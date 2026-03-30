@@ -1,0 +1,124 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { counties } from "@/data/areas";
+
+const countiesBySlug = Object.fromEntries(
+  counties.map((c) => [c.slug, c])
+);
+
+export async function generateStaticParams() {
+  return counties.map((county) => ({ county: county.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ county: string }>;
+}): Promise<Metadata> {
+  const { county } = await params;
+  const data = countiesBySlug[county];
+  if (!data) return {};
+  return {
+    title: data.metaTitle,
+    description: data.metaDescription,
+    alternates: {
+      canonical: `https://fivestarappliancerepairpros.com/areas-we-service/${county}/`,
+    },
+    openGraph: {
+      title: `${data.metaTitle}`,
+      description: data.metaDescription,
+      url: `https://fivestarappliancerepairpros.com/areas-we-service/${county}/`,
+    },
+  };
+}
+
+export default async function CountyPage({
+  params,
+}: {
+  params: Promise<{ county: string }>;
+}) {
+  const { county } = await params;
+  const data = countiesBySlug[county];
+  if (!data) notFound();
+
+  return (
+    <>
+      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="text-sm text-gray-400 mb-4">
+            <Link href="/" className="hover:text-white">
+              Home
+            </Link>
+            <span className="mx-2">/</span>
+            <Link href="/areas-we-service" className="hover:text-white">
+              Areas We Service
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-gray-200">{data.name}</span>
+          </nav>
+          <h1 className="text-4xl md:text-5xl font-bold">
+            Sub-Zero Appliance Repair in {data.name}, FL
+          </h1>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-12">
+            <div className="lg:col-span-2">
+              <p className="text-[#555555] leading-relaxed mb-6">
+                We provide expert Sub-Zero appliance repair services throughout{" "}
+                {data.name}, Florida. Our certified technicians offer same-day
+                service with genuine Sub-Zero parts for refrigerators, freezers,
+                ice makers, wine coolers, and marine refrigeration systems.
+              </p>
+              <p className="text-[#555555] leading-relaxed mb-8">
+                With over 30 years of experience and 24/7 availability,
+                we&apos;re the trusted choice for Sub-Zero repairs in{" "}
+                {data.name}. No extra charges for weekends or holidays — just
+                fast, reliable service when you need it most.
+              </p>
+              <h2 className="text-2xl font-bold text-[#111111] mb-6">
+                Cities We Serve in {data.name}
+              </h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {data.cities.map((city) => (
+                  <Link
+                    key={city.slug}
+                    href={`/areas-we-service/${county}/${city.slug}`}
+                    className="bg-gray-50 hover:bg-[#0099CC]/5 border border-gray-200 hover:border-[#0099CC]/30 rounded-lg p-3 text-sm text-center text-slate-700 hover:text-[#0099CC] transition-colors"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white rounded-lg p-6 text-center sticky top-24">
+                <h3 className="font-semibold mb-2">
+                  Schedule Repair in {data.name}
+                </h3>
+                <p className="text-sm text-gray-300 mb-4">
+                  Same-day service available
+                </p>
+                <a
+                  href="tel:+18006514528"
+                  className="inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-6 py-3 rounded-md font-semibold transition-colors w-full mb-3"
+                >
+                  (800) 651-4528
+                </a>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0099CC] px-6 py-3 rounded-md font-semibold transition-colors w-full"
+                >
+                  Request Service Call
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

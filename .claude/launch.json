@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sub-zero-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Volumes/T9/Development/sub-zero && npx next dev -p 3001"],
+      "port": 3001
+    }
+  ]
+}

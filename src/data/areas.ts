@@ -1,0 +1,153 @@
+export interface City {
+  name: string;
+  slug: string;
+}
+
+export interface County {
+  name: string;
+  slug: string;
+  metaTitle: string;
+  metaDescription: string;
+  cities: City[];
+}
+
+export const counties: County[] = [
+  {
+    name: "Miami-Dade County",
+    slug: "miami-dade-county",
+    metaTitle: "Sub-Zero Repair Miami-Dade County FL - Sub-Zero Repair Services",
+    metaDescription: "Expert Sub-Zero appliance repair in Miami-Dade County, FL. Same-day service for refrigerators, freezers, ice makers, and more. Call (800) 651-4528.",
+    cities: [
+      { name: "Aventura", slug: "aventura" },
+      { name: "Bal Harbour", slug: "bal-harbour" },
+      { name: "Bay Harbor Islands", slug: "bay-harbor-islands" },
+      { name: "Biscayne Park", slug: "biscayne-park" },
+      { name: "Coral Gables", slug: "coral-gables" },
+      { name: "Cutler Bay", slug: "cutler-bay" },
+      { name: "Doral", slug: "doral" },
+      { name: "El Portal", slug: "el-portal" },
+      { name: "Fisher Island", slug: "fisher-island" },
+      { name: "Golden Beach", slug: "golden-beach" },
+      { name: "Indian Creek Village", slug: "indian-creek-village" },
+      { name: "Key Biscayne", slug: "key-biscayne" },
+      { name: "Miami", slug: "miami" },
+      { name: "Miami Beach", slug: "miami-beach" },
+      { name: "Miami Lakes", slug: "miami-lakes" },
+      { name: "North Bay Village", slug: "north-bay-village" },
+      { name: "Palmetto Bay", slug: "palmetto-bay" },
+      { name: "Pinecrest", slug: "pinecrest" },
+      { name: "South Miami", slug: "south-miami" },
+      { name: "Sunny Isles Beach", slug: "sunny-isles-beach" },
+      { name: "Surfside", slug: "surfside" },
+    ],
+  },
+  {
+    name: "Broward County",
+    slug: "broward-county",
+    metaTitle: "Sub-Zero Repair Broward County FL - Sub-Zero Repair Services",
+    metaDescription: "Professional Sub-Zero appliance repair in Broward County, FL. Fast, reliable service with genuine parts. Call (800) 651-4528.",
+    cities: [
+      { name: "Coconut Creek", slug: "coconut-creek" },
+      { name: "Cooper City", slug: "cooper-city" },
+      { name: "Coral Springs", slug: "coral-springs" },
+      { name: "Davie", slug: "davie" },
+      { name: "Deerfield Beach", slug: "deerfield-beach" },
+      { name: "Fort Lauderdale", slug: "fort-lauderdale" },
+      { name: "Hallandale Beach", slug: "hallandale-beach" },
+      { name: "Hillsboro Beach", slug: "hillsboro-beach" },
+      { name: "Hollywood", slug: "hollywood" },
+      { name: "Lauderdale-by-the-Sea", slug: "lauderdale-by-the-sea" },
+      { name: "Lighthouse Point", slug: "lighthouse-point" },
+      { name: "Margate", slug: "margate" },
+      { name: "Miramar", slug: "miramar" },
+      { name: "Parkland", slug: "parkland" },
+      { name: "Pembroke Pines", slug: "pembroke-pines" },
+      { name: "Plantation", slug: "plantation" },
+      { name: "Pompano Beach", slug: "pompano-beach" },
+      { name: "Sea Ranch Lakes", slug: "sea-ranch-lakes" },
+      { name: "Southwest Ranches", slug: "southwest-ranches" },
+      { name: "Sunrise", slug: "sunrise" },
+      { name: "Tamarac", slug: "tamarac" },
+      { name: "Weston", slug: "weston" },
+    ],
+  },
+  {
+    name: "Palm Beach County",
+    slug: "palm-beach-county",
+    metaTitle: "Sub-Zero Repair Palm Beach County FL - Sub-Zero Repair Services",
+    metaDescription: "Expert Sub-Zero appliance repair in Palm Beach County, FL. Same-day service with certified technicians. Call (800) 651-4528.",
+    cities: [
+      { name: "Atlantis", slug: "atlantis" },
+      { name: "Boca Raton", slug: "boca-raton" },
+      { name: "Boynton Beach", slug: "boynton-beach" },
+      { name: "Delray Beach", slug: "delray-beach" },
+      { name: "Golf", slug: "golf" },
+      { name: "Highland Beach", slug: "highland-beach" },
+      { name: "Juno Beach", slug: "juno-beach" },
+      { name: "Jupiter", slug: "jupiter" },
+      { name: "Manalapan", slug: "manalapan" },
+      { name: "North Palm Beach", slug: "north-palm-beach" },
+      { name: "Ocean Ridge", slug: "ocean-ridge" },
+      { name: "Palm Beach", slug: "palm-beach" },
+      { name: "Palm Beach Gardens", slug: "palm-beach-gardens" },
+      { name: "Riviera Beach", slug: "riviera-beach" },
+      { name: "Tequesta", slug: "tequesta" },
+      { name: "Wellington", slug: "wellington" },
+      { name: "West Palm Beach", slug: "west-palm-beach" },
+    ],
+  },
+  {
+    name: "Monroe County",
+    slug: "monroe-county",
+    metaTitle: "Sub-Zero Repair Monroe County FL - Sub-Zero Repair Services",
+    metaDescription: "Sub-Zero appliance repair in Monroe County, FL including the Florida Keys. Call (800) 651-4528.",
+    cities: [
+      { name: "Islamorada", slug: "islamorada" },
+      { name: "Key Colony Beach", slug: "key-colony-beach" },
+      { name: "Key Largo", slug: "key-largo" },
+      { name: "North Key Largo", slug: "north-key-largo" },
+      { name: "Tavernier", slug: "tavernier" },
+    ],
+  },
+  {
+    name: "Collier County",
+    slug: "collier-county",
+    metaTitle: "Sub-Zero Repair Collier County FL - Sub-Zero Repair Services",
+    metaDescription: "Professional Sub-Zero appliance repair in Collier County, FL including Naples. Call (800) 651-4528.",
+    cities: [
+      { name: "Goodland", slug: "goodland" },
+      { name: "Island Walk", slug: "island-walk" },
+      { name: "Lely Resort", slug: "lely-resort" },
+      { name: "Marco Island", slug: "marco-island" },
+      { name: "Naples", slug: "naples" },
+      { name: "Naples Manor", slug: "naples-manor" },
+      { name: "Pelican Bay", slug: "pelican-bay" },
+      { name: "Pine Ridge", slug: "pine-ridge" },
+      { name: "Vineyards", slug: "vineyards" },
+    ],
+  },
+  {
+    name: "Martin County",
+    slug: "martin-county",
+    metaTitle: "Sub-Zero Repair Martin County FL - Sub-Zero Repair Services",
+    metaDescription: "Expert Sub-Zero appliance repair in Martin County, FL. Call (800) 651-4528 for same-day service.",
+    cities: [
+      { name: "Palm City", slug: "palm-city" },
+      { name: "Rio", slug: "rio" },
+      { name: "Sewall's Point", slug: "sewalls-point" },
+      { name: "Stuart", slug: "stuart" },
+    ],
+  },
+  {
+    name: "St. Lucie County",
+    slug: "st-lucie-county",
+    metaTitle: "Sub-Zero Repair St. Lucie County FL - Sub-Zero Repair Services",
+    metaDescription: "Professional Sub-Zero appliance repair in St. Lucie County, FL. Call (800) 651-4528.",
+    cities: [
+      { name: "Fort Pierce", slug: "fort-pierce" },
+      { name: "Port St. Lucie", slug: "port-st-lucie" },
+      { name: "Saint Lucie", slug: "saint-lucie" },
+      { name: "White City", slug: "white-city" },
+    ],
+  },
+];
