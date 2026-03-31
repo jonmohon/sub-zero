@@ -26,16 +26,16 @@ export default function Header() {
             <Navigation />
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-3">
               <Link
                 href="/contact"
-                className="bg-[#C62828] hover:bg-[#B71C1C] text-white px-5 py-2.5 rounded-md text-sm font-bold transition-colors"
+                className="bg-[#C41414] hover:bg-[#a81212] text-white text-[13px] font-semibold px-5 py-1.5 rounded transition-colors text-center whitespace-nowrap"
               >
                 Request Service Call
               </Link>
               <Link
                 href="/contact"
-                className="bg-[#1a237e] hover:bg-[#0d1642] text-white px-5 py-2.5 rounded-md text-sm font-bold transition-colors"
+                className="bg-[#1C3A5E] hover:bg-[#152d4a] text-white text-[13px] font-semibold px-5 py-1.5 rounded transition-colors text-center whitespace-nowrap"
               >
                 PAY NOW
               </Link>

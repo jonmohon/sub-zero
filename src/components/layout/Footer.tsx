@@ -32,7 +32,7 @@ export default function Footer() {
               alt="Sub-Zero Repair Services"
               width={200}
               height={50}
-              className="mb-4 brightness-0 invert"
+              className="mb-4"
             />
 
             {/* Social Links */}
