@@ -80,6 +80,6 @@ export const NAV_ITEMS = [
     ],
   },
   { label: "Blog", href: "/blog" },
-  { label: "Recent Work", href: "/checkins" },
+  { label: "FAQ", href: "/frequently-asked-questions" },
   { label: "Contact", href: "/contact" },
 ] as const;

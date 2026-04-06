@@ -2,45 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { NAV_ITEMS } from "@/lib/constants";
 
-const NAV_ITEMS = [
-  { label: "Home", href: "/" },
-  {
-    label: "Services",
-    href: "/services",
-    children: [
-      { label: "Sub-Zero Refrigerator Repair", href: "/services/refrigerator-repair" },
-      { label: "Sub-Zero Freezer Repair", href: "/services/freezer-repair" },
-      { label: "Sub-Zero Ice Maker Repair", href: "/services/icemaker-repair" },
-      { label: "Sub-Zero Wine Cooler Repair", href: "/services/wine-cooler-repair" },
-      { label: "Sub-Zero Marine Repair", href: "/services/sub-zero-marine-repair" },
-    ],
-  },
-  {
-    label: "Areas We Service",
-    href: "/areas-we-service",
-    children: [
-      { label: "Broward County", href: "/areas-we-service/broward-county" },
-      { label: "Miami Dade County", href: "/areas-we-service/miami-dade-county" },
-      { label: "Monroe County", href: "/areas-we-service/monroe-county" },
-      { label: "Palm Beach County", href: "/areas-we-service/palm-beach-county" },
-    ],
-  },
-  {
-    label: "Brands We Service",
-    href: "/brands-we-service",
-    children: [
-      { label: "Sub-Zero", href: "/sub-zero-appliance-repair-in-south-florida" },
-      { label: "Bosch", href: "/bosch-appliance-repair-in-south-florida" },
-      { label: "Viking", href: "/viking-appliance-repair-in-south-florida" },
-      { label: "Thermador", href: "/thermador-appliance-repair-in-south-florida" },
-      { label: "Miele", href: "/expert-miele-appliance-repair-in-south-florida" },
-    ],
-  },
-  { label: "Blog", href: "/blog" },
-  { label: "Recent Work", href: "/checkins" },
-  { label: "Contact", href: "/contact" },
-];
+function hasChildren(item: (typeof NAV_ITEMS)[number]): item is (typeof NAV_ITEMS)[number] & { children: readonly { readonly label: string; readonly href: string }[] } {
+  return "children" in item;
+}
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -55,7 +21,7 @@ export default function Navigation() {
           <li
             key={item.label}
             className="relative group"
-            onMouseEnter={() => item.children && setOpenDropdown(item.label)}
+            onMouseEnter={() => hasChildren(item) && setOpenDropdown(item.label)}
             onMouseLeave={() => setOpenDropdown(null)}
           >
             <Link
@@ -68,13 +34,13 @@ export default function Navigation() {
                 </svg>
               )}
               {item.label}
-              {item.children && (
+              {hasChildren(item) && (
                 <svg className="inline-block ml-1 w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               )}
             </Link>
-            {item.children && openDropdown === item.label && (
+            {hasChildren(item) && openDropdown === item.label && (
               <ul className="absolute left-0 top-full mt-1 bg-white border border-gray-200 rounded-xl py-2 min-w-[280px] z-50 shadow-xl">
                 {item.children.map((child) => (
                   <li key={child.label}>
@@ -138,7 +104,7 @@ export default function Navigation() {
             <div className="py-4">
               {NAV_ITEMS.map((item) => (
                 <div key={item.label} className="border-b border-gray-50 last:border-0">
-                  {item.children ? (
+                  {hasChildren(item) ? (
                     <>
                       <button
                         onClick={() =>
