@@ -31,7 +31,7 @@ const brandServices = [
 export default function MieleBrandPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -63,7 +63,7 @@ export default function MieleBrandPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Miele&apos;s German engineering excellence is evident in every
                 appliance they produce, from their precision-built dishwashers
                 to their advanced refrigeration systems. When your Miele
@@ -72,7 +72,7 @@ export default function MieleBrandPage() {
                 investment. We service the full range of Miele appliances
                 throughout South Florida.
               </p>
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Our technicians are trained on the complete Miele product line,
                 including refrigerators, dishwashers, ovens, washers, dryers,
                 and built-in coffee systems. We understand the sophisticated
@@ -80,14 +80,14 @@ export default function MieleBrandPage() {
                 genuine Miele replacement parts to maintain the exceptional
                 performance and longevity these appliances are known for.
               </p>
-              <h2 className="text-2xl font-bold text-[#111111] mt-8">
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8">
                 Services We Offer for Miele
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">
                 {brandServices.map((s) => (
-                  <li key={s} className="flex items-center gap-2 text-[#555555]">
+                  <li key={s} className="flex items-center gap-2 text-[#64748B]">
                     <svg
-                      className="w-5 h-5 text-[#0099CC]"
+                      className="w-5 h-5 text-[#00B4D8]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -105,7 +105,7 @@ export default function MieleBrandPage() {
               </ul>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">Schedule Miele Repair</h3>
                 <p className="text-sm text-gray-300 mb-4">
                   24/7 availability with same-day service
@@ -118,7 +118,7 @@ export default function MieleBrandPage() {
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0099CC] px-6 py-3 rounded-md font-semibold transition-colors w-full"
+                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#00B4D8] px-6 py-3 rounded-md font-semibold transition-colors w-full"
                 >
                   Request Service Call
                 </Link>

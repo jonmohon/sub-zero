@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { counties } from "@/data/areas";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
 
 const countiesBySlug = Object.fromEntries(
   counties.map((c) => [c.slug, c])
@@ -19,16 +21,17 @@ export async function generateMetadata({
   const { county } = await params;
   const data = countiesBySlug[county];
   if (!data) return {};
+  const topCityNames = data.cities.slice(0, 5).map((c) => c.name).join(", ");
+  const description = `Expert Sub-Zero appliance repair in ${data.name}, FL serving ${topCityNames} and more. Same-day service, certified technicians. Call (800) 651-4528.`;
+  const url = `${BUSINESS.siteUrl}/areas-we-service/${county}/`;
   return {
     title: data.metaTitle,
-    description: data.metaDescription,
-    alternates: {
-      canonical: `https://fivestarappliancerepairpros.com/areas-we-service/${county}/`,
-    },
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: `${data.metaTitle}`,
-      description: data.metaDescription,
-      url: `https://fivestarappliancerepairpros.com/areas-we-service/${county}/`,
+      title: data.metaTitle,
+      description,
+      url,
     },
   };
 }
@@ -42,9 +45,31 @@ export default async function CountyPage({
   const data = countiesBySlug[county];
   if (!data) notFound();
 
+  const countyUrl = `${BUSINESS.siteUrl}/areas-we-service/${county}/`;
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BUSINESS.siteUrl },
+    { name: "Areas We Service", url: `${BUSINESS.siteUrl}/areas-we-service/` },
+    { name: data.name, url: countyUrl },
+  ]);
+  const webPageSchema = generateWebPageSchema(
+    `Sub-Zero Appliance Repair in ${data.name}, FL`,
+    data.metaDescription,
+    countyUrl
+  );
+  const topCities = data.cities.slice(0, 5).map((c) => c.name).join(", ");
+
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -67,19 +92,19 @@ export default async function CountyPage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <p className="text-[#555555] leading-relaxed mb-6">
+              <p className="text-[#64748B] leading-relaxed mb-6">
                 We provide expert Sub-Zero appliance repair services throughout{" "}
                 {data.name}, Florida. Our certified technicians offer same-day
                 service with genuine Sub-Zero parts for refrigerators, freezers,
                 ice makers, wine coolers, and marine refrigeration systems.
               </p>
-              <p className="text-[#555555] leading-relaxed mb-8">
+              <p className="text-[#64748B] leading-relaxed mb-8">
                 With over 30 years of experience and 24/7 availability,
                 we&apos;re the trusted choice for Sub-Zero repairs in{" "}
                 {data.name}. No extra charges for weekends or holidays — just
                 fast, reliable service when you need it most.
               </p>
-              <h2 className="text-2xl font-bold text-[#111111] mb-6">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-6">
                 Cities We Serve in {data.name}
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -87,7 +112,7 @@ export default async function CountyPage({
                   <Link
                     key={city.slug}
                     href={`/areas-we-service/${county}/${city.slug}`}
-                    className="bg-gray-50 hover:bg-[#0099CC]/5 border border-gray-200 hover:border-[#0099CC]/30 rounded-lg p-3 text-sm text-center text-slate-700 hover:text-[#0099CC] transition-colors"
+                    className="bg-gray-50 hover:bg-[#00B4D8]/5 border border-gray-200 hover:border-[#00B4D8]/30 rounded-lg p-3 text-sm text-center text-slate-700 hover:text-[#00B4D8] transition-colors"
                   >
                     {city.name}
                   </Link>
@@ -95,7 +120,7 @@ export default async function CountyPage({
               </div>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">
                   Schedule Repair in {data.name}
                 </h3>
@@ -110,7 +135,7 @@ export default async function CountyPage({
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0099CC] px-6 py-3 rounded-md font-semibold transition-colors w-full"
+                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#00B4D8] px-6 py-3 rounded-md font-semibold transition-colors w-full"
                 >
                   Request Service Call
                 </Link>

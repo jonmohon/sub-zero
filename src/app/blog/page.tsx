@@ -22,7 +22,7 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog</h1>
           <p className="text-lg text-gray-300">Expert tips, guides, and insights for Sub-Zero appliance owners.</p>
@@ -36,13 +36,13 @@ export default function BlogPage() {
               <article key={post.slug} className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
                 <div className="p-6">
                   <time className="text-xs text-gray-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
-                  <h2 className="text-lg font-semibold text-[#111111] mt-2 mb-3">
-                    <Link href={`/blog/${post.slug}`} className="hover:text-[#0099CC] transition-colors">
+                  <h2 className="text-lg font-semibold text-[#0A2540] mt-2 mb-3">
+                    <Link href={`/blog/${post.slug}`} className="hover:text-[#00B4D8] transition-colors">
                       {post.title}
                     </Link>
                   </h2>
-                  <p className="text-sm text-[#555555] mb-4">{post.excerpt}</p>
-                  <Link href={`/blog/${post.slug}`} className="text-[#0099CC] hover:text-[#0077a3] text-sm font-medium">
+                  <p className="text-sm text-[#64748B] mb-4">{post.excerpt}</p>
+                  <Link href={`/blog/${post.slug}`} className="text-[#00B4D8] hover:text-[#0A2540] text-sm font-medium">
                     Read More →
                   </Link>
                 </div>

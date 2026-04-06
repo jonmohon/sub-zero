@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { generateBreadcrumbSchema, generateItemListSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: BUSINESS.siteUrl },
+  { name: "Services", url: `${BUSINESS.siteUrl}/services/` },
+]);
+const itemListSchema = generateItemListSchema([
+  { name: "Sub-Zero Refrigerator Repair", url: `${BUSINESS.siteUrl}/services/refrigerator-repair/` },
+  { name: "Sub-Zero Freezer Repair", url: `${BUSINESS.siteUrl}/services/freezer-repair/` },
+  { name: "Sub-Zero Ice Maker Repair", url: `${BUSINESS.siteUrl}/services/icemaker-repair/` },
+  { name: "Sub-Zero Wine Cooler Repair", url: `${BUSINESS.siteUrl}/services/wine-cooler-repair/` },
+  { name: "Sub-Zero Marine Refrigeration Repair", url: `${BUSINESS.siteUrl}/services/sub-zero-marine-repair/` },
+]);
 
 export const metadata: Metadata = {
   title: "Sub-Zero Appliance Repair Coral Gables FL",
@@ -59,7 +73,16 @@ const servicesList = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Sub-Zero Refrigerator Service and Repair in South Florida
@@ -74,10 +97,10 @@ export default function ServicesPage() {
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#111111] mb-4">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-4">
             Keep Cool by Calling Us for Repairs
           </h2>
-          <p className="text-[#555555] mb-6 max-w-4xl">
+          <p className="text-[#64748B] mb-6 max-w-4xl">
             You have no time to lose if your fridge or freezer is failing.
             Depend on our Sub-Zero Service Centers for emergency Sub-Zero
             refrigerator service and repair in South Florida. We&apos;ll save
@@ -85,10 +108,10 @@ export default function ServicesPage() {
             technicians at our company ensure your commercial or residential
             equipment is fully operational.
           </p>
-          <h2 className="text-3xl font-bold text-[#111111] mb-4">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-4">
             Fast and Affordable Same-Day Refrigerator Repair
           </h2>
-          <p className="text-[#555555] mb-12 max-w-4xl">
+          <p className="text-[#64748B] mb-12 max-w-4xl">
             Customers throughout the area trust us for emergency response when
             they have problems with their refrigeration equipment. Because our
             technicians are experienced and factory-trained, we deliver the
@@ -112,10 +135,10 @@ export default function ServicesPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#111111] group-hover:text-[#0099CC] transition-colors mb-2">
+                  <h3 className="text-xl font-semibold text-[#0A2540] group-hover:text-[#00B4D8] transition-colors mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-[#555555] text-sm">{service.description}</p>
+                  <p className="text-[#64748B] text-sm">{service.description}</p>
                 </div>
               </Link>
             ))}
@@ -123,7 +146,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Ready to Schedule Your Repair?
@@ -141,7 +164,7 @@ export default function ServicesPage() {
             </Link>
             <a
               href="tel:+18006514528"
-              className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0099CC] px-8 py-4 rounded-md font-semibold text-lg transition-colors"
+              className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#00B4D8] px-8 py-4 rounded-md font-semibold text-lg transition-colors"
             >
               (800) 651-4528
             </a>

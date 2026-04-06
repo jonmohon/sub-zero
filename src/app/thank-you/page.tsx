@@ -26,18 +26,18 @@ export default function ThankYouPage() {
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <h1 className="text-3xl font-bold text-[#111111] mb-4">
+          <h1 className="text-3xl font-bold text-[#0A2540] mb-4">
             Thank You!
           </h1>
-          <p className="text-[#555555] mb-2">
+          <p className="text-[#64748B] mb-2">
             Your service request has been received. One of our team members will
             contact you shortly to confirm your appointment.
           </p>
-          <p className="text-[#555555] mb-8">
+          <p className="text-[#64748B] mb-8">
             For immediate assistance, call us at{" "}
             <a
               href="tel:+18006514528"
-              className="text-[#0099CC] hover:text-[#0077a3] font-semibold"
+              className="text-[#00B4D8] hover:text-[#0A2540] font-semibold"
             >
               (800) 651-4528
             </a>
@@ -52,7 +52,7 @@ export default function ThankYouPage() {
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center justify-center border-2 border-[#0099CC] text-[#0099CC] hover:bg-[#0099CC] hover:text-white px-6 py-3 rounded-md font-semibold transition-colors"
+              className="inline-flex items-center justify-center border-2 border-[#00B4D8] text-[#00B4D8] hover:bg-[#00B4D8] hover:text-white px-6 py-3 rounded-md font-semibold transition-colors"
             >
               View Our Services
             </Link>

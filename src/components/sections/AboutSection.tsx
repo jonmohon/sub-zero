@@ -2,42 +2,75 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-white/80 font-semibold uppercase tracking-wider mb-8 text-center">About Us</h3>
-        <div className="grid md:grid-cols-2 gap-8">
+    <section className="relative bg-[#F8FAFC] py-24 overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Gradient mesh */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#00B4D8]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#0A2540]/5 rounded-full blur-3xl" />
+        {/* Geometric accent lines */}
+        <div className="absolute top-20 left-0 w-32 h-[2px] bg-gradient-to-r from-transparent via-[#00B4D8]/20 to-transparent" />
+        <div className="absolute bottom-20 right-0 w-48 h-[2px] bg-gradient-to-l from-transparent via-[#00B4D8]/20 to-transparent" />
+        {/* Subtle circle accents */}
+        <div className="absolute top-12 right-16 w-20 h-20 rounded-full border border-[#00B4D8]/10" />
+        <div className="absolute bottom-16 left-12 w-14 h-14 rounded-full border border-[#0A2540]/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[#00B4D8]/[0.04]" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 mb-4">
+            <span className="h-[2px] w-8 bg-gradient-to-r from-transparent to-[#00B4D8]" />
+            <h3 className="text-[#00B4D8] font-semibold uppercase tracking-wider text-sm">About Us</h3>
+            <span className="h-[2px] w-8 bg-gradient-to-l from-transparent to-[#00B4D8]" />
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10">
           {/* Left card */}
-          <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#111111] mb-4">
+          <div className="group relative bg-white/80 backdrop-blur-xl rounded-2xl p-10 shadow-xl border border-white/20 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
+            {/* Card accent */}
+            <div className="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-[#00B4D8] via-[#0A2540] to-[#00B4D8] rounded-b-full opacity-60" />
+            {/* Decorative corner element */}
+            <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#00B4D8]/5 group-hover:bg-[#00B4D8]/10 transition-colors duration-500" />
+
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-4 leading-tight">
               Top-Quality Sub-Zero Appliance Repair in Coral Gables, FL
             </h2>
-            <p className="text-[#555555] leading-relaxed mb-6">
+            <p className="text-[#64748B] leading-relaxed mb-8 text-base">
               We specialize in maintaining, diagnosing, and restoring high-end refrigeration equipment. With over 30 years of experience, our factory-trained technicians deliver the highest quality Sub-Zero appliance repair services throughout South Florida.
             </p>
             <Link
               href="/about"
-              className="inline-flex items-center text-[#0099CC] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 text-[#00B4D8] font-semibold group/link hover:gap-3 transition-all duration-300"
             >
               Learn More
-              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
           </div>
+
           {/* Right card */}
-          <div className="bg-white rounded-xl p-8 shadow-lg">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#111111] mb-4">
+          <div className="group relative bg-white/80 backdrop-blur-xl rounded-2xl p-10 shadow-xl border border-white/20 hover:-translate-y-1 hover:shadow-2xl transition-all duration-500">
+            {/* Card accent */}
+            <div className="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-[#f89406] via-[#0A2540] to-[#f89406] rounded-b-full opacity-60" />
+            {/* Decorative corner element */}
+            <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#f89406]/5 group-hover:bg-[#f89406]/10 transition-colors duration-500" />
+
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-4 leading-tight">
               Comprehensive Repairs Tailored to Your Needs
             </h2>
-            <p className="text-[#555555] leading-relaxed mb-6">
+            <p className="text-[#64748B] leading-relaxed mb-8 text-base">
               From residential refrigerators to marine refrigeration systems, we provide full-service solutions for all your Sub-Zero appliance needs. Our technicians carry genuine parts and have the training to handle any repair.
             </p>
             <Link
               href="/services"
-              className="inline-flex items-center text-[#0099CC] font-semibold hover:underline"
+              className="inline-flex items-center gap-2 text-[#00B4D8] font-semibold group/link hover:gap-3 transition-all duration-300"
             >
               View Services
-              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>

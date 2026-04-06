@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { counties } from "@/data/areas";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: BUSINESS.siteUrl },
+  { name: "Areas We Service", url: `${BUSINESS.siteUrl}/areas-we-service/` },
+]);
+const webPageSchema = generateWebPageSchema(
+  "Areas We Service",
+  "Sub-Zero appliance repair across South Florida. We serve Miami-Dade, Broward, Palm Beach, Monroe, Collier, Martin, and St. Lucie counties.",
+  `${BUSINESS.siteUrl}/areas-we-service/`
+);
 
 export const metadata: Metadata = {
   title: "Areas We Service - Sub-Zero Repair South Florida",
@@ -14,7 +26,16 @@ export const metadata: Metadata = {
 export default function AreasPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Areas We Service
@@ -33,10 +54,10 @@ export default function AreasPage() {
                 key={county.slug}
                 className="bg-white rounded-lg shadow-sm border border-gray-100 p-6"
               >
-                <h2 className="text-xl font-bold text-[#111111] mb-4">
+                <h2 className="text-xl font-bold text-[#0A2540] mb-4">
                   <Link
                     href={`/areas-we-service/${county.slug}`}
-                    className="hover:text-[#0099CC] transition-colors"
+                    className="hover:text-[#00B4D8] transition-colors"
                   >
                     {county.name}
                   </Link>
@@ -46,7 +67,7 @@ export default function AreasPage() {
                     <li key={city.slug}>
                       <Link
                         href={`/areas-we-service/${county.slug}/${city.slug}`}
-                        className="text-sm text-[#555555] hover:text-[#0099CC] transition-colors"
+                        className="text-sm text-[#64748B] hover:text-[#00B4D8] transition-colors"
                       >
                         {city.name}
                       </Link>

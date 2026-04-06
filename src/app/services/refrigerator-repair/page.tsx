@@ -1,5 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
+import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
+
+const serviceSchema = generateServiceSchema(
+  "Sub-Zero Refrigerator Repair",
+  "Expert Sub-Zero refrigerator repair across South Florida. Same-day service, genuine parts, certified technicians.",
+  `${BUSINESS.siteUrl}/services/refrigerator-repair/`,
+  [
+    { name: "Miami", type: "City" },
+    { name: "Miami Beach", type: "City" },
+    { name: "Key Biscayne", type: "City" },
+    { name: "Pinecrest", type: "City" },
+    { name: "Coral Gables", type: "City" },
+    { name: "South Florida", type: "State" },
+  ]
+);
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: BUSINESS.siteUrl },
+  { name: "Services", url: `${BUSINESS.siteUrl}/services/` },
+  { name: "Refrigerator Repair", url: `${BUSINESS.siteUrl}/services/refrigerator-repair/` },
+]);
 
 export const metadata: Metadata = {
   title: "Sub-Zero Refrigerator Repair Coral Gables FL",
@@ -21,7 +43,16 @@ export const metadata: Metadata = {
 export default function RefrigeratorRepairPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -44,7 +75,7 @@ export default function RefrigeratorRepairPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 You have no time to lose if your fridge or freezer is failing.
                 Depend on our Sub-Zero Service Centers for emergency Sub-Zero
                 refrigerator service and repair in South Florida. We&apos;ll
@@ -53,14 +84,14 @@ export default function RefrigeratorRepairPage() {
                 equipment is fully operational. That means your food stays fresh
                 and you save money by keeping it that way.
               </p>
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Customers throughout the area trust us for emergency response
                 when they have problems with their refrigeration equipment.
                 Because our technicians are experienced and factory-trained, we
                 deliver the highest-quality services to ensure your Sub-Zero
                 equipment is fully operational as soon as possible.
               </p>
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 If your refrigerator breaks, you need immediate emergency
                 services. At our company, we have extensive experience in
                 repairing all types of Sub-Zero units. In addition, we keep a
@@ -72,8 +103,8 @@ export default function RefrigeratorRepairPage() {
               </p>
             </div>
             <div className="space-y-6">
-              <div className="bg-[#0099CC]/5 border border-[#0099CC]/20 rounded-lg p-6">
-                <h3 className="font-semibold text-[#111111] mb-4">
+              <div className="bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6">
+                <h3 className="font-semibold text-[#0A2540] mb-4">
                   Why Choose Us
                 </h3>
                 <ul className="space-y-3">
@@ -88,7 +119,7 @@ export default function RefrigeratorRepairPage() {
                       className="flex items-center gap-2 text-sm text-gray-700"
                     >
                       <svg
-                        className="w-5 h-5 text-[#0099CC] flex-shrink-0"
+                        className="w-5 h-5 text-[#00B4D8] flex-shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -105,7 +136,7 @@ export default function RefrigeratorRepairPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white rounded-lg p-6 text-center">
+              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center">
                 <h3 className="font-semibold mb-2">Need Immediate Help?</h3>
                 <p className="text-sm text-gray-300 mb-4">
                   Our technicians are standing by 24/7
@@ -122,7 +153,9 @@ export default function RefrigeratorRepairPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-12">
+      <ServiceAreasGrid serviceType="Refrigerator Repair" />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">
             Schedule Your Refrigerator Repair Today

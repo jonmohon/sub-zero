@@ -11,6 +11,17 @@ export interface County {
   cities: City[];
 }
 
+export const PRIORITY_CITIES = [
+  "miami",
+  "key-biscayne",
+  "miami-beach",
+  "pinecrest",
+  "indian-creek-village",
+  "fisher-island",
+  "sunny-isles-beach",
+  "key-largo",
+];
+
 export const counties: County[] = [
   {
     name: "Miami-Dade County",

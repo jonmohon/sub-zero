@@ -3,11 +3,17 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import MobileBottomBar from "@/components/layout/MobileBottomBar";
+import { generateLocalBusinessSchema, generateOrganizationSchema } from "@/lib/schema";
+
+const localBusinessSchema = generateLocalBusinessSchema();
+const organizationSchema = generateOrganizationSchema();
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -59,92 +65,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Sub-Zero Repair Company",
-              telephone: "+1 800 651 4528",
-              address: {
-                "@type": "PostalAddress",
-                name: "Subzero Service Centers",
-                addressLocality: "Miami",
-                addressRegion: "FL",
-                postalCode: "33131",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 25.7462141,
-                longitude: -80.33623209999999,
-              },
-              openingHours: "Mo-Su 00:00-23:59",
-              sameAs: [
-                "https://facebook.com/subzeroservicecenters/",
-                "https://x.com/SubZeroRepairFL",
-              ],
-            }),
-          }}
+        <link rel="llms-txt" href="/llms.txt" />
+        <meta
+          name="ai-content-declaration"
+          content="This website contains factual business information about Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros), a licensed appliance repair service in South Florida founded in 1994."
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": ["Organization", "HomeAndConstructionBusiness"],
-              name: "Fivestar Appliance Repair Pros",
-              email: "info@fivestarappliancerepairpros.com",
-              telephone: "+1 800 651 4528",
-              url: "https://fivestarappliancerepairpros.com",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "1600 Ponce De Leon Blvd 10th Floor Suite 64",
-                addressLocality: "Coral Gables",
-                addressRegion: "FL",
-                postalCode: "33134",
-                addressCountry: "US",
-              },
-              areaServed: {
-                "@type": "State",
-                name: "Florida",
-                containedInPlace: {
-                  "@type": "Country",
-                  name: "US",
-                },
-              },
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Appliance Repair Services",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Sub-Zero & Refrigerator Repair",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Ice Maker & Freezer Repair",
-                    },
-                  },
-                ],
-              },
-              sameAs: [
-                "https://facebook.com/subzeroservicecenters/",
-                "https://x.com/SubZeroRepairFL",
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileBottomBar />
       </body>
     </html>
   );

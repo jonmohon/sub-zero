@@ -30,7 +30,7 @@ const brandServices = [
 export default function ThermadorBrandPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -62,14 +62,14 @@ export default function ThermadorBrandPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Thermador represents the pinnacle of premium kitchen appliances,
                 combining innovative technology with timeless design. When your
                 Thermador appliance requires repair, our certified technicians
                 deliver the expert service these luxury appliances deserve. We
                 provide comprehensive Thermador repair throughout South Florida.
               </p>
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 From Thermador&apos;s signature Star Burner cooktops to their
                 Freedom Collection refrigerators and professional wall ovens,
                 our team has deep expertise with every Thermador product line.
@@ -77,14 +77,14 @@ export default function ThermadorBrandPage() {
                 factory-recommended repair procedures to maintain your
                 appliance&apos;s premium performance.
               </p>
-              <h2 className="text-2xl font-bold text-[#111111] mt-8">
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8">
                 Services We Offer for Thermador
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">
                 {brandServices.map((s) => (
-                  <li key={s} className="flex items-center gap-2 text-[#555555]">
+                  <li key={s} className="flex items-center gap-2 text-[#64748B]">
                     <svg
-                      className="w-5 h-5 text-[#0099CC]"
+                      className="w-5 h-5 text-[#00B4D8]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export default function ThermadorBrandPage() {
               </ul>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">
                   Schedule Thermador Repair
                 </h3>
@@ -117,7 +117,7 @@ export default function ThermadorBrandPage() {
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0099CC] px-6 py-3 rounded-md font-semibold transition-colors w-full"
+                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#00B4D8] px-6 py-3 rounded-md font-semibold transition-colors w-full"
                 >
                   Request Service Call
                 </Link>

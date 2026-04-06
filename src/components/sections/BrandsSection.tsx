@@ -11,11 +11,14 @@ const brandsList = [
 
 export default function BrandsSection() {
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-gradient-to-br from-slate-50 via-white to-sky-50/40 py-24 overflow-hidden">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-[0.015] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #0A2540 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Bordered heading box */}
         <div className="flex justify-center mb-6">
-          <h2 className="text-3xl font-bold text-[#111111] border-[3px] border-[#0099CC] rounded-lg px-8 py-3 inline-block">
+          <h2 className="text-3xl font-bold text-[#0A2540] border-[3px] border-[#00B4D8] rounded-lg px-8 py-3 inline-block">
             Brands We Service
           </h2>
         </div>
@@ -27,21 +30,23 @@ export default function BrandsSection() {
             <Link
               key={brand.name}
               href={brand.href}
-              className="flex items-center justify-center p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white"
+              className="group flex items-center justify-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
             >
               <Image
                 src={brand.logo}
                 alt={`${brand.name} Logo`}
                 width={120}
                 height={60}
-                className="h-12 w-auto object-contain"
+                className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-500"
               />
             </Link>
           ))}
         </div>
-        {/* Certified banner */}
-        <div className="mt-12 bg-gradient-to-r from-[#0099CC] to-[#0077a3] rounded-lg py-4 px-6 text-center text-white font-semibold text-lg">
-          Certified Experts &nbsp;|&nbsp; Factory-Trained Technicians &nbsp;|&nbsp; Same-Day Service Available
+        {/* Certified banner — floating glassmorphism */}
+        <div className="mt-14 mx-auto max-w-3xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl py-5 px-8 text-center">
+          <span className="bg-gradient-to-r from-[#00B4D8] to-[#0A2540] bg-clip-text text-transparent font-bold text-lg">
+            Certified Experts &nbsp;|&nbsp; Factory-Trained Technicians &nbsp;|&nbsp; Same-Day Service Available
+          </span>
         </div>
       </div>
     </section>

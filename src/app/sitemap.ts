@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
+import { PRIORITY_CITIES } from "@/data/areas";
 
 const BASE_URL = "https://fivestarappliancerepairpros.com";
+const LAST_MODIFIED = new Date("2026-04-06");
 
 const countyCities: Record<string, string[]> = {
   "miami-dade-county": ["aventura", "bal-harbour", "bay-harbor-islands", "biscayne-park", "coral-gables", "cutler-bay", "doral", "el-portal", "fisher-island", "golden-beach", "indian-creek-village", "key-biscayne", "miami", "miami-beach", "miami-lakes", "north-bay-village", "palmetto-bay", "pinecrest", "south-miami", "sunny-isles-beach", "surfside"],
@@ -43,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/contact/`, changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/frequently-asked-questions/`, changeFrequency: "monthly" as const, priority: 0.6 },
     { url: `${BASE_URL}/blog/`, changeFrequency: "weekly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/ai-profile/`, changeFrequency: "monthly" as const, priority: 0.5 },
     { url: `${BASE_URL}/checkins/`, changeFrequency: "weekly" as const, priority: 0.5 },
   ];
 
@@ -55,8 +58,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cityPages = Object.entries(countyCities).flatMap(([county, cities]) =>
     cities.map((city) => ({
       url: `${BASE_URL}/areas-we-service/${county}/${city}/`,
+      lastModified: PRIORITY_CITIES.includes(city) ? LAST_MODIFIED : undefined,
       changeFrequency: "monthly" as const,
-      priority: 0.6,
+      priority: PRIORITY_CITIES.includes(city) ? 0.8 : county === "miami-dade-county" ? 0.7 : 0.6,
     }))
   );
 

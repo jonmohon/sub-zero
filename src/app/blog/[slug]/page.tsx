@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { generateBreadcrumbSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
 
 interface BlogPostData {
   slug: string;
@@ -174,16 +176,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     headline: post.title,
     description: post.metaDescription,
     author: { "@type": "Person", name: post.author },
-    publisher: { "@type": "Organization", name: "Sub-Zero Repair Services", url: "https://fivestarappliancerepairpros.com" },
+    publisher: { "@type": "Organization", name: "Sub-Zero Repair Services", url: BUSINESS.siteUrl },
     datePublished: post.date,
     dateModified: post.date,
   };
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BUSINESS.siteUrl },
+    { name: "Blog", url: `${BUSINESS.siteUrl}/blog/` },
+    { name: post.title, url: `${BUSINESS.siteUrl}/${post.slug}/` },
+  ]);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
@@ -205,21 +213,31 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             {post.content.map((paragraph, i) => (
-              <p key={i} className="text-[#555555] leading-relaxed mb-6">{paragraph}</p>
+              <p key={i} className="text-[#64748B] leading-relaxed mb-6">{paragraph}</p>
             ))}
           </div>
 
-          <div className="mt-12 bg-[#0099CC]/5 border border-[#0099CC]/20 rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-[#111111] mb-2">Need Professional Help?</h3>
-            <p className="text-[#555555] mb-4">Our certified technicians are available 24/7 for same-day service.</p>
+          <div className="mt-12 bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-[#0A2540] mb-2">Need Professional Help?</h3>
+            <p className="text-[#64748B] mb-4">Our certified technicians are available 24/7 for same-day service.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+18006514528" className="inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-6 py-3 rounded-md font-semibold transition-colors">
                 Call (800) 651-4528
               </a>
-              <Link href="/contact" className="inline-flex items-center justify-center border-2 border-[#0099CC] text-[#0099CC] hover:bg-[#0099CC] hover:text-white px-6 py-3 rounded-md font-semibold transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center border-2 border-[#00B4D8] text-[#00B4D8] hover:bg-[#00B4D8] hover:text-white px-6 py-3 rounded-md font-semibold transition-colors">
                 Request Service
               </Link>
             </div>
+          </div>
+
+          <div className="mt-12 border-t border-gray-200 pt-8">
+            <h3 className="text-lg font-semibold text-[#0A2540] mb-2">About Sub-Zero Repair Company</h3>
+            <p className="text-[#64748B] text-sm leading-relaxed">
+              Sub-Zero Repair Company, doing business as Fivestar Appliance Repair Pros, has provided factory-authorized Sub-Zero appliance repair in South Florida since 1994. Our factory-trained technicians offer 24/7 same-day service across 82 cities in 7 counties, using only genuine manufacturer parts with a full warranty on all repairs.{" "}
+              <Link href="/ai-profile" className="text-[#00B4D8] hover:text-[#0A2540]">
+                Learn more about our company
+              </Link>.
+            </p>
           </div>
         </div>
       </article>

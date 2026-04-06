@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { faqItems } from "@/data/faq";
 import FAQAccordion from "@/components/FAQAccordion";
+import { generateBreadcrumbSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: BUSINESS.siteUrl },
+  { name: "Frequently Asked Questions", url: `${BUSINESS.siteUrl}/frequently-asked-questions/` },
+]);
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions - Sub-Zero Repair Services",
@@ -32,8 +39,12 @@ export default function FAQPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Frequently Asked Questions
@@ -49,11 +60,11 @@ export default function FAQPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <FAQAccordion items={faqItems} />
 
-          <div className="mt-12 bg-[#0099CC]/5 border border-[#0099CC]/20 rounded-lg p-8 text-center">
-            <h2 className="text-xl font-bold text-[#111111] mb-2">
+          <div className="mt-12 bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-8 text-center">
+            <h2 className="text-xl font-bold text-[#0A2540] mb-2">
               Still Have Questions?
             </h2>
-            <p className="text-[#555555] mb-4">
+            <p className="text-[#64748B] mb-4">
               Our team is available 24/7 to answer any questions about your
               Sub-Zero appliance repair needs.
             </p>

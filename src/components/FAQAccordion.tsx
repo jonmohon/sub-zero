@@ -17,14 +17,14 @@ function AccordionItem({
       <button
         type="button"
         onClick={onToggle}
-        className="flex w-full items-center justify-between py-5 text-left"
+        className="flex w-full items-center justify-between py-6 text-left"
         aria-expanded={isOpen}
       >
-        <span className="text-base font-medium text-[#111111] pr-4">
+        <span className={`text-base font-medium pr-4 ${isOpen ? "text-[#00B4D8]" : "text-[#0A2540]"}`}>
           {item.question}
         </span>
         <svg
-          className={`w-5 h-5 text-[#0099CC] flex-shrink-0 transition-transform duration-200 ${
+          className={`w-5 h-5 text-[#0A2540] flex-shrink-0 transition-transform duration-200 ${
             isOpen ? "rotate-180" : ""
           }`}
           fill="none"
@@ -44,7 +44,7 @@ function AccordionItem({
           isOpen ? "max-h-96 pb-5" : "max-h-0"
         }`}
       >
-        <p className="text-[#555555] leading-relaxed">{item.answer}</p>
+        <p className="text-[#64748B] leading-relaxed">{item.answer}</p>
       </div>
     </div>
   );

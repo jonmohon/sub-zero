@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { BUSINESS } from "@/lib/constants";
+import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
+
+const serviceSchema = generateServiceSchema(
+  "Sub-Zero Freezer Repair",
+  "Professional Sub-Zero freezer repair in South Florida. Fast, reliable service with genuine parts.",
+  `${BUSINESS.siteUrl}/services/freezer-repair/`
+);
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: BUSINESS.siteUrl },
+  { name: "Services", url: `${BUSINESS.siteUrl}/services/` },
+  { name: "Freezer Repair", url: `${BUSINESS.siteUrl}/services/freezer-repair/` },
+]);
 
 export const metadata: Metadata = {
   title: "Sub-Zero Freezer Repair South Florida",
@@ -20,7 +34,16 @@ export const metadata: Metadata = {
 export default function FreezerRepairPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -43,14 +66,14 @@ export default function FreezerRepairPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 A malfunctioning freezer can lead to significant food loss and
                 costly replacements. Our Sub-Zero freezer repair specialists
                 provide fast, reliable service throughout South Florida to get
                 your freezer back to peak performance. We handle everything from
                 minor fixes to major component replacements.
               </p>
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Our factory-trained technicians are experts at diagnosing and
                 resolving the most common Sub-Zero freezer issues, including
                 temperature inconsistencies, excessive ice buildup, unusual
@@ -58,7 +81,7 @@ export default function FreezerRepairPage() {
                 genuine Sub-Zero parts on every service call to ensure a
                 first-visit fix whenever possible.
               </p>
-              <p className="text-[#555555] leading-relaxed">
+              <p className="text-[#64748B] leading-relaxed">
                 Whether you have a built-in Sub-Zero freezer column, an
                 integrated unit, or a freestanding model, our team has the
                 expertise and parts inventory to restore proper operation
@@ -68,8 +91,8 @@ export default function FreezerRepairPage() {
               </p>
             </div>
             <div className="space-y-6">
-              <div className="bg-[#0099CC]/5 border border-[#0099CC]/20 rounded-lg p-6">
-                <h3 className="font-semibold text-[#111111] mb-4">
+              <div className="bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6">
+                <h3 className="font-semibold text-[#0A2540] mb-4">
                   Why Choose Us
                 </h3>
                 <ul className="space-y-3">
@@ -84,7 +107,7 @@ export default function FreezerRepairPage() {
                       className="flex items-center gap-2 text-sm text-gray-700"
                     >
                       <svg
-                        className="w-5 h-5 text-[#0099CC] flex-shrink-0"
+                        className="w-5 h-5 text-[#00B4D8] flex-shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -101,7 +124,7 @@ export default function FreezerRepairPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white rounded-lg p-6 text-center">
+              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center">
                 <h3 className="font-semibold mb-2">Need Immediate Help?</h3>
                 <p className="text-sm text-gray-300 mb-4">
                   Our technicians are standing by 24/7
@@ -118,7 +141,9 @@ export default function FreezerRepairPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-12">
+      <ServiceAreasGrid serviceType="Freezer Repair" />
+
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">
             Schedule Your Freezer Repair Today

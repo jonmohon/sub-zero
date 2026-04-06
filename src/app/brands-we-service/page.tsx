@@ -58,7 +58,7 @@ const brands = [
 export default function BrandsWeServicePage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Brands We Service
@@ -88,17 +88,17 @@ export default function BrandsWeServicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h2 className="text-xl font-semibold text-[#111111] group-hover:text-[#0099CC] transition-colors mb-3">
+                <h2 className="text-xl font-semibold text-[#0A2540] group-hover:text-[#00B4D8] transition-colors mb-3">
                   {brand.name}
                 </h2>
-                <p className="text-[#555555] text-sm">{brand.description}</p>
+                <p className="text-[#64748B] text-sm">{brand.description}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Don&apos;t See Your Brand?
@@ -116,7 +116,7 @@ export default function BrandsWeServicePage() {
             </Link>
             <a
               href="tel:+18006514528"
-              className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0099CC] px-8 py-4 rounded-md font-semibold text-lg transition-colors"
+              className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#00B4D8] px-8 py-4 rounded-md font-semibold text-lg transition-colors"
             >
               (800) 651-4528
             </a>

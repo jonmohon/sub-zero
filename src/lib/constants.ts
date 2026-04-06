@@ -31,6 +31,12 @@ export const BUSINESS = {
     twitter: "https://x.com/SubZeroRepairFL",
   },
   siteUrl: "https://fivestarappliancerepairpros.com",
+  foundingYear: "1994",
+  priceRange: "$$",
+  paymentAccepted: "Cash, Credit Card, Debit Card, Check",
+  currenciesAccepted: "USD",
+  slogan: "South Florida's Trusted Sub-Zero Repair Experts",
+  languages: ["English", "Spanish"],
   copyright: `© ${new Date().getFullYear()} Sub-Zero Repair Company. All Rights Reserved.`,
 } as const;
 

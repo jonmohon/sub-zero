@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0099CC] to-[#0077a3] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg text-gray-300">
@@ -26,20 +26,20 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-[#111111] mb-6">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-6">
                 Request Service
               </h2>
               <ContactForm />
             </div>
             <div className="space-y-6">
               <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="font-semibold text-[#111111] mb-4">
+                <h3 className="font-semibold text-[#0A2540] mb-4">
                   Contact Information
                 </h3>
-                <div className="space-y-3 text-sm text-[#555555]">
+                <div className="space-y-3 text-sm text-[#64748B]">
                   <p className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-[#0099CC] mt-0.5"
+                      className="w-5 h-5 text-[#00B4D8] mt-0.5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   </p>
                   <p className="flex items-center gap-3">
                     <svg
-                      className="w-5 h-5 text-[#0099CC]"
+                      className="w-5 h-5 text-[#00B4D8]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -79,14 +79,14 @@ export default function ContactPage() {
                     </svg>
                     <a
                       href="tel:+18006514528"
-                      className="hover:text-[#0099CC]"
+                      className="hover:text-[#00B4D8]"
                     >
                       (800) 651-4528
                     </a>
                   </p>
                   <p className="flex items-center gap-3">
                     <svg
-                      className="w-5 h-5 text-[#0099CC]"
+                      className="w-5 h-5 text-[#00B4D8]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -100,21 +100,21 @@ export default function ContactPage() {
                     </svg>
                     <a
                       href="mailto:info@fivestarappliancerepairpros.com"
-                      className="hover:text-[#0099CC]"
+                      className="hover:text-[#00B4D8]"
                     >
                       info@fivestarappliancerepairpros.com
                     </a>
                   </p>
                 </div>
               </div>
-              <div className="bg-[#0099CC]/5 border border-[#0099CC]/20 rounded-lg p-6">
-                <h3 className="font-semibold text-[#111111] mb-2">
+              <div className="bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6">
+                <h3 className="font-semibold text-[#0A2540] mb-2">
                   Business Hours
                 </h3>
-                <p className="text-sm text-[#555555]">
+                <p className="text-sm text-[#64748B]">
                   Available 24 Hours a Day, 365 Days a Year
                 </p>
-                <p className="text-sm text-[#555555] mt-2">
+                <p className="text-sm text-[#64748B] mt-2">
                   No extra charge for weekends or holidays!
                 </p>
               </div>
