@@ -15,16 +15,23 @@ export function generateLocalBusinessSchema() {
     address: {
       "@type": "PostalAddress",
       name: BUSINESS.schemaAddress.name,
+      streetAddress: BUSINESS.schemaAddress.street,
       addressLocality: BUSINESS.schemaAddress.city,
       addressRegion: BUSINESS.schemaAddress.state,
       postalCode: BUSINESS.schemaAddress.zip,
+      addressCountry: BUSINESS.schemaAddress.country,
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: BUSINESS.geo.latitude,
       longitude: BUSINESS.geo.longitude,
     },
-    openingHours: BUSINESS.hoursSchema,
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
+    },
     foundingDate: BUSINESS.foundingYear,
     priceRange: BUSINESS.priceRange,
     paymentAccepted: BUSINESS.paymentAccepted,
@@ -198,9 +205,7 @@ export function generateServiceSchema(
     description,
     url,
     provider: {
-      "@type": "LocalBusiness",
-      name: "Sub-Zero Repair Company",
-      telephone: BUSINESS.phoneSchema,
+      "@id": `${BUSINESS.siteUrl}/#business`,
     },
     areaServed: areaServed
       ? areaServed.map((a) => ({ "@type": a.type, name: a.name }))
@@ -218,12 +223,20 @@ export function generateLocalBusinessSchemaForCity(
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     name: "Sub-Zero Repair Company",
     telephone: BUSINESS.phoneSchema,
+    email: BUSINESS.email,
     url: cityUrl,
+    image: `${BUSINESS.siteUrl}/images/logo.webp`,
+    logo: `${BUSINESS.siteUrl}/images/logo.webp`,
     address: {
       "@type": "PostalAddress",
       addressLocality: cityName,
       addressRegion: "FL",
       addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS.geo.latitude,
+      longitude: BUSINESS.geo.longitude,
     },
     areaServed: {
       "@type": "City",
@@ -233,7 +246,12 @@ export function generateLocalBusinessSchemaForCity(
         name: countyName,
       },
     },
-    openingHours: BUSINESS.hoursSchema,
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
+    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Sub-Zero Appliance Repair Services",
@@ -261,9 +279,7 @@ export function generateServiceSchemaForCity(
     description,
     url: serviceUrl,
     provider: {
-      "@type": "LocalBusiness",
-      name: "Sub-Zero Repair Company",
-      telephone: BUSINESS.phoneSchema,
+      "@id": `${BUSINESS.siteUrl}/#business`,
     },
     areaServed: {
       "@type": "City",
@@ -290,14 +306,6 @@ export function generateWebSiteSchema() {
     "@type": "WebSite",
     name: "Sub-Zero Repair Services",
     url: BUSINESS.siteUrl,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${BUSINESS.siteUrl}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

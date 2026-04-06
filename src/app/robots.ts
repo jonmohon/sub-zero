@@ -13,6 +13,8 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "Bytespider", allow: "/" },
       { userAgent: "CCBot", allow: "/" },
+      { userAgent: "Applebot-Extended", allow: "/" },
+      { userAgent: "Meta-ExternalAgent", allow: "/" },
     ],
     sitemap: "https://fivestarappliancerepairpros.com/sitemap.xml",
   };

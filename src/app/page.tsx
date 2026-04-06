@@ -17,16 +17,18 @@ import ContactSection from "@/components/sections/ContactSection";
 import EntityStatementsSection from "@/components/sections/EntityStatementsSection";
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Ice Maker, Appliance & Marine Repair and Freezer Service Center Coral Gables FL - Sub-Zero Repair Services",
+  title: {
+    absolute: "Sub-Zero Appliance Repair | 24/7 Service Coral Gables FL",
+  },
   description:
-    "Looking for the same caliber repair and maintenance as our appliances? Sub-Zero Repair Services provides 24/7 top-notch repairs for your Sub-Zero appliances. Fast, reliable, and certified technicians ready to restore your appliances. Book now!",
+    "24/7 Sub-Zero appliance repair in South Florida. Same-day service for refrigerators, freezers, ice makers & wine coolers. Certified technicians. Book now!",
   alternates: {
     canonical: "https://fivestarappliancerepairpros.com/",
   },
   openGraph: {
-    title: "Sub-Zero Ice Maker, Appliance & Marine Repair and Freezer Service Center Coral Gables FL - Sub-Zero Repair Services",
+    title: "Sub-Zero Appliance Repair | 24/7 Service Coral Gables FL",
     description:
-      "Looking for the same caliber repair and maintenance as our appliances? Sub-Zero Repair Services provides 24/7 top-notch repairs for your Sub-Zero appliances. Fast, reliable, and certified technicians ready to restore your appliances. Book now!",
+      "24/7 Sub-Zero appliance repair in South Florida. Same-day service for refrigerators, freezers, ice makers & wine coolers. Certified technicians. Book now!",
     url: "https://fivestarappliancerepairpros.com/",
     type: "website",
   },

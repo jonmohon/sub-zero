@@ -18,15 +18,13 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sub-Zero Ice Maker, Appliance & Marine Repair and Freezer Service Center Coral Gables FL - Sub-Zero Repair Services",
-    template: "%s - Sub-Zero Repair Services",
+    default: "Sub-Zero Appliance Repair | 24/7 Service Coral Gables FL",
+    template: "%s | Sub-Zero Repair Services",
   },
   description:
-    "Looking for the same caliber repair and maintenance as our appliances? Sub-Zero Repair Services provides 24/7 top-notch repairs for your Sub-Zero appliances. Fast, reliable, and certified technicians ready to restore your appliances. Book now!",
+    "24/7 Sub-Zero appliance repair in South Florida. Same-day service for refrigerators, freezers, ice makers & wine coolers. Certified technicians. Book now!",
   metadataBase: new URL("https://fivestarappliancerepairpros.com"),
-  alternates: {
-    canonical: "/",
-  },
+  alternates: {},
   openGraph: {
     locale: "en_US",
     siteName: "Sub-Zero Repair Services",

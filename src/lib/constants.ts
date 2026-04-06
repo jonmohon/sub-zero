@@ -15,10 +15,12 @@ export const BUSINESS = {
     country: "US",
   },
   schemaAddress: {
-    name: "Subzero Service Centers",
-    city: "Miami",
+    name: "Sub-Zero Repair Company",
+    street: "1600 Ponce De Leon Blvd 10th Floor Suite 64",
+    city: "Coral Gables",
     state: "FL",
-    zip: "33131",
+    zip: "33134",
+    country: "US",
   },
   geo: {
     latitude: 25.7462141,
@@ -57,10 +59,13 @@ export const NAV_ITEMS = [
     label: "Areas We Service",
     href: "/areas-we-service",
     children: [
+      { label: "Miami-Dade County", href: "/areas-we-service/miami-dade-county" },
       { label: "Broward County", href: "/areas-we-service/broward-county" },
-      { label: "Miami Dade County", href: "/areas-we-service/miami-dade-county" },
-      { label: "Monroe County", href: "/areas-we-service/monroe-county" },
       { label: "Palm Beach County", href: "/areas-we-service/palm-beach-county" },
+      { label: "Monroe County", href: "/areas-we-service/monroe-county" },
+      { label: "Collier County", href: "/areas-we-service/collier-county" },
+      { label: "Martin County", href: "/areas-we-service/martin-county" },
+      { label: "St. Lucie County", href: "/areas-we-service/st-lucie-county" },
     ],
   },
   {

@@ -39,21 +39,237 @@ html {
   color: white;
 }
 
-/* Ensure animations use GPU-composited properties only */
+/* ========================================
+   Scroll-Reveal Animation System
+   ======================================== */
+
+.sr-init {
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Fade Up */
+.sr-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.sr-fade-up.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade In */
+.sr-fade-in {
+  opacity: 0;
+}
+.sr-fade-in.sr-visible {
+  opacity: 1;
+}
+
+/* Slide Left (enters from right) */
+.sr-slide-left {
+  opacity: 0;
+  transform: translateX(60px);
+}
+.sr-slide-left.sr-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide Right (enters from left) */
+.sr-slide-right {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+.sr-slide-right.sr-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale In */
+.sr-scale-in {
+  opacity: 0;
+  transform: scale(0.92);
+}
+.sr-scale-in.sr-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ========================================
+   Hero Entrance Animation Sequence
+   ======================================== */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-animate-delay-1 { animation-delay: 0.1s; }
+.hero-animate-delay-2 { animation-delay: 0.25s; }
+.hero-animate-delay-3 { animation-delay: 0.4s; }
+.hero-animate-delay-4 { animation-delay: 0.55s; }
+.hero-animate-delay-5 { animation-delay: 0.7s; }
+.hero-animate-delay-6 { animation-delay: 0.85s; }
+
+.hero-image-animate {
+  opacity: 0;
+  animation: heroFadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+}
+
+/* ========================================
+   Gold Shimmer Effect (CTA buttons)
+   ======================================== */
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  100% { transform: translateX(200%) skewX(-15deg); }
+}
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: translateX(-100%) skewX(-15deg);
+}
+
+.btn-shimmer:hover::after {
+  animation: shimmer 0.75s ease-out;
+}
+
+/* ========================================
+   Floating Animation (review cards, decorative)
+   ======================================== */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-delay-1 {
+  animation: float 4.5s ease-in-out 0.5s infinite;
+}
+
+.animate-float-delay-2 {
+  animation: floatSlow 5.5s ease-in-out 1s infinite;
+}
+
+/* ========================================
+   Section Dividers
+   ======================================== */
+
+.section-divider-wave {
+  position: relative;
+}
+
+.section-divider-wave::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: inherit;
+  clip-path: ellipse(55% 100% at 50% 100%);
+  z-index: 1;
+}
+
+/* ========================================
+   Existing Animations
+   ======================================== */
+
 .animate-ping {
   will-change: transform, opacity;
 }
 
-/* Mobile menu slide-in */
 @keyframes slideIn {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
 }
 
+/* ========================================
+   Mobile Bottom Bar Spacing
+   ======================================== */
 
-/* Add padding at bottom on mobile for sticky bottom bar */
 @media (max-width: 1023px) {
   body {
     padding-bottom: 80px;
+  }
+}
+
+/* ========================================
+   Reduced Motion: Respect user preference
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .sr-init {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  .sr-fade-up,
+  .sr-fade-in,
+  .sr-slide-left,
+  .sr-slide-right,
+  .sr-scale-in {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-animate {
+    opacity: 1;
+    animation: none;
+  }
+  .hero-image-animate {
+    opacity: 1;
+    animation: none;
+  }
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-delay-1,
+  .animate-float-delay-2 {
+    animation: none;
   }
 }

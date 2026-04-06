@@ -2,8 +2,26 @@
 
 import { useEffect, useRef } from "react";
 
-export default function ScrollReveal({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLDivElement>(null);
+type AnimationType = "fade-up" | "fade-in" | "slide-left" | "slide-right" | "scale-in";
+
+interface ScrollRevealProps {
+  children: React.ReactNode;
+  animation?: AnimationType;
+  delay?: number;
+  duration?: number;
+  className?: string;
+  as?: "div" | "span";
+}
+
+export default function ScrollReveal({
+  children,
+  animation = "fade-up",
+  delay = 0,
+  duration = 700,
+  className = "",
+  as: Tag = "div",
+}: ScrollRevealProps) {
+  const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -13,12 +31,12 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add("sr-visible");
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
     );
 
     observer.observe(el);
@@ -26,8 +44,15 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
   }, []);
 
   return (
-    <div ref={ref} className="scroll-reveal">
+    <Tag
+      ref={ref as React.RefObject<HTMLDivElement & HTMLSpanElement>}
+      className={`sr-init sr-${animation} ${className}`}
+      style={{
+        transitionDelay: `${delay}ms`,
+        transitionDuration: `${duration}ms`,
+      }}
+    >
       {children}
-    </div>
+    </Tag>
   );
 }
