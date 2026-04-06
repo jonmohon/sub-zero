@@ -25,7 +25,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -44,7 +43,6 @@ html {
    ======================================== */
 
 .sr-init {
-  will-change: transform, opacity;
   transition-property: transform, opacity;
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -199,32 +197,8 @@ html {
 }
 
 /* ========================================
-   Section Dividers
-   ======================================== */
-
-.section-divider-wave {
-  position: relative;
-}
-
-.section-divider-wave::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: inherit;
-  clip-path: ellipse(55% 100% at 50% 100%);
-  z-index: 1;
-}
-
-/* ========================================
    Existing Animations
    ======================================== */
-
-.animate-ping {
-  will-change: transform, opacity;
-}
 
 @keyframes slideIn {
   from { transform: translateX(100%); }
