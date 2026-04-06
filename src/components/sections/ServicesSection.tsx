@@ -96,7 +96,7 @@ export default function ServicesSection() {
                       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#00B4D8] transition-colors duration-300">{service.title}</h3>
                       <p className="text-white/70 text-sm leading-relaxed">{service.description}</p>
                       <div className="mt-3 flex items-center gap-1.5 text-[#00B4D8] text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                        <span>Learn more</span>
+                        <span>View {service.title}</span>
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
@@ -142,7 +142,7 @@ export default function ServicesSection() {
                   href="/services/refrigerator-repair"
                   className="btn-shimmer inline-flex items-center gap-2 bg-[#0A2540] hover:bg-[#0F3460] text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-[#0A2540]/30 hover:-translate-y-0.5"
                 >
-                  Learn More
+                  Sub-Zero Refrigerator Repair Details
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>

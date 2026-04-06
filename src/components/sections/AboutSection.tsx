@@ -44,7 +44,7 @@ export default function AboutSection() {
                 href="/about"
                 className="inline-flex items-center gap-2 text-[#00B4D8] font-semibold group/link hover:gap-3 transition-all duration-300"
               >
-                Learn More
+                About Our Repair Services
                 <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
