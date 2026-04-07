@@ -37,7 +37,7 @@ const checkIns = [
 export default function RecentWorkSection() {
   return (
     <section className="relative bg-[#F8FAFC] py-24 overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#0A2540 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#0387cc 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">

@@ -111,7 +111,7 @@ export default async function CityPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -213,7 +213,7 @@ export default async function CityPage({
               </ul>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">
                   Schedule Repair in {cityData.name}
                 </h3>

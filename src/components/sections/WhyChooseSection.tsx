@@ -12,7 +12,7 @@ export default function WhyChooseSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      color: "bg-[#0A2540]",
+      color: "bg-[#0387cc]",
       accentColor: "border-[#00B4D8]/20",
       glowColor: "bg-[#00B4D8]/5",
     },
@@ -38,9 +38,9 @@ export default function WhyChooseSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      color: "bg-[#0A2540]",
-      accentColor: "border-[#0A2540]/10",
-      glowColor: "bg-[#0A2540]/5",
+      color: "bg-[#0387cc]",
+      accentColor: "border-[#0387cc]/10",
+      glowColor: "bg-[#0387cc]/5",
     },
   ];
 
@@ -57,9 +57,9 @@ export default function WhyChooseSection() {
       {/* Decorative gradient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-[#00B4D8]/[0.03] rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-[#0A2540]/[0.03] rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-[#0387cc]/[0.03] rounded-full blur-3xl" />
         <div className="absolute top-1/3 right-1/3 w-72 h-72 bg-[#f89406]/[0.02] rounded-full blur-3xl" />
-        <div className="absolute inset-0 opacity-[0.015]" style={{ backgroundImage: 'radial-gradient(#0A2540 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+        <div className="absolute inset-0 opacity-[0.015]" style={{ backgroundImage: 'radial-gradient(#0387cc 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,8 +81,8 @@ export default function WhyChooseSection() {
           <ScrollReveal animation="slide-right">
             <div className="relative">
               {/* Frame accent behind image */}
-              <div className="absolute -inset-3 bg-gradient-to-br from-[#00B4D8]/10 via-transparent to-[#0A2540]/10 rounded-3xl" />
-              <div className="absolute -inset-[1px] bg-gradient-to-br from-[#00B4D8]/20 to-[#0A2540]/20 rounded-2xl" />
+              <div className="absolute -inset-3 bg-gradient-to-br from-[#00B4D8]/10 via-transparent to-[#0387cc]/10 rounded-3xl" />
+              <div className="absolute -inset-[1px] bg-gradient-to-br from-[#00B4D8]/20 to-[#0387cc]/20 rounded-2xl" />
 
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
@@ -92,7 +92,7 @@ export default function WhyChooseSection() {
                   height={500}
                   className="w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540]/20 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0387cc]/20 via-transparent to-transparent" />
               </div>
 
               {/* Floating review cards with glassmorphism */}
@@ -107,7 +107,7 @@ export default function WhyChooseSection() {
                     key={review.name}
                     className={`${positions[index]} ${floatClasses[index]} bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl px-5 py-4 flex items-center gap-3 border border-white/40 hover:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.15)] transition-shadow duration-500`}
                   >
-                    <div className="w-10 h-10 bg-gradient-to-br from-[#0A2540] to-[#0F3460] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#0387cc] to-[#0F3460] rounded-full flex items-center justify-center text-white text-xs font-bold shadow-lg">
                       {review.name.charAt(0)}
                     </div>
                     <div>

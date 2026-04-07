@@ -82,7 +82,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Sub-Zero Refrigerator Service and Repair in South Florida
@@ -146,7 +146,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Ready to Schedule Your Repair?

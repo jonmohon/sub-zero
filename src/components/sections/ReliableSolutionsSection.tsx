@@ -49,7 +49,7 @@ export default function ReliableSolutionsSection() {
           <div className="lg:col-span-2 relative hidden lg:flex items-center justify-center min-h-[500px]">
             <ScrollReveal animation="slide-left">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#0A2540] to-[#0F3460] opacity-90 blur-sm" />
+                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#0387cc] to-[#0F3460] opacity-90 blur-sm" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 rounded-full border-2 border-[#00B4D8]/30 animate-float-slow" />

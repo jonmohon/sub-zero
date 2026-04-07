@@ -45,7 +45,7 @@ export default function EmergencySection() {
                   <div
                     className="group bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#00B4D8]/20 transition-all duration-300 hover:-translate-y-0.5"
                   >
-                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#00B4D8]/10 to-[#0A2540]/5 mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#00B4D8]/10 to-[#0387cc]/5 mb-3 group-hover:scale-110 transition-transform duration-300">
                       {guaranteeIcons[index]}
                     </div>
                     <div className="flex items-start gap-2.5">
