@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#0B1D33] via-[#0387cc] to-[#0D2847] min-h-[650px] lg:min-h-[750px]">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#0B1D33] via-[#0A2540] to-[#0D2847] min-h-[650px] lg:min-h-[750px]">
       {/* Hero image — large, covering right side */}
       <div className="absolute inset-0 hidden lg:block">
         <div className="absolute inset-0 z-[2] hero-image-animate">
@@ -18,7 +18,7 @@ export default function HeroSection() {
           />
         </div>
         {/* Gradient fade so text is readable */}
-        <div className="absolute inset-0 z-[3] bg-gradient-to-r from-[#0387cc] via-[#0387cc]/90 to-transparent w-[60%]" />
+        <div className="absolute inset-0 z-[3] bg-gradient-to-r from-[#0A2540] via-[#0A2540]/90 to-transparent w-[60%]" />
       </div>
 
       {/* Subtle texture */}
@@ -40,19 +40,19 @@ export default function HeroSection() {
         <div className="max-w-xl py-20 lg:py-28">
           {/* Overline */}
           <div className="hero-animate hero-animate-delay-1 flex items-center gap-3 mb-6">
-            <div className="w-12 h-px bg-red-500" />
-            <span className="text-red-500 text-lg sm:text-xl font-bold tracking-[0.15em] uppercase">
+            <div className="w-12 h-px bg-[#f89406]" />
+            <span className="text-[#f89406] text-xs font-semibold tracking-[0.2em] uppercase">
               24/7 Emergency Service
             </span>
           </div>
 
           <h1 className="hero-animate hero-animate-delay-2 text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] tracking-tight">
-            Fast Same-Day Sub-Zero Appliance Repair Across South Florida
+            Same-Day Sub-Zero Appliance Repair Across South Florida
           </h1>
 
           <p className="hero-animate hero-animate-delay-3 mt-6 text-lg text-white/50 leading-relaxed">
             Fast, reliable repair services for Sub-Zero refrigerators, freezers,
-            ice makers, and more. Open holidays and weekends.
+            ice makers, and more.
           </p>
 
           <div className="hero-animate hero-animate-delay-4 mt-8 flex flex-wrap gap-4">

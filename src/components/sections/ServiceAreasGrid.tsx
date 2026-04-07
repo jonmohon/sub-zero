@@ -21,11 +21,11 @@ export default function ServiceAreasGrid({
   return (
     <section className="py-12 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-[#0387cc] mb-6">
+        <h2 className="text-2xl font-bold text-[#0A2540] mb-6">
           Areas We Serve for {serviceType}
         </h2>
         <div className="mb-8">
-          <h3 className="text-lg font-semibold text-[#0387cc] mb-4">
+          <h3 className="text-lg font-semibold text-[#0A2540] mb-4">
             Top Service Areas
           </h3>
           <div className="flex flex-wrap gap-3">
@@ -41,7 +41,7 @@ export default function ServiceAreasGrid({
           </div>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#0387cc] mb-4">
+          <h3 className="text-lg font-semibold text-[#0A2540] mb-4">
             Service by County
           </h3>
           <div className="flex flex-wrap gap-3">

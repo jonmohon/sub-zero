@@ -20,11 +20,11 @@ function AccordionItem({
         className="flex w-full items-center justify-between py-6 text-left"
         aria-expanded={isOpen}
       >
-        <span className={`text-base font-medium pr-4 ${isOpen ? "text-[#00B4D8]" : "text-[#0387cc]"}`}>
+        <span className={`text-base font-medium pr-4 ${isOpen ? "text-[#00B4D8]" : "text-[#0A2540]"}`}>
           {item.question}
         </span>
         <svg
-          className={`w-5 h-5 text-[#0387cc] flex-shrink-0 transition-transform duration-200 ${
+          className={`w-5 h-5 text-[#0A2540] flex-shrink-0 transition-transform duration-200 ${
             isOpen ? "rotate-180" : ""
           }`}
           fill="none"

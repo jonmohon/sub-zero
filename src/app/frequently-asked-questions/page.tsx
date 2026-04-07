@@ -44,7 +44,7 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Frequently Asked Questions
@@ -61,7 +61,7 @@ export default function FAQPage() {
           <FAQAccordion items={faqItems} />
 
           <div className="mt-12 bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-8 text-center">
-            <h2 className="text-xl font-bold text-[#0387cc] mb-2">
+            <h2 className="text-xl font-bold text-[#0A2540] mb-2">
               Still Have Questions?
             </h2>
             <p className="text-[#64748B] mb-4">

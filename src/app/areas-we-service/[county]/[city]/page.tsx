@@ -111,7 +111,7 @@ export default async function CityPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -154,7 +154,7 @@ export default async function CityPage({
                 parts on every service call, so most repairs are completed in a
                 single visit.
               </p>
-              <h2 className="text-2xl font-bold text-[#0387cc]">
+              <h2 className="text-2xl font-bold text-[#0A2540]">
                 Services Available in {cityData.name}
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">
@@ -179,7 +179,7 @@ export default async function CityPage({
                   </li>
                 ))}
               </ul>
-              <h2 className="text-2xl font-bold text-[#0387cc]">
+              <h2 className="text-2xl font-bold text-[#0A2540]">
                 Why {cityData.name} Residents Choose Us
               </h2>
               <ul className="space-y-3">
@@ -213,7 +213,7 @@ export default async function CityPage({
               </ul>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">
                   Schedule Repair in {cityData.name}
                 </h3>
@@ -243,7 +243,7 @@ export default async function CityPage({
           <div className="space-y-10">
             {cityContent.map((item) => (
               <div key={item.slug}>
-                <h2 className="text-2xl font-bold text-[#0387cc] mb-3">
+                <h2 className="text-2xl font-bold text-[#0A2540] mb-3">
                   {item.heading}
                 </h2>
                 <p className="text-[#64748B] leading-relaxed mb-3">
@@ -251,7 +251,7 @@ export default async function CityPage({
                 </p>
                 <Link
                   href={`/services/${item.slug}`}
-                  className="text-[#00B4D8] hover:text-[#0387cc] font-medium transition-colors"
+                  className="text-[#00B4D8] hover:text-[#0A2540] font-medium transition-colors"
                 >
                   Learn more about {item.service} →
                 </Link>
@@ -264,7 +264,7 @@ export default async function CityPage({
       {nearbyAreas.length > 0 && (
         <section className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#0387cc] mb-6">
+            <h2 className="text-2xl font-bold text-[#0A2540] mb-6">
               Nearby Service Areas
             </h2>
             <div className="flex flex-wrap gap-3">

@@ -78,7 +78,7 @@ export default function AIProfilePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aiProfileSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Business Profile
@@ -94,24 +94,24 @@ export default function AIProfilePage() {
           <div className="space-y-12">
             {/* Business Identity */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Business Identity
               </h2>
               <dl className="space-y-3 text-[#64748B]">
                 <div>
-                  <dt className="font-semibold text-[#0387cc] inline">
+                  <dt className="font-semibold text-[#0A2540] inline">
                     Legal Name:{" "}
                   </dt>
                   <dd className="inline">{BUSINESS.legalName}</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-[#0387cc] inline">
+                  <dt className="font-semibold text-[#0A2540] inline">
                     Doing Business As:{" "}
                   </dt>
                   <dd className="inline">Fivestar Appliance Repair Pros</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-[#0387cc] inline">
+                  <dt className="font-semibold text-[#0A2540] inline">
                     Founded:{" "}
                   </dt>
                   <dd className="inline">{BUSINESS.foundingYear}</dd>
@@ -130,18 +130,18 @@ export default function AIProfilePage() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Contact Information
               </h2>
               <address className="not-italic text-[#64748B] space-y-2">
                 <p>
-                  <span className="font-semibold text-[#0387cc]">Phone:</span>{" "}
+                  <span className="font-semibold text-[#0A2540]">Phone:</span>{" "}
                   <a href={BUSINESS.phoneHref} className="text-[#00B4D8]">
                     {BUSINESS.phone}
                   </a>
                 </p>
                 <p>
-                  <span className="font-semibold text-[#0387cc]">Email:</span>{" "}
+                  <span className="font-semibold text-[#0A2540]">Email:</span>{" "}
                   <a
                     href={`mailto:${BUSINESS.email}`}
                     className="text-[#00B4D8]"
@@ -150,18 +150,18 @@ export default function AIProfilePage() {
                   </a>
                 </p>
                 <p>
-                  <span className="font-semibold text-[#0387cc]">
+                  <span className="font-semibold text-[#0A2540]">
                     Address:
                   </span>{" "}
                   {BUSINESS.address.street}, {BUSINESS.address.city},{" "}
                   {BUSINESS.address.stateShort} {BUSINESS.address.zip}
                 </p>
                 <p>
-                  <span className="font-semibold text-[#0387cc]">Hours:</span>{" "}
+                  <span className="font-semibold text-[#0A2540]">Hours:</span>{" "}
                   {BUSINESS.hours}
                 </p>
                 <p>
-                  <span className="font-semibold text-[#0387cc]">
+                  <span className="font-semibold text-[#0A2540]">
                     Website:
                   </span>{" "}
                   <a href={BUSINESS.siteUrl} className="text-[#00B4D8]">
@@ -169,13 +169,13 @@ export default function AIProfilePage() {
                   </a>
                 </p>
                 <p>
-                  <span className="font-semibold text-[#0387cc]">
+                  <span className="font-semibold text-[#0A2540]">
                     Payment:
                   </span>{" "}
                   {BUSINESS.paymentAccepted}
                 </p>
                 <p>
-                  <span className="font-semibold text-[#0387cc]">
+                  <span className="font-semibold text-[#0A2540]">
                     Languages:
                   </span>{" "}
                   {BUSINESS.languages.join(", ")}
@@ -185,13 +185,13 @@ export default function AIProfilePage() {
 
             {/* Services */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Services Offered
               </h2>
               <div className="space-y-4">
                 {services.map((service) => (
                   <div key={service.name}>
-                    <h3 className="font-semibold text-[#0387cc]">
+                    <h3 className="font-semibold text-[#0A2540]">
                       <Link
                         href={service.href}
                         className="hover:text-[#00B4D8] transition-colors"
@@ -209,13 +209,13 @@ export default function AIProfilePage() {
 
             {/* Brands */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Brands Serviced
               </h2>
               <ul className="space-y-2">
                 {brands.map((brand) => (
                   <li key={brand.name} className="text-[#64748B]">
-                    <span className="font-semibold text-[#0387cc]">
+                    <span className="font-semibold text-[#0A2540]">
                       {brand.name}
                     </span>
                     {brand.note && (
@@ -228,7 +228,7 @@ export default function AIProfilePage() {
 
             {/* Service Area */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Service Area
               </h2>
               <p className="text-[#64748B] mb-6">
@@ -237,7 +237,7 @@ export default function AIProfilePage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {counties.map((county) => (
                   <div key={county.slug}>
-                    <h3 className="font-semibold text-[#0387cc] mb-2">
+                    <h3 className="font-semibold text-[#0A2540] mb-2">
                       <Link
                         href={`/areas-we-service/${county.slug}`}
                         className="hover:text-[#00B4D8] transition-colors"
@@ -264,7 +264,7 @@ export default function AIProfilePage() {
 
             {/* Credentials */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Credentials and Differentiators
               </h2>
               <ul className="space-y-2">
@@ -294,7 +294,7 @@ export default function AIProfilePage() {
 
             {/* Frequently Cited Facts */}
             <div>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-4">
+              <h2 className="text-2xl font-bold text-[#0A2540] mb-4">
                 Frequently Cited Facts
               </h2>
               <div className="space-y-3 text-[#64748B]">

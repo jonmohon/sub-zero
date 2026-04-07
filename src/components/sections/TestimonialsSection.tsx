@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
   return (
     <section className="relative py-24 overflow-hidden" style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f0f9ff 100%)' }}>
       <div className="absolute top-0 left-0 w-72 h-72 bg-[#00B4D8]/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#0387cc]/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#0A2540]/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
       <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 bg-[#00B4D8]/[0.03] rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Verified Video Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0387cc] mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0A2540] mb-14">
             Trusted by Thousands Across the USA
           </h2>
         </ScrollReveal>
@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
               <div
                 className="group relative bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500 h-full"
               >
-                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#00B4D8] to-[#0387cc] rounded-t-2xl" />
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#00B4D8] to-[#0A2540] rounded-t-2xl" />
                 <span className="block text-6xl leading-none text-[#00B4D8]/20 font-serif select-none mb-2">&ldquo;</span>
                 <div className="flex gap-1.5 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
                     </svg>
                   ))}
                 </div>
-                <h3 className="text-lg font-bold text-[#0387cc] mb-3">&ldquo;{t.heading}&rdquo;</h3>
+                <h3 className="text-lg font-bold text-[#0A2540] mb-3">&ldquo;{t.heading}&rdquo;</h3>
                 <p className="text-sm text-[#64748B] leading-relaxed">{t.description}</p>
               </div>
             </ScrollReveal>
@@ -84,7 +84,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500">
-      <div className="relative bg-gradient-to-br from-[#0387cc] to-[#0F3460] p-3">
+      <div className="relative bg-gradient-to-br from-[#0A2540] to-[#0F3460] p-3">
         <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
           {loaded ? (
             <iframe
@@ -98,7 +98,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
           ) : (
             <button
               onClick={() => setLoaded(true)}
-              className="absolute inset-0 w-full h-full bg-[#0387cc] flex flex-col items-center justify-center gap-4 cursor-pointer hover:bg-[#0F3460] transition-colors"
+              className="absolute inset-0 w-full h-full bg-[#0A2540] flex flex-col items-center justify-center gap-4 cursor-pointer hover:bg-[#0F3460] transition-colors"
               aria-label={`Play video: ${title}`}
             >
               <div className="w-16 h-16 rounded-full bg-[#f89406] flex items-center justify-center shadow-[0_0_30px_rgba(248,148,6,0.4)] hover:scale-110 transition-transform duration-300">
@@ -119,7 +119,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
             </svg>
           ))}
         </div>
-        <p className="text-sm font-semibold text-[#0387cc]">&ldquo;{title}&rdquo;</p>
+        <p className="text-sm font-semibold text-[#0A2540]">&ldquo;{title}&rdquo;</p>
       </div>
     </div>
   );

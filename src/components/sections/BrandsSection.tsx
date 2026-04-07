@@ -13,12 +13,12 @@ const brandsList = [
 export default function BrandsSection() {
   return (
     <section className="relative bg-gradient-to-br from-slate-50 via-white to-sky-50/40 py-24 overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.015] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #0387cc 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+      <div className="absolute inset-0 opacity-[0.015] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #0A2540 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
           <div className="flex justify-center mb-6">
-            <h2 className="text-3xl font-bold text-[#0387cc] border-[3px] border-[#00B4D8] rounded-lg px-8 py-3 inline-block">
+            <h2 className="text-3xl font-bold text-[#0A2540] border-[3px] border-[#00B4D8] rounded-lg px-8 py-3 inline-block">
               Brands We Service
             </h2>
           </div>
@@ -48,7 +48,7 @@ export default function BrandsSection() {
 
         <ScrollReveal animation="fade-up" delay={300}>
           <div className="mt-14 mx-auto max-w-3xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl py-5 px-8 text-center">
-            <span className="bg-gradient-to-r from-[#00B4D8] to-[#0387cc] bg-clip-text text-transparent font-bold text-lg">
+            <span className="bg-gradient-to-r from-[#00B4D8] to-[#0A2540] bg-clip-text text-transparent font-bold text-lg">
               Certified Experts &nbsp;|&nbsp; Factory-Trained Technicians &nbsp;|&nbsp; Same-Day Service Available
             </span>
           </div>

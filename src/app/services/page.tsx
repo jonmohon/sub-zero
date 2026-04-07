@@ -82,7 +82,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Sub-Zero Refrigerator Service and Repair in South Florida
@@ -97,7 +97,7 @@ export default function ServicesPage() {
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#0387cc] mb-4">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-4">
             Keep Cool by Calling Us for Repairs
           </h2>
           <p className="text-[#64748B] mb-6 max-w-4xl">
@@ -108,7 +108,7 @@ export default function ServicesPage() {
             technicians at our company ensure your commercial or residential
             equipment is fully operational.
           </p>
-          <h2 className="text-3xl font-bold text-[#0387cc] mb-4">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-4">
             Fast and Affordable Same-Day Refrigerator Repair
           </h2>
           <p className="text-[#64748B] mb-12 max-w-4xl">
@@ -135,7 +135,7 @@ export default function ServicesPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#0387cc] group-hover:text-[#00B4D8] transition-colors mb-2">
+                  <h3 className="text-xl font-semibold text-[#0A2540] group-hover:text-[#00B4D8] transition-colors mb-2">
                     {service.title}
                   </h3>
                   <p className="text-[#64748B] text-sm">{service.description}</p>
@@ -146,7 +146,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Ready to Schedule Your Repair?

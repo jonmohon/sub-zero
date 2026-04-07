@@ -26,7 +26,7 @@ export default function Navigation() {
           >
             <Link
               href={item.href}
-              className="px-3 py-2 text-sm font-medium text-[#0387cc] hover:text-[#00B4D8] transition-colors flex items-center"
+              className="px-3 py-2 text-sm font-medium text-[#0A2540] hover:text-[#00B4D8] transition-colors flex items-center"
             >
               {item.label === "Home" && (
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ export default function Navigation() {
                   <li key={child.label}>
                     <Link
                       href={child.href}
-                      className="block px-4 py-2.5 text-sm text-[#0387cc] font-medium hover:text-[#00B4D8] hover:bg-gray-50 transition-colors"
+                      className="block px-4 py-2.5 text-sm text-[#0A2540] font-medium hover:text-[#00B4D8] hover:bg-gray-50 transition-colors"
                     >
                       {child.label}
                     </Link>
@@ -60,7 +60,7 @@ export default function Navigation() {
 
       {/* Mobile Menu Button */}
       <button
-        className="lg:hidden text-[#0387cc] p-2 relative z-[60]"
+        className="lg:hidden text-[#0A2540] p-2 relative z-[60]"
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle menu"
       >
@@ -88,10 +88,10 @@ export default function Navigation() {
           <div className="lg:hidden fixed top-0 right-0 h-full w-[85vw] max-w-sm bg-white z-50 shadow-2xl overflow-y-auto animate-[slideIn_0.3s_ease-out]">
             {/* Panel header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-              <span className="text-lg font-bold text-[#0387cc]">Menu</span>
+              <span className="text-lg font-bold text-[#0A2540]">Menu</span>
               <button
                 onClick={() => setMobileOpen(false)}
-                className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-[#0387cc] active:scale-95 transition-transform"
+                className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-[#0A2540] active:scale-95 transition-transform"
                 aria-label="Close menu"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,7 +112,7 @@ export default function Navigation() {
                             mobileExpandedItem === item.label ? null : item.label
                           )
                         }
-                        className="flex items-center justify-between w-full px-6 py-4 text-base font-medium text-[#0387cc] active:bg-gray-50 transition-colors"
+                        className="flex items-center justify-between w-full px-6 py-4 text-base font-medium text-[#0A2540] active:bg-gray-50 transition-colors"
                       >
                         {item.label}
                         <svg
@@ -151,7 +151,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-6 py-4 text-base font-medium text-[#0387cc] active:bg-gray-50 transition-colors"
+                      className="block px-6 py-4 text-base font-medium text-[#0A2540] active:bg-gray-50 transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}
@@ -165,7 +165,7 @@ export default function Navigation() {
             <div className="px-6 py-6 mt-auto border-t border-gray-100">
               <a
                 href="tel:+18006514528"
-                className="flex items-center justify-center gap-2 w-full bg-[#0387cc] text-white py-4 rounded-xl font-semibold text-sm mb-3 active:scale-95 transition-transform"
+                className="flex items-center justify-center gap-2 w-full bg-[#0A2540] text-white py-4 rounded-xl font-semibold text-sm mb-3 active:scale-95 transition-transform"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
