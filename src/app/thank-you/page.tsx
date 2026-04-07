@@ -26,7 +26,7 @@ export default function ThankYouPage() {
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <h1 className="text-3xl font-bold text-[#0A2540] mb-4">
+          <h1 className="text-3xl font-bold text-[#0387cc] mb-4">
             Thank You!
           </h1>
           <p className="text-[#64748B] mb-2">
@@ -37,7 +37,7 @@ export default function ThankYouPage() {
             For immediate assistance, call us at{" "}
             <a
               href="tel:+18006514528"
-              className="text-[#00B4D8] hover:text-[#0A2540] font-semibold"
+              className="text-[#00B4D8] hover:text-[#0387cc] font-semibold"
             >
               (800) 651-4528
             </a>

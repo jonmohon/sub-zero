@@ -40,9 +40,9 @@ export default function ServicesSection() {
     <section
       className="relative py-24 overflow-hidden"
       style={{
-        background: "#0A2540",
+        background: "#0387cc",
         backgroundImage: `
-          linear-gradient(135deg, #0A2540 0%, #0F3460 50%, #0A2540 100%),
+          linear-gradient(135deg, #0387cc 0%, #0F3460 50%, #0387cc 100%),
           linear-gradient(rgba(0,180,216,0.03) 1px, transparent 1px),
           linear-gradient(90deg, rgba(0,180,216,0.03) 1px, transparent 1px)
         `,
@@ -88,7 +88,7 @@ export default function ServicesSection() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0387cc] via-[#0387cc]/60 to-transparent" />
 
                   {/* Glassmorphism text area at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -120,7 +120,7 @@ export default function ServicesSection() {
                 <div className="inline-block mb-4">
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8] bg-[#00B4D8]/10 px-4 py-1.5 rounded-full">Featured Service</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-4">
                   Sub-Zero Refrigerator<br />Repair
                 </h3>
                 <p className="text-[#64748B] leading-relaxed mb-6">
@@ -140,7 +140,7 @@ export default function ServicesSection() {
                 </ul>
                 <Link
                   href="/services/refrigerator-repair"
-                  className="btn-shimmer inline-flex items-center gap-2 bg-[#0A2540] hover:bg-[#0F3460] text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-[#0A2540]/30 hover:-translate-y-0.5"
+                  className="btn-shimmer inline-flex items-center gap-2 bg-[#0387cc] hover:bg-[#0F3460] text-white px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-[#0387cc]/30 hover:-translate-y-0.5"
                 >
                   Sub-Zero Refrigerator Repair Details
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

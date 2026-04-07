@@ -44,7 +44,7 @@ export default function MarineRepairPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -94,7 +94,7 @@ export default function MarineRepairPage() {
             </div>
             <div className="space-y-6">
               <div className="bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6">
-                <h3 className="font-semibold text-[#0A2540] mb-4">
+                <h3 className="font-semibold text-[#0387cc] mb-4">
                   Why Choose Us
                 </h3>
                 <ul className="space-y-3">
@@ -126,7 +126,7 @@ export default function MarineRepairPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center">
+              <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-6 text-center">
                 <h3 className="font-semibold mb-2">Need Immediate Help?</h3>
                 <p className="text-sm text-gray-300 mb-4">
                   Dockside service available throughout South Florida
@@ -145,7 +145,7 @@ export default function MarineRepairPage() {
 
       <ServiceAreasGrid serviceType="Marine Refrigeration Repair" />
 
-      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-12">
+      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">
             Schedule Your Marine Refrigeration Repair Today

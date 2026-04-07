@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="bg-[#0A2540] text-white/70 py-2 px-4 text-xs border-b border-white/5">
+    <div className="bg-[#0387cc] text-white/70 py-2 px-4 text-xs border-b border-white/5">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link
           href="/contact"

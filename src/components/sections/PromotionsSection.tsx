@@ -34,14 +34,14 @@ export default function PromotionsSection() {
   return (
     <section className="relative py-24 overflow-hidden" style={{ background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)' }}>
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#00B4D8]/[0.03] rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#0A2540]/[0.03] rounded-full -translate-x-1/3 translate-y-1/3 blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#0387cc]/[0.03] rounded-full -translate-x-1/3 translate-y-1/3 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Current Offers
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0A2540] mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0387cc] mb-14">
             Specials &amp; Promotions
           </h2>
         </ScrollReveal>
@@ -50,9 +50,9 @@ export default function PromotionsSection() {
           {promotions.map((promo, index) => (
             <ScrollReveal key={promo.title} animation="fade-up" delay={index * 120}>
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 flex flex-col h-full">
-                <div className="h-1.5 bg-gradient-to-r from-[#00B4D8] to-[#0A2540]" />
+                <div className="h-1.5 bg-gradient-to-r from-[#00B4D8] to-[#0387cc]" />
                 <div className="p-7 text-center flex flex-col flex-1">
-                  <h3 className="text-lg font-bold text-[#0A2540] mb-3">{promo.title}</h3>
+                  <h3 className="text-lg font-bold text-[#0387cc] mb-3">{promo.title}</h3>
                   {promo.isList ? (
                     <div className="text-sm text-[#64748B] text-left space-y-2 mb-3 flex-1">
                       {promo.items!.map((item) => (
@@ -68,7 +68,7 @@ export default function PromotionsSection() {
                       {promo.extra && <p className="text-xs text-gray-400 mb-5">{promo.extra}</p>}
                     </>
                   )}
-                  <Link href="/contact" className="btn-shimmer inline-flex items-center justify-center bg-[#0A2540] hover:bg-[#0F3460] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg mt-auto">
+                  <Link href="/contact" className="btn-shimmer inline-flex items-center justify-center bg-[#0387cc] hover:bg-[#0F3460] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg mt-auto">
                     Get Started
                   </Link>
                 </div>

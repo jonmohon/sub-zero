@@ -31,7 +31,7 @@ const brandServices = [
 export default function MieleBrandPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -80,7 +80,7 @@ export default function MieleBrandPage() {
                 genuine Miele replacement parts to maintain the exceptional
                 performance and longevity these appliances are known for.
               </p>
-              <h2 className="text-2xl font-bold text-[#0A2540] mt-8">
+              <h2 className="text-2xl font-bold text-[#0387cc] mt-8">
                 Services We Offer for Miele
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">
@@ -105,7 +105,7 @@ export default function MieleBrandPage() {
               </ul>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0A2540] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">Schedule Miele Repair</h3>
                 <p className="text-sm text-gray-300 mb-4">
                   24/7 availability with same-day service

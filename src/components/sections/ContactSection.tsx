@@ -8,7 +8,7 @@ export default function ContactSection() {
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal animation="scale-in">
-            <div className="relative overflow-hidden rounded-2xl text-white py-16 px-8 text-center" style={{ background: 'radial-gradient(ellipse at center, #1a3a5c 0%, #0F3460 40%, #0A2540 100%)' }}>
+            <div className="relative overflow-hidden rounded-2xl text-white py-16 px-8 text-center" style={{ background: 'radial-gradient(ellipse at center, #1a3a5c 0%, #0F3460 40%, #0387cc 100%)' }}>
               {/* Decorative floating elements */}
               <div className="absolute top-8 left-8 w-24 h-24 border border-white/10 rounded-full" />
               <div className="absolute bottom-12 right-12 w-36 h-36 border border-white/[0.07] rounded-full" />
@@ -42,7 +42,7 @@ export default function ContactSection() {
                   </Link>
                   <a
                     href="tel:+18006514528"
-                    className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0A2540] px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+                    className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0387cc] px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
                   >
                     (800) 651-4528
                   </a>
@@ -54,7 +54,7 @@ export default function ContactSection() {
       </section>
 
       {/* Pre-footer banner */}
-      <section className="bg-gradient-to-br from-[#020617] to-[#0A2540] text-white py-12">
+      <section className="bg-gradient-to-br from-[#020617] to-[#0387cc] text-white py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
             <p className="text-lg md:text-xl font-medium text-white/90">

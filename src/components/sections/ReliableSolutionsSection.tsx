@@ -10,21 +10,21 @@ export default function ReliableSolutionsSection() {
           <div className="lg:col-span-3 relative">
             <ScrollReveal animation="slide-right">
               <div className="border-l-4 border-[#00B4D8] pl-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0387cc] mb-8">
                   Reliable Solutions When You Need Them Most
                 </h2>
                 <p className="text-[#64748B] leading-relaxed mb-8">
                   Appliance failures don&apos;t wait for a convenient time, which is why our emergency Sub-Zero repair service in Coral Gables, FL is available to help you get things back to normal quickly. Our team understands how crucial reliable refrigeration is, especially when it comes to preserving fresh ingredients or maintaining optimal conditions for stored goods. With our Sub-Zero fridge and freezer repair services, you can trust that your appliance will be back to operating efficiently in no time.
                 </p>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-6">
                   Trusted Technicians, Exceptional Results
                 </h3>
                 <p className="text-[#64748B] leading-relaxed mb-8">
                   Every technician at our Sub-Zero repair center is trained to work exclusively with Sub-Zero appliances, using genuine parts and advanced diagnostic tools to ensure lasting repairs. We pride ourselves on transparent communication, prompt response times, and a commitment to customer satisfaction. Our team has built a reputation across Coral Gables, FL, for delivering dependable service with attention to detail and professionalism at every step.
                 </p>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-6">
                   Experience the Sub-Zero Difference
                 </h3>
                 <p className="text-[#64748B] leading-relaxed mb-10">
@@ -49,7 +49,7 @@ export default function ReliableSolutionsSection() {
           <div className="lg:col-span-2 relative hidden lg:flex items-center justify-center min-h-[500px]">
             <ScrollReveal animation="slide-left">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#0A2540] to-[#0F3460] opacity-90 blur-sm" />
+                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#0387cc] to-[#0F3460] opacity-90 blur-sm" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 rounded-full border-2 border-[#00B4D8]/30 animate-float-slow" />
