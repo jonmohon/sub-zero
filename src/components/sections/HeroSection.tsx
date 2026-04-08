@@ -3,12 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Background — subtle gradient instead of flat white */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f0f7fc] via-white to-[#fef9f0]" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0387cc]/[0.04] rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#f89406]/[0.03] rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
-
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#f0f7fc] via-white to-[#fef9f0]">
       {/* Desktop: image behind text */}
       <div className="absolute inset-0 hidden lg:block z-[1]">
         <Image
@@ -52,7 +47,7 @@ export default function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="btn-shimmer btn-pulse group inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,165,78,0.3)] hover:-translate-y-0.5 tracking-wide"
+              className="btn-shimmer group inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,165,78,0.3)] hover:-translate-y-0.5 tracking-wide"
             >
               Request Service Call
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -115,7 +110,6 @@ export default function HeroSection() {
           fill
           sizes="100vw"
           className="object-contain object-bottom"
-          loading="eager"
         />
       </div>
 
