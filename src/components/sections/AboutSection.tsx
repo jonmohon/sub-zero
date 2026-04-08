@@ -6,8 +6,6 @@ export default function AboutSection() {
     <section className="relative bg-[#F8FAFC] py-24 overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#00B4D8]/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#0387cc]/5 rounded-full blur-3xl" />
         <div className="absolute top-20 left-0 w-32 h-[2px] bg-gradient-to-r from-transparent via-[#00B4D8]/20 to-transparent" />
         <div className="absolute bottom-20 right-0 w-48 h-[2px] bg-gradient-to-l from-transparent via-[#00B4D8]/20 to-transparent" />
         <div className="absolute top-12 right-16 w-20 h-20 rounded-full border border-[#00B4D8]/10" />

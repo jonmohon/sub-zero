@@ -29,9 +29,6 @@ export default function TestimonialsSection() {
 
   return (
     <section className="relative py-24 overflow-hidden" style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f0f9ff 100%)' }}>
-      <div className="absolute top-0 left-0 w-72 h-72 bg-[#00B4D8]/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#0387cc]/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 bg-[#00B4D8]/[0.03] rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="blur-up">

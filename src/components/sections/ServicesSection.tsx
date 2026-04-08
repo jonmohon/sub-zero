@@ -52,15 +52,10 @@ export default function ServicesSection() {
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: "radial-gradient(circle, #00B4D8 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
         }}
       />
 
       {/* Decorative geometric shapes */}
-      <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#00B4D8]/[0.03] blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-[#00B4D8]/[0.02] blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#0387cc]/20 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="blur-up">

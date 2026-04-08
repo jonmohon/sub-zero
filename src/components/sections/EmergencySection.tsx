@@ -21,8 +21,6 @@ export default function EmergencySection() {
 
   return (
     <section className="relative py-24 overflow-hidden" style={{ background: "linear-gradient(to bottom, #ffffff, #F8FAFC)" }}>
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#f89406]/[0.03] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#00B4D8]/[0.03] rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

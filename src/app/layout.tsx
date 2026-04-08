@@ -12,8 +12,8 @@ const organizationSchema = generateOrganizationSchema();
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
+  weight: ["400", "700"],
+  display: "optional",
 });
 
 export const metadata: Metadata = {

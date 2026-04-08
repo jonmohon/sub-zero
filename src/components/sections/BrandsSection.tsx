@@ -13,7 +13,6 @@ const brandsList = [
 export default function BrandsSection() {
   return (
     <section className="relative bg-gradient-to-br from-slate-50 via-white to-sky-50/40 py-24 overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.015] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #0387cc 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">

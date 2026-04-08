@@ -56,10 +56,6 @@ export default function WhyChooseSection() {
     <section className="relative bg-white py-24 overflow-hidden">
       {/* Decorative gradient mesh background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-[#00B4D8]/[0.03] rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-[#0387cc]/[0.03] rounded-full blur-3xl" />
-        <div className="absolute top-1/3 right-1/3 w-72 h-72 bg-[#f89406]/[0.02] rounded-full blur-3xl" />
-        <div className="absolute inset-0 opacity-[0.015]" style={{ backgroundImage: 'radial-gradient(#0387cc 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
