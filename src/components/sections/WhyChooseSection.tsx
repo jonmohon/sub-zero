@@ -70,7 +70,7 @@ export default function WhyChooseSection() {
               <span className="h-[2px] w-8 bg-gradient-to-r from-transparent to-[#00B4D8]" />
               <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-sm">About Us</p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1D33] leading-tight text-shimmer">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1D33] leading-tight">
               Why Choose SubZero Repair Co.?
             </h2>
           </div>

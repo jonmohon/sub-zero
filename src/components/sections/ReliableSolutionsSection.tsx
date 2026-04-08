@@ -45,21 +45,27 @@ export default function ReliableSolutionsSection() {
             </ScrollReveal>
           </div>
 
-          {/* Right decorative column */}
-          <div className="lg:col-span-2 relative hidden lg:flex items-center justify-center min-h-[500px]">
+          {/* Right — clean stat cards */}
+          <div className="lg:col-span-2 relative hidden lg:flex flex-col gap-6 sticky top-24">
             <ScrollReveal animation="slide-left">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 rounded-full bg-[#0387cc] opacity-90 blur-sm" />
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 text-center card-hover">
+                <div className="text-5xl font-extrabold text-[#0387cc] mb-1">100%</div>
+                <div className="text-[#0B1D33] font-semibold text-lg">Customer Satisfaction</div>
+                <p className="text-sm text-[#64748B] mt-2">Backed by hundreds of 5-star reviews across South Florida</p>
               </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 rounded-full border-2 border-[#00B4D8]/30 animate-float-slow" />
+            </ScrollReveal>
+            <ScrollReveal animation="slide-left" delay={150}>
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 text-center card-hover">
+                <div className="text-5xl font-extrabold text-[#f89406] mb-1">24/7</div>
+                <div className="text-[#0B1D33] font-semibold text-lg">Emergency Service</div>
+                <p className="text-sm text-[#64748B] mt-2">No extra charge for nights, weekends, or holidays</p>
               </div>
-              <div className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 text-center shadow-2xl">
-                <div className="text-5xl font-extrabold text-[#00B4D8] mb-2">100%</div>
-                <div className="text-white/90 font-semibold text-lg mb-1">Customer Satisfaction</div>
-                <div className="w-12 h-1 bg-[#f89406] mx-auto rounded-full my-4" />
-                <div className="text-5xl font-extrabold text-[#00B4D8] mb-2">24/7</div>
-                <div className="text-white/90 font-semibold text-lg">Emergency Service</div>
+            </ScrollReveal>
+            <ScrollReveal animation="slide-left" delay={300}>
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 text-center card-hover">
+                <div className="text-5xl font-extrabold text-[#0387cc] mb-1">30+</div>
+                <div className="text-[#0B1D33] font-semibold text-lg">Years Experience</div>
+                <p className="text-sm text-[#64748B] mt-2">Factory-trained technicians with genuine Sub-Zero parts</p>
               </div>
             </ScrollReveal>
           </div>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
+import ParallaxImage from "@/components/ParallaxImage";
 
 const serviceSchema = generateServiceSchema(
   "Sub-Zero Freezer Repair",
@@ -90,15 +90,11 @@ export default function FreezerRepairPage() {
 
       <section className="py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
-          <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src="/images/services/freezer-repair.webp"
-              alt="Sub-Zero Freezer Repair Service in South Florida"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          <ParallaxImage
+            src="/images/services/freezer-repair.webp"
+            alt="Sub-Zero Freezer Repair Service in South Florida"
+            className="w-full h-[300px] md:h-[450px] rounded-2xl shadow-2xl"
+          />
         </div>
       </section>
 

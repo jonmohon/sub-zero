@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Verified Video Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0B1D33] mb-14 text-shimmer">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0B1D33] mb-14">
             Trusted by Thousands Across the USA
           </h2>
         </ScrollReveal>

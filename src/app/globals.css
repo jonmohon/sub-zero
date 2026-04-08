@@ -231,6 +231,27 @@ html {
 }
 
 /* ========================================
+   Parallax Hero Image (service pages)
+   ======================================== */
+
+.parallax-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-hero img {
+  transition: transform 0.1s linear;
+}
+
+@supports (background-attachment: fixed) {
+  .parallax-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* ========================================
    Gold Shimmer Effect (CTA buttons)
    ======================================== */
 
