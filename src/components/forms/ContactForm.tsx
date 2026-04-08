@@ -13,6 +13,14 @@ const US_STATES = [
   "Wisconsin", "Wyoming",
 ];
 
+const COUNTRIES = [
+  "United States", "Canada", "United Kingdom", "Australia", "Bahamas", "Brazil",
+  "Cayman Islands", "Colombia", "Dominican Republic", "France", "Germany", "Italy",
+  "Jamaica", "Mexico", "Spain", "Trinidad and Tobago", "Venezuela", "Other",
+];
+
+const CONTACT_METHODS = ["Email", "Phone", "Text Message"];
+
 const SERVICE_TYPES = [
   "Refrigerator Repair",
   "Freezer Repair",
@@ -23,11 +31,22 @@ const SERVICE_TYPES = [
   "Other",
 ];
 
+const inputStyles =
+  "w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0387cc] focus:border-[#0387cc] outline-none transition-colors text-sm";
+const labelStyles = "block text-sm font-medium text-[#0B1D33] mb-1";
+
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [captchaAnswer, setCaptchaAnswer] = useState("");
+  const [captchaError, setCaptchaError] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (captchaAnswer.trim() !== "13") {
+      setCaptchaError(true);
+      return;
+    }
+    setCaptchaError(false);
     setSubmitted(true);
   }
 
@@ -44,142 +63,124 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-5">
+      <p className="text-sm text-[#64748B]">Fields marked with an <span className="text-red-500">*</span> are required</p>
+
+      {/* Name */}
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-[#0B1D33] mb-1">
+          <label htmlFor="firstName" className={labelStyles}>
             First Name <span className="text-red-500">*</span>
           </label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          />
+          <input type="text" id="firstName" name="firstName" required className={inputStyles} />
         </div>
         <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-[#0B1D33] mb-1">
+          <label htmlFor="lastName" className={labelStyles}>
             Last Name <span className="text-red-500">*</span>
           </label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            required
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          />
+          <input type="text" id="lastName" name="lastName" required className={inputStyles} />
         </div>
       </div>
 
+      {/* Address */}
       <div>
-        <label htmlFor="address" className="block text-sm font-medium text-[#0B1D33] mb-1">
-          Address
-        </label>
-        <input
-          type="text"
-          id="address"
-          name="address"
-          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-        />
+        <label htmlFor="address" className={labelStyles}>Address</label>
+        <input type="text" id="address" name="address" className={inputStyles} />
       </div>
 
-      <div className="grid sm:grid-cols-3 gap-4">
+      {/* City / State */}
+      <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="city" className="block text-sm font-medium text-[#0B1D33] mb-1">
-            City
-          </label>
-          <input
-            type="text"
-            id="city"
-            name="city"
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          />
+          <label htmlFor="city" className={labelStyles}>City</label>
+          <input type="text" id="city" name="city" className={inputStyles} />
         </div>
         <div>
-          <label htmlFor="state" className="block text-sm font-medium text-[#0B1D33] mb-1">
-            State
-          </label>
-          <select
-            id="state"
-            name="state"
-            defaultValue="Florida"
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          >
+          <label htmlFor="state" className={labelStyles}>State</label>
+          <select id="state" name="state" defaultValue="Florida" className={inputStyles}>
             <option value="">Select State</option>
             {US_STATES.map((state) => (
-              <option key={state} value={state}>
-                {state}
-              </option>
+              <option key={state} value={state}>{state}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* ZIP / Country */}
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="zip" className={labelStyles}>ZIP Code</label>
+          <input type="text" id="zip" name="zip" className={inputStyles} />
+        </div>
+        <div>
+          <label htmlFor="country" className={labelStyles}>Country</label>
+          <select id="country" name="country" defaultValue="United States" className={inputStyles}>
+            {COUNTRIES.map((c) => (
+              <option key={c} value={c}>{c}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* Phone / Email */}
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="phone" className={labelStyles}>
+            Telephone Number <span className="text-red-500">*</span>
+          </label>
+          <input type="tel" id="phone" name="phone" required className={inputStyles} />
+        </div>
+        <div>
+          <label htmlFor="email" className={labelStyles}>
+            Email Address <span className="text-red-500">*</span>
+          </label>
+          <input type="email" id="email" name="email" required className={inputStyles} />
+        </div>
+      </div>
+
+      {/* Preferred Contact Method / Service Type */}
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="contactMethod" className={labelStyles}>Preferred Contact Method</label>
+          <select id="contactMethod" name="contactMethod" defaultValue="Email" className={inputStyles}>
+            {CONTACT_METHODS.map((m) => (
+              <option key={m} value={m}>{m}</option>
             ))}
           </select>
         </div>
         <div>
-          <label htmlFor="zip" className="block text-sm font-medium text-[#0B1D33] mb-1">
-            ZIP Code
-          </label>
-          <input
-            type="text"
-            id="zip"
-            name="zip"
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          />
+          <label htmlFor="serviceType" className={labelStyles}>Service Type</label>
+          <select id="serviceType" name="serviceType" className={inputStyles}>
+            <option value="">Select Service Type</option>
+            {SERVICE_TYPES.map((type) => (
+              <option key={type} value={type}>{type}</option>
+            ))}
+          </select>
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-[#0B1D33] mb-1">
-            Phone
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-[#0B1D33] mb-1">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-          />
-        </div>
-      </div>
-
+      {/* Message */}
       <div>
-        <label htmlFor="serviceType" className="block text-sm font-medium text-[#0B1D33] mb-1">
-          Service Type
-        </label>
-        <select
-          id="serviceType"
-          name="serviceType"
-          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors"
-        >
-          <option value="">Select Service Type</option>
-          {SERVICE_TYPES.map((type) => (
-            <option key={type} value={type}>
-              {type}
-            </option>
-          ))}
-        </select>
+        <label htmlFor="message" className={labelStyles}>General Question / Description of Issue</label>
+        <textarea id="message" name="message" rows={5} className={`${inputStyles} resize-y`} />
       </div>
 
+      {/* Spam Captcha */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-[#0B1D33] mb-1">
-          Message
+        <label htmlFor="captcha" className={labelStyles}>
+          What is 9 plus four? <span className="text-red-500">*</span>
         </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={5}
-          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#00B4D8] focus:border-[#00B4D8] outline-none transition-colors resize-y"
+        <input
+          type="text"
+          id="captcha"
+          name="captcha"
+          required
+          value={captchaAnswer}
+          onChange={(e) => { setCaptchaAnswer(e.target.value); setCaptchaError(false); }}
+          className={`${inputStyles} max-w-[200px] ${captchaError ? "border-red-500 focus:ring-red-500" : ""}`}
         />
+        {captchaError && (
+          <p className="text-red-500 text-sm mt-1">Incorrect answer. Please try again.</p>
+        )}
       </div>
 
       <button

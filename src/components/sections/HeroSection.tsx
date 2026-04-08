@@ -11,7 +11,7 @@ export default function HeroSection() {
           alt="Sub-Zero Appliance Repair Technician"
           fill
           sizes="100vw"
-          className="object-contain object-right-bottom"
+          className="object-contain object-right-top"
           priority
           fetchPriority="high"
         />
