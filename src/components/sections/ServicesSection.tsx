@@ -30,7 +30,7 @@ const servicesList = [
   {
     title: "Marine Refrigeration Repair",
     href: "/services/sub-zero-marine-repair",
-    image: "/images/services/marine-repair.webp",
+    image: "/images/services/marine-repair-v2.webp",
     description: "Specialized marine refrigeration repair for Sub-Zero units on boats and yachts throughout South Florida.",
   },
 ];

@@ -79,7 +79,7 @@ export default function MarineRepairPage() {
       <section className="py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
           <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl">
-            <Image src="/images/services/marine-repair.webp" alt="Luxury yacht at South Florida marina — Sub-Zero marine refrigeration repair" fill className="object-cover" priority />
+            <Image src="/images/services/marine-repair-v2.webp" alt="Luxury yacht at South Florida marina — Sub-Zero marine refrigeration repair" fill className="object-cover" priority />
           </div>
         </div>
       </section>

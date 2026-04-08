@@ -82,7 +82,7 @@ export const services: Service[] = [
     metaTitle: "Sub-Zero Marine Refrigeration Repair South Florida - Sub-Zero Repair Services",
     metaDescription: "Expert Sub-Zero marine refrigeration repair in South Florida. Keep your vessel's cooling systems running. Call (800) 651-4528.",
     h1: "Sub-Zero Marine Refrigeration Repair in South Florida",
-    image: "/images/services/marine-repair.webp",
+    image: "/images/services/marine-repair-v2.webp",
     imageAlt: "Sub-Zero Marine Refrigeration Repair",
     shortDescription: "Specialized marine refrigeration repair for Sub-Zero units on boats and yachts. We service vessels throughout South Florida.",
     content: [
