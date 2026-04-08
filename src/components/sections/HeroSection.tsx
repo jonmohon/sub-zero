@@ -3,22 +3,27 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white min-h-[650px] lg:min-h-[750px]">
-      {/* Hero image — visible on all screen sizes, behind text */}
-      <div className="absolute inset-0 z-[1]">
+    <section className="relative overflow-hidden">
+      {/* Background — subtle gradient instead of flat white */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#f0f7fc] via-white to-[#fef9f0]" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0387cc]/[0.04] rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#f89406]/[0.03] rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
+
+      {/* Desktop: image behind text */}
+      <div className="absolute inset-0 hidden lg:block z-[1]">
         <Image
           src="/images/hero.webp"
           alt="Sub-Zero Appliance Repair Technician"
-          fill
-          sizes="100vw"
-          className="object-contain object-right-top"
+          width={1400}
+          height={900}
+          sizes="(min-width: 1024px) 100vw, 1px"
+          className="absolute right-0 bottom-0 w-auto h-full object-contain object-right-bottom"
+          style={{ minHeight: "100%", marginLeft: "25%" }}
           priority
           fetchPriority="high"
         />
+        <div className="absolute inset-0 z-[2] bg-gradient-to-r from-[#f0f7fc] via-[#f0f7fc]/95 to-transparent w-[60%]" />
       </div>
-
-      {/* Gradient overlay — light on mobile so image shows clearly */}
-      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-white/95 via-white/70 to-white/20 lg:from-white lg:via-white/95 lg:to-transparent lg:w-[60%]" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +68,7 @@ export default function HeroSection() {
           </div>
 
           {/* Divider */}
-          <div className="mt-8 w-full max-w-sm border-t border-gray-200" />
+          <div className="mt-8 w-full max-w-sm border-t border-gray-200/60" />
 
           {/* Emergency Call */}
           <div className="mt-6 flex items-center gap-4">
@@ -100,6 +105,23 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Mobile: hero image clearly visible below text */}
+      <div className="relative lg:hidden w-full h-[350px] sm:h-[420px] z-10">
+        <Image
+          src="/images/hero.webp"
+          alt="Sub-Zero Appliance Repair Technician"
+          fill
+          sizes="100vw"
+          className="object-contain object-bottom"
+          loading="eager"
+        />
+      </div>
+
+      {/* Gold accent line at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 z-20">
+        <div className="h-px bg-gradient-to-r from-transparent via-[#f89406]/40 to-transparent" />
       </div>
     </section>
   );
