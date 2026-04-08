@@ -105,15 +105,16 @@ export default function HeroSection() {
       </div>
 
       {/* Mobile: visible hero image below text */}
-      <div className="relative lg:hidden w-full h-[350px] sm:h-[400px] -mt-4">
+      <div className="relative lg:hidden w-full h-[350px] sm:h-[400px]">
         <Image
           src="/images/hero.webp"
           alt="Sub-Zero Appliance Repair Technician"
           fill
           sizes="100vw"
           className="object-contain object-bottom"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/60" />
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
       </div>
     </section>
   );
