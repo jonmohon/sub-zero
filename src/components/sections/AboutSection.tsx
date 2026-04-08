@@ -34,7 +34,7 @@ export default function AboutSection() {
               <div className="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-[#00B4D8] via-[#0387cc] to-[#00B4D8] rounded-b-full opacity-60" />
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#00B4D8]/5 group-hover:bg-[#00B4D8]/10 transition-colors duration-500" />
 
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-4 leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-4 leading-tight">
                 Top-Quality Sub-Zero Appliance Repair in Coral Gables, FL
               </h2>
               <p className="text-[#64748B] leading-relaxed mb-8 text-base">
@@ -58,7 +58,7 @@ export default function AboutSection() {
               <div className="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-[#f89406] via-[#0387cc] to-[#f89406] rounded-b-full opacity-60" />
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#f89406]/5 group-hover:bg-[#f89406]/10 transition-colors duration-500" />
 
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-4 leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-4 leading-tight">
                 Comprehensive Repairs Tailored to Your Needs
               </h2>
               <p className="text-[#64748B] leading-relaxed mb-8 text-base">

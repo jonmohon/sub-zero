@@ -58,7 +58,7 @@ const brands = [
 export default function BrandsWeServicePage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Brands We Service
@@ -88,7 +88,7 @@ export default function BrandsWeServicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h2 className="text-xl font-semibold text-[#0A2540] group-hover:text-[#00B4D8] transition-colors mb-3">
+                <h2 className="text-xl font-semibold text-[#0387cc] group-hover:text-[#00B4D8] transition-colors mb-3">
                   {brand.name}
                 </h2>
                 <p className="text-[#64748B] text-sm">{brand.description}</p>
@@ -98,7 +98,7 @@ export default function BrandsWeServicePage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Don&apos;t See Your Brand?

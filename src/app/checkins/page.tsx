@@ -76,7 +76,7 @@ const checkins = [
 export default function CheckinsPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Recent Work</h1>
           <p className="text-lg text-gray-300">
@@ -109,7 +109,7 @@ export default function CheckinsPage() {
                     <span>|</span>
                     <span>{checkin.county}</span>
                   </div>
-                  <h2 className="text-lg font-bold text-[#0A2540] mb-1">
+                  <h2 className="text-lg font-bold text-[#0387cc] mb-1">
                     {checkin.service}
                   </h2>
                   <p className="text-sm text-[#00B4D8] font-medium mb-3">
@@ -124,7 +124,7 @@ export default function CheckinsPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-8 inline-block">
+            <div className="bg-[#0387cc] text-white rounded-lg p-8 inline-block">
               <h2 className="text-xl font-bold mb-2">
                 Need Sub-Zero Repair Service?
               </h2>

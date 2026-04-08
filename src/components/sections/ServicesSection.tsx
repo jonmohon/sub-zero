@@ -42,11 +42,10 @@ export default function ServicesSection() {
       style={{
         background: "#0387cc",
         backgroundImage: `
-          linear-gradient(135deg, #0387cc 0%, #0F3460 50%, #0387cc 100%),
           linear-gradient(rgba(0,180,216,0.03) 1px, transparent 1px),
           linear-gradient(90deg, rgba(0,180,216,0.03) 1px, transparent 1px)
         `,
-        backgroundSize: "100% 100%, 40px 40px, 40px 40px",
+        backgroundSize: "40px 40px, 40px 40px",
       }}
     >
       {/* Decorative dot grid pattern */}
@@ -61,7 +60,7 @@ export default function ServicesSection() {
       {/* Decorative geometric shapes */}
       <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#00B4D8]/[0.03] blur-3xl" />
       <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-[#00B4D8]/[0.02] blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#0F3460]/30 blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#0387cc]/20 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
@@ -120,7 +119,7 @@ export default function ServicesSection() {
                 <div className="inline-block mb-4">
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8] bg-[#00B4D8]/10 px-4 py-1.5 rounded-full">Featured Service</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-[#0A2540] mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-4">
                   Sub-Zero Refrigerator<br />Repair
                 </h3>
                 <p className="text-[#64748B] leading-relaxed mb-6">

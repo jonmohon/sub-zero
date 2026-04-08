@@ -18,7 +18,7 @@ export default function BrandsSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="fade-up">
           <div className="flex justify-center mb-6">
-            <h2 className="text-3xl font-bold text-[#0A2540] border-[3px] border-[#00B4D8] rounded-lg px-8 py-3 inline-block">
+            <h2 className="text-3xl font-bold text-[#0387cc] border-[3px] border-[#00B4D8] rounded-lg px-8 py-3 inline-block">
               Brands We Service
             </h2>
           </div>

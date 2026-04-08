@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Verified Video Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0A2540] mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0387cc] mb-14">
             Trusted by Thousands Across the USA
           </h2>
         </ScrollReveal>
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
                     </svg>
                   ))}
                 </div>
-                <h3 className="text-lg font-bold text-[#0A2540] mb-3">&ldquo;{t.heading}&rdquo;</h3>
+                <h3 className="text-lg font-bold text-[#0387cc] mb-3">&ldquo;{t.heading}&rdquo;</h3>
                 <p className="text-sm text-[#64748B] leading-relaxed">{t.description}</p>
               </div>
             </ScrollReveal>
@@ -84,7 +84,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-500">
-      <div className="relative bg-gradient-to-br from-[#0387cc] to-[#0F3460] p-3">
+      <div className="relative bg-[#0387cc] p-3">
         <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
           {loaded ? (
             <iframe
@@ -119,7 +119,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
             </svg>
           ))}
         </div>
-        <p className="text-sm font-semibold text-[#0A2540]">&ldquo;{title}&rdquo;</p>
+        <p className="text-sm font-semibold text-[#0387cc]">&ldquo;{title}&rdquo;</p>
       </div>
     </div>
   );

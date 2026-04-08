@@ -1,7 +1,7 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import Image from "next/image";
+import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
 
@@ -23,23 +23,47 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Services", url: `${BUSINESS.siteUrl}/services/` },
   { name: "Refrigerator Repair", url: `${BUSINESS.siteUrl}/services/refrigerator-repair/` },
 ]);
+const faqSchema = generateFAQSchema([
+  { question: "How quickly can you repair my Sub-Zero refrigerator?", answer: "We offer same-day service throughout South Florida. Most repairs are completed in a single visit since our technicians carry genuine Sub-Zero parts on every truck." },
+  { question: "Do you use genuine Sub-Zero parts?", answer: "Yes. We exclusively use factory-authorized Sub-Zero replacement parts, which come with a full manufacturer warranty for quality and longevity." },
+  { question: "What does a typical Sub-Zero repair cost?", answer: "Costs vary depending on the issue and parts needed. We provide a transparent, written estimate before any work begins so there are no surprises." },
+  { question: "Do you charge extra for weekends or holidays?", answer: "No. Our standard service rates apply 24/7, including nights, weekends, and holidays. We never add emergency surcharges." },
+  { question: "What Sub-Zero models do you service?", answer: "We repair all Sub-Zero refrigerator models including Built-In, Integrated, Classic, Designer, Pro 48, Column, and Undercounter series." },
+  { question: "Is your repair work guaranteed?", answer: "Absolutely. Every repair comes with a full warranty on both parts and labor, giving you complete peace of mind." },
+]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Refrigerator Repair Coral Gables FL",
+  title: "Sub-Zero Refrigerator Repair South Florida | Same-Day Service",
   description:
-    "Expert Sub-Zero refrigerator repair in Coral Gables, FL. Same-day service, genuine parts, and certified technicians. Call (800) 651-4528 for fast, reliable repairs.",
+    "Expert Sub-Zero refrigerator repair in South Florida. Same-day service, genuine parts, and certified technicians with 30+ years experience. Call (800) 651-4528.",
   alternates: {
     canonical:
       "https://fivestarappliancerepairpros.com/services/refrigerator-repair/",
   },
   openGraph: {
     title:
-      "Sub-Zero Refrigerator Repair Coral Gables FL - Sub-Zero Repair Services",
+      "Sub-Zero Refrigerator Repair South Florida - Sub-Zero Repair Services",
     description:
-      "Expert Sub-Zero refrigerator repair in Coral Gables, FL. Same-day service, genuine parts, and certified technicians. Call (800) 651-4528 for fast, reliable repairs.",
+      "Expert Sub-Zero refrigerator repair in South Florida. Same-day service, genuine parts, and certified technicians. Call (800) 651-4528 for fast, reliable repairs.",
     url: "https://fivestarappliancerepairpros.com/services/refrigerator-repair/",
   },
 };
+
+const commonIssues = [
+  { title: "Not Cooling Properly", description: "Refrigerator running but not maintaining temperature. Could be a compressor, condenser, or thermostat issue." },
+  { title: "Unusual Noises", description: "Grinding, buzzing, or clicking sounds often indicate a failing compressor, evaporator fan motor, or condenser fan." },
+  { title: "Water Leaking", description: "Puddles under or inside the unit typically stem from a clogged defrost drain, cracked water line, or damaged door gasket." },
+  { title: "Ice Buildup in Freezer", description: "Excessive frost usually points to a defective defrost heater, thermostat, or timer that needs replacement." },
+  { title: "Door Seal Issues", description: "Worn or damaged gaskets allow warm air in, forcing the compressor to work harder and driving up energy costs." },
+  { title: "Control Board Malfunction", description: "Electronic display errors or unresponsive controls may require a control board diagnosis or replacement." },
+];
+
+const repairProcess = [
+  { step: "1", title: "Schedule Your Service", description: "Call us at (800) 651-4528 or request service online. We offer same-day appointments throughout South Florida." },
+  { step: "2", title: "Expert Diagnosis", description: "Our certified technician arrives with specialized diagnostic tools to identify the exact issue with your Sub-Zero refrigerator." },
+  { step: "3", title: "Transparent Quote", description: "We provide an upfront, written estimate before any work begins. No hidden fees, no surprises." },
+  { step: "4", title: "Professional Repair", description: "Using only genuine Sub-Zero parts, we complete the repair — most units are fixed in a single visit." },
+];
 
 export default function RefrigeratorRepairPage() {
   return (
@@ -52,132 +76,265 @@ export default function RefrigeratorRepairPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      {/* Hero Banner */}
+      <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-gray-400 mb-4">
-            <Link href="/" className="hover:text-white">
+          <nav className="text-sm text-white/60 mb-4" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-white transition-colors">
               Home
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/services" className="hover:text-white">
+            <Link href="/services" className="hover:text-white transition-colors">
               Services
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-200">Refrigerator Repair</span>
+            <span className="text-white">Refrigerator Repair</span>
           </nav>
           <h1 className="text-4xl md:text-5xl font-bold">
             Sub-Zero Refrigerator Repair in South Florida
           </h1>
+          <p className="mt-4 text-lg text-white/80 max-w-2xl">
+            Factory-trained technicians with 30+ years of experience. Same-day service with genuine Sub-Zero parts on every truck.
+          </p>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+      {/* Hero Image */}
+      <section className="py-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
+          <div className="relative w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="/images/services/refrigerator-repair.webp"
-              alt="Sub-Zero Refrigerator Repair Service"
+              alt="Sub-Zero Refrigerator Repair Service in South Florida"
               fill
               className="object-cover"
               priority
             />
           </div>
         </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-6">
-              <p className="text-[#64748B] leading-relaxed">
-                You have no time to lose if your fridge or freezer is failing.
-                Depend on our Sub-Zero Service Centers for emergency Sub-Zero
-                refrigerator service and repair in South Florida. We&apos;ll
-                save your food by repairing your refrigerator unit. The trained
-                technicians at our company ensure your commercial or residential
-                equipment is fully operational. That means your food stays fresh
-                and you save money by keeping it that way.
-              </p>
-              <p className="text-[#64748B] leading-relaxed">
-                Customers throughout the area trust us for emergency response
-                when they have problems with their refrigeration equipment.
-                Because our technicians are experienced and factory-trained, we
-                deliver the highest-quality services to ensure your Sub-Zero
-                equipment is fully operational as soon as possible.
-              </p>
-              <p className="text-[#64748B] leading-relaxed">
-                If your refrigerator breaks, you need immediate emergency
-                services. At our company, we have extensive experience in
-                repairing all types of Sub-Zero units. In addition, we keep a
-                large supply of authentic Sub-Zero refrigerator parts on our
-                trucks. This ensures that we are able to fix everything -- from
-                freestanding units to built-in models. You can depend on us for
-                same-day repair, affordable services, and high-quality
-                workmanship.
-              </p>
+            <div className="lg:col-span-2 space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-3xl font-bold text-[#0B1D33]">Expert Sub-Zero Refrigerator Repair You Can Trust</h2>
+                <p className="text-[#64748B] leading-relaxed text-lg">
+                  You have no time to lose if your fridge or freezer is failing.
+                  Depend on our Sub-Zero Service Centers for emergency Sub-Zero
+                  refrigerator service and repair in South Florida. We&apos;ll
+                  save your food by repairing your refrigerator unit. The trained
+                  technicians at our company ensure your commercial or residential
+                  equipment is fully operational. That means your food stays fresh
+                  and you save money by keeping it that way.
+                </p>
+                <p className="text-[#64748B] leading-relaxed">
+                  Customers throughout the area trust us for emergency response
+                  when they have problems with their refrigeration equipment.
+                  Because our technicians are experienced and factory-trained, we
+                  deliver the highest-quality services to ensure your Sub-Zero
+                  equipment is fully operational as soon as possible.
+                </p>
+                <p className="text-[#64748B] leading-relaxed">
+                  If your refrigerator breaks, you need immediate emergency
+                  services. At our company, we have extensive experience in
+                  repairing all types of Sub-Zero units. In addition, we keep a
+                  large supply of authentic Sub-Zero refrigerator parts on our
+                  trucks. This ensures that we are able to fix everything — from
+                  freestanding units to built-in models. You can depend on us for
+                  same-day repair, affordable services, and high-quality
+                  workmanship.
+                </p>
+              </div>
+
+              {/* Models We Service */}
+              <div className="bg-[#F8FAFC] rounded-2xl p-8">
+                <h2 className="text-2xl font-bold text-[#0B1D33] mb-4">Sub-Zero Refrigerator Models We Service</h2>
+                <div className="grid sm:grid-cols-2 gap-3">
+                  {[
+                    "Built-In Refrigerators (BI Series)",
+                    "Integrated Refrigerators (IT Series)",
+                    "Classic Series (CL)",
+                    "Designer Series (DET)",
+                    "Pro 48 Refrigerators",
+                    "Column Refrigerators (IC Series)",
+                    "Undercounter Refrigerators (UC Series)",
+                    "Side-by-Side Models",
+                  ].map((model) => (
+                    <div key={model} className="flex items-center gap-2 text-[#64748B]">
+                      <svg className="w-5 h-5 text-[#0387cc] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {model}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+
+            {/* Sidebar */}
             <div className="space-y-6">
-              <div className="bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6">
-                <h3 className="font-semibold text-[#0A2540] mb-4">
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+                <h3 className="font-bold text-[#0B1D33] text-lg mb-4">
                   Why Choose Us
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   {[
-                    "Same-Day Service",
-                    "Genuine Parts",
-                    "Certified Technicians",
-                    "24/7 Availability",
+                    { label: "Same-Day Service", detail: "Most repairs completed in one visit" },
+                    { label: "Genuine Sub-Zero Parts", detail: "Factory-authorized replacement parts" },
+                    { label: "Certified Technicians", detail: "30+ years of hands-on experience" },
+                    { label: "24/7 Availability", detail: "No extra charge for weekends or holidays" },
+                    { label: "Written Estimates", detail: "Transparent pricing before work begins" },
+                    { label: "Full Warranty", detail: "Parts and labor guaranteed" },
                   ].map((f) => (
-                    <li
-                      key={f}
-                      className="flex items-center gap-2 text-sm text-gray-700"
-                    >
-                      <svg
-                        className="w-5 h-5 text-[#00B4D8] flex-shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
+                    <li key={f.label} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-[#0387cc] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      {f}
+                      <div>
+                        <span className="font-semibold text-[#0B1D33] text-sm">{f.label}</span>
+                        <p className="text-xs text-[#64748B]">{f.detail}</p>
+                      </div>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-6 text-center">
-                <h3 className="font-semibold mb-2">Need Immediate Help?</h3>
-                <p className="text-sm text-gray-300 mb-4">
+              <div className="bg-[#0387cc] text-white rounded-2xl p-6 text-center sticky top-24">
+                <h3 className="font-bold text-xl mb-2">Need Immediate Help?</h3>
+                <p className="text-sm text-white/80 mb-4">
                   Our technicians are standing by 24/7
                 </p>
                 <a
                   href="tel:+18006514528"
-                  className="inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-6 py-3 rounded-md font-semibold transition-colors w-full"
+                  className="inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-6 py-3 rounded-lg font-bold transition-colors w-full text-lg"
                 >
                   (800) 651-4528
                 </a>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0387cc] px-6 py-3 rounded-lg font-semibold transition-colors w-full mt-3"
+                >
+                  Request Service Call
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Common Issues */}
+      <section className="py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#0B1D33] mb-4">Common Sub-Zero Refrigerator Problems We Fix</h2>
+          <p className="text-[#64748B] mb-10 max-w-3xl">
+            Our factory-trained technicians have seen it all. Here are the most common Sub-Zero refrigerator issues we diagnose and repair every day across South Florida.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {commonIssues.map((issue) => (
+              <div key={issue.title} className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-bold text-[#0B1D33] mb-2">{issue.title}</h3>
+                <p className="text-sm text-[#64748B] leading-relaxed">{issue.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Repair Process */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#0B1D33] mb-4">Our Refrigerator Repair Process</h2>
+          <p className="text-[#64748B] mb-10 max-w-3xl">
+            From your first call to a fully working refrigerator, here is what to expect when you choose our repair service.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {repairProcess.map((item) => (
+              <div key={item.step} className="relative">
+                <div className="w-12 h-12 bg-[#0387cc] text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">
+                  {item.step}
+                </div>
+                <h3 className="font-bold text-[#0B1D33] mb-2">{item.title}</h3>
+                <p className="text-sm text-[#64748B] leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#0B1D33] mb-10">Frequently Asked Questions</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              { q: "How quickly can you repair my Sub-Zero refrigerator?", a: "We offer same-day service throughout South Florida. Most repairs are completed in a single visit since our technicians carry genuine Sub-Zero parts on every truck." },
+              { q: "Do you use genuine Sub-Zero parts?", a: "Yes. We exclusively use factory-authorized Sub-Zero replacement parts, which come with a full manufacturer warranty for quality and longevity." },
+              { q: "What does a typical Sub-Zero repair cost?", a: "Costs vary depending on the issue and parts needed. We provide a transparent, written estimate before any work begins so there are no surprises." },
+              { q: "Do you charge extra for weekends or holidays?", a: "No. Our standard service rates apply 24/7, including nights, weekends, and holidays. We never add emergency surcharges." },
+              { q: "What Sub-Zero models do you service?", a: "We repair all Sub-Zero refrigerator models including Built-In, Integrated, Classic, Designer, Pro 48, Column, and Undercounter series." },
+              { q: "Is your repair work guaranteed?", a: "Absolutely. Every repair comes with a full warranty on both parts and labor, giving you complete peace of mind." },
+            ].map((faq) => (
+              <div key={faq.q} className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-[#0B1D33] mb-2">{faq.q}</h3>
+                <p className="text-sm text-[#64748B] leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-12 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-[#0B1D33] mb-6">Other Sub-Zero Services We Offer</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: "Refrigerator Repair", href: "/services/refrigerator-repair" },
+              { name: "Freezer Repair", href: "/services/freezer-repair" },
+              { name: "Ice Maker Repair", href: "/services/icemaker-repair" },
+              { name: "Wine Cooler Repair", href: "/services/wine-cooler-repair" },
+              { name: "Marine Repair", href: "/services/sub-zero-marine-repair" },
+            ].filter(s => s.href !== "/services/refrigerator-repair").map((service) => (
+              <Link key={service.href} href={service.href} className="bg-[#F8FAFC] hover:bg-[#0387cc] hover:text-white text-[#0B1D33] rounded-xl p-4 font-semibold text-sm transition-all text-center border border-gray-100 hover:border-[#0387cc]">
+                {service.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ServiceAreasGrid serviceType="Refrigerator Repair" />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-12">
+      {/* Bottom CTA */}
+      <section className="bg-[#0387cc] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4">
             Schedule Your Refrigerator Repair Today
           </h2>
-          <Link
-            href="/contact"
-            className="inline-flex items-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-md font-semibold text-lg transition-colors"
-          >
-            Request Service Call
-          </Link>
+          <p className="text-white/80 mb-6 max-w-2xl mx-auto">
+            Don&apos;t risk food spoilage. Call now for same-day Sub-Zero refrigerator repair anywhere in South Florida.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="tel:+18006514528"
+              className="inline-flex items-center bg-white text-[#0387cc] px-8 py-4 rounded-lg font-bold text-lg transition-colors hover:bg-gray-100"
+            >
+              Call (800) 651-4528
+            </a>
+            <Link
+              href="/contact"
+              className="inline-flex items-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+            >
+              Request Service Call
+            </Link>
+          </div>
         </div>
       </section>
     </>

@@ -41,7 +41,7 @@ export default function PromotionsSection() {
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Current Offers
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0A2540] mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0387cc] mb-14">
             Specials &amp; Promotions
           </h2>
         </ScrollReveal>
@@ -52,7 +52,7 @@ export default function PromotionsSection() {
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 flex flex-col h-full">
                 <div className="h-1.5 bg-gradient-to-r from-[#00B4D8] to-[#0387cc]" />
                 <div className="p-7 text-center flex flex-col flex-1">
-                  <h3 className="text-lg font-bold text-[#0A2540] mb-3">{promo.title}</h3>
+                  <h3 className="text-lg font-bold text-[#0387cc] mb-3">{promo.title}</h3>
                   {promo.isList ? (
                     <div className="text-sm text-[#64748B] text-left space-y-2 mb-3 flex-1">
                       {promo.items!.map((item) => (

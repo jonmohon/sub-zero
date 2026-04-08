@@ -25,7 +25,7 @@ export async function generateMetadata({
   const description = `Expert Sub-Zero appliance repair in ${data.name}, FL serving ${topCityNames} and more. Same-day service, certified technicians. Call (800) 651-4528.`;
   const url = `${BUSINESS.siteUrl}/areas-we-service/${county}/`;
   return {
-    title: data.metaTitle,
+    title: { absolute: data.metaTitle },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -69,7 +69,7 @@ export default async function CountyPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
 
-      <section className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white py-16">
+      <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/" className="hover:text-white">
@@ -104,7 +104,7 @@ export default async function CountyPage({
                 {data.name}. No extra charges for weekends or holidays — just
                 fast, reliable service when you need it most.
               </p>
-              <h2 className="text-2xl font-bold text-[#0A2540] mb-6">
+              <h2 className="text-2xl font-bold text-[#0387cc] mb-6">
                 Cities We Serve in {data.name}
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -120,7 +120,7 @@ export default async function CountyPage({
               </div>
             </div>
             <div>
-              <div className="bg-gradient-to-br from-[#0387cc] to-[#0F3460] text-white rounded-lg p-6 text-center sticky top-24">
+              <div className="bg-[#0387cc] text-white rounded-lg p-6 text-center sticky top-24">
                 <h3 className="font-semibold mb-2">
                   Schedule Repair in {data.name}
                 </h3>
