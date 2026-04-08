@@ -3,24 +3,23 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white">
-      {/* Desktop: image positioned behind text (hidden on mobile) */}
-      <div className="absolute inset-0 hidden lg:block">
-        <div className="absolute inset-0 z-[2]">
-          <Image
-            src="/images/hero.webp"
-            alt="Sub-Zero Appliance Repair Technician"
-            width={1400}
-            height={900}
-            sizes="(min-width: 1024px) 100vw, 1px"
-            className="absolute right-0 bottom-0 w-auto h-full object-contain object-right-bottom"
-            style={{ minHeight: "100%", marginLeft: "25%" }}
-            priority
-            fetchPriority="high"
-          />
-        </div>
-        <div className="absolute inset-0 z-[3] bg-gradient-to-r from-white via-white/95 to-transparent w-[60%]" />
+    <section className="relative overflow-hidden bg-white min-h-[650px] lg:min-h-[750px]">
+      {/* Hero image — visible on all screen sizes, behind text */}
+      <div className="absolute inset-0 z-[1]">
+        <Image
+          src="/images/hero.webp"
+          alt="Sub-Zero Appliance Repair Technician"
+          fill
+          sizes="100vw"
+          className="object-cover object-right sm:object-contain sm:object-right-bottom"
+          style={{ objectPosition: "75% center" }}
+          priority
+          fetchPriority="high"
+        />
       </div>
+
+      {/* Gradient overlay — lighter on mobile so image shows through */}
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-white via-white/90 to-white/50 sm:to-white/30 lg:via-white/95 lg:to-transparent lg:w-[60%]" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,19 +101,6 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Mobile: visible hero image below text */}
-      <div className="relative lg:hidden w-full h-[350px] sm:h-[400px]">
-        <Image
-          src="/images/hero.webp"
-          alt="Sub-Zero Appliance Repair Technician"
-          fill
-          sizes="100vw"
-          className="object-contain object-bottom"
-          loading="eager"
-        />
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
       </div>
     </section>
   );
