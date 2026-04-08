@@ -84,7 +84,7 @@ export default function RefrigeratorRepairPage() {
       {/* Hero Banner */}
       <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-white/60 mb-4" aria-label="Breadcrumb">
+          <nav className="text-sm text-white/90 mb-4" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white transition-colors">
               Home
             </Link>

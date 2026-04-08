@@ -93,7 +93,7 @@ export default function ServicesSection() {
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="backdrop-blur-md bg-white/[0.07] rounded-xl p-5 border border-white/10">
                       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#00B4D8] transition-colors duration-300">{service.title}</h3>
-                      <p className="text-white/70 text-sm leading-relaxed">{service.description}</p>
+                      <p className="text-white/90 text-sm leading-relaxed">{service.description}</p>
                       <div className="mt-3 flex items-center gap-1.5 text-[#00B4D8] text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                         <span>View {service.title}</span>
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

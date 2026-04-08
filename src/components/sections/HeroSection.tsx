@@ -6,15 +6,17 @@ export default function HeroSection() {
     <section className="relative overflow-hidden bg-white min-h-[650px] lg:min-h-[750px]">
       {/* Hero image — visible on all screen sizes */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 z-[2] hero-image-animate">
+        <div className="absolute inset-0 z-[2]">
           <Image
             src="/images/hero.webp"
             alt="Sub-Zero Appliance Repair Technician"
             width={1400}
             height={900}
+            sizes="100vw"
             className="absolute right-0 bottom-0 w-auto h-full object-contain object-right-bottom"
             style={{ minHeight: "100%", marginLeft: "25%" }}
             priority
+            fetchPriority="high"
           />
         </div>
         {/* Gradient fade so text is readable */}

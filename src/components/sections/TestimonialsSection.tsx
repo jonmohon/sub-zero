@@ -106,7 +106,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
-              <span className="text-white/70 text-sm font-medium">Click to play</span>
+              <span className="text-white/90 text-sm font-medium">Click to play</span>
             </button>
           )}
         </div>

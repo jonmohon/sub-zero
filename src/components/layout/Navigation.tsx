@@ -91,7 +91,7 @@ export default function Navigation() {
               <span className="text-lg font-bold text-[#0B1D33]">Menu</span>
               <button
                 onClick={() => setMobileOpen(false)}
-                className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-[#0B1D33] active:scale-95 transition-transform"
+                className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-[#0B1D33] active:scale-95 transition-transform"
                 aria-label="Close menu"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
