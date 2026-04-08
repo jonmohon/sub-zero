@@ -95,7 +95,140 @@ html {
   transform: scale(1);
 }
 
-/* Hero animations removed for Lighthouse performance (Speed Index) */
+/* ========================================
+   Blur-Up Reveal (scroll-triggered)
+   ======================================== */
+
+.sr-blur-up {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(8px);
+}
+.sr-blur-up.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.sr-init.sr-blur-up {
+  transition-property: transform, opacity, filter;
+}
+
+/* ========================================
+   Card Hover Micro-Interactions
+   ======================================== */
+
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 40px -12px rgba(3, 135, 204, 0.15),
+    0 0 0 1px rgba(3, 135, 204, 0.05);
+}
+
+/* ========================================
+   Animated Link Underlines
+   ======================================== */
+
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0387cc, #00B4D8);
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 1px;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   Gradient Text Shimmer (section headings)
+   ======================================== */
+
+@keyframes textShimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #0B1D33 0%,
+    #0B1D33 40%,
+    #0387cc 50%,
+    #0B1D33 60%,
+    #0B1D33 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 6s ease-in-out infinite;
+}
+
+/* ========================================
+   CTA Pulse Glow
+   ======================================== */
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(248, 148, 6, 0.4); }
+  50% { box-shadow: 0 0 20px 4px rgba(248, 148, 6, 0.2); }
+}
+
+.btn-pulse {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* ========================================
+   Icon Hover Effects
+   ======================================== */
+
+.icon-hover {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group:hover .icon-hover {
+  transform: scale(1.15) rotate(3deg);
+}
+
+/* ========================================
+   Staggered Grid Items (CSS-only)
+   ======================================== */
+
+.stagger-grid > :nth-child(1) { transition-delay: 0ms; }
+.stagger-grid > :nth-child(2) { transition-delay: 80ms; }
+.stagger-grid > :nth-child(3) { transition-delay: 160ms; }
+.stagger-grid > :nth-child(4) { transition-delay: 240ms; }
+.stagger-grid > :nth-child(5) { transition-delay: 320ms; }
+.stagger-grid > :nth-child(6) { transition-delay: 400ms; }
+
+/* ========================================
+   Section Divider Reveal
+   ======================================== */
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.divider-reveal {
+  width: 0;
+  animation: expandWidth 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
 
 /* ========================================
    Gold Shimmer Effect (CTA buttons)
@@ -193,9 +326,19 @@ html {
   .sr-fade-in,
   .sr-slide-left,
   .sr-slide-right,
-  .sr-scale-in {
+  .sr-scale-in,
+  .sr-blur-up {
     opacity: 1;
     transform: none;
+    filter: none;
+  }
+  .text-shimmer {
+    animation: none;
+    -webkit-text-fill-color: initial;
+    background: none;
+  }
+  .btn-pulse {
+    animation: none;
   }
   .animate-float,
   .animate-float-slow,

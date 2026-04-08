@@ -52,7 +52,7 @@ export default function HeroSection() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="btn-shimmer group inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,165,78,0.3)] hover:-translate-y-0.5 tracking-wide"
+              className="btn-shimmer btn-pulse group inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 hover:shadow-[0_0_30px_rgba(201,165,78,0.3)] hover:-translate-y-0.5 tracking-wide"
             >
               Request Service Call
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

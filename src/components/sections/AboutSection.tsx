@@ -17,7 +17,7 @@ export default function AboutSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <ScrollReveal animation="fade-up">
+        <ScrollReveal animation="blur-up">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="h-[2px] w-8 bg-gradient-to-r from-transparent to-[#00B4D8]" />

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-type AnimationType = "fade-up" | "fade-in" | "slide-left" | "slide-right" | "scale-in";
+type AnimationType = "fade-up" | "fade-in" | "slide-left" | "slide-right" | "scale-in" | "blur-up";
 
 interface ScrollRevealProps {
   children: React.ReactNode;

@@ -34,11 +34,11 @@ export default function TestimonialsSection() {
       <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 bg-[#00B4D8]/[0.03] rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollReveal animation="fade-up">
+        <ScrollReveal animation="blur-up">
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Verified Video Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0B1D33] mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0B1D33] mb-14 text-shimmer">
             Trusted by Thousands Across the USA
           </h2>
         </ScrollReveal>

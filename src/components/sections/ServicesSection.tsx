@@ -63,7 +63,7 @@ export default function ServicesSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#0387cc]/20 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollReveal animation="fade-up">
+        <ScrollReveal animation="blur-up">
           <p className="text-[#00B4D8] font-semibold uppercase tracking-[0.2em] mb-3 text-center text-sm">
             Our Services
           </p>

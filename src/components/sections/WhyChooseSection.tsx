@@ -70,7 +70,7 @@ export default function WhyChooseSection() {
               <span className="h-[2px] w-8 bg-gradient-to-r from-transparent to-[#00B4D8]" />
               <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-sm">About Us</p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1D33] leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1D33] leading-tight text-shimmer">
               Why Choose SubZero Repair Co.?
             </h2>
           </div>
@@ -130,7 +130,7 @@ export default function WhyChooseSection() {
             {features.map((feature, index) => (
               <ScrollReveal key={feature.title} animation="fade-up" delay={index * 150}>
                 <div
-                  className="group relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#00B4D8]/20 transition-all duration-300"
+                  className="group relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover"
                 >
                   <div className={`absolute inset-0 ${feature.glowColor} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
 
