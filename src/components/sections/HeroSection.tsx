@@ -11,15 +11,14 @@ export default function HeroSection() {
           alt="Sub-Zero Appliance Repair Technician"
           fill
           sizes="100vw"
-          className="object-cover object-right sm:object-contain sm:object-right-bottom"
-          style={{ objectPosition: "75% center" }}
+          className="object-contain object-right-bottom"
           priority
           fetchPriority="high"
         />
       </div>
 
-      {/* Gradient overlay — lighter on mobile so image shows through */}
-      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-white via-white/90 to-white/50 sm:to-white/30 lg:via-white/95 lg:to-transparent lg:w-[60%]" />
+      {/* Gradient overlay — light on mobile so image shows clearly */}
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-white/95 via-white/70 to-white/20 lg:from-white lg:via-white/95 lg:to-transparent lg:w-[60%]" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
