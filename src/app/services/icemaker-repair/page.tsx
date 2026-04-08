@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { generateServiceSchema, generateBreadcrumbSchema } from "@/lib/schema";
@@ -64,6 +65,17 @@ export default function IceMakerRepairPage() {
       </section>
 
       <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/services/icemaker-repair.webp"
+              alt="Sub-Zero Ice Maker Repair Service"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
