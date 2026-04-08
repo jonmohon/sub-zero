@@ -218,7 +218,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
 
           <div className="mt-12 bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold text-[#0387cc] mb-2">Need Professional Help?</h3>
+            <h3 className="text-xl font-semibold text-[#0B1D33] mb-2">Need Professional Help?</h3>
             <p className="text-[#64748B] mb-4">Our certified technicians are available 24/7 for same-day service.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+18006514528" className="inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-6 py-3 rounded-md font-semibold transition-colors">
@@ -231,10 +231,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
 
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <h3 className="text-lg font-semibold text-[#0387cc] mb-2">About Sub-Zero Repair Company</h3>
+            <h3 className="text-lg font-semibold text-[#0B1D33] mb-2">About Sub-Zero Repair Company</h3>
             <p className="text-[#64748B] text-sm leading-relaxed">
               Sub-Zero Repair Company, doing business as Fivestar Appliance Repair Pros, has provided factory-authorized Sub-Zero appliance repair in South Florida since 1994. Our factory-trained technicians offer 24/7 same-day service across 82 cities in 7 counties, using only genuine manufacturer parts with a full warranty on all repairs.{" "}
-              <Link href="/ai-profile" className="text-[#00B4D8] hover:text-[#0387cc]">
+              <Link href="/ai-profile" className="text-[#00B4D8] hover:text-[#0B1D33]">
                 Learn more about our company
               </Link>.
             </p>

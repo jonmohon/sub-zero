@@ -74,7 +74,7 @@ export default function SubZeroBrandPage() {
                 refrigeration systems. Every repair uses genuine Sub-Zero parts
                 to maintain your appliance&apos;s performance and warranty.
               </p>
-              <h2 className="text-2xl font-bold text-[#0387cc] mt-8">
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Sub-Zero
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">

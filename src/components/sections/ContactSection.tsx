@@ -42,7 +42,7 @@ export default function ContactSection() {
                   </Link>
                   <a
                     href="tel:+18006514528"
-                    className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0387cc] px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+                    className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0B1D33] px-10 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
                   >
                     (800) 651-4528
                   </a>

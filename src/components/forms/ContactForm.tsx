@@ -37,7 +37,7 @@ export default function ContactForm() {
         <svg className="w-12 h-12 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
-        <h3 className="text-xl font-semibold text-[#0387cc] mb-2">Thank You!</h3>
+        <h3 className="text-xl font-semibold text-[#0B1D33] mb-2">Thank You!</h3>
         <p className="text-[#64748B]">Your service request has been submitted. We will contact you shortly.</p>
       </div>
     );
@@ -47,7 +47,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="firstName" className="block text-sm font-medium text-[#0B1D33] mb-1">
             First Name <span className="text-red-500">*</span>
           </label>
           <input
@@ -59,7 +59,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="lastName" className="block text-sm font-medium text-[#0B1D33] mb-1">
             Last Name <span className="text-red-500">*</span>
           </label>
           <input
@@ -73,7 +73,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="address" className="block text-sm font-medium text-[#0387cc] mb-1">
+        <label htmlFor="address" className="block text-sm font-medium text-[#0B1D33] mb-1">
           Address
         </label>
         <input
@@ -86,7 +86,7 @@ export default function ContactForm() {
 
       <div className="grid sm:grid-cols-3 gap-4">
         <div>
-          <label htmlFor="city" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="city" className="block text-sm font-medium text-[#0B1D33] mb-1">
             City
           </label>
           <input
@@ -97,7 +97,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="state" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="state" className="block text-sm font-medium text-[#0B1D33] mb-1">
             State
           </label>
           <select
@@ -115,7 +115,7 @@ export default function ContactForm() {
           </select>
         </div>
         <div>
-          <label htmlFor="zip" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="zip" className="block text-sm font-medium text-[#0B1D33] mb-1">
             ZIP Code
           </label>
           <input
@@ -129,7 +129,7 @@ export default function ContactForm() {
 
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="phone" className="block text-sm font-medium text-[#0B1D33] mb-1">
             Phone
           </label>
           <input
@@ -140,7 +140,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-[#0387cc] mb-1">
+          <label htmlFor="email" className="block text-sm font-medium text-[#0B1D33] mb-1">
             Email
           </label>
           <input
@@ -153,7 +153,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="serviceType" className="block text-sm font-medium text-[#0387cc] mb-1">
+        <label htmlFor="serviceType" className="block text-sm font-medium text-[#0B1D33] mb-1">
           Service Type
         </label>
         <select
@@ -171,7 +171,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-[#0387cc] mb-1">
+        <label htmlFor="message" className="block text-sm font-medium text-[#0B1D33] mb-1">
           Message
         </label>
         <textarea

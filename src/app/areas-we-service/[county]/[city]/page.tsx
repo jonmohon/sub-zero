@@ -154,7 +154,7 @@ export default async function CityPage({
               { value: "100%", label: "Parts Warranty" },
             ].map((stat) => (
               <div key={stat.label} className="py-6 text-center">
-                <div className="text-2xl font-bold text-[#0387cc]">{stat.value}</div>
+                <div className="text-2xl font-bold text-[#0B1D33]">{stat.value}</div>
                 <div className="text-xs text-[#64748B] uppercase tracking-wider mt-1">{stat.label}</div>
               </div>
             ))}
@@ -200,12 +200,12 @@ export default async function CityPage({
                     >
                       <div className="flex items-start gap-3">
                         <div className="w-10 h-10 bg-[#0387cc]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-[#0387cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 text-[#0B1D33]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon} />
                           </svg>
                         </div>
                         <div>
-                          <h3 className="font-bold text-[#0B1D33] group-hover:text-[#0387cc] transition-colors">{s.name}</h3>
+                          <h3 className="font-bold text-[#0B1D33] group-hover:text-[#0B1D33] transition-colors">{s.name}</h3>
                           <p className="text-xs text-[#64748B] mt-1">{s.desc}</p>
                         </div>
                       </div>
@@ -229,7 +229,7 @@ export default async function CityPage({
                     { title: "Full Warranty", detail: "Every repair is backed by a complete warranty on parts and labor." },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-3 bg-[#F8FAFC] rounded-xl p-4">
-                      <svg className="w-5 h-5 text-[#0387cc] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#0B1D33] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <div>
@@ -259,7 +259,7 @@ export default async function CityPage({
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0387cc] px-6 py-3 rounded-lg font-semibold transition-colors w-full"
+                  className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0B1D33] px-6 py-3 rounded-lg font-semibold transition-colors w-full"
                 >
                   Request Service Call
                 </Link>
@@ -313,7 +313,7 @@ export default async function CityPage({
                 </p>
                 <Link
                   href={`/services/${item.slug}`}
-                  className="inline-flex items-center gap-1 text-[#0387cc] hover:text-[#0387cc]/80 font-semibold text-sm transition-colors"
+                  className="inline-flex items-center gap-1 text-[#0B1D33] hover:text-[#0B1D33]/80 font-semibold text-sm transition-colors"
                 >
                   View {item.service} details
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -360,7 +360,7 @@ export default async function CityPage({
                 <Link
                   key={area.slug}
                   href={`/areas-we-service/${area.countySlug}/${area.slug}`}
-                  className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-[#64748B] hover:text-[#0387cc] hover:border-[#0387cc]/30 transition-colors font-medium text-sm"
+                  className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-[#64748B] hover:text-[#0B1D33] hover:border-[#0387cc]/30 transition-colors font-medium text-sm"
                 >
                   {area.name}, FL
                 </Link>
@@ -382,7 +382,7 @@ export default async function CityPage({
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:+18006514528"
-              className="inline-flex items-center bg-white text-[#0387cc] px-8 py-4 rounded-lg font-bold text-lg transition-colors hover:bg-gray-100"
+              className="inline-flex items-center bg-white text-[#0B1D33] px-8 py-4 rounded-lg font-bold text-lg transition-colors hover:bg-gray-100"
             >
               Call (800) 651-4528
             </a>

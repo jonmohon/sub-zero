@@ -11,7 +11,7 @@ export default function EntityStatementsSection() {
   return (
     <section className="py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0387cc] mb-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0B1D33] mb-8 text-center">
           About Sub-Zero Repair Company
         </h2>
         <div className="max-w-4xl mx-auto space-y-4 border-l-4 border-[#00B4D8] pl-8">

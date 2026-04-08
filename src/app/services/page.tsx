@@ -97,7 +97,7 @@ export default function ServicesPage() {
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#0387cc] mb-4">
+          <h2 className="text-3xl font-bold text-[#0B1D33] mb-4">
             Keep Cool by Calling Us for Repairs
           </h2>
           <p className="text-[#64748B] mb-6 max-w-4xl">
@@ -108,7 +108,7 @@ export default function ServicesPage() {
             technicians at our company ensure your commercial or residential
             equipment is fully operational.
           </p>
-          <h2 className="text-3xl font-bold text-[#0387cc] mb-4">
+          <h2 className="text-3xl font-bold text-[#0B1D33] mb-4">
             Fast and Affordable Same-Day Refrigerator Repair
           </h2>
           <p className="text-[#64748B] mb-12 max-w-4xl">
@@ -135,7 +135,7 @@ export default function ServicesPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#0387cc] group-hover:text-[#00B4D8] transition-colors mb-2">
+                  <h3 className="text-xl font-semibold text-[#0B1D33] group-hover:text-[#00B4D8] transition-colors mb-2">
                     {service.title}
                   </h3>
                   <p className="text-[#64748B] text-sm">{service.description}</p>

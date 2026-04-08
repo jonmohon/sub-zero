@@ -80,7 +80,7 @@ export default function MieleBrandPage() {
                 genuine Miele replacement parts to maintain the exceptional
                 performance and longevity these appliances are known for.
               </p>
-              <h2 className="text-2xl font-bold text-[#0387cc] mt-8">
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Miele
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">

@@ -88,7 +88,7 @@ export default function BrandsWeServicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h2 className="text-xl font-semibold text-[#0387cc] group-hover:text-[#00B4D8] transition-colors mb-3">
+                <h2 className="text-xl font-semibold text-[#0B1D33] group-hover:text-[#00B4D8] transition-colors mb-3">
                   {brand.name}
                 </h2>
                 <p className="text-[#64748B] text-sm">{brand.description}</p>

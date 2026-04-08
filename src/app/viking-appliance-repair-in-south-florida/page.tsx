@@ -78,7 +78,7 @@ export default function VikingBrandPage() {
                 Viking&apos;s commercial-grade components and deliver repairs
                 that restore full performance.
               </p>
-              <h2 className="text-2xl font-bold text-[#0387cc] mt-8">
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Viking
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">

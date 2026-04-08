@@ -113,7 +113,7 @@ export default function IceMakerRepairPage() {
                     "Pro 48 Ice Production Systems",
                   ].map((model) => (
                     <div key={model} className="flex items-center gap-2 text-[#64748B]">
-                      <svg className="w-5 h-5 text-[#0387cc] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#0B1D33] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {model}
@@ -136,7 +136,7 @@ export default function IceMakerRepairPage() {
                     { label: "Full Warranty", detail: "Parts and labor guaranteed" },
                   ].map((f) => (
                     <li key={f.label} className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-[#0387cc] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#0B1D33] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <div>
@@ -151,7 +151,7 @@ export default function IceMakerRepairPage() {
                 <h3 className="font-bold text-xl mb-2">Need Immediate Help?</h3>
                 <p className="text-sm text-white/80 mb-4">Our technicians are standing by 24/7</p>
                 <a href="tel:+18006514528" className="inline-flex items-center justify-center bg-[#f89406] hover:bg-[#e08505] text-white px-6 py-3 rounded-lg font-bold transition-colors w-full text-lg">(800) 651-4528</a>
-                <Link href="/contact" className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0387cc] px-6 py-3 rounded-lg font-semibold transition-colors w-full mt-3">Request Service Call</Link>
+                <Link href="/contact" className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-[#0B1D33] px-6 py-3 rounded-lg font-semibold transition-colors w-full mt-3">Request Service Call</Link>
               </div>
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function IceMakerRepairPage() {
           <h2 className="text-3xl font-bold mb-4">Schedule Your Ice Maker Repair Today</h2>
           <p className="text-white/80 mb-6 max-w-2xl mx-auto">Get your Sub-Zero ice maker back to full production. Same-day service available throughout South Florida.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+18006514528" className="inline-flex items-center bg-white text-[#0387cc] px-8 py-4 rounded-lg font-bold text-lg transition-colors hover:bg-gray-100">Call (800) 651-4528</a>
+            <a href="tel:+18006514528" className="inline-flex items-center bg-white text-[#0B1D33] px-8 py-4 rounded-lg font-bold text-lg transition-colors hover:bg-gray-100">Call (800) 651-4528</a>
             <Link href="/contact" className="inline-flex items-center bg-[#f89406] hover:bg-[#e08505] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">Request Service Call</Link>
           </div>
         </div>

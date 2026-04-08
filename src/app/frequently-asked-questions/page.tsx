@@ -61,7 +61,7 @@ export default function FAQPage() {
           <FAQAccordion items={faqItems} />
 
           <div className="mt-12 bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-8 text-center">
-            <h2 className="text-xl font-bold text-[#0387cc] mb-2">
+            <h2 className="text-xl font-bold text-[#0B1D33] mb-2">
               Still Have Questions?
             </h2>
             <p className="text-[#64748B] mb-4">

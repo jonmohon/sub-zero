@@ -109,7 +109,7 @@ export default function CheckinsPage() {
                     <span>|</span>
                     <span>{checkin.county}</span>
                   </div>
-                  <h2 className="text-lg font-bold text-[#0387cc] mb-1">
+                  <h2 className="text-lg font-bold text-[#0B1D33] mb-1">
                     {checkin.service}
                   </h2>
                   <p className="text-sm text-[#00B4D8] font-medium mb-3">

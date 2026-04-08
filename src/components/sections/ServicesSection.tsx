@@ -119,7 +119,7 @@ export default function ServicesSection() {
                 <div className="inline-block mb-4">
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8] bg-[#00B4D8]/10 px-4 py-1.5 rounded-full">Featured Service</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-[#0387cc] mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#0B1D33] mb-4">
                   Sub-Zero Refrigerator<br />Repair
                 </h3>
                 <p className="text-[#64748B] leading-relaxed mb-6">

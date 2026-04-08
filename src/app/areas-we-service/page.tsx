@@ -54,7 +54,7 @@ export default function AreasPage() {
                 key={county.slug}
                 className="bg-white rounded-lg shadow-sm border border-gray-100 p-6"
               >
-                <h2 className="text-xl font-bold text-[#0387cc] mb-4">
+                <h2 className="text-xl font-bold text-[#0B1D33] mb-4">
                   <Link
                     href={`/areas-we-service/${county.slug}`}
                     className="hover:text-[#00B4D8] transition-colors"

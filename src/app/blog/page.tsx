@@ -36,13 +36,13 @@ export default function BlogPage() {
               <article key={post.slug} className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
                 <div className="p-6">
                   <time className="text-xs text-gray-500">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
-                  <h2 className="text-lg font-semibold text-[#0387cc] mt-2 mb-3">
+                  <h2 className="text-lg font-semibold text-[#0B1D33] mt-2 mb-3">
                     <Link href={`/blog/${post.slug}`} className="hover:text-[#00B4D8] transition-colors">
                       {post.title}
                     </Link>
                   </h2>
                   <p className="text-sm text-[#64748B] mb-4">{post.excerpt}</p>
-                  <Link href={`/blog/${post.slug}`} className="text-[#00B4D8] hover:text-[#0387cc] text-sm font-medium">
+                  <Link href={`/blog/${post.slug}`} className="text-[#00B4D8] hover:text-[#0B1D33] text-sm font-medium">
                     Read More →
                   </Link>
                 </div>

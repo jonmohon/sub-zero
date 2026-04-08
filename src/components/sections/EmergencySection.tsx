@@ -30,7 +30,7 @@ export default function EmergencySection() {
           <div>
             <ScrollReveal animation="fade-up">
               <p className="text-[#f89406] font-semibold uppercase tracking-[0.2em] mb-3 text-sm">Emergency Services</p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0387cc] mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B1D33] mb-6 leading-tight">
                 Do You Have a Refrigeration Emergency?
               </h2>
               <p className="text-[#64748B] leading-relaxed mb-10 text-lg">

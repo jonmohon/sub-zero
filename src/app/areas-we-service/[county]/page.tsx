@@ -104,7 +104,7 @@ export default async function CountyPage({
                 {data.name}. No extra charges for weekends or holidays — just
                 fast, reliable service when you need it most.
               </p>
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-6">
+              <h2 className="text-2xl font-bold text-[#0B1D33] mb-6">
                 Cities We Serve in {data.name}
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">

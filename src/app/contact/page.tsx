@@ -26,14 +26,14 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-[#0387cc] mb-6">
+              <h2 className="text-2xl font-bold text-[#0B1D33] mb-6">
                 Request Service
               </h2>
               <ContactForm />
             </div>
             <div className="space-y-6">
               <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="font-semibold text-[#0387cc] mb-4">
+                <h3 className="font-semibold text-[#0B1D33] mb-4">
                   Contact Information
                 </h3>
                 <div className="space-y-3 text-sm text-[#64748B]">
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="bg-[#00B4D8]/5 border border-[#00B4D8]/20 rounded-lg p-6">
-                <h3 className="font-semibold text-[#0387cc] mb-2">
+                <h3 className="font-semibold text-[#0B1D33] mb-2">
                   Business Hours
                 </h3>
                 <p className="text-sm text-[#64748B]">

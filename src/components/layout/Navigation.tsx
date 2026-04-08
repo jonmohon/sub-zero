@@ -26,7 +26,7 @@ export default function Navigation() {
           >
             <Link
               href={item.href}
-              className="px-3 py-2 text-sm font-medium text-[#0387cc] hover:text-[#00B4D8] transition-colors flex items-center"
+              className="px-3 py-2 text-sm font-medium text-[#0B1D33] hover:text-[#00B4D8] transition-colors flex items-center"
             >
               {item.label === "Home" && (
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ export default function Navigation() {
                   <li key={child.label}>
                     <Link
                       href={child.href}
-                      className="block px-4 py-2.5 text-sm text-[#0387cc] font-medium hover:text-[#00B4D8] hover:bg-gray-50 transition-colors"
+                      className="block px-4 py-2.5 text-sm text-[#0B1D33] font-medium hover:text-[#00B4D8] hover:bg-gray-50 transition-colors"
                     >
                       {child.label}
                     </Link>
@@ -60,7 +60,7 @@ export default function Navigation() {
 
       {/* Mobile Menu Button */}
       <button
-        className="lg:hidden text-[#0387cc] p-2 relative z-[60]"
+        className="lg:hidden text-[#0B1D33] p-2 relative z-[60]"
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle menu"
       >
@@ -88,10 +88,10 @@ export default function Navigation() {
           <div className="lg:hidden fixed top-0 right-0 h-full w-[85vw] max-w-sm bg-white z-50 shadow-2xl overflow-y-auto animate-[slideIn_0.3s_ease-out]">
             {/* Panel header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-              <span className="text-lg font-bold text-[#0387cc]">Menu</span>
+              <span className="text-lg font-bold text-[#0B1D33]">Menu</span>
               <button
                 onClick={() => setMobileOpen(false)}
-                className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-[#0387cc] active:scale-95 transition-transform"
+                className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-[#0B1D33] active:scale-95 transition-transform"
                 aria-label="Close menu"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,7 +112,7 @@ export default function Navigation() {
                             mobileExpandedItem === item.label ? null : item.label
                           )
                         }
-                        className="flex items-center justify-between w-full px-6 py-4 text-base font-medium text-[#0387cc] active:bg-gray-50 transition-colors"
+                        className="flex items-center justify-between w-full px-6 py-4 text-base font-medium text-[#0B1D33] active:bg-gray-50 transition-colors"
                       >
                         {item.label}
                         <svg
@@ -151,7 +151,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-6 py-4 text-base font-medium text-[#0387cc] active:bg-gray-50 transition-colors"
+                      className="block px-6 py-4 text-base font-medium text-[#0B1D33] active:bg-gray-50 transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}

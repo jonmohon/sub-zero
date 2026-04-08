@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
           <p className="text-[#00B4D8] font-semibold uppercase tracking-wider text-center text-sm mb-2">
             Verified Video Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0387cc] mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0B1D33] mb-14">
             Trusted by Thousands Across the USA
           </h2>
         </ScrollReveal>
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
                     </svg>
                   ))}
                 </div>
-                <h3 className="text-lg font-bold text-[#0387cc] mb-3">&ldquo;{t.heading}&rdquo;</h3>
+                <h3 className="text-lg font-bold text-[#0B1D33] mb-3">&ldquo;{t.heading}&rdquo;</h3>
                 <p className="text-sm text-[#64748B] leading-relaxed">{t.description}</p>
               </div>
             </ScrollReveal>
@@ -119,7 +119,7 @@ function VideoTestimonialCard({ title, embedUrl }: { title: string; embedUrl: st
             </svg>
           ))}
         </div>
-        <p className="text-sm font-semibold text-[#0387cc]">&ldquo;{title}&rdquo;</p>
+        <p className="text-sm font-semibold text-[#0B1D33]">&ldquo;{title}&rdquo;</p>
       </div>
     </div>
   );

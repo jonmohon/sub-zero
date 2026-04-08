@@ -77,7 +77,7 @@ export default function BoschBrandPage() {
                 appliance to peak performance. Our technicians stay current with
                 the latest Bosch models and repair techniques.
               </p>
-              <h2 className="text-2xl font-bold text-[#0387cc] mt-8">
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Bosch
               </h2>
               <ul className="grid sm:grid-cols-2 gap-3">
