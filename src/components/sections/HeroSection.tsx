@@ -3,34 +3,28 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white min-h-[650px] lg:min-h-[750px]">
-      {/* Hero image — visible on all screen sizes */}
-      <div className="absolute inset-0">
+    <section className="relative overflow-hidden bg-white">
+      {/* Desktop: image positioned behind text (hidden on mobile) */}
+      <div className="absolute inset-0 hidden lg:block">
         <div className="absolute inset-0 z-[2]">
           <Image
             src="/images/hero.webp"
             alt="Sub-Zero Appliance Repair Technician"
             width={1400}
             height={900}
-            sizes="100vw"
+            sizes="(min-width: 1024px) 100vw, 1px"
             className="absolute right-0 bottom-0 w-auto h-full object-contain object-right-bottom"
             style={{ minHeight: "100%", marginLeft: "25%" }}
             priority
             fetchPriority="high"
           />
         </div>
-        {/* Gradient fade so text is readable */}
-        <div className="absolute inset-0 z-[3] bg-gradient-to-r from-white via-white/95 to-white/40 lg:to-transparent w-full lg:w-[60%]" />
-      </div>
-
-      {/* Gold accent line at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
-        <div className="h-px bg-gradient-to-r from-transparent via-[#f89406]/40 to-transparent" />
+        <div className="absolute inset-0 z-[3] bg-gradient-to-r from-white via-white/95 to-transparent w-[60%]" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-xl py-20 lg:py-28">
+        <div className="max-w-xl py-16 lg:py-28">
           {/* 24/7 Emergency Badge */}
           <div className="mb-6">
             <div className="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg shadow-red-600/30">
@@ -108,6 +102,18 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Mobile: visible hero image below text */}
+      <div className="relative lg:hidden w-full h-[350px] sm:h-[400px] -mt-4">
+        <Image
+          src="/images/hero.webp"
+          alt="Sub-Zero Appliance Repair Technician"
+          fill
+          sizes="100vw"
+          className="object-contain object-bottom"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/60" />
       </div>
     </section>
   );
