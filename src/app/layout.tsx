@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Banner from "@/components/layout/Banner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MobileBottomBar from "@/components/layout/MobileBottomBar";
@@ -78,6 +79,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <Banner />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
