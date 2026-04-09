@@ -39,7 +39,7 @@ export default function HeroSection() {
             Fast Same-Day Sub-Zero Appliance Repair Across South Florida
           </h1>
 
-          <p className="mt-6 text-lg text-[#64748B] leading-relaxed">
+          <p className="mt-6 text-lg text-[#334155] leading-relaxed">
             Fast, reliable repair services for Sub-Zero refrigerators, freezers,
             ice makers, and more. Open holidays and weekends.
           </p>
