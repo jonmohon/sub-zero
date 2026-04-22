@@ -32,7 +32,7 @@ const postsData: Record<string, BlogPostData> = {
   "why-diy-refrigerator-repair-isnt-always-the-best-option": {
     slug: "why-diy-refrigerator-repair-isnt-always-the-best-option",
     title: "Why DIY Refrigerator Repair Isn't Always the Best Option",
-    metaTitle: "Why DIY Refrigerator Repair Isn't Always the Best Option",
+    metaTitle: "Why DIY Refrigerator Repair Isn't Always Best",
     metaDescription: "Discover why professional refrigerator repair is often better than DIY. Protect your investment with expert service.",
     author: "Marvin Schuster",
     date: "2024-12-01",
@@ -154,11 +154,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.metaTitle,
     description: post.metaDescription,
-    alternates: { canonical: `https://fivestarappliancerepairpros.com/${post.slug}/` },
+    alternates: { canonical: `https://fivestarappliancerepairpros.com/blog/${post.slug}/` },
     openGraph: {
       title: `${post.metaTitle} - Sub-Zero Repair Services`,
       description: post.metaDescription,
-      url: `https://fivestarappliancerepairpros.com/${post.slug}/`,
+      url: `https://fivestarappliancerepairpros.com/blog/${post.slug}/`,
       type: "article",
       publishedTime: post.date,
     },
@@ -183,7 +183,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: BUSINESS.siteUrl },
     { name: "Blog", url: `${BUSINESS.siteUrl}/blog/` },
-    { name: post.title, url: `${BUSINESS.siteUrl}/${post.slug}/` },
+    { name: post.title, url: `${BUSINESS.siteUrl}/blog/${post.slug}/` },
   ]);
 
   return (

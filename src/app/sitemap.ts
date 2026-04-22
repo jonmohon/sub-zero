@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { PRIORITY_CITIES } from "@/data/areas";
 
 const BASE_URL = "https://fivestarappliancerepairpros.com";
-const LAST_MODIFIED = new Date("2026-04-06");
+const LAST_MODIFIED = new Date("2026-04-22");
 
 const countyCities: Record<string, string[]> = {
   "miami-dade-county": ["aventura", "bal-harbour", "bay-harbor-islands", "biscayne-park", "coral-gables", "cutler-bay", "doral", "el-portal", "fisher-island", "golden-beach", "indian-creek-village", "key-biscayne", "miami", "miami-beach", "miami-lakes", "north-bay-village", "palmetto-bay", "pinecrest", "south-miami", "sunny-isles-beach", "surfside"],
@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/`, lastModified: LAST_MODIFIED, changeFrequency: "weekly" as const, priority: 0.7 },
     { url: `${BASE_URL}/ai-profile/`, lastModified: LAST_MODIFIED, changeFrequency: "monthly" as const, priority: 0.5 },
     { url: `${BASE_URL}/checkins/`, lastModified: LAST_MODIFIED, changeFrequency: "weekly" as const, priority: 0.5 },
+    { url: `${BASE_URL}/sitemap/`, lastModified: LAST_MODIFIED, changeFrequency: "monthly" as const, priority: 0.3 },
   ];
 
   const countyPages = Object.keys(countyCities).map((county) => ({

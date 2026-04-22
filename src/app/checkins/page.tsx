@@ -3,7 +3,7 @@ import { BUSINESS } from "@/lib/constants";
 import { getCheckins } from "@/lib/checkins";
 
 export const metadata: Metadata = {
-  title: "Recent Work - Sub-Zero Repair Check-Ins",
+  title: { absolute: "Recent Work | Sub-Zero Repair Check-Ins South Florida" },
   description:
     "See our recent Sub-Zero appliance repair work across South Florida. Real service calls from Miami-Dade, Broward, and Palm Beach counties.",
   alternates: {
@@ -48,7 +48,7 @@ export default async function CheckinsPage() {
                         agent: {
                           "@type": "Organization",
                           name: BUSINESS.name,
-                          telephone: BUSINESS.phone,
+                          telephone: BUSINESS.phoneSchema,
                           address: {
                             "@type": "PostalAddress",
                             streetAddress: BUSINESS.address.street,

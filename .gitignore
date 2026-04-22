@@ -45,3 +45,6 @@ next-env.d.ts
 
 # seo partner delivery working dir
 .seo-delivery/
+
+# seo audit scratch
+.audit/

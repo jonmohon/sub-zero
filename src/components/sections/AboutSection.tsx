@@ -39,7 +39,7 @@ export default function AboutSection() {
                 We specialize in maintaining, diagnosing, and restoring high-end refrigeration equipment. With over 30 years of experience, our factory-trained technicians deliver the highest quality Sub-Zero appliance repair services throughout South Florida.
               </p>
               <Link
-                href="/about"
+                href="/sub-zero-appliance-repair-in-south-florida"
                 className="inline-flex items-center gap-2 text-[#00B4D8] font-semibold group/link hover:gap-3 transition-all duration-300"
               >
                 About Our Repair Services
