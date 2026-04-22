@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Serve URLs with trailing slashes. The sitemap and canonical tags
+  // already use the trailing-slash form, so without this Next was 308
+  // redirecting /foo/ -> /foo, creating a canonical loop that Google
+  // used to drop city/service pages out of its index.
+  trailingSlash: true,
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 768, 1024, 1280, 1536],
