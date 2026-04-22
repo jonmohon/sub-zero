@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code — local-only config
+.claude/settings.local.json
+
+# seo partner delivery working dir
+.seo-delivery/
