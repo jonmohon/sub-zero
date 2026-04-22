@@ -35,15 +35,15 @@ export async function generateMetadata({
   if (!countyData) return {};
   const cityData = countyData.cities.find((c) => c.slug === city);
   if (!cityData) return {};
-  const title = `Sub-Zero Appliance Repair ${cityData.name} FL | Same-Day Service`;
-  const description = `Expert Sub-Zero refrigerator, freezer, ice maker & wine cooler repair in ${cityData.name}, FL. Same-day service, certified technicians, genuine parts. Call (800) 651-4528.`;
+  const title = `Sub-Zero Repair in ${cityData.name}, FL | Same-Day Service`;
+  const description = `Sub-Zero repair in ${cityData.name}, FL. Refrigerators, freezers, ice makers & wine coolers. Same-day service. Call (800) 651-4528.`;
   const url = `${BUSINESS.siteUrl}/areas-we-service/${county}/${city}/`;
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${title} - Sub-Zero Repair Services`,
+      title,
       description,
       url,
     },

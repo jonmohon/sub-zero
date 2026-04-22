@@ -21,8 +21,8 @@ export async function generateMetadata({
   const { county } = await params;
   const data = countiesBySlug[county];
   if (!data) return {};
-  const topCityNames = data.cities.slice(0, 5).map((c) => c.name).join(", ");
-  const description = `Expert Sub-Zero appliance repair in ${data.name}, FL serving ${topCityNames} and more. Same-day service, certified technicians. Call (800) 651-4528.`;
+  const topCityNames = data.cities.slice(0, 3).map((c) => c.name).join(", ");
+  const description = `Sub-Zero appliance repair in ${data.name}, FL. Same-day service in ${topCityNames} & more. Call (800) 651-4528.`;
   const url = `${BUSINESS.siteUrl}/areas-we-service/${county}/`;
   return {
     title: { absolute: data.metaTitle },
@@ -56,7 +56,6 @@ export default async function CountyPage({
     data.metaDescription,
     countyUrl
   );
-  const topCities = data.cities.slice(0, 5).map((c) => c.name).join(", ");
 
   return (
     <>
@@ -104,6 +103,60 @@ export default async function CountyPage({
                 {data.name}. No extra charges for weekends or holidays — just
                 fast, reliable service when you need it most.
               </p>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mb-4">
+                Sub-Zero Services We Provide in {data.name}
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mb-4">
+                Our factory-trained technicians handle every type of Sub-Zero
+                appliance repair across {data.name}. Whether you own a built-in
+                column refrigerator, an integrated wine cellar, or a marine
+                refrigeration unit, we diagnose and fix the issue on the first
+                visit whenever possible.
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-[#64748B] mb-8">
+                <li>
+                  <strong>Sub-Zero refrigerator repair</strong> — cooling
+                  problems, compressor failures, thermostat issues, ice in the
+                  fresh-food compartment, noisy operation, and door seal
+                  replacement.
+                </li>
+                <li>
+                  <strong>Sub-Zero freezer repair</strong> — units not freezing,
+                  excessive frost buildup, defrost system failures, and
+                  temperature-control board replacement.
+                </li>
+                <li>
+                  <strong>Sub-Zero ice maker repair</strong> — no ice
+                  production, small or cloudy cubes, water-line leaks, and
+                  inlet-valve replacement.
+                </li>
+                <li>
+                  <strong>Sub-Zero wine cooler repair</strong> — temperature
+                  drift, humidity control issues, compressor replacement, and
+                  LED-panel diagnostics on dual-zone units.
+                </li>
+                <li>
+                  <strong>Sub-Zero marine refrigeration</strong> — dockside
+                  service for yachts and boats throughout {data.name}, including
+                  corrosion-resistant repairs and power-system diagnostics.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mb-4">
+                Why {data.name} Residents Choose Us
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mb-8">
+                We have been repairing Sub-Zero appliances in South Florida
+                since 1994, so we know the specific challenges {data.name}{" "}
+                throws at refrigeration — coastal humidity, salt air, hurricane
+                power fluctuations, and busy summer schedules. Every technician
+                arrives in a fully-stocked van with genuine Sub-Zero parts so
+                most repairs are completed in a single visit. Pricing is
+                transparent with a written estimate before any work begins, and
+                every repair is backed by a full parts-and-labor warranty.
+              </p>
+
               <h2 className="text-2xl font-bold text-[#0B1D33] mb-6">
                 Cities We Serve in {data.name}
               </h2>

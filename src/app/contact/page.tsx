@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us - South Florida",
+  title: { absolute: "Contact Sub-Zero Repair Services — South Florida" },
   description:
     "Contact Sub-Zero Repair Services for fast, reliable appliance repair in South Florida. Call (800) 651-4528 or fill out our online form.",
   alternates: {

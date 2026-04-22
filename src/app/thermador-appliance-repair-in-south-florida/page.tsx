@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thermador Appliance Repair in South Florida",
+  title: { absolute: "Thermador Appliance Repair in South Florida | Expert Service" },
   description:
     "Expert Thermador appliance repair in South Florida. Certified technicians for all Thermador appliances. Call (800) 651-4528.",
   alternates: {
@@ -100,6 +100,54 @@ export default function ThermadorBrandPage() {
                   </li>
                 ))}
               </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Common Thermador Repair Issues We Fix
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                Thermador&apos;s precision engineering is superb, but the most
+                common service calls we handle in South Florida include:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-[#64748B] mt-4">
+                <li>
+                  <strong>Star burner won&apos;t ignite</strong> — spark
+                  module, igniter, or regulator replacement.
+                </li>
+                <li>
+                  <strong>Steam oven error codes</strong> — water reservoir,
+                  sensor, or steam-generator diagnostics.
+                </li>
+                <li>
+                  <strong>Refrigerator Freedom column temperature drift</strong>{" "}
+                  — thermistor, damper, or control-board issues.
+                </li>
+                <li>
+                  <strong>Induction cooktop cooling fan failures</strong> —
+                  coil replacement and touch-screen recalibration.
+                </li>
+                <li>
+                  <strong>Dishwasher Sapphire glow and cycle errors</strong> —
+                  heating element, sump pump, and diverter valve service.
+                </li>
+                <li>
+                  <strong>Wine column door alarm</strong> — door seal,
+                  hinge, and sensor troubleshooting.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Thermador Models We Service
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                Our technicians are trained on every Thermador line, including{" "}
+                <strong>Professional and PRD 30/36/48&quot; ranges</strong>,
+                the <strong>Freedom Collection</strong> of columns and
+                drawers, <strong>Masterpiece and Sapphire dishwashers</strong>,
+                <strong> Sensor Dome Steam ovens</strong>, and
+                <strong> Star Burner cooktops</strong>. Parts are sourced from
+                authorized Thermador suppliers, and every repair is backed by
+                a full warranty.
+              </p>
             </div>
             <div>
               <div className="bg-[#0387cc] text-white rounded-lg p-6 text-center sticky top-24">

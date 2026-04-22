@@ -17,7 +17,7 @@ const itemListSchema = generateItemListSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Repair Services South Florida | All Models",
+  title: { absolute: "Sub-Zero Repair Services South Florida | All Models" },
   description:
     "Expert Sub-Zero repair for refrigerators, freezers, ice makers & wine coolers in South Florida. Same-day service, certified technicians, genuine parts.",
   alternates: {

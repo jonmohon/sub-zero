@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bosch Appliance Repair in South Florida",
+  title: { absolute: "Bosch Appliance Repair in South Florida | Certified Service" },
   description:
     "Expert Bosch appliance repair in South Florida. Professional service for all Bosch refrigerators and appliances. Call (800) 651-4528.",
   alternates: {
@@ -100,6 +100,57 @@ export default function BoschBrandPage() {
                   </li>
                 ))}
               </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Common Bosch Repair Issues We Fix
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                Bosch engineering is excellent, but even the best appliances
+                eventually need service. The issues we see most often in South
+                Florida homes include:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-[#64748B] mt-4">
+                <li>
+                  <strong>Refrigerator not cooling</strong> — commonly a failing
+                  evaporator fan, blocked air path, or thermistor sensor fault.
+                </li>
+                <li>
+                  <strong>Dishwasher not draining</strong> — clogged drain pump,
+                  faulty check valve, or damaged drain hose.
+                </li>
+                <li>
+                  <strong>Dishwasher error codes (E24, E09, E15)</strong> —
+                  drainage, heating element, or AquaStop leak detection faults.
+                </li>
+                <li>
+                  <strong>Oven not heating to set temperature</strong> — bad
+                  bake element, oven sensor out of tolerance, or control-board
+                  failure.
+                </li>
+                <li>
+                  <strong>Induction cooktop error codes</strong> — coil
+                  diagnostics, cooling fan replacement, and touch-control
+                  recalibration.
+                </li>
+                <li>
+                  <strong>Freezer ice buildup</strong> — defrost heater,
+                  thermostat, or door gasket issues causing frost.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Bosch Models We Service
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                We service every current Bosch line, including{" "}
+                <strong>500, 800, and Benchmark series</strong> refrigerators
+                and dishwashers, <strong>Bosch 800 and Benchmark wall
+                ovens</strong>, and
+                Bosch <strong>induction, gas, and electric cooktops</strong>.
+                We also support legacy Bosch models and sourcing for harder-to-find
+                parts when needed. Every repair uses genuine Bosch replacement
+                parts backed by the manufacturer warranty.
+              </p>
             </div>
             <div>
               <div className="bg-[#0387cc] text-white rounded-lg p-6 text-center sticky top-24">

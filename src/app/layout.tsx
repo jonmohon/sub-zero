@@ -21,7 +21,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: {
     default: "Sub-Zero Appliance Repair | 24/7 Service Coral Gables FL",
-    template: "%s | Sub-Zero Repair Services",
+    // Shorter fallback suffix so subpage titles stay under Google's ~60-char
+    // SERP cutoff. Most subpages now pass absolute titles and skip this.
+    template: "%s | Sub-Zero Repair",
   },
   description:
     "24/7 Sub-Zero appliance repair in South Florida. Same-day service for refrigerators, freezers, ice makers & wine coolers. Certified technicians. Book now!",

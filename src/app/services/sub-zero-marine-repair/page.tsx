@@ -23,7 +23,7 @@ const faqSchema = generateFAQSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Marine Repair South Florida | Dockside Service",
+  title: { absolute: "Sub-Zero Marine Repair South Florida | Dockside Service" },
   description:
     "Expert Sub-Zero marine refrigeration repair in South Florida. Professional dockside service for boats and yachts with genuine parts. Call (800) 651-4528.",
   alternates: {

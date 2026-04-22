@@ -23,7 +23,7 @@ const faqSchema = generateFAQSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Freezer Repair South Florida | Same-Day Service",
+  title: { absolute: "Sub-Zero Freezer Repair South Florida | Same-Day Service" },
   description:
     "Professional Sub-Zero freezer repair in South Florida. Same-day emergency service with genuine parts and certified technicians. Call (800) 651-4528.",
   alternates: {

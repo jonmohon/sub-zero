@@ -23,7 +23,7 @@ const faqSchema = generateFAQSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Ice Maker Repair South Florida | Same-Day Service",
+  title: { absolute: "Sub-Zero Ice Maker Repair South Florida | Same-Day Service" },
   description:
     "Expert Sub-Zero ice maker repair in South Florida. Same-day service with genuine parts, certified technicians, and 30+ years experience. Call (800) 651-4528.",
   alternates: {

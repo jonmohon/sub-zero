@@ -3,16 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Brands We Service - Sub-Zero Repair Services",
+  title: { absolute: "Brands We Service | Sub-Zero Repair Services" },
   description:
-    "We service all major luxury appliance brands including Sub-Zero, Bosch, Viking, Thermador, and Miele. Expert repair throughout South Florida. Call (800) 651-4528.",
+    "Factory-trained repair for Sub-Zero, Bosch, Viking, Thermador & Miele appliances across South Florida. Same-day service. Call (800) 651-4528.",
   alternates: {
     canonical: "https://fivestarappliancerepairpros.com/brands-we-service/",
   },
   openGraph: {
     title: "Brands We Service - Sub-Zero Repair Services",
     description:
-      "We service all major luxury appliance brands including Sub-Zero, Bosch, Viking, Thermador, and Miele. Expert repair throughout South Florida. Call (800) 651-4528.",
+      "Factory-trained repair for Sub-Zero, Bosch, Viking, Thermador & Miele appliances across South Florida. Same-day service. Call (800) 651-4528.",
     url: "https://fivestarappliancerepairpros.com/brands-we-service/",
   },
 };
@@ -95,6 +95,49 @@ export default function BrandsWeServicePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#F8FAFC]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-[#0B1D33] mb-4">
+            Why Luxury Appliance Owners Trust Us
+          </h2>
+          <p className="text-[#64748B] leading-relaxed mb-6">
+            High-end appliances demand expertise that the average repair shop
+            simply doesn&apos;t have. Sub-Zero, Bosch, Viking, Thermador, and
+            Miele all use proprietary components, sealed systems, and specialized
+            diagnostics that require factory-trained technicians. Our team has
+            been repairing these brands for over 30 years, and we invest
+            continuously in manufacturer training, diagnostic tools, and
+            genuine-parts inventory so the vast majority of repairs are
+            completed on the first visit.
+          </p>
+          <h2 className="text-2xl font-bold text-[#0B1D33] mb-4">
+            What You Can Expect
+          </h2>
+          <ul className="list-disc pl-6 space-y-2 text-[#64748B] mb-6">
+            <li>
+              <strong>Same-day service</strong> throughout South Florida — no
+              extra charges for evenings, weekends, or holidays.
+            </li>
+            <li>
+              <strong>Genuine replacement parts</strong> only, sourced directly
+              from the manufacturer or authorized distributors.
+            </li>
+            <li>
+              <strong>Written estimates</strong> before any work begins so
+              there are no surprises.
+            </li>
+            <li>
+              <strong>Full warranty</strong> on parts and labor for every
+              repair.
+            </li>
+            <li>
+              <strong>Insured, background-checked technicians</strong> who
+              respect your home and your appliance.
+            </li>
+          </ul>
         </div>
       </section>
 

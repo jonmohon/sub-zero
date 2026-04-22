@@ -15,7 +15,7 @@ const webPageSchema = generateWebPageSchema(
 );
 
 export const metadata: Metadata = {
-  title: "Areas We Service - Sub-Zero Repair South Florida",
+  title: { absolute: "Areas We Service | Sub-Zero Repair South Florida" },
   description:
     "Sub-Zero appliance repair across South Florida. We serve Miami-Dade, Broward, Palm Beach, Monroe, Collier, Martin, and St. Lucie counties.",
   alternates: {

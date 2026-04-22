@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sitemap - Sub-Zero Repair Services",
+  title: { absolute: "Sitemap | Sub-Zero Repair Services" },
   description:
     "Sitemap of Sub-Zero Repair Services. Browse all pages including services, areas we service, brands, blog, FAQ, and contact.",
   alternates: {

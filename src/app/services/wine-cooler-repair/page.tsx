@@ -23,7 +23,7 @@ const faqSchema = generateFAQSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Wine Cooler Repair South Florida | Expert Service",
+  title: { absolute: "Sub-Zero Wine Cooler Repair South Florida | Expert Service" },
   description:
     "Professional Sub-Zero wine cooler repair in South Florida. Protect your wine collection with certified technicians and genuine parts. Call (800) 651-4528.",
   alternates: {

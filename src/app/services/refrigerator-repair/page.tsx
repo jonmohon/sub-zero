@@ -33,7 +33,7 @@ const faqSchema = generateFAQSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Refrigerator Repair South Florida | Same-Day Service",
+  title: { absolute: "Sub-Zero Refrigerator Repair South Florida | Same-Day Service" },
   description:
     "Expert Sub-Zero refrigerator repair in South Florida. Same-day service, genuine parts, and certified technicians with 30+ years experience. Call (800) 651-4528.",
   alternates: {

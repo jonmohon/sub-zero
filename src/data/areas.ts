@@ -26,7 +26,7 @@ export const counties: County[] = [
   {
     name: "Miami-Dade County",
     slug: "miami-dade-county",
-    metaTitle: "Sub-Zero Repair Miami-Dade County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair Miami-Dade County, FL | Same-Day Service",
     metaDescription: "Expert Sub-Zero appliance repair in Miami-Dade County, FL. Same-day service for refrigerators, freezers, ice makers, and more. Call (800) 651-4528.",
     cities: [
       { name: "Aventura", slug: "aventura" },
@@ -55,7 +55,7 @@ export const counties: County[] = [
   {
     name: "Broward County",
     slug: "broward-county",
-    metaTitle: "Sub-Zero Repair Broward County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair Broward County, FL | Same-Day Service",
     metaDescription: "Professional Sub-Zero appliance repair in Broward County, FL. Fast, reliable service with genuine parts. Call (800) 651-4528.",
     cities: [
       { name: "Coconut Creek", slug: "coconut-creek" },
@@ -85,7 +85,7 @@ export const counties: County[] = [
   {
     name: "Palm Beach County",
     slug: "palm-beach-county",
-    metaTitle: "Sub-Zero Repair Palm Beach County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair Palm Beach County, FL | Same-Day Service",
     metaDescription: "Expert Sub-Zero appliance repair in Palm Beach County, FL. Same-day service with certified technicians. Call (800) 651-4528.",
     cities: [
       { name: "Atlantis", slug: "atlantis" },
@@ -110,7 +110,7 @@ export const counties: County[] = [
   {
     name: "Monroe County",
     slug: "monroe-county",
-    metaTitle: "Sub-Zero Repair Monroe County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair Monroe County & Florida Keys | Same-Day Service",
     metaDescription: "Sub-Zero appliance repair in Monroe County, FL including the Florida Keys. Call (800) 651-4528.",
     cities: [
       { name: "Islamorada", slug: "islamorada" },
@@ -123,7 +123,7 @@ export const counties: County[] = [
   {
     name: "Collier County",
     slug: "collier-county",
-    metaTitle: "Sub-Zero Repair Collier County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair Collier County & Naples, FL | Same-Day",
     metaDescription: "Professional Sub-Zero appliance repair in Collier County, FL including Naples. Call (800) 651-4528.",
     cities: [
       { name: "Goodland", slug: "goodland" },
@@ -140,7 +140,7 @@ export const counties: County[] = [
   {
     name: "Martin County",
     slug: "martin-county",
-    metaTitle: "Sub-Zero Repair Martin County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair Martin County, FL | Same-Day Service",
     metaDescription: "Expert Sub-Zero appliance repair in Martin County, FL. Call (800) 651-4528 for same-day service.",
     cities: [
       { name: "Palm City", slug: "palm-city" },
@@ -152,7 +152,7 @@ export const counties: County[] = [
   {
     name: "St. Lucie County",
     slug: "st-lucie-county",
-    metaTitle: "Sub-Zero Repair St. Lucie County FL - Sub-Zero Repair Services",
+    metaTitle: "Sub-Zero Repair St. Lucie County, FL | Same-Day Service",
     metaDescription: "Professional Sub-Zero appliance repair in St. Lucie County, FL. Call (800) 651-4528.",
     cities: [
       { name: "Fort Pierce", slug: "fort-pierce" },

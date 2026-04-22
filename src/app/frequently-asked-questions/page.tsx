@@ -10,7 +10,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 ]);
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions - Sub-Zero Repair Services",
+  title: { absolute: "Sub-Zero Repair FAQ | Common Questions Answered" },
   description:
     "Find answers to common questions about our Sub-Zero appliance repair services. Available 24/7 across South Florida.",
   alternates: {

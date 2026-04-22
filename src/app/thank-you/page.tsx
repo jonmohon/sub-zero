@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thank You - Sub-Zero Repair Services",
+  title: { absolute: "Thank You | Sub-Zero Repair Services" },
   description:
     "Thank you for contacting Sub-Zero Repair Services. We will be in touch shortly to schedule your service.",
   robots: { index: false, follow: false },

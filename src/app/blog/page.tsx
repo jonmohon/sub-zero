@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: { absolute: "Sub-Zero Repair Blog | Tips, Guides & Troubleshooting" },
   description: "Expert tips and guides for Sub-Zero appliance repair, maintenance, and troubleshooting from our certified technicians.",
   alternates: { canonical: "https://fivestarappliancerepairpros.com/blog/" },
 };

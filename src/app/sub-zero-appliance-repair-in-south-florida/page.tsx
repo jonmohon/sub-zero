@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sub-Zero Appliance Repair in South Florida",
+  title: { absolute: "Sub-Zero Appliance Repair in South Florida" },
   description:
-    "Certified Sub-Zero appliance repair in South Florida. Expert service for refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
+    "Certified Sub-Zero appliance repair in South Florida. Refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
   alternates: {
     canonical:
       "https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title:
       "Sub-Zero Appliance Repair in South Florida - Sub-Zero Repair Services",
     description:
-      "Certified Sub-Zero appliance repair in South Florida. Expert service for refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
+      "Certified Sub-Zero appliance repair in South Florida. Refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
     url: "https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/",
   },
 };
@@ -97,6 +97,64 @@ export default function SubZeroBrandPage() {
                   </li>
                 ))}
               </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Common Sub-Zero Repair Issues We Fix
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                Sub-Zero builds the best refrigeration on the market, but
+                after 10–15 years of service every unit eventually needs
+                attention. The repairs we see most often:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-[#64748B] mt-4">
+                <li>
+                  <strong>Refrigerator not cooling / vacuum condenser
+                  failure</strong> — compressor, evaporator fan, or dual
+                  refrigeration system diagnostics.
+                </li>
+                <li>
+                  <strong>Red-light alarm (&quot;Service&quot; or
+                  &quot;Vacuum&quot;)</strong> — condenser fan, thermistor, or
+                  control-board faults with the characteristic flashing alert.
+                </li>
+                <li>
+                  <strong>Freezer frost buildup or not freezing</strong> —
+                  defrost heater, timer, or gasket replacement.
+                </li>
+                <li>
+                  <strong>Ice maker not producing or cloudy cubes</strong> —
+                  water inlet valve, filter, or optics sensor service.
+                </li>
+                <li>
+                  <strong>Wine cooler temperature drift</strong> — dual-zone
+                  damper, sensor, or compressor start relay fix.
+                </li>
+                <li>
+                  <strong>Marine unit salt-air corrosion</strong> — dockside
+                  repair with marine-grade parts and coatings.
+                </li>
+                <li>
+                  <strong>Door not sealing, water dispenser leaking, or noisy
+                  operation</strong> — gasket, valve, and mounting-plate
+                  service for all integrated and built-in units.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Sub-Zero Models We Service
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                Every current and legacy Sub-Zero line is covered:{" "}
+                <strong>Built-In BI series, Designer series, Integrated
+                IT series, Classic, PRO 48</strong>, the{" "}
+                <strong>Column refrigerator and freezer</strong> line,{" "}
+                <strong>Undercounter UC models</strong>, and{" "}
+                <strong>Wolf–Sub-Zero combination installations</strong>.
+                Marine customers can book dockside service for yacht and
+                superyacht installations throughout South Florida. Every
+                repair uses factory-authorized Sub-Zero parts and carries a
+                full parts-and-labor warranty.
+              </p>
             </div>
             <div>
               <div className="bg-[#0387cc] text-white rounded-lg p-6 text-center sticky top-24">

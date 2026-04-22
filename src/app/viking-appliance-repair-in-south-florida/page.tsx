@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Viking Appliance Repair in South Florida",
+  title: { absolute: "Viking Appliance Repair in South Florida | Expert Service" },
   description:
     "Professional Viking appliance repair in South Florida. Expert technicians for all Viking refrigerators and appliances. Call (800) 651-4528.",
   alternates: {
@@ -101,6 +101,55 @@ export default function VikingBrandPage() {
                   </li>
                 ))}
               </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Common Viking Repair Issues We Fix
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                Viking&apos;s pro-grade performance comes with complex
+                components that eventually need service. Our technicians
+                routinely resolve:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-[#64748B] mt-4">
+                <li>
+                  <strong>Range burner won&apos;t light or stays lit</strong>{" "}
+                  — spark igniter, gas valve, or flame-sensor replacement.
+                </li>
+                <li>
+                  <strong>Oven temperature inaccurate</strong> — convection
+                  fan, bake element, or oven-sensor recalibration.
+                </li>
+                <li>
+                  <strong>Refrigerator not cooling evenly</strong> — damper
+                  motor, evaporator fan, or compressor-start relay issues.
+                </li>
+                <li>
+                  <strong>Freezer frost or leaks</strong> — defrost heater,
+                  timer, or drain-line blockage.
+                </li>
+                <li>
+                  <strong>Dishwasher not cleaning properly</strong> — spray
+                  arm, wash pump, or water-inlet valve service.
+                </li>
+                <li>
+                  <strong>Control panel errors</strong> — touch-control board
+                  diagnostics and firmware resets on newer models.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-[#0B1D33] mt-10">
+                Viking Models We Service
+              </h2>
+              <p className="text-[#64748B] leading-relaxed mt-4">
+                We repair every current Viking line — the{" "}
+                <strong>Professional Series and 5, 7, and Tuscany 48&quot;
+                ranges</strong>, the <strong>Virtuoso 6 Series</strong>,{" "}
+                <strong>built-in and freestanding refrigerators</strong>,{" "}
+                wine cellars, dishwashers, and ventilation hoods. We also
+                support legacy Viking models, working with authorized parts
+                suppliers to source genuine components. Every Viking repair
+                includes a full parts-and-labor warranty.
+              </p>
             </div>
             <div>
               <div className="bg-[#0387cc] text-white rounded-lg p-6 text-center sticky top-24">
