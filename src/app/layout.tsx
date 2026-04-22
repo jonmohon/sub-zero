@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Banner from "@/components/layout/Banner";
 import Header from "@/components/layout/Header";
@@ -84,6 +85,16 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <MobileBottomBar />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MLN8WCDW10"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-MLN8WCDW10');`}
+        </Script>
       </body>
     </html>
   );

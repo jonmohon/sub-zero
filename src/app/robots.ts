@@ -1,5 +1,41 @@
 import type { MetadataRoute } from "next";
 
+const BLOCKED_BOTS = [
+  "Updownerbot", "OmniExplorer_Bot", "FreeFind", "BecomeBot", "Nutch",
+  "Jetbot/1.0", "Jetbot", "WebVac", "Stanford", "naver", "dumbot",
+  "Hatena Antenna", "grub-client", "grub", "WebZip", "larbin", "b2w/0.1",
+  "Copernic", "psbot", "Python-urllib", "NetMechanic", "URL_Spider_Pro",
+  "CherryPicker", "EmailCollector", "EmailSiphon", "WebBandit", "EmailWolf",
+  "ExtractorPro", "CopyRightCheck", "Crescent", "SiteSnagger", "ProWebWalker",
+  "CheeseBot", "LNSpiderguy", "Alexibot", "Teleport", "TeleportPro",
+  "Stanford Comp Sci", "MIIxpc", "Telesoft", "Website Quester", "moget/2.1",
+  "WebZip/4.0", "WebStripper", "WebSauger", "WebCopier", "NetAnts",
+  "Mister PiX", "WebAuto", "TheNomad", "WWW-Collector-E", "RMA",
+  "libWeb/clsHTTP", "asterias", "httplib", "turingos", "spanner",
+  "InfoNaviRobot", "Harvest/1.5", "Bullseye/1.0",
+  "Crescent Internet ToolPak HTTP OLE Control v.1.0", "CherryPickerSE/1.0",
+  "CherryPickerElite/1.0", "WebBandit/3.50", "NICErsPRO",
+  "Microsoft URL Control - 5.01.4511", "DittoSpyder", "Foobot", "SpankBot",
+  "BotALot", "lwp-trivial/1.34", "lwp-trivial", "BunnySlippers",
+  "Microsoft URL Control - 6.00.8169", "URLy Warning", "Wget/1.6",
+  "Wget/1.5.3", "Wget", "LinkWalker", "cosmos", "moget", "hloader",
+  "humanlinks", "LinkextractorPro", "Offline Explorer", "Mata Hari",
+  "LexiBot", "Web Image Collector", "The Intraformant", "True_Robot/1.0",
+  "True_Robot", "BlowFish/1.0", "JennyBot", "MIIxpc/4.2", "BuiltBotTough",
+  "ProPowerBot/2.14", "BackDoorBot/1.0", "toCrawl/UrlDispatcher",
+  "WebEnhancer", "suzuran", "VCI WebViewer VCI WebViewer Win32", "VCI",
+  "Szukacz/1.4", "QueryN Metasearch", "Openfind data gathere", "Openfind",
+  "Xenu's Link Sleuth 1.1c", "Xenu's", "Zeus",
+  "RepoMonkey Bait & Tackle/v1.01", "RepoMonkey", "Microsoft URL Control",
+  "Openbot", "URL Control", "Zeus Link Scout",
+  "Zeus 32297 Webster Pro V2.9 Win32", "Webster Pro", "EroCrawler",
+  "LinkScan/8.1a Unix", "Keyword Density/0.9", "Kenjin Spider",
+  "Iron33/1.0.2", "Bookmark search tool", "GetRight/4.2", "FairAd Client",
+  "Gaisbot", "Aqua_Products", "Radiation Retriever 1.1",
+  "Flaming AttackBot", "Oracle Ultra Search", "MSIECrawler", "PerMan",
+  "searchpreview", "sootle", "Enterprise_Search/1.0", "Enterprise_Search",
+];
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -15,6 +51,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "CCBot", allow: "/" },
       { userAgent: "Applebot-Extended", allow: "/" },
       { userAgent: "Meta-ExternalAgent", allow: "/" },
+      ...BLOCKED_BOTS.map((userAgent) => ({ userAgent, disallow: "/" })),
     ],
     sitemap: "https://fivestarappliancerepairpros.com/sitemap.xml",
   };

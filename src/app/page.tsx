@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { generateWebSiteSchema } from "@/lib/schema";
 import HeroSection from "@/components/sections/HeroSection";
 
@@ -40,6 +41,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+      />
+      <Script
+        src="//script.crazyegg.com/pages/scripts/0022/1041.js"
+        strategy="afterInteractive"
       />
       <HeroSection />
       <BrandsSection />
