@@ -78,6 +78,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        {/* Apigateway webchat widget — loaded defer so it doesn't block render */}
+        <script
+          src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
+          data-widget-id="74b52434-3e52-11f1-9591-d6af760c4600"
+          defer
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Banner />
