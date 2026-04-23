@@ -332,6 +332,12 @@ html {
   body {
     padding-bottom: 80px;
   }
+
+  /* Lift the Apigateway webchat widget above the fixed MobileBottomBar on mobile.
+     The widget uses inline styles with bottom:0, so !important is required. */
+  iframe[id^="webchat-floating-iframe-"] {
+    bottom: 80px !important;
+  }
 }
 
 /* ========================================
