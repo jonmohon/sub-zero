@@ -70,6 +70,17 @@ export default function Footer() {
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
+              <a
+                href="https://share.google/BkcjqPpGmWdjZ43mR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+                aria-label="Google Business Profile — see reviews and directions"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#EA4335" d="M12 10.8v3.59h5.02c-.22 1.2-1.47 3.53-5.02 3.53-3.02 0-5.49-2.5-5.49-5.58s2.47-5.58 5.49-5.58c1.72 0 2.87.73 3.53 1.36l2.4-2.31C16.36 4.35 14.38 3.5 12 3.5 7.3 3.5 3.5 7.3 3.5 12s3.8 8.5 8.5 8.5c4.91 0 8.17-3.45 8.17-8.31 0-.56-.06-.99-.14-1.39H12z" />
+                </svg>
+              </a>
             </div>
 
             <div className="border-t border-white/20 pt-4">

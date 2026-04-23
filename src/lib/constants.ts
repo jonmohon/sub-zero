@@ -31,6 +31,10 @@ export const BUSINESS = {
   social: {
     facebook: "https://facebook.com/subzeroservicecenters/",
     twitter: "https://x.com/SubZeroRepairFL",
+    // Google Business Profile — short share link + durable kgmid entity URL.
+    // Both included in sameAs so Google binds the site to this GBP entry.
+    googleBusinessProfile: "https://share.google/BkcjqPpGmWdjZ43mR",
+    googleKgmid: "https://www.google.com/search?kgmid=/g/11yhkmz6vr",
   },
   siteUrl: "https://fivestarappliancerepairpros.com",
   foundingYear: "1994",

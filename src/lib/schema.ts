@@ -54,7 +54,12 @@ export function generateLocalBusinessSchema() {
       "Sub-Zero marine refrigeration repair",
       "premium appliance repair",
     ],
-    sameAs: [BUSINESS.social.facebook, BUSINESS.social.twitter],
+    sameAs: [
+      BUSINESS.social.googleBusinessProfile,
+      BUSINESS.social.googleKgmid,
+      BUSINESS.social.facebook,
+      BUSINESS.social.twitter,
+    ],
   };
 }
 
@@ -111,7 +116,12 @@ export function generateOrganizationSchema() {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sub-Zero Marine Refrigeration Repair" } },
       ],
     },
-    sameAs: [BUSINESS.social.facebook, BUSINESS.social.twitter],
+    sameAs: [
+      BUSINESS.social.googleBusinessProfile,
+      BUSINESS.social.googleKgmid,
+      BUSINESS.social.facebook,
+      BUSINESS.social.twitter,
+    ],
   };
 }
 
@@ -263,7 +273,12 @@ export function generateLocalBusinessSchemaForCity(
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sub-Zero Marine Refrigeration Repair" } },
       ],
     },
-    sameAs: [BUSINESS.social.facebook, BUSINESS.social.twitter],
+    sameAs: [
+      BUSINESS.social.googleBusinessProfile,
+      BUSINESS.social.googleKgmid,
+      BUSINESS.social.facebook,
+      BUSINESS.social.twitter,
+    ],
   };
 }
 
