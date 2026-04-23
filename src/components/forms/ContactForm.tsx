@@ -39,15 +39,42 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [captchaAnswer, setCaptchaAnswer] = useState("");
   const [captchaError, setCaptchaError] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (captchaAnswer.trim() !== "13") {
       setCaptchaError(true);
       return;
     }
     setCaptchaError(false);
-    setSubmitted(true);
+    setSubmitError(null);
+    setSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const payload = Object.fromEntries(formData.entries());
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const data = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(data.error ?? "Failed to submit");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again.",
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -183,11 +210,18 @@ export default function ContactForm() {
         )}
       </div>
 
+      {submitError && (
+        <p className="text-red-500 text-sm" role="alert">
+          {submitError}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="w-full bg-[#f89406] hover:bg-[#e08505] text-white py-4 px-6 rounded-xl font-semibold text-lg transition-colors"
+        disabled={submitting}
+        className="w-full bg-[#f89406] hover:bg-[#e08505] disabled:bg-[#f89406]/60 disabled:cursor-not-allowed text-white py-4 px-6 rounded-xl font-semibold text-lg transition-colors"
       >
-        Submit Request
+        {submitting ? "Sending..." : "Submit Request"}
       </button>
     </form>
   );
