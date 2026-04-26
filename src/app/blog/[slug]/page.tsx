@@ -233,10 +233,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="mt-12 border-t border-gray-200 pt-8">
             <h3 className="text-lg font-semibold text-[#0B1D33] mb-2">About Sub-Zero Repair Company</h3>
             <p className="text-[#64748B] text-sm leading-relaxed">
-              Sub-Zero Repair Company, doing business as Fivestar Appliance Repair Pros, has provided factory-authorized Sub-Zero appliance repair in South Florida since 1994. Our factory-trained technicians offer 24/7 same-day service across 82 cities in 7 counties, using only genuine manufacturer parts with a full warranty on all repairs.{" "}
-              <Link href="/ai-profile" className="text-[#00B4D8] hover:text-[#0B1D33]">
-                Learn more about our company
-              </Link>.
+              Sub-Zero Repair Company, doing business as Fivestar Appliance Repair Pros, has provided factory-authorized Sub-Zero appliance repair in South Florida since 1994. Our factory-trained technicians offer 24/7 same-day service across 82 cities in 7 counties, using only genuine manufacturer parts with a full warranty on all repairs.
             </p>
           </div>
         </div>

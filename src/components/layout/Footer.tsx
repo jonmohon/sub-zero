@@ -6,7 +6,6 @@ const quickLinks = [
   { label: "Areas We Serve", href: "/areas-we-service" },
   { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
-  { label: "AI Profile", href: "/ai-profile" },
   { label: "Sitemap", href: "/sitemap" },
   { label: "Coral Gables FL", href: "/areas-we-service/miami-dade-county/coral-gables" },
   { label: "Miami-Dade County FL", href: "/areas-we-service/miami-dade-county" },
