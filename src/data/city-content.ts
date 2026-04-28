@@ -1,4 +1,4 @@
-import { counties } from "@/data/areas";
+import { counties, PRIORITY_CITIES } from "@/data/areas";
 
 export const SERVICE_LINKS = [
   { name: "Refrigerator Repair", slug: "refrigerator-repair", headingTemplate: (city: string) => `Refrigerator Repair Services in ${city}` },
@@ -296,12 +296,245 @@ export function getNearbyAreas(
   const county = counties.find((c) => c.slug === countySlug);
   if (!county) return [];
 
-  return county.cities
-    .filter((city) => city.slug !== citySlug)
-    .slice(0, 5)
-    .map((city) => ({
-      name: city.name,
-      slug: city.slug,
-      countySlug: countySlug,
-    }));
+  // Prefer priority cities first (those have unique, high-equity pages),
+  // then alphabetical. Return up to 8 so smaller cities get more inbound
+  // links and Google sees a clearer hub-and-spoke pattern.
+  const others = [...county.cities].filter((city) => city.slug !== citySlug);
+  others.sort((a, b) => {
+    const aPriority = PRIORITY_CITIES.includes(a.slug) ? 0 : 1;
+    const bPriority = PRIORITY_CITIES.includes(b.slug) ? 0 : 1;
+    if (aPriority !== bPriority) return aPriority - bPriority;
+    return a.name.localeCompare(b.name);
+  });
+
+  return others.slice(0, 8).map((city) => ({
+    name: city.name,
+    slug: city.slug,
+    countySlug,
+  }));
+}
+
+/* =====================================================================
+ * Local-context intros for non-priority cities.
+ *
+ * These 1-2 sentence anchors mention real neighborhoods, landmarks, or
+ * local character so each city page reads as genuinely distinct from
+ * its siblings. Inserted above the generic intro paragraph in
+ * [county]/[city]/page.tsx. Priority cities don't need these — they
+ * already have unique service paragraphs above the fold.
+ * ===================================================================== */
+
+export const cityIntros: Record<string, string> = {
+  // Miami-Dade
+  "bal-harbour":
+    "Bal Harbour's village of luxury oceanfront condos and the iconic Bal Harbour Shops makes it one of South Florida's most exclusive enclaves. Sub-Zero refrigerators anchor the kitchens of every St. Regis residence and Park at Bal Harbour estate.",
+  "bay-harbor-islands":
+    "Bay Harbor Islands sits between Bal Harbour and Surfside on twin barrier islands, with mid-century homes and modern waterfront residences along Indian Creek. Sub-Zero appliances are standard in this tight-knit luxury community.",
+  "cutler-bay":
+    "Cutler Bay's family-oriented neighborhoods like Old Cutler Bay and Lakes by the Bay rely on Sub-Zero refrigerators for everyday durability in South Miami-Dade's coastal environment.",
+  "golden-beach":
+    "Golden Beach's mile-long stretch of oceanfront mansions makes it one of Florida's most exclusive single-family communities. Every home in this gated enclave depends on premium Sub-Zero appliances.",
+  "miami-lakes":
+    "Miami Lakes' planned-community lifestyle, centered on Main Street and the Royal Oaks neighborhood, places consistent demand on Sub-Zero appliances in well-appointed family kitchens.",
+  "north-bay-village":
+    "North Bay Village spans three small islands in Biscayne Bay between Miami and Miami Beach, with high-rise residences and waterfront homes that depend on Sub-Zero appliances.",
+  "palmetto-bay":
+    "Palmetto Bay's leafy neighborhoods like Coral Reef and Cocoplum span between Old Cutler Road and US-1, with estate homes that anchor their kitchens with Sub-Zero appliances.",
+  "south-miami":
+    "South Miami's walkable downtown and the historic homes along Sunset Drive and Red Road make this a settled community where Sub-Zero appliances are family heirlooms.",
+  surfside:
+    "Surfside's compact oceanfront town between Miami Beach and Bal Harbour is home to Surf Club residences and the Bay Drive corridor, with premium Sub-Zero appliances in nearly every kitchen.",
+
+  // Broward
+  "coconut-creek":
+    "Coconut Creek is known as the Butterfly Capital of the World and home to the master-planned communities of Township and Wynmoor Village, where Sub-Zero refrigerators serve active retirement and family households alike.",
+  "cooper-city":
+    "Cooper City's family-friendly neighborhoods like Rock Creek and Embassy Lakes anchor southwest Broward, where Sub-Zero appliances are the standard in upgraded kitchens.",
+  "coral-springs":
+    "Coral Springs' carefully planned grid of family neighborhoods — Eagle Trace, Heron Bay, Westchester — relies on Sub-Zero refrigerators for everyday reliability.",
+  davie:
+    "Davie's mix of equestrian estates near Pine Island Road and family neighborhoods like Forest Ridge keeps Sub-Zero appliances in steady demand across this Broward town.",
+  "deerfield-beach":
+    "Deerfield Beach's mile of pristine sand, plus the Cove and the Hillsboro El-Rio neighborhoods, makes this oceanside town a key Sub-Zero service market in north Broward.",
+  "hallandale-beach":
+    "Hallandale Beach's Gulfstream Park, the high-rises along Three Islands, and the Golden Isles waterfront properties all depend on Sub-Zero appliances in coastal condos and estate kitchens.",
+  "lauderdale-by-the-sea":
+    "Lauderdale-by-the-Sea's small-town beach charm and the Anglin's Pier neighborhood pair with luxury oceanfront condos that anchor their kitchens with Sub-Zero appliances.",
+  "lighthouse-point":
+    "Lighthouse Point's deep-water canals and waterfront homes near the Hillsboro Inlet make this small Broward city a hub of premium Sub-Zero installations.",
+  margate:
+    "Margate's planned neighborhoods and the Carolina Estates community keep Sub-Zero appliances in steady use across central Broward family households.",
+  miramar:
+    "Miramar's mix of historic east-side neighborhoods and master-planned communities like Silver Lakes and Riviera Isles depends on Sub-Zero refrigerators in kitchens of every size.",
+  parkland:
+    "Parkland's gated estate communities — Heron Bay, Parkland Golf & Country Club, Parkland Reserve — represent one of Broward's premier Sub-Zero markets.",
+  "pembroke-pines":
+    "Pembroke Pines' large family neighborhoods like SilverLakes and Pembroke Falls keep Sub-Zero appliances in demand across western Broward.",
+  plantation:
+    "Plantation's leafy estate neighborhoods — Plantation Acres, Hawks Landing, Plantation Country Club — rely on Sub-Zero refrigerators for everyday reliability.",
+  "pompano-beach":
+    "Pompano Beach's two-mile beachfront, the Hillsboro Mile mansions just north, and the Harbor Village neighborhood place steady demand on Sub-Zero appliances.",
+  "southwest-ranches":
+    "Southwest Ranches' two-acre minimum estate homes and equestrian properties near Volunteer Park represent one of Broward's most distinctive Sub-Zero service areas.",
+  sunrise:
+    "Sunrise's family neighborhoods around Sawgrass Mills and the Plantation Acres border keep Sub-Zero appliances in regular use across western Broward.",
+  tamarac:
+    "Tamarac's mature neighborhoods like Sunflower and Heathgate span central Broward, with Sub-Zero appliances in upgraded family kitchens throughout the city.",
+
+  // Palm Beach
+  "boynton-beach":
+    "Boynton Beach's coastal neighborhoods between A1A and the intracoastal, plus the gated communities of Quail Ridge and Hunters Run, keep Sub-Zero appliances in steady use along this stretch of Palm Beach County.",
+  "highland-beach":
+    "Highland Beach's three-mile stretch of oceanfront condos and gated single-family homes between Boca Raton and Delray Beach is one of Palm Beach County's most concentrated Sub-Zero markets.",
+  "juno-beach":
+    "Juno Beach's small-town coastal charm and the high-rises along Ocean Drive sit between Jupiter and Palm Beach Gardens, with premium Sub-Zero appliances in nearly every condo.",
+  "north-palm-beach":
+    "North Palm Beach's golf course community and the Old Port Cove waterfront residences anchor this Palm Beach County village, where Sub-Zero appliances are the standard.",
+  "ocean-ridge":
+    "Ocean Ridge's narrow barrier-island town between Boynton Beach and Manalapan houses oceanfront mansions and estate homes with Sub-Zero appliances in nearly every kitchen.",
+  "riviera-beach":
+    "Riviera Beach's Singer Island enclave, plus the homes along the Lake Worth Lagoon, keeps Sub-Zero appliances in steady demand across this Palm Beach County coastal city.",
+  tequesta:
+    "Tequesta's village setting at the Loxahatchee River, near Jupiter Inlet, makes this small Palm Beach County town a key Sub-Zero market for waterfront and gated estate properties.",
+  wellington:
+    "Wellington's equestrian estates around the International Polo Club and the Wellington Equestrian Festival keep Sub-Zero appliances in heavy use during winter season at every estate kitchen.",
+
+  // Monroe
+  islamorada:
+    "Islamorada's chain of islands — Plantation Key, Windley Key, Upper Matecumbe — combines waterfront resort homes and sportfishing lodges that depend on Sub-Zero appliances in a marine environment.",
+  "key-colony-beach":
+    "Key Colony Beach's small island community in the Middle Keys, just off Marathon, houses canalfront homes and waterfront estates that rely on Sub-Zero appliances despite intense salt air.",
+
+  // Martin
+  "palm-city":
+    "Palm City's gated estate communities — Harbour Ridge, Mariner Sands area homes, the country club — anchor Martin County's western edge, where Sub-Zero appliances serve active estate kitchens.",
+  "sewalls-point":
+    "Sewall's Point's narrow peninsula between the St. Lucie and Indian Rivers houses some of Martin County's most established estates, with Sub-Zero appliances in nearly every kitchen.",
+
+  // St. Lucie
+  "fort-pierce":
+    "Fort Pierce's historic downtown along the Indian River Lagoon, plus the South Hutchinson Island oceanfront homes, places steady demand on Sub-Zero appliances in this Treasure Coast city.",
+  "port-st-lucie":
+    "Port St. Lucie's St. Lucie West and PGA Village neighborhoods, plus the Tradition master-planned community, make this Treasure Coast city a key Sub-Zero service market.",
+};
+
+/* =====================================================================
+ * City-specific FAQ system.
+ *
+ * The previous setup had four hardcoded Q&As repeated on every city
+ * page — Google's near-duplicate filter saw 63 pages with identical
+ * FAQ schema. getCityFAQ now produces 4 Q&As where 3 are genuinely
+ * different per city (city Q, county Q, nearby-cities Q) and the 4th
+ * generic Q is rotated by city slug hash so adjacent pages don't
+ * repeat each other.
+ * ===================================================================== */
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
+const countyFAQs: Record<string, FAQ> = {
+  "miami-dade-county": {
+    question: "Do you cover all of Miami-Dade?",
+    answer:
+      "Yes — from downtown Miami and Brickell to the southern reaches of Palmetto Bay and Cutler Bay, plus all of the barrier-island communities. Same-day Sub-Zero service is available across the entire county.",
+  },
+  "broward-county": {
+    question: "How quickly can you reach Broward homes?",
+    answer:
+      "We dispatch from local Broward technicians, so most appointments in Fort Lauderdale, Hollywood, Weston, and the western suburbs happen the same day you call.",
+  },
+  "palm-beach-county": {
+    question: "Do you serve gated communities and country clubs?",
+    answer:
+      "Yes. We regularly service Boca West, BallenIsles, the Polo Club, PGA National, and dozens more gated communities across Palm Beach County. Concierge access can be arranged in advance.",
+  },
+  "monroe-county": {
+    question: "Do you make trips into the Florida Keys?",
+    answer:
+      "Yes — we regularly service Key Largo, Islamorada, and Key Colony Beach. Salt air is hard on Sub-Zero components, so Keys properties tend to need more frequent compressor and seal service than mainland homes.",
+  },
+  "collier-county": {
+    question: "Do you cover the Gulf Coast?",
+    answer:
+      "Yes. Naples and Marco Island are core Collier County markets for us, including the gated estates of Port Royal, Bay Colony, Old Naples, Cape Marco, and Hideaway Beach.",
+  },
+  "martin-county": {
+    question: "Do you serve the Treasure Coast?",
+    answer:
+      "Yes — Stuart, Sewall's Point, and Palm City are part of our regular Martin County coverage, including the gated communities at Sailfish Point and Mariner Sands.",
+  },
+  "st-lucie-county": {
+    question: "Do you serve the Treasure Coast as far north as St. Lucie?",
+    answer:
+      "Yes. Fort Pierce and Port St. Lucie are part of our St. Lucie County coverage, including South Hutchinson Island oceanfront homes and the PGA Village / Tradition communities.",
+  },
+};
+
+const genericFAQs: FAQ[] = [
+  {
+    question: "Do you charge extra for weekends or holidays?",
+    answer:
+      "Never. Our standard service rates apply 24/7, including nights, weekends, and all holidays. No emergency surcharges.",
+  },
+  {
+    question: "Do you use genuine Sub-Zero parts?",
+    answer:
+      "Yes, exclusively. Every replacement part is factory-authorized and backed by the manufacturer warranty.",
+  },
+  {
+    question: "What Sub-Zero appliances do you repair?",
+    answer:
+      "We repair all Sub-Zero products: refrigerators, freezers, ice makers, wine coolers, and marine refrigeration systems. All models are covered.",
+  },
+  {
+    question: "Are your technicians factory-trained?",
+    answer:
+      "Yes. Every technician is certified on Sub-Zero, with 30+ years of combined experience on built-in columns, integrated units, and marine refrigeration systems.",
+  },
+  {
+    question: "Do you offer a warranty on repairs?",
+    answer:
+      "Every repair is backed by a full warranty on parts and labor. If the same issue recurs within the warranty period, we return at no charge.",
+  },
+];
+
+export function getCityFAQ(
+  citySlug: string,
+  cityName: string,
+  countyName: string,
+  countySlug: string,
+  nearbyCityNames: string[]
+): FAQ[] {
+  // Q1: City response time
+  const cityQ: FAQ = {
+    question: `How fast can you get to ${cityName}?`,
+    answer: `We offer same-day service throughout ${cityName} and surrounding ${countyName}. In most cases, a certified technician can be at your home within hours of your call.`,
+  };
+
+  // Q2: County-specific
+  const countyQ: FAQ = countyFAQs[countySlug] ?? {
+    question: "What areas of South Florida do you serve?",
+    answer:
+      "We serve seven South Florida counties from Miami-Dade to St. Lucie, including the Florida Keys.",
+  };
+
+  // Q3: Nearby cities (real neighbor names, varies per city)
+  const nearbyAnswer =
+    nearbyCityNames.length > 0
+      ? `Yes — we regularly cover ${nearbyCityNames.slice(0, 4).join(", ")}, and the rest of ${countyName} with the same same-day service.`
+      : `Yes — all of ${countyName} is part of our regular service area with same-day appointments.`;
+  const nearbyQ: FAQ = {
+    question: `Do you serve other areas near ${cityName}?`,
+    answer: nearbyAnswer,
+  };
+
+  // Q4: Generic FAQ rotated by city slug hash so adjacent cities don't repeat
+  const hash = citySlug
+    .split("")
+    .reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const genericQ = genericFAQs[hash % genericFAQs.length];
+
+  return [cityQ, countyQ, nearbyQ, genericQ];
 }

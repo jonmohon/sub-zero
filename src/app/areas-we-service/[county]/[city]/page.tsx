@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { counties } from "@/data/areas";
-import { getCityContent, getNearbyAreas, SERVICE_LINKS } from "@/data/city-content";
+import {
+  cityIntros,
+  getCityContent,
+  getCityFAQ,
+  getNearbyAreas,
+  SERVICE_LINKS,
+} from "@/data/city-content";
 import { BUSINESS } from "@/lib/constants";
 import {
   generateLocalBusinessSchemaForCity,
@@ -76,6 +82,14 @@ export default async function CityPage({
   const cityUrl = `${BUSINESS.siteUrl}/areas-we-service/${county}/${city}/`;
   const cityContent = getCityContent(city, cityData.name, countyData.name);
   const nearbyAreas = getNearbyAreas(city, county);
+  const cityIntro = cityIntros[city];
+  const cityFAQ = getCityFAQ(
+    city,
+    cityData.name,
+    countyData.name,
+    county,
+    nearbyAreas.map((a) => a.name)
+  );
 
   const localBusinessSchema = generateLocalBusinessSchemaForCity(
     cityData.name,
@@ -96,12 +110,7 @@ export default async function CityPage({
     { name: countyData.name, url: `${BUSINESS.siteUrl}/areas-we-service/${county}/` },
     { name: cityData.name, url: cityUrl },
   ]);
-  const faqSchema = generateFAQSchema([
-    { question: `How fast can you get to ${cityData.name}?`, answer: `We offer same-day service throughout ${cityData.name} and ${countyData.name}. In most cases, a certified technician can be at your home within hours of your call.` },
-    { question: "Do you charge extra for weekends or holidays?", answer: "Never. Our standard service rates apply 24/7, including nights, weekends, and all holidays. No emergency surcharges." },
-    { question: "What Sub-Zero appliances do you repair?", answer: "We repair all Sub-Zero products: refrigerators, freezers, ice makers, wine coolers, and marine refrigeration systems. All models are covered." },
-    { question: "Do you use genuine Sub-Zero parts?", answer: "Yes, exclusively. Every replacement part is factory-authorized and backed by the manufacturer warranty." },
-  ]);
+  const faqSchema = generateFAQSchema(cityFAQ);
 
   return (
     <>
@@ -171,6 +180,11 @@ export default async function CityPage({
                 <h2 className="text-3xl font-bold text-[#0B1D33]">
                   Expert Sub-Zero Repair in {cityData.name}
                 </h2>
+                {cityIntro && (
+                  <p className="text-[#64748B] leading-relaxed text-lg">
+                    {cityIntro}
+                  </p>
+                )}
                 <p className="text-[#64748B] leading-relaxed text-lg">
                   Looking for expert Sub-Zero appliance repair in {cityData.name},
                   Florida? Our certified technicians provide fast, reliable
@@ -333,15 +347,10 @@ export default async function CityPage({
             Sub-Zero Repair FAQ for {cityData.name}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { q: `How fast can you get to ${cityData.name}?`, a: `We offer same-day service throughout ${cityData.name} and ${countyData.name}. In most cases, a certified technician can be at your home within hours of your call.` },
-              { q: "Do you charge extra for weekends or holidays?", a: "Never. Our standard service rates apply 24/7, including nights, weekends, and all holidays. No emergency surcharges." },
-              { q: "What Sub-Zero appliances do you repair?", a: "We repair all Sub-Zero products: refrigerators, freezers, ice makers, wine coolers, and marine refrigeration systems. All models are covered." },
-              { q: "Do you use genuine Sub-Zero parts?", a: "Yes, exclusively. Every replacement part is factory-authorized and backed by the manufacturer warranty." },
-            ].map((faq) => (
-              <div key={faq.q} className="bg-[#F8FAFC] rounded-xl p-6">
-                <h3 className="font-bold text-[#0B1D33] mb-2">{faq.q}</h3>
-                <p className="text-sm text-[#64748B] leading-relaxed">{faq.a}</p>
+            {cityFAQ.map((faq) => (
+              <div key={faq.question} className="bg-[#F8FAFC] rounded-xl p-6">
+                <h3 className="font-bold text-[#0B1D33] mb-2">{faq.question}</h3>
+                <p className="text-sm text-[#64748B] leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
