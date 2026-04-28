@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { getPriorityCityLinks } from "@/data/areas";
 
 const quickLinks = [
   { label: "Services", href: "/services" },
@@ -7,8 +8,6 @@ const quickLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
   { label: "Sitemap", href: "/sitemap" },
-  { label: "Coral Gables FL", href: "/areas-we-service/miami-dade-county/coral-gables" },
-  { label: "Miami-Dade County FL", href: "/areas-we-service/miami-dade-county" },
 ];
 
 const serviceLinks = [
@@ -19,16 +18,12 @@ const serviceLinks = [
   { label: "Sub-Zero Marine Repair", href: "/services/sub-zero-marine-repair" },
 ];
 
-const topServiceAreas = [
-  { label: "Miami", href: "/areas-we-service/miami-dade-county/miami" },
-  { label: "Miami Beach", href: "/areas-we-service/miami-dade-county/miami-beach" },
-  { label: "Key Biscayne", href: "/areas-we-service/miami-dade-county/key-biscayne" },
-  { label: "Pinecrest", href: "/areas-we-service/miami-dade-county/pinecrest" },
-  { label: "Fisher Island", href: "/areas-we-service/miami-dade-county/fisher-island" },
-  { label: "Indian Creek Village", href: "/areas-we-service/miami-dade-county/indian-creek-village" },
-  { label: "Sunny Isles Beach", href: "/areas-we-service/miami-dade-county/sunny-isles-beach" },
-  { label: "Key Largo", href: "/areas-we-service/monroe-county/key-largo" },
-];
+// All 23 priority cities — gives the high-equity pages a sitewide
+// inbound link from every footer, lifting their crawl priority.
+const topServiceAreas = getPriorityCityLinks().map((c) => ({
+  label: c.name,
+  href: c.href,
+}));
 
 export default function Footer() {
   return (
@@ -141,7 +136,7 @@ export default function Footer() {
           {/* Top Service Areas */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Top Service Areas</h3>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
               {topServiceAreas.map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-sm hover:text-[#00B4D8] transition-colors">

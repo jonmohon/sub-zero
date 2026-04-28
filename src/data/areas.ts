@@ -162,6 +162,39 @@ export const counties: County[] = [
 ];
 
 /**
+ * Priority city link data — used by Footer, homepage ServiceAreasSection,
+ * and service pages to ensure the 23 priority cities get strong internal
+ * link signals from every page on the site. Order matches PRIORITY_CITIES.
+ */
+export interface PriorityCityLink {
+  name: string;
+  slug: string;
+  countySlug: string;
+  countyName: string;
+  href: string;
+}
+
+export function getPriorityCityLinks(): PriorityCityLink[] {
+  const result: PriorityCityLink[] = [];
+  for (const slug of PRIORITY_CITIES) {
+    for (const county of counties) {
+      const city = county.cities.find((c) => c.slug === slug);
+      if (city) {
+        result.push({
+          name: city.name,
+          slug: city.slug,
+          countySlug: county.slug,
+          countyName: county.name,
+          href: `/areas-we-service/${county.slug}/${city.slug}/`,
+        });
+        break;
+      }
+    }
+  }
+  return result;
+}
+
+/**
  * Cities that previously had pages but were culled because they were
  * tiny CDPs, sub-villages, or neighborhoods of cities we already cover.
  * Each of these URLs now 301-redirects to its parent county page (see

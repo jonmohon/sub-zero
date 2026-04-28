@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import { getPriorityCityLinks } from "@/data/areas";
 
 const areas = [
   { name: "Broward County", href: "/areas-we-service/broward-county" },
@@ -10,6 +11,8 @@ const areas = [
   { name: "Monroe County", href: "/areas-we-service/monroe-county" },
   { name: "St. Lucie County", href: "/areas-we-service/st-lucie-county" },
 ];
+
+const priorityCityLinks = getPriorityCityLinks();
 
 export default function ServiceAreasSection() {
   return (
@@ -26,7 +29,7 @@ export default function ServiceAreasSection() {
           <div className="w-16 h-1 bg-[#00B4D8] mx-auto rounded-full mb-12" />
         </ScrollReveal>
 
-        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-4">
+        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-4 mb-12">
           {areas.map((area, index) => (
             <ScrollReveal key={area.name} animation="scale-in" delay={index * 80}>
               <Link
@@ -39,6 +42,25 @@ export default function ServiceAreasSection() {
                 {area.name}
               </Link>
             </ScrollReveal>
+          ))}
+        </div>
+
+        {/* Priority cities — every page gets a homepage link to all 23
+            high-equity city pages, giving Google a strong crawl signal. */}
+        <ScrollReveal animation="fade-up">
+          <p className="text-white/80 text-sm uppercase tracking-wider mb-4">
+            Top Cities We Serve
+          </p>
+        </ScrollReveal>
+        <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-3">
+          {priorityCityLinks.map((city) => (
+            <Link
+              key={city.slug}
+              href={city.href}
+              className="text-sm text-white/90 hover:text-white bg-white/5 hover:bg-white/15 border border-white/10 hover:border-white/30 rounded-full px-4 py-1.5 transition-all"
+            >
+              {city.name}
+            </Link>
           ))}
         </div>
       </div>
