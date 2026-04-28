@@ -12,6 +12,7 @@ export interface County {
 }
 
 export const PRIORITY_CITIES = [
+  // Original priority set (unique paragraphs in city-content.ts)
   "miami",
   "key-biscayne",
   "miami-beach",
@@ -20,6 +21,22 @@ export const PRIORITY_CITIES = [
   "fisher-island",
   "sunny-isles-beach",
   "key-largo",
+  // Second wave: high-demand luxury markets with unique paragraphs
+  "boca-raton",
+  "fort-lauderdale",
+  "naples",
+  "aventura",
+  "coral-gables",
+  "doral",
+  "weston",
+  "jupiter",
+  "palm-beach-gardens",
+  "west-palm-beach",
+  "delray-beach",
+  "hollywood",
+  "stuart",
+  "marco-island",
+  "palm-beach",
 ];
 
 export const counties: County[] = [
@@ -32,11 +49,9 @@ export const counties: County[] = [
       { name: "Aventura", slug: "aventura" },
       { name: "Bal Harbour", slug: "bal-harbour" },
       { name: "Bay Harbor Islands", slug: "bay-harbor-islands" },
-      { name: "Biscayne Park", slug: "biscayne-park" },
       { name: "Coral Gables", slug: "coral-gables" },
       { name: "Cutler Bay", slug: "cutler-bay" },
       { name: "Doral", slug: "doral" },
-      { name: "El Portal", slug: "el-portal" },
       { name: "Fisher Island", slug: "fisher-island" },
       { name: "Golden Beach", slug: "golden-beach" },
       { name: "Indian Creek Village", slug: "indian-creek-village" },
@@ -65,7 +80,6 @@ export const counties: County[] = [
       { name: "Deerfield Beach", slug: "deerfield-beach" },
       { name: "Fort Lauderdale", slug: "fort-lauderdale" },
       { name: "Hallandale Beach", slug: "hallandale-beach" },
-      { name: "Hillsboro Beach", slug: "hillsboro-beach" },
       { name: "Hollywood", slug: "hollywood" },
       { name: "Lauderdale-by-the-Sea", slug: "lauderdale-by-the-sea" },
       { name: "Lighthouse Point", slug: "lighthouse-point" },
@@ -75,7 +89,6 @@ export const counties: County[] = [
       { name: "Pembroke Pines", slug: "pembroke-pines" },
       { name: "Plantation", slug: "plantation" },
       { name: "Pompano Beach", slug: "pompano-beach" },
-      { name: "Sea Ranch Lakes", slug: "sea-ranch-lakes" },
       { name: "Southwest Ranches", slug: "southwest-ranches" },
       { name: "Sunrise", slug: "sunrise" },
       { name: "Tamarac", slug: "tamarac" },
@@ -88,15 +101,12 @@ export const counties: County[] = [
     metaTitle: "Sub-Zero Repair Palm Beach County, FL | Same-Day Service",
     metaDescription: "Expert Sub-Zero appliance repair in Palm Beach County, FL. Same-day service with certified technicians. Call (800) 651-4528.",
     cities: [
-      { name: "Atlantis", slug: "atlantis" },
       { name: "Boca Raton", slug: "boca-raton" },
       { name: "Boynton Beach", slug: "boynton-beach" },
       { name: "Delray Beach", slug: "delray-beach" },
-      { name: "Golf", slug: "golf" },
       { name: "Highland Beach", slug: "highland-beach" },
       { name: "Juno Beach", slug: "juno-beach" },
       { name: "Jupiter", slug: "jupiter" },
-      { name: "Manalapan", slug: "manalapan" },
       { name: "North Palm Beach", slug: "north-palm-beach" },
       { name: "Ocean Ridge", slug: "ocean-ridge" },
       { name: "Palm Beach", slug: "palm-beach" },
@@ -116,8 +126,6 @@ export const counties: County[] = [
       { name: "Islamorada", slug: "islamorada" },
       { name: "Key Colony Beach", slug: "key-colony-beach" },
       { name: "Key Largo", slug: "key-largo" },
-      { name: "North Key Largo", slug: "north-key-largo" },
-      { name: "Tavernier", slug: "tavernier" },
     ],
   },
   {
@@ -126,15 +134,8 @@ export const counties: County[] = [
     metaTitle: "Sub-Zero Repair Collier County & Naples, FL | Same-Day",
     metaDescription: "Professional Sub-Zero appliance repair in Collier County, FL including Naples. Call (800) 651-4528.",
     cities: [
-      { name: "Goodland", slug: "goodland" },
-      { name: "Island Walk", slug: "island-walk" },
-      { name: "Lely Resort", slug: "lely-resort" },
       { name: "Marco Island", slug: "marco-island" },
       { name: "Naples", slug: "naples" },
-      { name: "Naples Manor", slug: "naples-manor" },
-      { name: "Pelican Bay", slug: "pelican-bay" },
-      { name: "Pine Ridge", slug: "pine-ridge" },
-      { name: "Vineyards", slug: "vineyards" },
     ],
   },
   {
@@ -144,7 +145,6 @@ export const counties: County[] = [
     metaDescription: "Expert Sub-Zero appliance repair in Martin County, FL. Call (800) 651-4528 for same-day service.",
     cities: [
       { name: "Palm City", slug: "palm-city" },
-      { name: "Rio", slug: "rio" },
       { name: "Sewall's Point", slug: "sewalls-point" },
       { name: "Stuart", slug: "stuart" },
     ],
@@ -157,8 +157,42 @@ export const counties: County[] = [
     cities: [
       { name: "Fort Pierce", slug: "fort-pierce" },
       { name: "Port St. Lucie", slug: "port-st-lucie" },
-      { name: "Saint Lucie", slug: "saint-lucie" },
-      { name: "White City", slug: "white-city" },
     ],
   },
+];
+
+/**
+ * Cities that previously had pages but were culled because they were
+ * tiny CDPs, sub-villages, or neighborhoods of cities we already cover.
+ * Each of these URLs now 301-redirects to its parent county page (see
+ * next.config.ts) so any external links or stale Google index entries
+ * preserve equity rather than 404'ing.
+ */
+export const CULLED_CITY_REDIRECTS: { county: string; city: string }[] = [
+  // Miami-Dade
+  { county: "miami-dade-county", city: "biscayne-park" },
+  { county: "miami-dade-county", city: "el-portal" },
+  // Broward
+  { county: "broward-county", city: "hillsboro-beach" },
+  { county: "broward-county", city: "sea-ranch-lakes" },
+  // Palm Beach
+  { county: "palm-beach-county", city: "atlantis" },
+  { county: "palm-beach-county", city: "golf" },
+  { county: "palm-beach-county", city: "manalapan" },
+  // Monroe (sub-areas of Key Largo)
+  { county: "monroe-county", city: "north-key-largo" },
+  { county: "monroe-county", city: "tavernier" },
+  // Collier (Naples-area neighborhoods/developments)
+  { county: "collier-county", city: "goodland" },
+  { county: "collier-county", city: "island-walk" },
+  { county: "collier-county", city: "lely-resort" },
+  { county: "collier-county", city: "naples-manor" },
+  { county: "collier-county", city: "pelican-bay" },
+  { county: "collier-county", city: "pine-ridge" },
+  { county: "collier-county", city: "vineyards" },
+  // Martin
+  { county: "martin-county", city: "rio" },
+  // St. Lucie
+  { county: "st-lucie-county", city: "saint-lucie" },
+  { county: "st-lucie-county", city: "white-city" },
 ];

@@ -1,18 +1,8 @@
 import type { MetadataRoute } from "next";
-import { PRIORITY_CITIES } from "@/data/areas";
+import { counties, PRIORITY_CITIES } from "@/data/areas";
 
 const BASE_URL = "https://fivestarappliancerepairpros.com";
-const LAST_MODIFIED = new Date("2026-04-22");
-
-const countyCities: Record<string, string[]> = {
-  "miami-dade-county": ["aventura", "bal-harbour", "bay-harbor-islands", "biscayne-park", "coral-gables", "cutler-bay", "doral", "el-portal", "fisher-island", "golden-beach", "indian-creek-village", "key-biscayne", "miami", "miami-beach", "miami-lakes", "north-bay-village", "palmetto-bay", "pinecrest", "south-miami", "sunny-isles-beach", "surfside"],
-  "broward-county": ["coconut-creek", "cooper-city", "coral-springs", "davie", "deerfield-beach", "fort-lauderdale", "hallandale-beach", "hillsboro-beach", "hollywood", "lauderdale-by-the-sea", "lighthouse-point", "margate", "miramar", "parkland", "pembroke-pines", "plantation", "pompano-beach", "sea-ranch-lakes", "southwest-ranches", "sunrise", "tamarac", "weston"],
-  "palm-beach-county": ["atlantis", "boca-raton", "boynton-beach", "delray-beach", "golf", "highland-beach", "juno-beach", "jupiter", "manalapan", "north-palm-beach", "ocean-ridge", "palm-beach", "palm-beach-gardens", "riviera-beach", "tequesta", "wellington", "west-palm-beach"],
-  "monroe-county": ["islamorada", "key-colony-beach", "key-largo", "north-key-largo", "tavernier"],
-  "collier-county": ["goodland", "island-walk", "lely-resort", "marco-island", "naples", "naples-manor", "pelican-bay", "pine-ridge", "vineyards"],
-  "martin-county": ["palm-city", "rio", "sewalls-point", "stuart"],
-  "st-lucie-county": ["fort-pierce", "port-st-lucie", "saint-lucie", "white-city"],
-};
+const LAST_MODIFIED = new Date("2026-04-28");
 
 const blogSlugs = [
   "when-to-call-a-refrigerator-repair-technician",
@@ -50,23 +40,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/sitemap/`, lastModified: LAST_MODIFIED, changeFrequency: "monthly" as const, priority: 0.3 },
   ];
 
-  const countyPages = Object.keys(countyCities).map((county) => ({
-    url: `${BASE_URL}/areas-we-service/${county}/`,
+  // City list comes from src/data/areas.ts — single source of truth.
+  // Adding/removing a city there automatically updates the sitemap.
+  const countyPages = counties.map((county) => ({
+    url: `${BASE_URL}/areas-we-service/${county.slug}/`,
+    lastModified: LAST_MODIFIED,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
-  const cityPages = Object.entries(countyCities).flatMap(([county, cities]) =>
-    cities.map((city) => ({
-      url: `${BASE_URL}/areas-we-service/${county}/${city}/`,
-      lastModified: PRIORITY_CITIES.includes(city) ? LAST_MODIFIED : undefined,
+  const cityPages = counties.flatMap((county) =>
+    county.cities.map((city) => ({
+      url: `${BASE_URL}/areas-we-service/${county.slug}/${city.slug}/`,
+      lastModified: PRIORITY_CITIES.includes(city.slug) ? LAST_MODIFIED : undefined,
       changeFrequency: "monthly" as const,
-      priority: PRIORITY_CITIES.includes(city) ? 0.8 : county === "miami-dade-county" ? 0.7 : 0.6,
+      priority: PRIORITY_CITIES.includes(city.slug)
+        ? 0.8
+        : county.slug === "miami-dade-county"
+          ? 0.7
+          : 0.6,
     }))
   );
 
   const blogPages = blogSlugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}/`,
+    lastModified: LAST_MODIFIED,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));

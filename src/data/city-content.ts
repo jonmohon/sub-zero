@@ -97,6 +97,156 @@ const priorityCityParagraphs: PriorityCityContent = {
     "wine-cooler-repair":
       "Key Largo's waterfront estates and the laid-back Florida Keys lifestyle call for a Sub-Zero wine cooler that performs flawlessly despite the marine environment. Salt air and humidity can affect cooling systems and seals, making expert repair essential. Our certified technicians deliver professional Sub-Zero wine cooler service with genuine parts to Key Largo homeowners.",
   },
+  "boca-raton": {
+    "refrigerator-repair":
+      "Boca Raton's affluent neighborhoods — from Royal Palm Yacht & Country Club to The Sanctuary, Old Floresta, and the gated estates off Camino Real — house some of South Florida's finest Sub-Zero refrigerators. Our certified technicians provide expert diagnostics and genuine factory parts to estate homes and Mizner Park condos alike, with same-day service throughout Boca.",
+    "freezer-repair":
+      "From Boca West and St. Andrews Country Club to the estate homes of Polo Club and Boca Pointe, Boca Raton's homeowners trust their Sub-Zero freezers to handle daily meals and long-term storage. Our factory-trained technicians service the entire city with genuine Sub-Zero parts and same-day appointments.",
+    "icemaker-repair":
+      "Boca Raton's year-round entertaining culture — Mizner Park brunches, private events at Royal Palm Yacht Club, family gatherings at The Oaks — depends on Sub-Zero ice makers performing flawlessly. Our certified technicians handle clogged lines, faulty sensors, and mineral buildup with factory-authorized parts and same-day service across Boca.",
+    "wine-cooler-repair":
+      "The wine cellars of Boca Raton's country clubs and gated estates — Boca West, The Oaks, Stone Creek Ranch, Royal Palm Yacht Club — demand precise temperature and humidity control. Our certified technicians calibrate Sub-Zero wine coolers to exacting standards using genuine factory parts, ensuring your collection is preserved at ideal conditions.",
+  },
+  "fort-lauderdale": {
+    "refrigerator-repair":
+      "Fort Lauderdale's waterfront homes along Las Olas Isles, Rio Vista, and Harbor Beach face unique salt-air challenges that affect Sub-Zero refrigerator performance over time. Our certified technicians serve the intracoastal corridor, Coral Ridge, Victoria Park, and downtown high-rises, providing expert repair with genuine Sub-Zero parts.",
+    "freezer-repair":
+      "From the canalfront mansions of Las Olas Isles to the high-rises along Galt Mile and Sunrise Boulevard, Fort Lauderdale homeowners trust their Sub-Zero freezers in a salt-air coastal climate. Our factory-trained team handles compressor and seal issues common in waterfront properties, using only genuine Sub-Zero parts.",
+    "icemaker-repair":
+      "Fort Lauderdale's boating and entertaining lifestyle — from Bahia Mar to the Lauderdale Yacht Club — runs through the kitchen ice maker. Our certified technicians repair Sub-Zero ice makers across Coral Ridge, Victoria Park, and the Isles, addressing the line scaling and sensor wear coastal humidity tends to cause.",
+    "wine-cooler-repair":
+      "The waterfront estates of Harbor Beach and Las Olas Isles, plus the high-rise condos along Galt Mile, store some of Fort Lauderdale's most impressive wine collections. Our certified technicians service every Sub-Zero wine cooler with factory parts, restoring precise climate control even in salt-exposed coastal homes.",
+  },
+  naples: {
+    "refrigerator-repair":
+      "Naples' luxury enclaves — Port Royal, Old Naples, Aqualane Shores, and Bay Colony — set the standard for Gulf Coast estate living and the Sub-Zero refrigerators that anchor those kitchens. Our certified technicians serve all of Naples with same-day appointments and genuine factory parts.",
+    "freezer-repair":
+      "From the historic homes of Old Naples to the gated estates of Port Royal and Bay Colony, Naples residents depend on Sub-Zero freezers that handle Gulf-coast humidity year-round. Our factory-trained technicians provide expert diagnostics and genuine replacement parts across Naples and surrounding Collier County.",
+    "icemaker-repair":
+      "Naples' refined entertaining scene, from 5th Avenue South dining to private gatherings in Port Royal, depends on a flawless Sub-Zero ice maker. Our certified technicians repair clogged lines, sensor failures, and water-supply issues with factory-authorized parts and prompt service throughout Naples.",
+    "wine-cooler-repair":
+      "The wine cellars of Naples' Port Royal estates and Aqualane Shores waterfront homes hold collections that require Sub-Zero precision. Our certified technicians calibrate temperature and humidity to exacting standards using genuine factory parts, protecting wines stored in some of Florida's finest residences.",
+  },
+  aventura: {
+    "refrigerator-repair":
+      "Aventura's high-rise lifestyle — Williams Island, Porto Vita, Turnberry Ocean Colony — places enormous demand on Sub-Zero refrigerators that anchor each unit's kitchen. Our certified technicians provide concierge-style service to Aventura's gated communities and luxury condo towers with genuine Sub-Zero parts.",
+    "freezer-repair":
+      "From Williams Island's gated towers to the family neighborhoods near Aventura Mall, Aventura's Sub-Zero freezers handle a demanding entertaining schedule. Our factory-trained team provides expert repair using genuine parts, with same-day service for both high-rise condos and single-family homes.",
+    "icemaker-repair":
+      "Aventura's social calendar — from rooftop pool decks at Porto Vita to family gatherings near Aventura Mall — runs on a working ice maker. Our certified technicians repair every Sub-Zero ice maker model with factory-authorized parts, navigating concierge access and same-day appointments across the city's luxury towers.",
+    "wine-cooler-repair":
+      "The wine collections of Aventura's penthouse residents — Williams Island, Turnberry, Porto Vita — require Sub-Zero wine coolers calibrated to exacting standards. Our certified technicians provide white-glove service with genuine factory parts, coordinating concierge access for the city's high-rise community.",
+  },
+  "coral-gables": {
+    "refrigerator-repair":
+      "Coral Gables' historic estates — Cocoplum, Gables Estates, Old Cutler, Hammock Lakes — house Sub-Zero refrigerators that match the city's architectural standards. Our certified technicians serve Miracle Mile, the Biltmore neighborhood, and every gated community with expert diagnostics and genuine factory parts.",
+    "freezer-repair":
+      "From the Mediterranean-style homes near the Biltmore to the waterfront estates of Gables Estates and Cocoplum, Coral Gables residents trust Sub-Zero freezers for everyday reliability. Our factory-trained technicians handle compressor and ice-buildup issues with genuine parts and same-day service throughout the city.",
+    "icemaker-repair":
+      "Coral Gables' entertaining culture — the Biltmore's social calendar, Granada Golf Course events, Riviera Country Club gatherings — keeps Sub-Zero ice makers running constantly. Our certified technicians service every model across Cocoplum, Old Cutler, and Hammock Lakes, using factory parts to restore reliable performance.",
+    "wine-cooler-repair":
+      "The wine cellars of Coral Gables' Cocoplum and Gables Estates mansions hold collections that demand Sub-Zero-grade precision. Our certified technicians calibrate temperature and humidity to exacting standards using genuine factory parts, protecting wines stored in the city's most prestigious homes.",
+  },
+  doral: {
+    "refrigerator-repair":
+      "Doral's master-planned communities — Doral Isles, Doral Country Club, Doral Cay — bring premium Sub-Zero refrigerators into family kitchens that demand reliability. Our certified technicians provide same-day service throughout Doral, from gated communities to executive estates near Trump National Doral, with genuine factory parts.",
+    "freezer-repair":
+      "From the gated communities of Doral Isles to the executive homes near Trump National Doral, Doral families rely on Sub-Zero freezers to keep up with active households. Our factory-trained technicians provide expert repair with genuine parts and same-day appointments across the city.",
+    "icemaker-repair":
+      "Doral's growing residential scene — from Doral Country Club to the planned communities along NW 87th Avenue — depends on Sub-Zero ice makers that work hard in South Florida's heat. Our certified technicians address line clogs and sensor failures with factory-authorized parts and prompt service.",
+    "wine-cooler-repair":
+      "Doral's executive homeowners — at Doral Country Club, near Trump National Doral, and throughout the gated enclaves — trust Sub-Zero wine coolers to protect their collections. Our certified technicians provide expert calibration and component repair using only genuine factory parts.",
+  },
+  weston: {
+    "refrigerator-repair":
+      "Weston's master-planned neighborhoods — Bonaventure, Weston Hills Country Club, Country Isles, Savanna — house family Sub-Zero refrigerators that anchor everyday life. Our certified technicians serve every gated community in Weston with expert diagnostics, genuine factory parts, and same-day appointments.",
+    "freezer-repair":
+      "From Weston Hills Country Club estates to the family homes of Country Isles and Savanna, Weston residents trust their Sub-Zero freezers for busy household routines. Our factory-trained technicians provide expert repair with genuine Sub-Zero parts across this carefully planned community.",
+    "icemaker-repair":
+      "Weston's family-oriented lifestyle, from neighborhood pool parties in Country Isles to weekend gatherings at Weston Hills, depends on a working Sub-Zero ice maker. Our certified technicians handle every issue with factory-authorized parts and same-day service throughout Weston.",
+    "wine-cooler-repair":
+      "The estate homes of Weston Hills and Bonaventure house Sub-Zero wine coolers protecting collections built over years. Our certified technicians provide precise temperature and humidity calibration using genuine factory parts, keeping Weston wine collections at ideal conditions.",
+  },
+  jupiter: {
+    "refrigerator-repair":
+      "Jupiter's waterfront enclaves — Admiral's Cove, the Loxahatchee Club, Jupiter Inlet Colony — combine luxury living with the salt-air challenges that affect Sub-Zero refrigerator components. Our certified technicians serve all of Jupiter with corrosion-aware repair, genuine factory parts, and same-day appointments.",
+    "freezer-repair":
+      "From the gated estates of Admiral's Cove to Jupiter Inlet's waterfront homes, Jupiter's coastal lifestyle demands Sub-Zero freezers built to last. Our factory-trained technicians address salt-air component wear with genuine parts and same-day service throughout the Jupiter area.",
+    "icemaker-repair":
+      "Jupiter's golf-and-boating lifestyle, from Trump National Jupiter to The Loxahatchee Club, runs on Sub-Zero ice makers that need to handle constant entertaining. Our certified technicians repair every model with factory-authorized parts, accounting for the salt-air conditions unique to Jupiter.",
+    "wine-cooler-repair":
+      "The wine cellars of Jupiter's Admiral's Cove and Loxahatchee Club estates hold collections that require Sub-Zero precision in a coastal environment. Our certified technicians calibrate climate control to exacting standards using genuine factory parts, protecting wines in salt-air homes.",
+  },
+  "palm-beach-gardens": {
+    "refrigerator-repair":
+      "Palm Beach Gardens' luxury communities — PGA National, Mirasol, BallenIsles, Frenchman's Creek, Old Marsh — anchor their kitchens with Sub-Zero refrigerators that demand expert care. Our certified technicians provide same-day service to every gated community with genuine Sub-Zero parts.",
+    "freezer-repair":
+      "From the championship golf communities of PGA National and BallenIsles to the gated estates of Mirasol and Frenchman's Creek, Palm Beach Gardens residents depend on Sub-Zero freezers for premium food storage. Our factory-trained technicians handle every issue with genuine parts.",
+    "icemaker-repair":
+      "Palm Beach Gardens' active golf-and-tennis lifestyle, centered on PGA National and BallenIsles Country Club, keeps Sub-Zero ice makers in constant use. Our certified technicians repair clogged lines and sensor failures with factory-authorized parts and same-day service throughout the city.",
+    "wine-cooler-repair":
+      "The estate homes of Frenchman's Creek and Old Marsh hold wine collections protected by Sub-Zero precision. Our certified technicians calibrate temperature and humidity in every wine cooler using genuine factory parts, preserving collections built across Palm Beach Gardens' most exclusive communities.",
+  },
+  "west-palm-beach": {
+    "refrigerator-repair":
+      "West Palm Beach's neighborhoods — El Cid, SoSo, Flamingo Park, the historic Northwood district — combine charm with the everyday need for reliable Sub-Zero refrigerator performance. Our certified technicians serve downtown's high-rises along with the city's residential blocks, using genuine Sub-Zero parts.",
+    "freezer-repair":
+      "From the historic homes of El Cid and Flamingo Park to the high-rises overlooking Clematis Street and CityPlace, West Palm Beach residents trust Sub-Zero freezers for daily reliability. Our factory-trained technicians provide expert repair with genuine parts throughout the city.",
+    "icemaker-repair":
+      "West Palm Beach's mix of historic neighborhoods and downtown high-rises depends on Sub-Zero ice makers that handle South Florida's heat. Our certified technicians serve El Cid, SoSo, Flamingo Park, and downtown with factory-authorized parts and same-day appointments.",
+    "wine-cooler-repair":
+      "The historic estates of El Cid and the Northwood district house wine collections that demand Sub-Zero-grade preservation. Our certified technicians calibrate temperature and humidity in every wine cooler using genuine factory parts, protecting West Palm Beach's most cherished collections.",
+  },
+  "delray-beach": {
+    "refrigerator-repair":
+      "Delray Beach's vibrant Atlantic Avenue lifestyle, plus the gated estates of the Polo Club and Country Club neighborhoods, makes Sub-Zero refrigerator reliability essential. Our certified technicians serve beachside condos along A1A, Pineapple Grove, and the city's gated communities with genuine factory parts.",
+    "freezer-repair":
+      "From the beachside condos along A1A to the estate homes of the Delray Country Club and Polo Club, Delray Beach residents depend on Sub-Zero freezers in a coastal environment. Our factory-trained technicians address salt-air wear with genuine Sub-Zero parts and same-day service.",
+    "icemaker-repair":
+      "Delray Beach's social scene — Atlantic Avenue dining, beachside entertaining, Polo Club gatherings — runs on Sub-Zero ice makers performing flawlessly. Our certified technicians repair every model with factory-authorized parts, navigating the salt-air conditions common in coastal homes.",
+    "wine-cooler-repair":
+      "The wine cellars of Delray Beach's Polo Club and Country Club estates, plus the beachside condos along A1A, demand Sub-Zero precision. Our certified technicians provide expert calibration and component repair using only genuine factory parts.",
+  },
+  hollywood: {
+    "refrigerator-repair":
+      "Hollywood's mix of beachside high-rises along the Broadwalk and gated communities like Emerald Hills and Hollywood Lakes places consistent demand on Sub-Zero refrigerators. Our certified technicians serve the entire city with expert diagnostics, genuine factory parts, and same-day service.",
+    "freezer-repair":
+      "From the beachside condos along Hollywood Beach Broadwalk to the homes of Emerald Hills and Hollywood Lakes, Hollywood residents rely on Sub-Zero freezers in a salt-air coastal environment. Our factory-trained technicians provide expert repair with genuine parts.",
+    "icemaker-repair":
+      "Hollywood's beachside lifestyle, from the Broadwalk to the Lakes neighborhood, keeps Sub-Zero ice makers working hard in South Florida's heat. Our certified technicians address line clogs and sensor failures with factory-authorized parts and prompt service across the city.",
+    "wine-cooler-repair":
+      "The estate homes of Emerald Hills and the beachside condos along the Broadwalk house wine collections protected by Sub-Zero wine coolers. Our certified technicians provide precise climate control with genuine factory parts, preserving Hollywood collections in coastal conditions.",
+  },
+  stuart: {
+    "refrigerator-repair":
+      "Stuart's waterfront properties along the St. Lucie River, plus the gated estates of Sailfish Point and Mariner Sands, require Sub-Zero refrigerator service that accounts for the marine environment. Our certified technicians serve all of Stuart with genuine factory parts and same-day appointments.",
+    "freezer-repair":
+      "From Sailfish Point's oceanfront homes to the historic downtown Stuart waterfront, Stuart residents depend on Sub-Zero freezers that hold up to coastal humidity. Our factory-trained technicians provide expert repair with genuine Sub-Zero parts throughout Martin County's seat.",
+    "icemaker-repair":
+      "Stuart's waterfront lifestyle, from boats moored at Sailfish Point to estate homes overlooking the St. Lucie River, runs on a reliable Sub-Zero ice maker. Our certified technicians address salt-air corrosion and component wear with factory-authorized parts and same-day service.",
+    "wine-cooler-repair":
+      "The wine cellars of Stuart's Sailfish Point and Mariner Sands estates hold collections that demand Sub-Zero precision in a marine environment. Our certified technicians provide expert calibration using only genuine factory parts, protecting wines stored in Stuart's waterfront homes.",
+  },
+  "marco-island": {
+    "refrigerator-repair":
+      "Marco Island's beachfront condos and gated estates — Cape Marco, Hideaway Beach, the homes lining Tigertail Beach — require Sub-Zero refrigerator service that handles intense Gulf-coast salt air. Our certified technicians provide expert repair with genuine factory parts throughout the island.",
+    "freezer-repair":
+      "From the beachside towers of Cape Marco to the gated homes of Hideaway Beach, Marco Island's Gulf-coast environment puts heavy demand on Sub-Zero freezer components. Our factory-trained technicians address salt-air wear with genuine Sub-Zero parts and same-day appointments.",
+    "icemaker-repair":
+      "Marco Island's beach-and-boating lifestyle, from Tigertail Beach to the Marco Island Yacht Club, depends on Sub-Zero ice makers that perform in Gulf-coast humidity. Our certified technicians repair clogged lines and sensor failures with factory-authorized parts and prompt service.",
+    "wine-cooler-repair":
+      "Marco Island's beachfront estates and Cape Marco condos house wine collections that demand Sub-Zero precision despite Gulf-coast salt air. Our certified technicians calibrate temperature and humidity in every wine cooler using genuine factory parts, protecting collections on the island.",
+  },
+  "palm-beach": {
+    "refrigerator-repair":
+      "Palm Beach's Estate Section, plus the iconic homes along Worth Avenue and South Ocean Boulevard, sets the world's standard for luxury living and the Sub-Zero refrigerators that anchor those kitchens. Our certified technicians provide discreet, white-glove service with genuine factory parts.",
+    "freezer-repair":
+      "From the oceanfront estates south of Mar-a-Lago to the Royal Poinciana neighborhood and El Bravo Way, Palm Beach's most prestigious homes depend on Sub-Zero freezers that match the island's exacting standards. Our factory-trained technicians provide discreet service with genuine parts.",
+    "icemaker-repair":
+      "Palm Beach's social calendar, from The Breakers' events to private gatherings in the Estate Section, depends on Sub-Zero ice makers performing flawlessly. Our certified technicians provide white-glove service across the island with factory-authorized parts and discretion.",
+    "wine-cooler-repair":
+      "The wine cellars of Palm Beach's Estate Section and South Ocean Boulevard mansions hold collections of historic significance. Our certified technicians provide the island's most exacting Sub-Zero wine cooler service, calibrating climate control to museum-grade standards using only genuine factory parts.",
+  },
 };
 
 const defaultTemplates: Record<string, (cityName: string, countyName: string) => string> = {
