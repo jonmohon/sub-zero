@@ -6,6 +6,7 @@ import Banner from "@/components/layout/Banner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MobileBottomBar from "@/components/layout/MobileBottomBar";
+import ChatWidgetLoader from "@/components/chat/ChatWidgetLoader";
 import { generateLocalBusinessSchema, generateOrganizationSchema } from "@/lib/schema";
 
 const localBusinessSchema = generateLocalBusinessSchema();
@@ -80,12 +81,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        {/* Apigateway webchat widget — loaded defer so it doesn't block render */}
-        <script
-          src="https://cdn.apigateway.co/webchat-client..prod/sdk.js"
-          data-widget-id="74b52434-3e52-11f1-9591-d6af760c4600"
-          defer
-        />
       </head>
       <body className="min-h-full flex flex-col">
         <Banner />
@@ -93,6 +88,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <MobileBottomBar />
+        <ChatWidgetLoader />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-MLN8WCDW10"
           strategy="afterInteractive"
