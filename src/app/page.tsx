@@ -44,7 +44,7 @@ export default function HomePage() {
       />
       <Script
         src="//script.crazyegg.com/pages/scripts/0022/1041.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <HeroSection />
       <BrandsSection />
