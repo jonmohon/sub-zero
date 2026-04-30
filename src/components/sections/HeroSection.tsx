@@ -110,6 +110,8 @@ export default function HeroSection() {
           fill
           sizes="100vw"
           className="object-contain object-bottom"
+          priority
+          fetchPriority="high"
         />
       </div>
 
