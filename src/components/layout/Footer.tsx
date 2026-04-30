@@ -151,10 +151,18 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <p className="text-center text-xs text-gray-600">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 px-4 sm:px-6 lg:px-8 py-4">
+          <p className="text-xs text-gray-600">
             &copy; 2026 Sub-Zero Repair Company. All Rights Reserved.
           </p>
+          <a
+            href="https://www.nexvato.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-gray-600 transition-colors hover:text-[#00B4D8]"
+          >
+            Powered by Nexvato
+          </a>
         </div>
       </div>
     </footer>
