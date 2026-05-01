@@ -202,6 +202,38 @@ export function generateArticleSchema(
   };
 }
 
+export interface ReviewItem {
+  author: string;
+  rating: number;
+  body: string;
+  /** ISO date string, e.g. "2026-04-15". */
+  datePublished: string;
+}
+
+/**
+ * Build Review schema for the page. ONLY pass real, verifiable reviews —
+ * Google penalizes fabricated review markup. The reviews must also appear
+ * visibly on the page; schema-only reviews are a policy violation.
+ */
+export function generateReviewSchema(reviews: ReviewItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": reviews.map((r) => ({
+      "@type": "Review",
+      itemReviewed: { "@id": `${BUSINESS.siteUrl}/#business` },
+      author: { "@type": "Person", name: r.author },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      reviewBody: r.body,
+      datePublished: r.datePublished,
+    })),
+  };
+}
+
 export function generateFAQSchema(items: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",

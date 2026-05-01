@@ -3,6 +3,10 @@ import Image from "next/image";
 import { getPriorityCityLinks } from "@/data/areas";
 
 const quickLinks = [
+  { label: "About", href: "/about" },
+  { label: "Our Technicians", href: "/technicians" },
+  { label: "Our History", href: "/history" },
+  { label: "Warranty", href: "/warranty" },
   { label: "Services", href: "/services" },
   { label: "Areas We Serve", href: "/areas-we-service" },
   { label: "Blog", href: "/blog" },

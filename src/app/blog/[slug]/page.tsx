@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
+import AuthorBox from "@/components/AuthorBox";
+import { getTeamMember } from "@/data/team";
 
 interface BlogPostData {
   slug: string;
@@ -170,12 +172,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = postsData[slug];
   if (!post) notFound();
 
+  const teamMember = getTeamMember(post.author);
+  const authorSchema = teamMember
+    ? {
+        "@type": "Person",
+        name: teamMember.name,
+        jobTitle: teamMember.role,
+        description: teamMember.bio,
+        url: `${BUSINESS.siteUrl}/technicians/#${teamMember.slug}`,
+        worksFor: { "@id": `${BUSINESS.siteUrl}/#business` },
+      }
+    : { "@type": "Person", name: post.author };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
-    author: { "@type": "Person", name: post.author },
+    author: authorSchema,
     publisher: { "@type": "Organization", name: "Sub-Zero Repair Services", url: BUSINESS.siteUrl },
     datePublished: post.date,
     dateModified: post.date,
@@ -230,10 +244,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </div>
           </div>
 
+          {teamMember && (
+            <div className="mt-12">
+              <AuthorBox member={teamMember} />
+            </div>
+          )}
+
           <div className="mt-12 border-t border-gray-200 pt-8">
             <h3 className="text-lg font-semibold text-[#0B1D33] mb-2">About Sub-Zero Repair Company</h3>
             <p className="text-[#64748B] text-sm leading-relaxed">
-              Sub-Zero Repair Company, doing business as Fivestar Appliance Repair Pros, has provided factory-authorized Sub-Zero appliance repair in South Florida since 1994. Our factory-trained technicians offer 24/7 same-day service across 82 cities in 7 counties, using only genuine manufacturer parts with a full warranty on all repairs.
+              Sub-Zero Repair Company, doing business as Fivestar Appliance Repair Pros, has provided Sub-Zero appliance repair in South Florida since 1994. Our factory-trained technicians offer 24/7 same-day service across 82 cities in 7 counties, using only genuine manufacturer parts with a full warranty on all repairs.
             </p>
           </div>
         </div>
