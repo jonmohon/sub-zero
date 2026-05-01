@@ -11,6 +11,7 @@ import ReliableSolutionsSection from "@/components/sections/ReliableSolutionsSec
 import ServicesSection from "@/components/sections/ServicesSection";
 import EmergencySection from "@/components/sections/EmergencySection";
 import PromotionsSection from "@/components/sections/PromotionsSection";
+import GoogleReviewsSection from "@/components/sections/GoogleReviewsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import RecentWorkSection from "@/components/sections/RecentWorkSection";
 import ServiceAreasSection from "@/components/sections/ServiceAreasSection";
@@ -54,6 +55,7 @@ export default function HomePage() {
       <ServicesSection />
       <EmergencySection />
       <PromotionsSection />
+      <GoogleReviewsSection />
       <TestimonialsSection />
       <RecentWorkSection />
       <ServiceAreasSection />

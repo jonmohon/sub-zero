@@ -1,5 +1,18 @@
 import { BUSINESS } from "./constants";
 
+function aggregateRating() {
+  if (BUSINESS.rating.value == null || BUSINESS.rating.reviewCount == null) {
+    return undefined;
+  }
+  return {
+    "@type": "AggregateRating",
+    ratingValue: BUSINESS.rating.value,
+    reviewCount: BUSINESS.rating.reviewCount,
+    bestRating: 5,
+    worstRating: 1,
+  };
+}
+
 export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
@@ -12,6 +25,7 @@ export function generateLocalBusinessSchema() {
     email: BUSINESS.email,
     image: `${BUSINESS.siteUrl}/images/logo.webp`,
     logo: `${BUSINESS.siteUrl}/images/logo.webp`,
+    aggregateRating: aggregateRating(),
     address: {
       "@type": "PostalAddress",
       name: BUSINESS.schemaAddress.name,
@@ -76,6 +90,7 @@ export function generateOrganizationSchema() {
     logo: `${BUSINESS.siteUrl}/images/logo.webp`,
     image: `${BUSINESS.siteUrl}/images/logo.webp`,
     foundingDate: BUSINESS.foundingYear,
+    aggregateRating: aggregateRating(),
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -237,6 +252,7 @@ export function generateLocalBusinessSchemaForCity(
     url: cityUrl,
     image: `${BUSINESS.siteUrl}/images/logo.webp`,
     logo: `${BUSINESS.siteUrl}/images/logo.webp`,
+    aggregateRating: aggregateRating(),
     address: {
       "@type": "PostalAddress",
       addressLocality: cityName,

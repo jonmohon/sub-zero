@@ -44,6 +44,18 @@ export const BUSINESS = {
   slogan: "South Florida's Trusted Sub-Zero Repair Experts",
   languages: ["English", "Spanish"],
   copyright: `© ${new Date().getFullYear()} Sub-Zero Repair Company. All Rights Reserved.`,
+  // Google Business Profile aggregate rating. Set to real values from the GBP
+  // dashboard so AggregateRating schema renders. Leave as null to omit (never
+  // ship fabricated numbers — Google penalizes that).
+  rating: {
+    value: null as number | null,
+    reviewCount: null as number | null,
+  },
+  // Trustindex widget ID for the embedded Google Reviews section.
+  // Sign up at trustindex.io (free), connect GBP, create a "Google Reviews"
+  // widget, paste the ID here. Until set, the section renders a clear "coming
+  // soon" placeholder for visitors.
+  trustindexWidgetId: null as string | null,
 } as const;
 
 export const NAV_ITEMS = [
