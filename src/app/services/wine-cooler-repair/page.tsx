@@ -4,6 +4,7 @@ import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
 import ParallaxImage from "@/components/ParallaxImage";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const serviceSchema = generateServiceSchema(
   "Sub-Zero Wine Cooler Repair",
@@ -75,6 +76,26 @@ export default function WineCoolerRepairPage() {
           </p>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get my Sub-Zero wine cooler repaired in South Florida?"
+        answer="Sub-Zero Repair Company services every Sub-Zero wine column and wine cooler — single-zone, dual-zone, integrated, and undercounter — across all 7 South Florida counties. We carry genuine OEM parts on every truck and recalibrate temperature and humidity after every repair so your collection is protected within hours, not days. Same-day service since 1994, no surcharges nights/weekends/holidays."
+        stats={[
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Parts on every truck" },
+          { value: "Calibrated", label: "Temp + humidity post-repair" },
+        ]}
+        quote={{
+          text: "Wine columns are the most precision-sensitive units Sub-Zero makes. A 2-degree drift over a week ages a vintage faster than the owner ever notices — that's why we recalibrate after every service, not just after compressor work.",
+          attribution: "Marvin Schuster, Lead Service Technician",
+        }}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">

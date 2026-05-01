@@ -4,6 +4,7 @@ import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
 import ParallaxImage from "@/components/ParallaxImage";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const serviceSchema = generateServiceSchema(
   "Sub-Zero Refrigerator Repair",
@@ -103,6 +104,26 @@ export default function RefrigeratorRepairPage() {
           </p>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get my Sub-Zero refrigerator repaired in South Florida?"
+        answer="Sub-Zero Repair Company services every Sub-Zero refrigerator line — Built-In, Integrated, Classic, Designer, Pro 48, Column, and Undercounter — across Miami-Dade, Broward, and 5 more South Florida counties. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck mean most repairs finish in a single visit. Available 24/7 with no surcharges for nights, weekends, or holidays."
+        stats={[
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Parts on every truck" },
+          { value: "All models", label: "Built-In to Pro 48" },
+        ]}
+        quote={{
+          text: "Most Sub-Zero failures we see in South Florida trace back to humidity stressing the condenser or sealed system — issues that look mysterious to a generalist but read like a textbook to anyone who has worked these units for a decade.",
+          attribution: "Marvin Schuster, Lead Service Technician",
+        }}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       {/* Hero Image */}
       <section className="py-0">

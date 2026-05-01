@@ -4,6 +4,7 @@ import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
 import ParallaxImage from "@/components/ParallaxImage";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const serviceSchema = generateServiceSchema(
   "Sub-Zero Marine Refrigeration Repair",
@@ -75,6 +76,26 @@ export default function MarineRepairPage() {
           </p>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get my Sub-Zero marine refrigerator repaired in South Florida?"
+        answer="Sub-Zero Repair Company provides dockside marine refrigeration service across South Florida — Miami Beach Marina, Sunset Harbour, Crandon Park, Bal Harbour, and every major yacht basin in between. We service marine refrigerators, freezers, ice makers, and wine units on vessels of any size. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck since 1994."
+        stats={[
+          { value: "Dockside", label: "We come to your slip" },
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "OEM", label: "Marine parts stocked" },
+          { value: "Any size", label: "Galley to cockpit" },
+        ]}
+        quote={{
+          text: "Marine units fail differently than residential — salt air corrodes contacts and fittings the manuals never mention, and constant vibration loosens lines that would never move on a kitchen install. You learn to spot it from feet away.",
+          attribution: "Marvin Schuster, Lead Service Technician",
+        }}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">

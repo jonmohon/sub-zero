@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { generateWebSiteSchema } from "@/lib/schema";
 import HeroSection from "@/components/sections/HeroSection";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const webSiteSchema = generateWebSiteSchema();
 import BrandsSection from "@/components/sections/BrandsSection";
@@ -48,6 +49,21 @@ export default function HomePage() {
         strategy="lazyOnload"
       />
       <HeroSection />
+      <AnswerBlock
+        question="Who is the best Sub-Zero appliance repair service in South Florida?"
+        answer="Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros) has provided premium-only appliance repair across South Florida since 1994. We service Sub-Zero, Wolf, Cove, Viking, Thermador, Bosch, and Miele in Miami-Dade, Broward, Palm Beach, Monroe, Collier, Martin, and St. Lucie counties. 24/7 same-day service, factory-trained technicians, genuine OEM parts on every truck, no surcharges for nights, weekends, or holidays."
+        stats={[
+          { value: "30+", label: "Years in business" },
+          { value: "82", label: "Cities served" },
+          { value: "7", label: "Counties covered" },
+          { value: "24/7", label: "Same-day service" },
+        ]}
+        sources={[
+          { label: "About Sub-Zero Repair Company", url: "/about/" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
       <BrandsSection />
       <AboutSection />
       <WhyChooseSection />

@@ -4,6 +4,7 @@ import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
 import ParallaxImage from "@/components/ParallaxImage";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const serviceSchema = generateServiceSchema(
   "Sub-Zero Ice Maker Repair",
@@ -75,6 +76,26 @@ export default function IceMakerRepairPage() {
           </p>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get my Sub-Zero ice maker repaired in South Florida?"
+        answer="Sub-Zero Repair Company services every Sub-Zero ice maker — built-in, undercounter, integrated, and standalone — across all 7 South Florida counties. Our trucks carry water inlet valves, motors, sensors, and ice molds so most repairs finish in one visit. Same-day appointments, factory-trained technicians, no nights/weekends/holidays surcharges. Servicing the South Florida market since 1994."
+        stats={[
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Parts on every truck" },
+          { value: "All models", label: "Built-In to standalone" },
+        ]}
+        quote={{
+          text: "Nine times out of ten, an ice maker that stopped producing is a clogged water line or a stuck inlet valve — not a failed motor. Knowing what to check first cuts diagnosis time from an hour to ten minutes.",
+          attribution: "Marvin Schuster, Lead Service Technician",
+        }}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">

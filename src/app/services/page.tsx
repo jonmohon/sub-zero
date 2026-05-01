@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { generateBreadcrumbSchema, generateItemListSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: BUSINESS.siteUrl },
@@ -94,6 +95,22 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Who repairs Sub-Zero appliances in South Florida?"
+        answer="Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros) services Sub-Zero refrigerators, freezers, ice makers, wine columns, and marine units across all 7 South Florida counties — Miami-Dade, Broward, Palm Beach, Monroe, Collier, Martin, and St. Lucie. Same-day appointments, factory-trained technicians, genuine OEM parts, and 24/7 availability with no holiday or weekend surcharges."
+        stats={[
+          { value: "30+", label: "Years in business" },
+          { value: "82", label: "Cities served" },
+          { value: "5", label: "Sub-Zero product lines" },
+          { value: "24/7", label: "Same-day service" },
+        ]}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "About our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

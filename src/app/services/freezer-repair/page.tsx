@@ -4,6 +4,7 @@ import { generateServiceSchema, generateBreadcrumbSchema, generateFAQSchema } fr
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreasGrid from "@/components/sections/ServiceAreasGrid";
 import ParallaxImage from "@/components/ParallaxImage";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const serviceSchema = generateServiceSchema(
   "Sub-Zero Freezer Repair",
@@ -87,6 +88,26 @@ export default function FreezerRepairPage() {
           </p>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get my Sub-Zero freezer repaired in South Florida?"
+        answer="Sub-Zero Repair Company services every Sub-Zero freezer configuration — column, side-by-side, integrated, and standalone — across all 7 South Florida counties. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck mean most repairs finish in one visit. 24/7 availability with no surcharges for nights, weekends, or holidays, since 1994."
+        stats={[
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Parts on every truck" },
+          { value: "All types", label: "Column to standalone" },
+        ]}
+        quote={{
+          text: "When a freezer column gets warm but the refrigerator side stays cold, it's almost always the freezer evaporator fan — not the compressor. Catching that distinction in the first 10 minutes saves the customer a four-figure bill.",
+          attribution: "Marvin Schuster, Lead Service Technician",
+        }}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
