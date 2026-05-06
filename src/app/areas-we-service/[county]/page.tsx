@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { counties } from "@/data/areas";
+import { countyDeepContent } from "@/data/city-content";
 import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
 import AnswerBlock from "@/components/AnswerBlock";
@@ -45,6 +46,8 @@ export default async function CountyPage({
   const { county } = await params;
   const data = countiesBySlug[county];
   if (!data) notFound();
+
+  const deep = countyDeepContent[county];
 
   const countyUrl = `${BUSINESS.siteUrl}/areas-we-service/${county}/`;
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -103,6 +106,55 @@ export default async function CountyPage({
           { label: "Meet our technicians", url: "/technicians/" },
         ]}
       />
+
+      {deep && (
+        <section className="py-16 bg-white border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-3 gap-12">
+              <div className="lg:col-span-2 space-y-8">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#0B1D33] mb-3">
+                    Sub-Regions of {data.name}
+                  </h2>
+                  <p className="text-[#64748B] leading-relaxed mb-6">
+                    {deep.marketProfile}
+                  </p>
+                  <ul className="space-y-5">
+                    {deep.subRegions.map((region) => (
+                      <li key={region.name} className="flex gap-4">
+                        <span
+                          className="shrink-0 w-2 h-2 rounded-full bg-[#f89406] mt-2.5"
+                          aria-hidden="true"
+                        />
+                        <div>
+                          <p className="font-semibold text-[#0B1D33] mb-1">{region.name}</p>
+                          <p className="text-[#334155] leading-relaxed text-sm">
+                            {region.description}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <aside className="bg-[#0387cc]/5 border border-[#0387cc]/20 rounded-2xl p-6 self-start">
+                <p className="text-xs uppercase tracking-[0.15em] text-[#0387cc] font-bold mb-2">
+                  From our service log
+                </p>
+                <p className="text-sm font-semibold text-[#0B1D33] mb-3">
+                  What we see most on {data.name} calls
+                </p>
+                <p className="text-[#334155] text-sm leading-relaxed mb-4">
+                  {deep.failureNote}
+                </p>
+                <p className="text-xs text-[#64748B]">
+                  — Daniel Rivera, Senior Service Technician
+                </p>
+              </aside>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

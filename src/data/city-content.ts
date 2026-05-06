@@ -419,6 +419,263 @@ export const cityIntros: Record<string, string> = {
 };
 
 /* =====================================================================
+ * Per-county sub-regions, market profile, and failure-pattern notes.
+ *
+ * Adds substantial unique content to each of the 7 county hub pages.
+ * Differentiates them from each other and from the city pages they link
+ * to. Renders three new sections on county pages:
+ *   - "Sub-Regions of {County}" — 4-6 named sub-areas
+ *   - "Market profile" — what kind of Sub-Zero installs dominate
+ *   - "From our service log" — Daniel-voice failure-pattern observation
+ * ===================================================================== */
+
+export interface CountySubRegion {
+  name: string;
+  description: string;
+}
+
+export interface CountyDeepContent {
+  subRegions: CountySubRegion[];
+  marketProfile: string;
+  failureNote: string;
+}
+
+export const countyDeepContent: Record<string, CountyDeepContent> = {
+  "miami-dade-county": {
+    subRegions: [
+      {
+        name: "Brickell + Downtown corridor",
+        description:
+          "Dense luxury high-rise zone — SLS, Echo, Flatiron, ICON, Brickell Key towers. Standard install: Built-In BI-30/BI-36 in standard units, Integrated and wine columns in penthouses.",
+      },
+      {
+        name: "Coral Gables + Pinecrest",
+        description:
+          "Single-family estate country with mature canopy. Pro 48 and Built-In installs from 1990s-2010s renovation waves. Dust-blocked condensers from heavy landscaping are the dominant service pattern.",
+      },
+      {
+        name: "Miami Beach + barrier islands",
+        description:
+          "Three sub-markets: South Beach (high-rise condo), Mid-Beach (Faena, Continuum, Setai), and the residential islands (Star, Palm, Hibiscus, Sunset). Salt-air corrosion is the unifying factor.",
+      },
+      {
+        name: "Aventura + Sunny Isles + Bal Harbour",
+        description:
+          "Northeast Miami-Dade luxury condo corridor. COI-required tower buildings (Acqualina, Trump, Porsche Design Tower, St. Regis). Voltage instability damaging control boards is the signature failure here.",
+      },
+      {
+        name: "Key Biscayne",
+        description:
+          "Worst salt-air exposure in our coverage area. Sub-Zero condensers corrode here on an 18-24 month timeline without intervention. Annual maintenance is non-negotiable.",
+      },
+      {
+        name: "Doral + western Miami-Dade",
+        description:
+          "Gated single-family communities (Trump National Doral, Mansions at Doral). 2010s-build Pro 48 installs. Slightly harder water profile pushes ice maker filter replacement intervals shorter.",
+      },
+    ],
+    marketProfile:
+      "Miami-Dade is the most diverse Sub-Zero service market in our coverage area — luxury high-rise condos, single-family estate homes, gated communities, marine refrigeration on yachts, and outdoor kitchen units. Different parts inventory and different protocols for each.",
+    failureNote:
+      "Three failure patterns dominate Miami-Dade: voltage instability damaging control boards in luxury condo towers, dust-blocked condensers in single-family homes with heavy landscaping, and accelerated salt-air corrosion on coastal-island properties. Same brand, same models — completely different failure profiles depending on where in the county the unit is installed.",
+  },
+
+  "broward-county": {
+    subRegions: [
+      {
+        name: "Las Olas + Fort Lauderdale waterfront",
+        description:
+          "Las Olas Isles, Rio Vista, Coral Ridge, Harbor Beach. Single-family waterfront homes plus the yacht refrigeration market at Pier 66, Bahia Mar, Las Olas Marina, and Hall of Fame.",
+      },
+      {
+        name: "Hollywood + Hallandale Beach",
+        description:
+          "Beachfront condo towers (Trump Hollywood, Diplomat Residences, Hyde Beach) plus inland gated communities (Emerald Hills, Hollywood Lakes). Salt-air at the beach, defrost-system service inland.",
+      },
+      {
+        name: "Western Broward (Sunrise, Plantation, Davie, Weston)",
+        description:
+          "Residential single-family + gated estate communities. Long Lake Ranches, Forest Ridge, Jacaranda Country Club, Weston Hills. 2000s build wave hitting first major service window.",
+      },
+      {
+        name: "Coral Springs + Parkland",
+        description:
+          "Master-planned community territory. Routine residential service patterns. Family-oriented kitchens with standard Built-In and Pro 48 installs.",
+      },
+      {
+        name: "Pompano Beach + Lighthouse Point",
+        description:
+          "Coastal-residential mix. Salt-air exposure on oceanfront properties; standard service patterns inland. Marine refrigeration at the Hillsboro Inlet.",
+      },
+    ],
+    marketProfile:
+      "Broward splits into three distinct Sub-Zero markets: waterfront residential (Las Olas, Harbor Beach, Coral Ridge), beachfront condos (Hollywood, Hallandale, Pompano), and western residential (Plantation, Davie, Weston, Coral Springs). Plus the substantial yacht refrigeration market at the Fort Lauderdale marinas.",
+    failureNote:
+      "Broward dispatch is fundamentally about routing — beachfront salt-air calls, mainland residential calls, and yacht slip calls all in the same county but requiring different parts inventory. The Fort Lauderdale yacht market alone is a meaningful share of our overall service volume, and the failure patterns there are completely different from the residential calls 5 miles inland.",
+  },
+
+  "palm-beach-county": {
+    subRegions: [
+      {
+        name: "Boca Raton gated communities",
+        description:
+          "Royal Palm Yacht & Country Club, Long Lake Estates, St. Andrews, Polo Club, Woodfield, Boca Pointe. Most installs are 2008-2014 BI series and Pro 48 columns. Defrost system service at year 12 is the dominant call.",
+      },
+      {
+        name: "Delray Beach + Boynton Beach",
+        description:
+          "Mix of downtown condos (Atlantic Avenue / Pineapple Grove), beachfront properties, and gated communities (Mizner, Polo Trace, Hunters Run, Indian Spring, Quail Ridge, Valencia communities). Snowbird-heavy market.",
+      },
+      {
+        name: "Wellington + western Palm Beach",
+        description:
+          "Equestrian estate country. International Polo Club, Wellington Equestrian Festival venue. Heavy winter-season Sub-Zero use. Pre-season service is a major scheduled category.",
+      },
+      {
+        name: "Palm Beach Island + Jupiter Island",
+        description:
+          "The most exacting market we cover. Estate Section, Worth Avenue corridor, Jupiter Island, Admirals Cove, Trump National. White-glove service protocol. Every estate has 8+ Sub-Zero appliances per kitchen.",
+      },
+      {
+        name: "Palm Beach Gardens + Jupiter (mainland)",
+        description:
+          "BallenIsles, Mirasol, Old Palm, PGA National. Country club residential. Wine column humidity recalibration is the most-skipped maintenance item here.",
+      },
+      {
+        name: "West Palm Beach historic + downtown",
+        description:
+          "El Cid, SoSo, Flamingo Park (historic single-family) plus downtown CityPlace high-rise. Two completely different failure profiles — legacy 632/642/690 series in historic homes, new-build BI series in downtown towers.",
+      },
+    ],
+    marketProfile:
+      "Palm Beach is the most prestige-sensitive Sub-Zero market we serve. Multi-appliance kitchens are standard. Snowbird service cycles drive a substantial portion of our annual schedule. Wine column collections in many homes exceed the value of the units protecting them.",
+    failureNote:
+      "Two patterns dominate Palm Beach service. First: snowbird-cycle damage when seasonal residents return — door gasket compression loss from dormancy, ice maker line freezes, voltage damage from power events while the home is unoccupied. Second: wine column humidity drift on collections that span decades. Most owners only call about wine units when temperature drifts visibly, by which point humidity has been damaging corks for months.",
+  },
+
+  "monroe-county": {
+    subRegions: [
+      {
+        name: "Key Largo + Ocean Reef Club",
+        description:
+          "Ocean Reef Club is the most exclusive enclave in the Florida Keys — every home has full Sub-Zero/Wolf kitchens. Salt-air exposure here is the worst in our coverage area; annual maintenance keeps units running 15+ years.",
+      },
+      {
+        name: "Islamorada + the Middle Keys",
+        description:
+          "Plantation Key, Windley Key, Upper Matecumbe Key. Sportfishing lodges and waterfront homes. Marine refrigeration at the major lodges plus residential service on island estates.",
+      },
+      {
+        name: "Marathon + Lower Keys",
+        description:
+          "Hawks Cay Resort area, Duck Key residential, plus the homes spanning into the Lower Keys. Extended scheduling required for dispatch — typically a half-day visit.",
+      },
+      {
+        name: "Key West",
+        description:
+          "Old Town historic homes and the Truman Annex condos. Salt air is at peak intensity. Sub-Zero installs face the most aggressive maintenance schedule we recommend.",
+      },
+    ],
+    marketProfile:
+      "Monroe County is Sub-Zero's most punishing operational environment in our service area. Salt air at hurricane intensity year-round. Sub-Zero condensers that last 15 years inland fail at 6-8 years in the Keys without proper maintenance. Properties at Ocean Reef Club, Islamorada lodges, and Key West Old Town all require accelerated service schedules to hit normal Sub-Zero lifespans.",
+    failureNote:
+      "Salt-air corrosion is the defining factor on every Monroe County call. Pull the back panel on any Keys Sub-Zero and you see visible corrosion on contacts and condenser fins by year 3. Owners who follow our marine-grade maintenance schedule routinely get 15-20 years from their units; owners who don't typically face premature replacement at 6-8 years. The math on annual maintenance is overwhelming here.",
+  },
+
+  "collier-county": {
+    subRegions: [
+      {
+        name: "Old Naples + Port Royal",
+        description:
+          "The most established Naples luxury market. Port Royal estate homes, Aqualane Shores, Old Naples south of Central Ave. Single-family chef's kitchens with full Sub-Zero/Wolf installations.",
+      },
+      {
+        name: "Pelican Bay + Bay Colony",
+        description:
+          "North Naples gated community territory. Pelican Bay's residential towers and single-family homes from the 1990s-2000s renovation wave. Pro 48 sealed-system service is now the dominant call.",
+      },
+      {
+        name: "Grey Oaks + Quail West + Mediterra",
+        description:
+          "East Naples gated communities. Heavy Sub-Zero/Wolf install density, mostly 2000s-2010s vintage. Wine column humidity recalibration is the most-skipped maintenance item.",
+      },
+      {
+        name: "Marco Island",
+        description:
+          "Tigertail Beach, Hideaway Beach, Cape Marco. Gulf-coast salt air plus heavy seasonal-resident population. Pre-season service is a major scheduled category.",
+      },
+      {
+        name: "Bonita Springs + Estero",
+        description:
+          "Northern Collier residential. Bonita Bay, Coconut Point, Pelican Landing. Less salt-air exposure than waterfront Naples, more typical residential service patterns.",
+      },
+    ],
+    marketProfile:
+      "Collier County is the Gulf Coast luxury market — single-family estate kitchens dominate, with substantial seasonal-resident populations that drive pre-season and pre-arrival service queues every fall. Marine refrigeration at Naples Boat Club, Naples Yacht Club, and Marco Island Yacht Club is a meaningful share of the service mix.",
+    failureNote:
+      "Collier County's defining service pattern is seasonal. Half my Naples spring queue is pre-arrival service for snowbird returns. The other half is owners who skipped pre-arrival service and now need real repairs — door gasket failures from dormancy, voltage damage from power events while homes were empty, ice maker line damage from forgotten water-supply shutoff. The math on pre-arrival service is overwhelming for seasonal residents.",
+  },
+
+  "martin-county": {
+    subRegions: [
+      {
+        name: "Sailfish Point + Hutchinson Island",
+        description:
+          "Atlantic-coast oceanfront and barrier-island homes. Sailfish Point's gated community has its own marina and yacht refrigeration mix. Salt-air exposure is significant.",
+      },
+      {
+        name: "Stuart waterfront + Sewall's Point",
+        description:
+          "St. Lucie River and Indian River waterfronts. Sewall's Point's narrow peninsula has some of Martin County's most established estates. Marine and residential service mixed.",
+      },
+      {
+        name: "Mariner Sands + inland gated communities",
+        description:
+          "Country club residential. Standard service patterns — defrost systems, evaporator fans, door gaskets — without the heavy salt-air exposure of waterfront properties.",
+      },
+      {
+        name: "Palm City + Hobe Sound",
+        description:
+          "Established residential plus the Hobe Sound oceanfront community. Mix of new-build and 1990s-2000s estate homes. Pro 48 installs hitting first major service window.",
+      },
+    ],
+    marketProfile:
+      "Martin County is a Treasure Coast service market with two distinct profiles: the waterfront/marine-adjacent properties at Sailfish Point and along the rivers, and the inland gated communities at Mariner Sands and Palm City. We dispatch from Palm Beach into Martin County most days, with a roughly 60-90 minute drive depending on Stuart traffic.",
+    failureNote:
+      "Sailfish Point and Hutchinson Island oceanfront calls follow the marine-adjacent failure profile — accelerated condenser corrosion, contact wear, more frequent door gasket replacement. Inland Mariner Sands and Palm City calls look like typical residential — defrost system service, evaporator fan replacement, ice maker valves. Same county, two completely different service playbooks.",
+  },
+
+  "st-lucie-county": {
+    subRegions: [
+      {
+        name: "South Hutchinson Island",
+        description:
+          "Oceanfront condos and residential community. Salt-air exposure typical for Treasure Coast oceanfront. Annual maintenance recommended.",
+      },
+      {
+        name: "Fort Pierce historic + downtown",
+        description:
+          "Indian River Lagoon waterfront plus the historic downtown. Mix of older established homes (some with legacy Sub-Zero installs) and newer waterfront condos.",
+      },
+      {
+        name: "Port St. Lucie residential",
+        description:
+          "St. Lucie West, PGA Village, Tradition master-planned community. Newer build wave — most Sub-Zero installs are post-2010. Standard residential service patterns.",
+      },
+      {
+        name: "Tradition + western Port St. Lucie",
+        description:
+          "Master-planned community territory with heavy Sub-Zero install density in newer homes. Service patterns track with build vintage — ice maker valves, door gaskets, defrost components.",
+      },
+    ],
+    marketProfile:
+      "St. Lucie County is at the northern edge of our service area. Most calls are residential single-family, with smaller share of waterfront and historic-downtown work. Newer build wave (post-2010) dominates Port St. Lucie installs.",
+    failureNote:
+      "St. Lucie service is mostly straightforward residential work. The defining factor is dispatch distance from our Palm Beach base — typically 90 minutes to two hours depending on Florida Turnpike traffic. We schedule St. Lucie visits in clusters when possible to make the dispatch efficient. Same-day service is achievable in most cases when booked early.",
+  },
+};
+
+/* =====================================================================
  * Per-city neighborhood + landmark lists.
  *
  * Renders as a "Neighborhoods we cover in {City}" section on city pages
