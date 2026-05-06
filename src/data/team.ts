@@ -17,15 +17,16 @@ export interface TeamMember {
 
 export const team: TeamMember[] = [
   {
-    slug: "marvin-schuster",
-    name: "Marvin Schuster",
-    role: "Lead Service Technician",
-    yearsExperience: 18,
-    bio: "Marvin leads the field service team and personally handles complex Sub-Zero refrigeration diagnostics across Miami-Dade and Broward. He has spent the better part of two decades working exclusively on premium built-in refrigeration, with deep familiarity for older Classic and Pro 48 systems as well as the current Designer line. Marvin authors most of the technical guides on our blog.",
+    slug: "daniel-rivera",
+    name: "Daniel Rivera",
+    role: "Senior Service Technician",
+    yearsExperience: 15,
+    bio: "Daniel is the senior technician on dispatch for our most complex Sub-Zero work — sealed-system diagnostics, marine refrigeration, and wine column calibration across Miami-Dade and Broward. Fifteen years working only on premium built-in refrigeration has given him an unusual fluency with both the active Designer and Pro 48 lines and the legacy 532, 632, and 690 series still running across South Florida luxury homes. He writes most of the technical guides on this site.",
     specialties: [
-      "Sub-Zero refrigeration",
-      "Sealed system diagnostics",
-      "Wine column service",
+      "Sealed-system diagnostics",
+      "Marine refrigeration",
+      "Wine column calibration",
+      "Legacy Sub-Zero systems",
     ],
   },
 ];

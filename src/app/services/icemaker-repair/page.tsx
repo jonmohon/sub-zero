@@ -88,7 +88,7 @@ export default function IceMakerRepairPage() {
         ]}
         quote={{
           text: "Nine times out of ten, an ice maker that stopped producing is a clogged water line or a stuck inlet valve — not a failed motor. Knowing what to check first cuts diagnosis time from an hour to ten minutes.",
-          attribution: "Marvin Schuster, Lead Service Technician",
+          attribution: "Daniel Rivera, Senior Service Technician",
         }}
         sources={[
           { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
@@ -112,15 +112,27 @@ export default function IceMakerRepairPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#0B1D33]">Expert Sub-Zero Ice Maker Repair</h2>
+                <h2 className="text-3xl font-bold text-[#0B1D33]">Sub-Zero Ice Maker Repair — Same-Day in South Florida</h2>
                 <p className="text-[#64748B] leading-relaxed text-lg">
-                  A properly functioning ice maker is essential, especially in South Florida&apos;s warm climate. When your Sub-Zero ice maker stops producing ice or delivers undersized, cloudy, or misshapen cubes, our certified technicians can diagnose and resolve the issue quickly with same-day service.
+                  Nine out of ten &ldquo;no ice&rdquo; calls trace to one of three things —
+                  a clogged water line, a stuck water inlet valve, or a frozen-over fill
+                  tube. Catching the right one in the first ten minutes is what separates
+                  a $200 fix from a $500 misdiagnosis. We service every Sub-Zero ice maker
+                  configuration across South Florida.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Common Sub-Zero ice maker problems include clogged water lines, faulty water inlet valves, malfunctioning motors, defective sensors, and thermostat issues. Our technicians carry genuine Sub-Zero replacement parts on every service call, allowing us to complete most repairs in a single visit without the need for follow-up appointments.
+                  South Florida&apos;s harder water profile pushes water filter replacement
+                  intervals to the lower end of the manufacturer range. Skip a replacement
+                  cycle and the inlet valve starts to clog, ice cubes get small or hollow,
+                  and eventually the valve itself fails. We arrive with OEM water inlet
+                  valves, harvest motors, ice level sensors, and ice molds for every active
+                  Sub-Zero ice maker line.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Whether your ice maker is built into your Sub-Zero refrigerator or is a standalone unit, we have the expertise to restore full ice production. We also provide preventive maintenance services to keep your ice maker running efficiently and extend its lifespan.
+                  Built into your Built-In refrigerator, undercounter UC-15I, integrated
+                  IT-series ice maker, Pro 48 production system, or outdoor UC-15IO unit —
+                  we service them all. Most ice maker repairs finish in under an hour
+                  on-site, with the workmanship warranty written on the invoice.
                 </p>
               </div>
 

@@ -100,7 +100,7 @@ export default function FreezerRepairPage() {
         ]}
         quote={{
           text: "When a freezer column gets warm but the refrigerator side stays cold, it's almost always the freezer evaporator fan — not the compressor. Catching that distinction in the first 10 minutes saves the customer a four-figure bill.",
-          attribution: "Marvin Schuster, Lead Service Technician",
+          attribution: "Daniel Rivera, Senior Service Technician",
         }}
         sources={[
           { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
@@ -124,29 +124,28 @@ export default function FreezerRepairPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#0B1D33]">Fast, Reliable Sub-Zero Freezer Repair</h2>
+                <h2 className="text-3xl font-bold text-[#0B1D33]">Sub-Zero Freezer Repair — Every Configuration</h2>
                 <p className="text-[#64748B] leading-relaxed text-lg">
-                  A malfunctioning freezer can lead to significant food loss and
-                  costly replacements. Our Sub-Zero freezer repair specialists
-                  provide fast, reliable service throughout South Florida to get
-                  your freezer back to peak performance. We handle everything from
-                  minor fixes to major component replacements.
+                  Sub-Zero freezers fail in patterns that rarely require sealed-system work.
+                  Defrost components, evaporator fans, and door seals account for the vast
+                  majority of calls. We service every Sub-Zero freezer configuration —
+                  column, side-by-side, integrated, and standalone — across all seven
+                  South Florida counties.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Our factory-trained technicians are experts at diagnosing and
-                  resolving the most common Sub-Zero freezer issues, including
-                  temperature inconsistencies, excessive ice buildup, unusual
-                  noises, door seal problems, and compressor failures. We carry
-                  genuine Sub-Zero parts on every service call to ensure a
-                  first-visit fix whenever possible.
+                  When a freezer column starts warming up but the refrigerator side stays
+                  cold, it&apos;s almost always the freezer evaporator fan — not the
+                  compressor. Catching that distinction in the first 10 minutes saves the
+                  customer a four-figure bill. Our technicians arrive with defrost heaters,
+                  defrost timers, evaporator fan motors, common door gaskets, and the
+                  diagnostic tools to test the sealed system without breaking it open.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Whether you have a built-in Sub-Zero freezer column, an
-                  integrated unit, or a freestanding model, our team has the
-                  expertise and parts inventory to restore proper operation
-                  quickly. We understand the urgency of freezer failures and offer
-                  same-day emergency service to minimize food spoilage and
-                  inconvenience.
+                  Most Sub-Zero freezer repairs finish in a single visit. Built-In freezer
+                  columns (IC series), Integrated columns (IT series), Classic side-by-sides,
+                  Designer freezer columns, Pro 48 freezer columns, and the legacy 524, 525,
+                  561T, and 642 lines still running across South Florida — we have parts for
+                  all of them on the truck.
                 </p>
               </div>
 

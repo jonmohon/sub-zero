@@ -36,12 +36,13 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0B1D33] leading-[1.08] tracking-tight">
-            Fast Same-Day Sub-Zero Appliance Repair Across South Florida
+            Sub-Zero Appliance Repair Across South Florida — Same-Day Service Since 1994
           </h1>
 
           <p className="mt-6 text-lg text-[#334155] leading-relaxed">
-            Fast, reliable repair services for Sub-Zero refrigerators, freezers,
-            ice makers, and more. Open holidays and weekends.
+            Sub-Zero specialists for refrigerators, freezers, ice makers, wine columns, and
+            marine units. Factory-trained technicians dispatching same-day across Miami-Dade,
+            Broward, and five more counties — with no surcharges for nights, weekends, or holidays.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "When to Call a Refrigerator Repair Technician - Sub-Zero Repair Services",
     metaDescription: "Learn the warning signs that indicate you need a professional refrigerator repair technician. Don't wait until it's too late!",
     excerpt: "Learn the key warning signs that your refrigerator needs professional attention before a minor issue becomes a major breakdown.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2024-11-15",
     content: [
       "Your refrigerator is one of the hardest-working appliances in your home, running 24 hours a day to keep your food fresh and safe. When it starts showing signs of trouble, knowing when to call a professional repair technician can save you from a costly emergency.",
@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Why DIY Refrigerator Repair Isn't Always the Best Option - Sub-Zero Repair Services",
     metaDescription: "Discover why professional refrigerator repair is often better than DIY. Protect your investment with expert service.",
     excerpt: "While DIY projects can be rewarding, refrigerator repair is one area where professional expertise makes all the difference.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2024-12-01",
     content: [
       "In the age of YouTube tutorials and online guides, it's tempting to tackle refrigerator repairs yourself. However, modern Sub-Zero and premium refrigerators are complex appliances that require specialized knowledge and tools.",
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Reliable Freezer Maintenance Quick Guide - Sub-Zero Repair Services",
     metaDescription: "Keep your freezer running efficiently with these essential maintenance tips from our certified technicians.",
     excerpt: "Essential maintenance tips to keep your Sub-Zero freezer running efficiently and extend its lifespan.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-01-10",
     content: [
       "Regular maintenance is the key to keeping your Sub-Zero freezer running efficiently for years to come. A well-maintained freezer not only preserves your food better but also saves energy and prevents costly breakdowns.",
@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Refrigerator Troubleshooting Guide - Sub-Zero Repair Services",
     metaDescription: "Troubleshoot common refrigerator cooling issues with our expert guide. Know when to DIY and when to call a pro.",
     excerpt: "A comprehensive guide to troubleshooting common refrigerator cooling problems before calling for professional help.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-01-25",
     content: [
       "When your refrigerator isn't cooling properly, it can be stressful. Before calling for service, there are several things you can check to potentially resolve the issue or help your technician diagnose it faster.",
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Refrigerator Compressor Repair Guide - Sub-Zero Repair Services",
     metaDescription: "Everything you need to know about refrigerator compressor repair. Expert diagnostics and repair from certified technicians.",
     excerpt: "Understanding compressor issues in your refrigerator and why professional repair is essential.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-02-05",
     content: [
       "The compressor is the heart of your refrigerator's cooling system. When it fails, your entire unit stops cooling effectively. Understanding compressor issues can help you identify problems early and avoid complete system failures.",
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Refrigerator Leaking Water Causes and Fixes - Sub-Zero Repair Services",
     metaDescription: "Discover common causes of refrigerator water leaks and when you need professional repair. Fast, reliable service available.",
     excerpt: "Common causes of refrigerator water leaks and how to address them quickly.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-02-15",
     content: [
       "Finding water pooling around your refrigerator is never a welcome sight. Water leaks can damage your flooring, create slip hazards, and indicate underlying problems with your refrigerator that need attention.",
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Emergency Fridge Repair Near Me 24/7 - Sub-Zero Repair Services",
     metaDescription: "Need emergency refrigerator repair? We offer 24/7 same-day service across South Florida. Call (800) 651-4528 now.",
     excerpt: "When your refrigerator breaks down, you need fast, professional help. Our 24/7 emergency service is here for you.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-02-20",
     content: [
       "A refrigerator breakdown is always an emergency. Your food is at risk, and every hour counts. That's why we offer 24/7 emergency refrigerator repair service across South Florida — no extra charges for nights, weekends, or holidays.",
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Ice Maker Repair Service Same-Day - Sub-Zero Repair Services",
     metaDescription: "Professional ice maker repair with same-day service. Expert technicians for all Sub-Zero ice maker models. Call (800) 651-4528.",
     excerpt: "Fast, professional ice maker repair service available same-day throughout South Florida.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-03-01",
     content: [
       "When your ice maker stops producing ice or starts making unusual noises, you need fast professional help. Our certified technicians specialize in Sub-Zero ice maker repair and can diagnose and fix most issues the same day.",
@@ -136,7 +136,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Wine Cooler Repair Specialists Same-Day - Sub-Zero Repair Services",
     metaDescription: "Expert wine cooler repair to protect your wine collection. Same-day service with genuine parts. Call (800) 651-4528.",
     excerpt: "Protect your wine collection with our expert wine cooler repair service, available same-day.",
-    author: "Marvin Schuster",
+    author: "Daniel Rivera",
     date: "2025-03-10",
     content: [
       "Your wine collection is an investment that deserves proper protection. When your Sub-Zero wine cooler isn't maintaining the right temperature or humidity, every bottle is at risk. Our wine cooler repair specialists can help.",

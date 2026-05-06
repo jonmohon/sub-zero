@@ -88,7 +88,7 @@ export default function WineCoolerRepairPage() {
         ]}
         quote={{
           text: "Wine columns are the most precision-sensitive units Sub-Zero makes. A 2-degree drift over a week ages a vintage faster than the owner ever notices — that's why we recalibrate after every service, not just after compressor work.",
-          attribution: "Marvin Schuster, Lead Service Technician",
+          attribution: "Daniel Rivera, Senior Service Technician",
         }}
         sources={[
           { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
@@ -112,15 +112,28 @@ export default function WineCoolerRepairPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#0B1D33]">Certified Sub-Zero Wine Cooler Repair</h2>
+                <h2 className="text-3xl font-bold text-[#0B1D33]">Sub-Zero Wine Cooler & Wine Column Repair — Recalibrated After Every Service</h2>
                 <p className="text-[#64748B] leading-relaxed text-lg">
-                  Your wine collection represents a significant investment, and proper storage conditions are critical to preserving its value and flavor. When your Sub-Zero wine cooler experiences temperature fluctuations, compressor issues, or humidity control problems, our certified technicians provide expert repair service to protect your collection.
+                  Wine columns are the most precision-sensitive units Sub-Zero makes. A
+                  two-degree drift over a week ages a vintage faster than the owner ever
+                  notices. After 8-10 years, most units quietly drift below the 50%
+                  humidity target — invisible to the owner, slow death for the corks. Our
+                  recalibration after every service prevents this from happening to your
+                  collection.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Sub-Zero wine coolers are precision instruments designed to maintain exact temperature and humidity levels. Common issues we repair include temperature fluctuations between zones, compressor and evaporator problems, humidity control malfunctions, worn door seals allowing warm air infiltration, and electronic control board failures.
+                  We service every Sub-Zero wine storage configuration — single-zone,
+                  dual-zone, integrated wine columns, and undercounter units. Common
+                  failures include temperature drift between zones, compressor short-cycling,
+                  evaporator coil frost-over, worn door seals letting humidity escape, and
+                  electronic control board issues from sustained voltage instability.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Our technicians understand the delicate balance required for optimal wine storage. We use only genuine Sub-Zero replacement parts and calibrate every unit after repair to ensure your wines are stored at precisely the right temperature and humidity level. Same-day emergency service is available to minimize any risk to your collection.
+                  After every wine cooler repair we perform, the unit gets recalibrated —
+                  not just after compressor work. We bring the cabinet to setpoint, verify
+                  with a calibrated thermocouple at three shelf positions, measure humidity
+                  with a calibrated hygrometer, and adjust the control board to compensate
+                  for any drift. Documented on the invoice.
                 </p>
               </div>
 

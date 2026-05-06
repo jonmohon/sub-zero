@@ -116,7 +116,7 @@ export default function RefrigeratorRepairPage() {
         ]}
         quote={{
           text: "Most Sub-Zero failures we see in South Florida trace back to humidity stressing the condenser or sealed system — issues that look mysterious to a generalist but read like a textbook to anyone who has worked these units for a decade.",
-          attribution: "Marvin Schuster, Lead Service Technician",
+          attribution: "Daniel Rivera, Senior Service Technician",
         }}
         sources={[
           { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
@@ -142,32 +142,29 @@ export default function RefrigeratorRepairPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#0B1D33]">Expert Sub-Zero Refrigerator Repair You Can Trust</h2>
+                <h2 className="text-3xl font-bold text-[#0B1D33]">Sub-Zero Refrigerator Repair — Sealed-System Specialists</h2>
                 <p className="text-[#64748B] leading-relaxed text-lg">
-                  You have no time to lose if your fridge or freezer is failing.
-                  Depend on our Sub-Zero Service Centers for emergency Sub-Zero
-                  refrigerator service and repair in South Florida. We&apos;ll
-                  save your food by repairing your refrigerator unit. The trained
-                  technicians at our company ensure your commercial or residential
-                  equipment is fully operational. That means your food stays fresh
-                  and you save money by keeping it that way.
+                  When a Sub-Zero refrigerator stops cooling in South Florida humidity,
+                  food loss starts in hours, not days. We dispatch same-day across
+                  Miami-Dade, Broward, and Palm Beach for sealed-system diagnostics,
+                  compressor work, defrost board replacement, evaporator fan repair, and
+                  electronic control board service — every active and legacy Sub-Zero line.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Customers throughout the area trust us for emergency response
-                  when they have problems with their refrigeration equipment.
-                  Because our technicians are experienced and factory-trained, we
-                  deliver the highest-quality services to ensure your Sub-Zero
-                  equipment is fully operational as soon as possible.
+                  Our technicians have worked exclusively on premium built-in refrigeration
+                  for three decades. That focus matters because Sub-Zero sealed-system
+                  architecture doesn&apos;t forgive a generalist. The first hour of a
+                  Sub-Zero diagnostic decides whether the bill is $400 or $2,000 — getting
+                  that hour right is what we&apos;re paid for.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  If your refrigerator breaks, you need immediate emergency
-                  services. At our company, we have extensive experience in
-                  repairing all types of Sub-Zero units. In addition, we keep a
-                  large supply of authentic Sub-Zero refrigerator parts on our
-                  trucks. This ensures that we are able to fix everything — from
-                  freestanding units to built-in models. You can depend on us for
-                  same-day repair, affordable services, and high-quality
-                  workmanship.
+                  Every truck ships with the OEM parts your Sub-Zero refrigerator is
+                  statistically most likely to need: evaporator fan motors, defrost boards,
+                  defrost thermostats, water inlet valves, common door gaskets, and the
+                  diagnostic equipment to test the sealed system without breaking it open.
+                  Most repairs finish on the first visit — Built-In to Pro 48, Designer to
+                  Classic, and the legacy 532, 632, and 690 series still running across
+                  South Florida luxury homes.
                 </p>
               </div>
 

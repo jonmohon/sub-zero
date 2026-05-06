@@ -88,7 +88,7 @@ export default function MarineRepairPage() {
         ]}
         quote={{
           text: "Marine units fail differently than residential — salt air corrodes contacts and fittings the manuals never mention, and constant vibration loosens lines that would never move on a kitchen install. You learn to spot it from feet away.",
-          attribution: "Marvin Schuster, Lead Service Technician",
+          attribution: "Daniel Rivera, Senior Service Technician",
         }}
         sources={[
           { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
@@ -112,15 +112,28 @@ export default function MarineRepairPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#0B1D33]">Expert Marine Sub-Zero Repair — We Come to Your Vessel</h2>
+                <h2 className="text-3xl font-bold text-[#0B1D33]">Sub-Zero Marine Refrigeration Repair — Dockside Across South Florida</h2>
                 <p className="text-[#64748B] leading-relaxed text-lg">
-                  Marine refrigeration systems face unique challenges that land-based units never encounter. Salt air exposure, constant vibration, power fluctuations, and the demanding marine environment all take a toll on your Sub-Zero equipment. Our specialized marine repair technicians understand these challenges and provide expert dockside service throughout South Florida.
+                  Marine Sub-Zero units fail differently than residential. Salt air corrodes
+                  contacts and fittings the residential service manuals never mention.
+                  Constant vibration loosens lines that would never move on a kitchen install.
+                  Inverter switching introduces voltage spikes that residential control
+                  boards aren&apos;t built to tolerate long-term. Different failure profile,
+                  different parts inventory, different tools.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  Whether you&apos;re docked at a marina in Miami, Fort Lauderdale, or anywhere along the South Florida coast, our team comes to you. We service Sub-Zero marine refrigerators, freezers, and ice makers on boats and yachts of all sizes. Our technicians are experienced with the specific wiring, ventilation, and space constraints found in marine installations.
+                  We provide dockside service across every major South Florida marina —
+                  Miami Beach Marina, Sunset Harbour, Bal Harbour Yacht Club, Crandon Park,
+                  Pier 66, Bahia Mar, and the Naples Boat Club / Marco Island basins.
+                  Sub-Zero marine refrigerators, freezers, ice makers, and wine units on
+                  vessels of any size — galley to cockpit.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  We carry a comprehensive inventory of genuine Sub-Zero marine parts and are equipped to handle corrosion-related repairs, compressor replacements, thermostat recalibrations, and electrical system diagnostics. Keep your vessel&apos;s cooling systems running reliably with our professional marine refrigeration repair service.
+                  Our marine trucks ship with corrosion-replacement contact sets, OEM
+                  marine fan motors, pressure-test gauges, marine-grade refrigerant, and
+                  the short-handle tools sized for tight galley access. Most repairs
+                  finish on the first dockside visit. The workmanship warranty appears
+                  on your invoice; OEM marine parts carry their own manufacturer warranty.
                 </p>
               </div>
 

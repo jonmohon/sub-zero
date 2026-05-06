@@ -86,12 +86,12 @@ export default function ServicesPage() {
       <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Sub-Zero Refrigerator Service and Repair in South Florida
+            Sub-Zero Service and Repair Across South Florida — Five Specialty Lines
           </h1>
           <p className="text-lg text-gray-300 max-w-3xl">
-            Trust our expert team for reliable repair services on all Sub-Zero
-            appliances, including refrigerators, freezers, and more. Contact us
-            today to schedule your service!
+            Refrigerators, freezers, ice makers, wine columns, and marine refrigeration —
+            handled by factory-trained technicians dispatching same-day across Miami-Dade,
+            Broward, and five more counties. Genuine OEM parts on every truck.
           </p>
         </div>
       </section>
@@ -115,25 +115,23 @@ export default function ServicesPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#0B1D33] mb-4">
-            Keep Cool by Calling Us for Repairs
+            One Specialty, Five Service Lines
           </h2>
           <p className="text-[#64748B] mb-6 max-w-4xl">
-            You have no time to lose if your fridge or freezer is failing.
-            Depend on our Sub-Zero Service Centers for emergency Sub-Zero
-            refrigerator service and repair in South Florida. We&apos;ll save
-            your food by repairing your refrigerator unit. The trained
-            technicians at our company ensure your commercial or residential
-            equipment is fully operational.
+            We service Sub-Zero exclusively — no general appliance work, no oven repair, no
+            washer-dryer calls. The focus matters because Sub-Zero sealed-system architecture
+            doesn&apos;t forgive a generalist. Three decades on this product line means our
+            technicians read failure patterns in minutes that take a generalist hours to
+            isolate.
           </p>
           <h2 className="text-3xl font-bold text-[#0B1D33] mb-4">
-            Fast and Affordable Same-Day Refrigerator Repair
+            Same-Day Sub-Zero Repair in South Florida
           </h2>
           <p className="text-[#64748B] mb-12 max-w-4xl">
-            Customers throughout the area trust us for emergency response when
-            they have problems with their refrigeration equipment. Because our
-            technicians are experienced and factory-trained, we deliver the
-            highest-quality services to ensure your Sub-Zero equipment is fully
-            operational as soon as possible.
+            Most Miami-Dade, Broward, and Palm Beach appointments get a same-day window when
+            booked before noon. Our trucks ship with the OEM parts your model line is
+            statistically most likely to need, so most repairs finish on the first visit
+            without a follow-up call.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

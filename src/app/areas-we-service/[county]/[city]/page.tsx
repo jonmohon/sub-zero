@@ -144,10 +144,10 @@ export default async function CityPage({
             <span className="text-white">{cityData.name}</span>
           </nav>
           <h1 className="text-4xl md:text-5xl font-bold">
-            Sub-Zero Appliance Repair in {cityData.name}, FL
+            Sub-Zero Appliance Repair in {cityData.name}, FL — Specialist Service Since 1994
           </h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl">
-            Same-day Sub-Zero repair service in {cityData.name} and throughout {countyData.name}. Certified technicians, genuine parts, no extra weekend charges.
+            Sub-Zero specialists dispatching to {cityData.name} and the surrounding {countyData.name} area. Three decades of premium-only experience, OEM parts on every truck, no surcharge for nights, weekends, or holidays.
           </p>
         </div>
       </section>
@@ -178,7 +178,7 @@ export default async function CityPage({
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-[#0B1D33]">
-                  Expert Sub-Zero Repair in {cityData.name}
+                  Sub-Zero Specialists Serving {cityData.name}
                 </h2>
                 {cityIntro && (
                   <p className="text-[#64748B] leading-relaxed text-lg">
@@ -186,17 +186,10 @@ export default async function CityPage({
                   </p>
                 )}
                 <p className="text-[#64748B] leading-relaxed text-lg">
-                  Looking for expert Sub-Zero appliance repair in {cityData.name},
-                  Florida? Our certified technicians provide fast, reliable
-                  service for all Sub-Zero refrigerators, freezers, ice makers,
-                  wine coolers, and marine refrigeration systems. We know {cityData.name} and {countyData.name} well, so we arrive quickly and get to work immediately.
+                  We service every Sub-Zero product line — refrigerators, freezers, ice makers, wine columns, and marine refrigeration — across {cityData.name} and the surrounding {countyData.name} area. Three decades of premium-only experience since 1994 means our technicians read failure patterns in minutes, not hours. The first hour of a Sub-Zero diagnostic decides whether the bill is $400 or $2,000 — getting that hour right is what {cityData.name} customers pay us for.
                 </p>
                 <p className="text-[#64748B] leading-relaxed">
-                  We offer same-day service in {cityData.name} and throughout{" "}
-                  {countyData.name} with no extra charges for weekends or
-                  holidays. Our factory-trained technicians carry genuine Sub-Zero
-                  parts on every service call, so most repairs are completed in a
-                  single visit. When your Sub-Zero appliance breaks down, every hour counts — that is why {cityData.name} homeowners trust us for fast, dependable repairs.
+                  Our trucks ship with the OEM parts your Sub-Zero is statistically most likely to need: evaporator fan motors, defrost boards, water inlet valves, common door gaskets, and the diagnostic equipment to test sealed systems without breaking them open. Most {cityData.name} repairs finish on the first visit — every active and legacy Sub-Zero line, including the 532, 632, and 690 series still running across South Florida luxury homes.
                 </p>
               </div>
 
@@ -231,16 +224,16 @@ export default async function CityPage({
               {/* Why Choose Us */}
               <div>
                 <h2 className="text-2xl font-bold text-[#0B1D33] mb-6">
-                  Why {cityData.name} Residents Choose Us
+                  What {cityData.name} Customers Get When They Call Us
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    { title: "24/7 Availability", detail: "No extra charges for nights, weekends, or holidays. We are always ready." },
-                    { title: "Same-Day Service", detail: "We arrive the same day with genuine parts ready to complete the repair." },
-                    { title: "Certified Technicians", detail: "30+ years experience with factory training on all Sub-Zero models." },
-                    { title: "Transparent Pricing", detail: "Written estimates before work begins. No hidden fees or surprise charges." },
-                    { title: "Genuine Sub-Zero Parts", detail: "Factory-authorized replacement parts backed by manufacturer warranty." },
-                    { title: "Full Warranty", detail: "Every repair is backed by a complete warranty on parts and labor." },
+                    { title: "24/7 Availability", detail: "Same flat rate Tuesday afternoon, Saturday at midnight, or Christmas Day. No after-hours surcharges on the invoice." },
+                    { title: "Same-Day Service", detail: "Most appointments inside Miami-Dade, Broward, and Palm Beach get a same-day window when booked before noon." },
+                    { title: "Specialist-Only Since 1994", detail: "Three decades on Sub-Zero, Wolf, and Cove product lines exclusively — no general appliance work pulls focus." },
+                    { title: "Transparent Pricing", detail: "Written quote on-site before any labor begins. No work happens until you see the number and approve it." },
+                    { title: "OEM Parts on Every Truck", detail: "Genuine Sub-Zero replacement parts ride with the technician — most repairs finish on the first visit." },
+                    { title: "Workmanship Warranty", detail: "Workmanship warranty in writing on every invoice. OEM parts carry manufacturer warranty on top of that." },
                   ].map((item) => (
                     <div key={item.title} className="flex items-start gap-3 bg-[#F8FAFC] rounded-xl p-4">
                       <svg className="w-5 h-5 text-[#0B1D33] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
