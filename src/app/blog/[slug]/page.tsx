@@ -31,126 +31,1103 @@ const postsData: Record<string, BlogPostData> = {
     slug: "when-to-call-a-refrigerator-repair-technician",
     title: "When to Call a Refrigerator Repair Technician",
     metaTitle: "When to Call a Refrigerator Repair Technician",
-    metaDescription: "Learn the warning signs that indicate you need a professional refrigerator repair technician. Don't wait until it's too late!",
+    metaDescription: "The 8 warning signs that mean it's time to call a Sub-Zero technician — and the 4 issues you can troubleshoot yourself first. From a 30-year specialist.",
     author: "Daniel Rivera",
     date: "2024-11-15",
+    lead: "Eight warning signs mean it's time to stop troubleshooting and call a professional Sub-Zero technician: unusual noises, temperature fluctuations, excessive frost buildup, water on the floor, compressor running constantly, higher energy bills, error codes, and any sealed-system symptom. Knowing the difference between a $100 fix and a $2,000 repair often comes down to how soon you make the call.",
     content: [
-      "Your refrigerator is one of the hardest-working appliances in your home, running 24 hours a day to keep your food fresh and safe. When it starts showing signs of trouble, knowing when to call a professional repair technician can save you from a costly emergency.",
-      "Warning signs that you need professional repair include unusual noises, temperature fluctuations, excessive frost buildup, water leaking on the floor, the compressor running constantly, and higher than normal energy bills.",
-      "While some minor issues can be addressed with basic troubleshooting, most refrigerator problems require the expertise of a trained technician. Attempting DIY repairs on complex refrigeration systems can void your warranty and potentially cause further damage.",
-      "If you notice any of these warning signs, don't wait. Call our certified technicians at (800) 651-4528 for same-day service. Early intervention can prevent small problems from becoming expensive repairs.",
+      "Your refrigerator is one of the hardest-working appliances in your home. When it shows signs of trouble, knowing when to call a professional can save you from a costly emergency.",
+    ],
+    bodyHtml: `
+<h2>The 8 Warning Signs That Mean Call a Technician Now</h2>
+<p>After 30 years on Sub-Zero service calls across South Florida, here's the failure-pattern checklist I use. If you see any of these, the problem isn't going to fix itself.</p>
+
+<h3>1. New mechanical noises</h3>
+<p>Buzzing, grinding, clicking, or squealing that wasn't there before. Each sound has a specific source. Buzzing usually means compressor relay or capacitor. Grinding usually means evaporator fan blade hitting ice buildup or condenser fan bearing. Clicking often means compressor trying to start and failing.</p>
+
+<h3>2. Temperature drift you can verify</h3>
+<p>Set point is 38°F refrigerator and 0°F freezer. If you check with a thermometer and either compartment is more than 5°F off, something's wrong. Don't wait — drift gets worse, not better.</p>
+
+<h3>3. Excessive frost buildup</h3>
+<p>Sub-Zero freezers are designed to be frost-free. Frost on packages from condensation is normal. Ice on the back wall, floor, or ceiling means the defrost system has failed.</p>
+
+<h3>4. Water leaking onto the floor</h3>
+<p>Always serious. Could be a clogged defrost drain (cheap fix), a cracked water supply line (medium fix), or a damaged door gasket allowing condensation buildup (small fix). All of them get worse with time.</p>
+
+<h3>5. Compressor running constantly</h3>
+<p>If you can hear the compressor going more or less continuously, the unit is overworking. Causes include door seal failure, dust-blocked condenser, low refrigerant from a slow leak, or a thermostat malfunction. Each of these is a high-ROI repair caught early.</p>
+
+<h3>6. Higher than normal energy bill</h3>
+<p>Sub-Zero refrigerators are efficient. If your power bill jumped without other changes, the unit is the most likely culprit. Inefficiency comes from the same root causes as continuous compressor operation.</p>
+
+<h3>7. Any error code on the display</h3>
+<p>Modern Sub-Zero units self-diagnose. E1, E2, E3, EE, F1, F2 all mean specific things. Some clear on their own; others (E3 sealed system, EE control board) don't and shouldn't be ignored.</p>
+
+<h3>8. Any sealed-system symptom</h3>
+<p>Refrigerant leaks, capillary tube blockages, compressor pressure issues. These don't fix themselves and progress to more expensive repairs the longer you wait. Symptoms include gradual cooling loss over weeks, hissing sounds from the back, or oily residue near service ports.</p>
+
+<h2>The 4 Things You Can Troubleshoot Yourself First</h2>
+
+<h3>1. Verify the basics</h3>
+<p>Power at the outlet. Door fully closed. Thermostat at correct setpoint. I've driven to plenty of Coral Gables homes where the thermostat got bumped during a kid's snack raid. 30 seconds of self-check saves a service call.</p>
+
+<h3>2. Check for door seal issues with the bill test</h3>
+<p>Close the door on a dollar bill, halfway in. Try to pull it out. If it slides easily, the gasket is failing. Easy DIY fix is impossible, but knowing the cause means you can call ahead and we arrive with the right gasket.</p>
+
+<h3>3. Check the condenser for dust</h3>
+<p>Pull the kick plate off the front bottom of the unit. Look at the condenser coils. If they're dust-blocked, vacuum and brush them clean. This alone resolves a lot of "compressor running too much" complaints.</p>
+
+<h3>4. Wait for a defrost cycle</h3>
+<p>If the unit just stopped cooling, give it 30 minutes. Sub-Zero units run a defrost cycle every 8-12 hours; during that cycle, the compressor pauses and the cabinet temperature can drift up briefly. After the cycle ends, normal operation resumes within 30 minutes.</p>
+
+<blockquote>"Most 'my Sub-Zero is broken' calls are actually one of three things: a fan motor that needs replacement, a defrost board that's failed, or a door seal that's compromised. None of them are catastrophic if you call early. All of them get worse if you wait."</blockquote>
+
+<h2>What Happens When You Wait Too Long</h2>
+<p>Three patterns I see repeatedly:</p>
+
+<h3>Pattern 1: Door seal ignored → compressor failure</h3>
+<p>Owner notices the unit running more than usual. Doesn't act. Door seal continues to degrade. Compressor runs constantly trying to compensate. After 6-12 months, the compressor itself fails from continuous duty cycling. A $200 gasket replacement becomes a $1,500 compressor repair.</p>
+
+<h3>Pattern 2: Slow refrigerant leak ignored → full sealed system service</h3>
+<p>Owner notices gradual cooling loss. Adjusts the thermostat colder to compensate. Refrigerant continues to leak. Eventually compressor can't maintain pressure. Now it's a full sealed-system service plus refrigerant replacement plus possible compressor replacement. $400 leak repair becomes $2,500.</p>
+
+<h3>Pattern 3: Error code ignored → cascade failure</h3>
+<p>Owner sees error code, ignores it. Underlying issue (often a sensor, sometimes a control board) continues to malfunction. Connected systems start showing symptoms. Eventually multiple components need service. $300 single-component fix becomes $1,200+.</p>
+
+<h2>What to Have Ready When You Call</h2>
+<p>Three things that cut diagnostic time in half:</p>
+<ul>
+  <li><strong>Model number</strong> — usually on a metal plate inside the refrigerator section, behind the kick plate, or on the freezer ceiling</li>
+  <li><strong>Symptom description</strong> — what's happening, when it started, anything that triggered it</li>
+  <li><strong>Any error code</strong> — exactly what shows on the display</li>
+</ul>
+
+<h2>Same-Day Service Across South Florida</h2>
+<p>We dispatch same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>. Naples and Marco Island typically need a half-day buffer. <a href="/services/refrigerator-repair/">See our refrigerator repair page</a> for details, or call (800) 651-4528 to schedule.</p>
+`,
+    faqs: [
+      {
+        question: "How can I tell if my refrigerator is dying or just needs a small repair?",
+        answer: "Most failures are repairable. The exception is when multiple major components fail simultaneously (compressor + sealed system + control board), which usually happens on units 25+ years old. Even then, repair vs. replace depends on the unit. We'll tell you straight if it's worth fixing.",
+      },
+      {
+        question: "Can I keep using my refrigerator while waiting for a technician?",
+        answer: "Usually yes, with caveats. If the unit is still cooling but inefficiently, it's safe to use. If you see water on the floor, address it (dry the area, place a towel) but the unit is still safe. The only time to unplug is if you smell electrical burning, see sparks, or the unit is making sealed-system hissing sounds with refrigerant smell.",
+      },
+      {
+        question: "How much does a typical Sub-Zero repair cost?",
+        answer: "Door gaskets and minor sensors run $200-400. Defrost system components and fan motors run $300-600. Compressor or sealed-system work runs $1,000-2,500. We provide a written quote on-site before any labor begins, so you always know the number before approving the work.",
+      },
+      {
+        question: "Should I just buy a new refrigerator instead of repairing?",
+        answer: "For Sub-Zero specifically, almost always repair. Sub-Zero units are designed for 20-25 year service life. Replacing a 12-year unit because of a $400 repair is throwing away a decade of remaining value. The exception is a 25+ year old unit with multiple major component failures.",
+      },
+      {
+        question: "What's the most common Sub-Zero repair you do?",
+        answer: "Defrost system component replacement (heater, timer, or thermostat) is probably first. Door gasket replacement is second. Evaporator fan motor is third. All three are inexpensive parts and routine service calls — the kind of thing that should be caught at annual maintenance before it disrupts your kitchen.",
+      },
+      {
+        question: "How fast can you get to me for repair in South Florida?",
+        answer: "Same-day across Miami-Dade, Broward, and Palm Beach if booked before noon. Naples and Marco Island typically need a half-day buffer. Florida Keys require extended scheduling.",
+      },
     ],
   },
   "why-diy-refrigerator-repair-isnt-always-the-best-option": {
     slug: "why-diy-refrigerator-repair-isnt-always-the-best-option",
-    title: "Why DIY Refrigerator Repair Isn't Always the Best Option",
-    metaTitle: "Why DIY Refrigerator Repair Isn't Always Best",
-    metaDescription: "Discover why professional refrigerator repair is often better than DIY. Protect your investment with expert service.",
+    title: "Why DIY Sub-Zero Repair Isn't Always the Best Option",
+    metaTitle: "Why DIY Sub-Zero Repair Isn't Always Best",
+    metaDescription: "When DIY Sub-Zero repair makes sense and when it doesn't — from a 30-year specialist who's seen the failed YouTube fixes that turn $200 jobs into $2,000 ones.",
     author: "Daniel Rivera",
     date: "2024-12-01",
+    lead: "DIY refrigerator repair has its place — water filter changes, condenser cleaning, defrost-drain clearing. Beyond those, Sub-Zero's sealed-system architecture and electronic controls make DIY a high-risk proposition. Three categories of repair almost always cost more if you DIY: anything sealed-system, anything that voids the manufacturer warranty, and anything that requires specialized diagnostic equipment.",
     content: [
-      "In the age of YouTube tutorials and online guides, it's tempting to tackle refrigerator repairs yourself. However, modern Sub-Zero and premium refrigerators are complex appliances that require specialized knowledge and tools.",
-      "DIY repairs can void your manufacturer's warranty, expose you to electrical hazards, and potentially cause more damage if not done correctly. Refrigeration systems contain pressurized refrigerants that require certified handling.",
-      "Professional technicians have factory training, specialized diagnostic equipment, access to genuine parts, and the experience to identify root causes rather than just treating symptoms.",
-      "Save yourself time, money, and frustration by calling our certified technicians. We'll diagnose the problem accurately and fix it right the first time with genuine parts and a full warranty on our work.",
+      "It's tempting to DIY refrigerator repairs with so many YouTube tutorials available. But Sub-Zero's complexity makes some repairs genuinely high-risk for owners.",
+    ],
+    bodyHtml: `
+<h2>What's Reasonable to DIY on a Sub-Zero</h2>
+<p>Some Sub-Zero maintenance is owner-friendly. These are jobs the manufacturer designed for end-user execution.</p>
+
+<h3>Water filter replacement</h3>
+<p>5-minute job, no tools required. Sub-Zero designed the filter for owner replacement. Buy genuine Sub-Zero filters (third-party filters cause recognition issues on some models). South Florida water profile pushes replacement intervals to 6-9 months.</p>
+
+<h3>Condenser cleaning</h3>
+<p>Pull the kick plate. Vacuum the condenser coils. Brush stubborn dust off with a soft brush. 10-15 minutes of work, prevents about half the major repairs we see. This is the single highest-ROI maintenance you can do as an owner.</p>
+
+<h3>Defrost drain clearing</h3>
+<p>If you see water pooling at the bottom of the freezer, the defrost drain is likely clogged. You can clear it by carefully running warm water through the drain tube or using a small bottle brush. Not every Sub-Zero model is easy to access here, but for those that are, it's a reasonable DIY.</p>
+
+<h3>Door gasket cleaning</h3>
+<p>Wipe gaskets with mild soapy water and a soft cloth. Removes salt residue, sticky food, and dust that accelerates gasket degradation. Worth doing every 60 days, especially on coastal properties.</p>
+
+<h3>Replacing light bulbs</h3>
+<p>Sub-Zero light bulbs (the ones that aren't sealed LED units) are owner-replaceable. Check the manual for the exact bulb spec. Designer Series with sealed LEDs need professional service.</p>
+
+<h2>What's High-Risk to DIY</h2>
+
+<h3>1. Anything involving refrigerant</h3>
+<p>Refrigeration systems run pressurized refrigerant. Federal regulations (EPA Section 608) require certification to handle refrigerants. Even with certification, sealed-system work requires specialized recovery equipment, vacuum pumps, leak detectors, and the parts catalogs to source the correct components.</p>
+<p>YouTube videos showing "simple compressor replacement" routinely skip critical steps: proper refrigerant recovery, vacuum drying, oil compatibility check, and pressure test before recharge. Skip any of these and the new compressor fails in months.</p>
+
+<h3>2. Electronic control board replacement</h3>
+<p>Sub-Zero control boards are model-specific. Installing the wrong board can damage the unit or trigger fault states that aren't obvious until weeks later. Some boards require initialization or pairing with the unit's identity. We've seen DIY board replacements that "work" for a week, then cascade-fail other components because the board's calibration wasn't right.</p>
+
+<h3>3. Compressor work of any kind</h3>
+<p>Compressor diagnosis requires specific testing — capacitor check, relay test, amperage measurement under load, terminal continuity. Most "compressor failures" are actually relay or starting capacitor failures, which are cheap fixes. Replacing a working compressor because you misdiagnosed the relay is a $1,000 mistake.</p>
+
+<h3>4. Anything during the warranty period</h3>
+<p>Sub-Zero's warranty is voided by unauthorized repair. If your unit is under warranty (typically 2 years on most components, 5-12 years on sealed system depending on year), DIY work disqualifies you from manufacturer coverage. This is real money — the difference between $0 and $1,500 for a sealed-system repair.</p>
+
+<h3>5. Sealed-system diagnostics</h3>
+<p>The sealed system (compressor, condenser, evaporator, capillary tube, refrigerant) requires equipment that costs more than most DIY budgets allow. Manifold gauge sets, leak detectors, vacuum pumps, recovery cylinders. Without this equipment, you can't accurately diagnose what's actually wrong inside the sealed system, which means you'll likely replace the wrong component.</p>
+
+<blockquote>"Half my expensive service calls are DIY repairs that went wrong. The owner replaced a compressor when the issue was a relay. Or installed a control board incorrectly. Or charged refrigerant without proper vacuum. The original repair would have been $400; the DIY-recovery repair is $2,000."</blockquote>
+
+<h2>The Cost Math: DIY vs. Professional</h2>
+<p>For a typical Sub-Zero repair, the math runs:</p>
+<ul>
+  <li><strong>Successful DIY</strong>: $50-300 in parts + 4-8 hours of your time + risk of mistakes</li>
+  <li><strong>Professional service</strong>: $300-1,500 depending on repair, including warranty</li>
+  <li><strong>DIY gone wrong</strong>: original parts cost + emergency professional repair + replacement of damaged components — usually 2-3x what professional would have been</li>
+</ul>
+<p>The risk-adjusted math favors professional service for anything beyond the simple maintenance items above. The exception is owners with HVAC or appliance repair experience and proper equipment.</p>
+
+<h2>How to Tell If You Should Try DIY First</h2>
+<p>Three questions to ask yourself before starting:</p>
+<ol>
+  <li><strong>Is this a "service" item or a "repair" item?</strong> Cleaning, filter replacement, gasket cleaning are service items — DIY-friendly. Anything that involves removing components or accessing the sealed system is a repair item — call us.</li>
+  <li><strong>Is the unit under warranty?</strong> If yes, never DIY. Call the manufacturer first, then the authorized service.</li>
+  <li><strong>Do I have the diagnostic equipment to verify the actual cause?</strong> Without proper diagnostics, you're guessing. Guessing wrong on Sub-Zero parts is expensive.</li>
+</ol>
+<p>If the answers are: service item, out of warranty, basic verification — DIY is fine. If any answer is unclear, call. We can usually resolve over the phone whether something is DIY-able or needs professional service.</p>
+
+<h2>Same-Day Service When DIY Isn't Right</h2>
+<p>When the answer is professional service: <a href="/services/refrigerator-repair/">Sub-Zero refrigerator repair</a>, <a href="/services/freezer-repair/">freezer repair</a>, <a href="/services/icemaker-repair/">ice maker repair</a>, and <a href="/services/wine-cooler-repair/">wine cooler repair</a> all available same-day across most of South Florida. We provide written quotes on-site before any work begins, with a workmanship warranty in writing on every invoice.</p>
+<p>Call (800) 651-4528 or <a href="/contact/">request service online</a>.</p>
+`,
+    faqs: [
+      {
+        question: "Will DIY repair void my Sub-Zero warranty?",
+        answer: "Yes, in most cases. Sub-Zero's warranty requires authorized service for repairs. DIY work — even if successful — typically voids coverage on related components. If your unit is in the warranty period, the math always favors authorized service. After warranty expiration, the DIY-vs-professional decision is purely about complexity and risk.",
+      },
+      {
+        question: "What Sub-Zero repairs are safe to DIY?",
+        answer: "Water filter replacement, condenser coil cleaning, defrost drain clearing, door gasket cleaning, and (on some models) light bulb replacement. These are designed for owner execution. Anything beyond cleaning and consumables — fan motors, sensors, control boards, sealed system, compressor — should be professional service.",
+      },
+      {
+        question: "Can I replace a Sub-Zero fan motor myself?",
+        answer: "Technically possible, but rarely worth it. The motor itself runs $100-200, but the diagnostic to confirm fan motor (vs. control board, vs. sensor, vs. wiring) requires specific testing. Many DIYers replace a fan motor that wasn't actually the problem. Better to have us diagnose and replace in one visit.",
+      },
+      {
+        question: "What about replacing a compressor on an old Sub-Zero?",
+        answer: "Don't. Compressor replacement requires refrigerant recovery (federal regulation), proper vacuum drying, oil compatibility verification, and pressure testing. Without all four steps, the new compressor fails in months. The labor and equipment cost makes professional compressor replacement worth it even on a 25+ year old unit if you want to keep it running.",
+      },
+      {
+        question: "What's the most common DIY mistake you fix?",
+        answer: "Replacing a working compressor because the relay or starting capacitor was actually the failed component. The compressor relay is a $40 part; a compressor is a $400-1,000 part. Misdiagnosing this is one of the most expensive Sub-Zero mistakes possible. Always verify with proper testing before replacing high-cost components.",
+      },
+      {
+        question: "Are YouTube Sub-Zero repair videos accurate?",
+        answer: "Some are fine for general orientation. Most skip critical steps. The big gaps are usually around refrigerant handling, control board calibration, and proper diagnostic verification before parts replacement. Use videos for context — call professionals for execution on anything sealed-system or electronic.",
+      },
     ],
   },
   "reliable-freezer-maintenance-quick-guide": {
     slug: "reliable-freezer-maintenance-quick-guide",
-    title: "Reliable Freezer Maintenance: Quick Guide",
-    metaTitle: "Reliable Freezer Maintenance Quick Guide",
-    metaDescription: "Keep your freezer running efficiently with these essential maintenance tips from our certified technicians.",
+    title: "Sub-Zero Freezer Maintenance: A Specialist's Quick Guide",
+    metaTitle: "Sub-Zero Freezer Maintenance Quick Guide",
+    metaDescription: "The maintenance schedule that gets a Sub-Zero freezer to 25 years — what owners can do, what we do, and the warning signs that mean stop maintenance and call for service.",
     author: "Daniel Rivera",
     date: "2025-01-10",
+    lead: "Sub-Zero freezers are designed for 20-25 year service life. Reaching that lifespan in South Florida requires three things: annual condenser cleaning, periodic door gasket inspection, and recognition of the four warning signs that mean a maintenance issue has become a service issue. Most owners skip the first two and only act on the third — by which point the cheap fixes are off the table.",
     content: [
-      "Regular maintenance is the key to keeping your Sub-Zero freezer running efficiently for years to come. A well-maintained freezer not only preserves your food better but also saves energy and prevents costly breakdowns.",
-      "Essential freezer maintenance tasks include cleaning the condenser coils every 6-12 months, checking door gaskets for proper seal, maintaining proper temperature settings, defrosting when ice buildup exceeds a quarter inch, and keeping the freezer properly stocked.",
-      "Signs that your freezer needs professional attention include frost buildup on the walls, the motor running constantly, temperature fluctuations, unusual odors, or ice crystals on frozen food.",
-      "For professional freezer maintenance and repair, call our certified technicians at (800) 651-4528. We offer free maintenance with any repair over $250.",
+      "Regular maintenance keeps your Sub-Zero freezer running efficiently for years. Here's the schedule we actually recommend.",
+    ],
+    bodyHtml: `
+<h2>The Owner Maintenance Schedule</h2>
+<p>What you can do without a technician, and how often.</p>
+
+<h3>Every 30 days</h3>
+<ul>
+  <li><strong>Visual condenser check.</strong> Pull the kick plate and look at the condenser. Any visible dust accumulation is a sign to vacuum.</li>
+  <li><strong>Door seal wipe-down.</strong> Damp cloth, no chemicals. Removes salt residue (coastal homes), food spills, dust.</li>
+  <li><strong>Listen test.</strong> Stand near the unit for 30 seconds. New noises (clicking, squealing, grinding) are early warning signs.</li>
+</ul>
+
+<h3>Every 6 months</h3>
+<ul>
+  <li><strong>Condenser vacuum + brush.</strong> Remove dust accumulation. Coastal homes should do this every 3 months.</li>
+  <li><strong>Door gasket inspection.</strong> Run the dollar bill test on every door. Pull the bill out — should drag noticeably.</li>
+  <li><strong>Ice maker check.</strong> Inspect the fill tube for any visible cracks or buildup.</li>
+  <li><strong>Defrost drain check.</strong> Look for water at the bottom of the freezer cabinet — indicates drain blockage.</li>
+</ul>
+
+<h3>Every 12 months</h3>
+<ul>
+  <li><strong>Schedule professional maintenance visit.</strong> Catches what owner inspection misses.</li>
+</ul>
+
+<h2>What Professional Annual Maintenance Covers</h2>
+<p>The visit takes 60-90 minutes and covers items that need diagnostic equipment or specialized inspection.</p>
+
+<h3>Refrigerant pressure check</h3>
+<p>Slow leaks aren't visible to owners but show up as gradual cooling efficiency loss over months. Pressure check catches leaks before they become major service.</p>
+
+<h3>Compressor amperage test</h3>
+<p>Compressor draws should be in spec for the model. Drift indicates wear or efficiency loss. Catching this at year 8 vs. year 12 is the difference between a $0 alert and a $1,500 repair.</p>
+
+<h3>Defrost cycle verification</h3>
+<p>We run a manual defrost cycle and watch for proper heater operation, defrost termination, and complete drain. Catches defrost system component degradation 6-12 months before it manifests as ice buildup.</p>
+
+<h3>Sensor calibration</h3>
+<p>Temperature sensors drift over years. Calibrated thermocouple at three positions confirms the unit is reading correctly. Drift causes the unit to over- or under-cool, which stresses the compressor.</p>
+
+<h3>Electrical contact inspection</h3>
+<p>Especially on coastal properties — pull back panel, inspect for salt corrosion on terminals and PCB connections. Replace contact sets that show visible degradation rather than waiting for failure.</p>
+
+<h3>Door alignment + hinge tension</h3>
+<p>Doors fall slightly out of alignment over years. Compromised alignment means compromised seal, even if the gasket is fine. Quick adjustment.</p>
+
+<h2>The 4 Warning Signs to Stop Maintenance and Call for Service</h2>
+<p>Routine maintenance is for healthy units. Once you see any of these, you need diagnosis, not maintenance.</p>
+
+<h3>1. Frost or ice on the back wall, floor, or ceiling</h3>
+<p>Defrost system has failed. Manual defrost will clear the ice temporarily, but the underlying component (heater, timer, or thermostat) is broken. Without service, the ice returns within 2-4 weeks. After multiple cycles, the underlying compressor stress causes secondary failures.</p>
+
+<h3>2. Compressor running constantly</h3>
+<p>Could be door seal failure (cheap fix), condenser blockage (cheap fix), low refrigerant from slow leak (medium fix), or compressor wear (expensive fix). All of them are diagnosable in 30 minutes on-site.</p>
+
+<h3>3. Temperature drift you can verify with a thermometer</h3>
+<p>Setpoint is 0°F freezer. Drift more than 5°F is significant. Could be sensor failure, evaporator fan failure, defrost system, or sealed-system pressure. Don't wait — drift gets worse, not better.</p>
+
+<h3>4. Any new noise that wasn't there before</h3>
+<p>Each sound has a specific source. Catching it early means cheaper repair.</p>
+
+<blockquote>"Sub-Zero freezers are over-engineered. They tell you what's wrong before they fail completely — but only if you're paying attention. The owners who ignore the early warnings are the ones with $2,000 repair bills five years later."</blockquote>
+
+<h2>South Florida Specifics</h2>
+<p>Three South Florida factors that affect the maintenance schedule:</p>
+
+<h3>Coastal salt-air exposure</h3>
+<p>Within 1 mile of the coast, accelerate everything. Twice-yearly professional maintenance instead of annual. Contact-cleaning at every visit. Door gasket replacement at year 5 instead of year 7-8.</p>
+
+<h3>Year-round high humidity</h3>
+<p>Door gaskets degrade faster. Condensate management matters more. The defrost drain is more likely to be a routine maintenance item.</p>
+
+<h3>Hurricane season power events</h3>
+<p>Schedule a post-season check after every major storm event, even if the unit appears fine. Voltage damage often shows up 2-6 weeks later.</p>
+
+<h2>What "Properly Stocked" Actually Means</h2>
+<p>Sub-Zero freezers run more efficiently when full. Empty space is wasted air the compressor has to cool. Optimal fill: 70-80%. Too empty wastes energy; too full restricts air circulation.</p>
+<p>If you can't keep the freezer 70-80% full with food, fill the empty space with water bottles or freezer-safe ice packs. Bonus: useful in a power outage.</p>
+
+<h2>When to Call</h2>
+<p>Schedule professional maintenance annually (twice annually for coastal properties). Schedule service immediately if any of the four warning signs above appear.</p>
+<p><a href="/services/freezer-repair/">See our Sub-Zero freezer repair page</a> for service details, or call (800) 651-4528. Same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>.</p>
+`,
+    faqs: [
+      {
+        question: "How often should I clean my Sub-Zero freezer's condenser coils?",
+        answer: "Every 6 months for inland properties, every 3 months for coastal properties (within 1 mile of the ocean). The condenser is at the back or bottom of the unit — pull the kick plate to access. Vacuum and brush off any visible dust. This is the single highest-ROI maintenance you can do as an owner.",
+      },
+      {
+        question: "Do I need to manually defrost a Sub-Zero freezer?",
+        answer: "No. Sub-Zero freezers are designed to be frost-free with an automatic defrost cycle every 8-12 hours. If you see ice buildup on the back wall, floor, or ceiling, the defrost system has failed and needs service — manual defrosting is a temporary fix, not a real solution.",
+      },
+      {
+        question: "What's the right temperature setting for a Sub-Zero freezer?",
+        answer: "0°F is the standard setpoint. Some models default to -5°F. For long-term storage of high-value items (specialty meats, hard-to-replace ingredients), -5°F gives more buffer during power outages. For everyday use, 0°F is fine and slightly more energy-efficient.",
+      },
+      {
+        question: "How can I tell if my freezer's door gasket needs replacement?",
+        answer: "Run the dollar bill test: close the door on a dollar bill halfway in, try to pull the bill out. If it slides easily, the gasket compression is failing. Other signs: frost on the door interior (warm air leaking in), increased compressor cycling, and visible deformation or cracking of the gasket rubber.",
+      },
+      {
+        question: "Should I keep my Sub-Zero freezer full or partially empty?",
+        answer: "70-80% full is optimal. Empty space is wasted air the compressor has to cool. Too full restricts air circulation. If you can't keep the freezer at that fill level with food, use water bottles or ice packs to fill the gap. Bonus: those are useful in a power outage.",
+      },
+      {
+        question: "What's the most common Sub-Zero freezer failure?",
+        answer: "Defrost system component failure — heater, timer, or thermostat. Manifests as ice buildup on the back wall. All three are inexpensive parts and routine to replace. The pattern usually shows up around year 10-12 of service. Catching the early warning signs (slight ice buildup) means a single component replacement; ignoring it means cascading damage.",
+      },
     ],
   },
   "refrigerator-troubleshooting-guide-fix-cooling-issues-now": {
     slug: "refrigerator-troubleshooting-guide-fix-cooling-issues-now",
-    title: "Refrigerator Troubleshooting Guide: Fix Cooling Issues Now",
-    metaTitle: "Refrigerator Troubleshooting Guide",
-    metaDescription: "Troubleshoot common refrigerator cooling issues with our expert guide. Know when to DIY and when to call a pro.",
+    title: "Sub-Zero Refrigerator Troubleshooting: A Specialist's Field Guide",
+    metaTitle: "Sub-Zero Refrigerator Troubleshooting Guide",
+    metaDescription: "The same diagnostic checklist a Sub-Zero technician runs on every cooling-issue call — what to check first, what to skip, and when to stop and call.",
     author: "Daniel Rivera",
     date: "2025-01-25",
+    lead: "When a Sub-Zero stops cooling properly, run through the same six-step diagnostic I use on every service call. Most cooling issues trace to one of three things: a fan motor failure, a defrost system problem, or a door seal compromise. The diagnostic takes about 10 minutes and tells you whether you need a technician or just a thermostat adjustment.",
     content: [
-      "When your refrigerator isn't cooling properly, it can be stressful. Before calling for service, there are several things you can check to potentially resolve the issue or help your technician diagnose it faster.",
-      "Start by checking the thermostat settings, ensuring the vents aren't blocked by food items, verifying the door seals are clean and intact, and making sure the condenser coils are free of dust and debris.",
-      "If basic troubleshooting doesn't resolve the issue, the problem may be more serious — such as a failing compressor, a refrigerant leak, a faulty evaporator fan, or a malfunctioning control board.",
-      "These more complex issues require professional diagnosis and repair. Contact our certified technicians at (800) 651-4528 for fast, reliable service.",
+      "When your refrigerator isn't cooling properly, run through these checks before calling for service.",
+    ],
+    bodyHtml: `
+<h2>The 6-Step Diagnostic I Run on Every Call</h2>
+<p>This is the exact sequence I use when I arrive at a "not cooling" service call. You can run the first 5 yourself; step 6 needs equipment.</p>
+
+<h3>Step 1: Verify the obvious (60 seconds)</h3>
+<ul>
+  <li>Power at the outlet — plug something else in to confirm</li>
+  <li>Door fully closed — sometimes a tall bottle pushes against the back, preventing full close</li>
+  <li>Thermostat at correct setpoint — 38°F refrigerator, 0°F freezer</li>
+  <li>Recent additions — did you load a lot of warm food in the last 12 hours? Give it 24 hours to recover.</li>
+</ul>
+<p>I've driven to plenty of homes where one of these resolved the issue. 30 seconds of checking saves a service call.</p>
+
+<h3>Step 2: Listen at the back grille (60 seconds)</h3>
+<p>Pull off the kick plate or step behind the unit. Listen for the compressor.</p>
+<ul>
+  <li><strong>Steady humming</strong> — compressor running. Continue to step 3.</li>
+  <li><strong>Silence</strong> — could be in defrost cycle (wait 30 minutes and re-check), could be a relay/capacitor issue. If still silent after 30 minutes, call for service.</li>
+  <li><strong>Clicking that doesn't lead to humming</strong> — compressor trying to start and failing. Relay or starting capacitor. Call for service.</li>
+</ul>
+
+<h3>Step 3: Feel the back grille (60 seconds)</h3>
+<p>Hand on the condenser area. Should be hot to the touch when compressor is running.</p>
+<ul>
+  <li><strong>Hot</strong> — cooling system is engaged. Continue to step 4.</li>
+  <li><strong>Warm but not hot</strong> — possible reduced airflow. Check condenser for dust blockage, vacuum if needed.</li>
+  <li><strong>Cool with compressor running</strong> — reduced compressor output. Either compressor is failing or sealed system has lost refrigerant. Call for service.</li>
+</ul>
+
+<h3>Step 4: Listen at the freezer wall (60 seconds)</h3>
+<p>Open the freezer. Hold ear close to the back wall (don't touch). Listen.</p>
+<ul>
+  <li><strong>Soft whirring</strong> — evaporator fan working. Continue to step 5.</li>
+  <li><strong>Silence</strong> (with compressor running) — evaporator fan motor failed. This is the #1 "not cooling" cause. Cold is being made but not blown into the cabinet. Call for service.</li>
+  <li><strong>Scraping or rattling</strong> — fan blade hitting ice buildup. Defrost system has failed. Call for service.</li>
+</ul>
+
+<h3>Step 5: Check for ice buildup in the freezer (60 seconds)</h3>
+<p>Open the freezer wide. Look at the back wall and floor.</p>
+<ul>
+  <li><strong>Ice on the back wall</strong> — defrost system failure. Common, fixable. Call for service.</li>
+  <li><strong>No ice buildup</strong> — defrost system fine. Continue to step 6.</li>
+</ul>
+
+<h3>Step 6: Check the door seal (60 seconds)</h3>
+<p>Close the door on a dollar bill halfway in. Try to pull the bill out.</p>
+<ul>
+  <li><strong>Bill slides out easily</strong> — door gasket compression failing. Warm air leaking in continuously. High-ROI repair.</li>
+  <li><strong>Bill drags noticeably</strong> — door seal fine.</li>
+</ul>
+
+<h2>What "Not Cooling" Almost Never Is</h2>
+<p>After 30 years of these diagnostics, here's what "not cooling" is rarely:</p>
+
+<h3>True compressor failure</h3>
+<p>People assume compressor when they hear noise or see no cooling. Actual compressor failures are rare — maybe 5-10% of "not cooling" calls. Most of the rest are fan motor, defrost system, or door seal issues that LOOK like compressor failure but aren't.</p>
+
+<h3>Refrigerant loss</h3>
+<p>Refrigerant doesn't go bad and shouldn't deplete in a sealed system. If refrigerant is the issue, there's a leak somewhere. Symptoms are gradual cooling loss over weeks, not sudden failure.</p>
+
+<h3>Total electronic failure</h3>
+<p>Control boards fail in distinctive patterns (specific error codes, partial functionality), not "everything stops cooling at once."</p>
+
+<blockquote>"Customers tell me 'I think the compressor is dying.' Then I run the diagnostic and it's the evaporator fan motor. $300 fix instead of $1,500. Knowing the failure patterns is what saves real money."</blockquote>
+
+<h2>Common Patterns and What They Mean</h2>
+
+<h3>Refrigerator warm, freezer cold</h3>
+<p>Air damper between sections has failed, or the evaporator fan that pushes cold air to the refrigerator section is dead. Common on Built-In side-by-side models.</p>
+
+<h3>Both compartments slightly warm</h3>
+<p>Refrigerant low (slow leak), condenser blocked, or door seal compromised. All diagnosable in 30 minutes on-site.</p>
+
+<h3>Compartments alternate temperatures</h3>
+<p>Sensor drift or control board issue. Modern Sub-Zero units self-diagnose — check the display for error codes.</p>
+
+<h3>Cooling normally but ice buildup</h3>
+<p>Defrost system has failed. Compressor is fine, refrigeration is fine, but ice is accumulating because defrost cycles aren't running properly.</p>
+
+<h3>Cooling normally then sudden failure</h3>
+<p>Likely a hard-failure of a single component — relay, fan motor, control board. Call for service same-day.</p>
+
+<h2>Error Codes Quick Reference</h2>
+<ul>
+  <li><strong>E1</strong> — Refrigerator over-temperature warning</li>
+  <li><strong>E2</strong> — Freezer over-temperature warning</li>
+  <li><strong>E3</strong> — Sealed-system pressure issue (call same-day, don't run the unit)</li>
+  <li><strong>EE</strong> — Electronic control board fault (try power cycle first)</li>
+  <li><strong>F1 / F2</strong> — Fan motor fault</li>
+  <li><strong>dr</strong> — Door alarm (check for door not fully closed)</li>
+</ul>
+
+<h2>When to Call</h2>
+<p>If steps 2-6 above pointed to any of: failed evaporator fan, defrost system issue, door seal compromise, sealed-system symptom, or any persistent error code — that's a service call.</p>
+<p><a href="/services/refrigerator-repair/">See our Sub-Zero refrigerator repair page</a> or call (800) 651-4528. Same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>.</p>
+`,
+    faqs: [
+      {
+        question: "How long should it take a Sub-Zero to recover after I add a lot of warm food?",
+        answer: "12-24 hours to fully recover to setpoint. During recovery, the compressor runs more or less continuously. This is normal. If recovery takes longer than 24 hours, the unit has a problem unrelated to the food load.",
+      },
+      {
+        question: "My Sub-Zero is in defrost cycle — should I worry?",
+        answer: "No. Sub-Zero refrigerators run defrost cycles every 8-12 hours, lasting 20-30 minutes. During the cycle, the compressor pauses and cabinet temperature can drift up briefly. After the cycle, normal cooling resumes within 30 minutes. If your unit appears to stop cooling for more than an hour, that's not a defrost cycle.",
+      },
+      {
+        question: "Why is my refrigerator section warm but the freezer is fine?",
+        answer: "On side-by-side or column units, this usually means the evaporator fan that pushes cold air to the refrigerator section has failed, or the air damper between sections is stuck. Both are inexpensive parts and routine repairs.",
+      },
+      {
+        question: "Should I unplug my Sub-Zero if it's not cooling?",
+        answer: "Only in specific cases: if you smell electrical burning, see sparks, hear refrigerant hissing with chemical smell, or see visible damage. Otherwise leave it plugged in. Even a partially working unit holds food cold longer than no unit at all. Call for same-day service.",
+      },
+      {
+        question: "What's the most common cause of 'refrigerator not cooling'?",
+        answer: "Evaporator fan motor failure. Cold is being made but not blown into the cabinet. Diagnostic in 60 seconds — listen at the freezer wall for fan whirring. If it's silent and the compressor is running, that's almost certainly the issue. Common Sub-Zero part, routine repair.",
+      },
+      {
+        question: "Can a power surge cause cooling failure?",
+        answer: "Yes — power surges damage control boards, fan motors, and starting capacitors. Damage often shows up 2-6 weeks after the surge event, not immediately. If your area had a recent power outage and your Sub-Zero now has cooling issues, the timing may be related. Whole-home surge protection prevents this; cost is $200-400.",
+      },
     ],
   },
   "refrigerator-compressor-repair-complete-diagnostic-and-repair": {
     slug: "refrigerator-compressor-repair-complete-diagnostic-and-repair",
-    title: "Refrigerator Compressor Repair: Complete Diagnostic and Repair Guide",
-    metaTitle: "Refrigerator Compressor Repair Guide",
-    metaDescription: "Everything you need to know about refrigerator compressor repair. Expert diagnostics and repair from certified technicians.",
+    title: "Sub-Zero Compressor Repair: Diagnostic + Replacement Decision Guide",
+    metaTitle: "Sub-Zero Compressor Repair Diagnostic Guide",
+    metaDescription: "When a Sub-Zero compressor really fails vs. when it's actually a relay or capacitor — the diagnostic process, the replacement decision, and what owners get wrong.",
     author: "Daniel Rivera",
     date: "2025-02-05",
+    lead: "Most 'compressor failures' aren't actually the compressor. The relay, the starting capacitor, the fan motor, or even the door seal can cause symptoms that look like compressor death — and those misdiagnoses are how owners end up replacing a $600 compressor when a $40 relay would have fixed the problem. Here's how the actual diagnostic runs.",
     content: [
-      "The compressor is the heart of your refrigerator's cooling system. When it fails, your entire unit stops cooling effectively. Understanding compressor issues can help you identify problems early and avoid complete system failures.",
-      "Common signs of compressor problems include the refrigerator not cooling despite running, clicking or buzzing noises from the back of the unit, the compressor running continuously without cycling off, and the unit tripping circuit breakers.",
-      "Compressor repair or replacement is a complex job that requires specialized tools and refrigerant handling certification. Our factory-trained technicians have the expertise to diagnose compressor issues accurately and determine whether repair or replacement is the most cost-effective solution.",
-      "Don't let a failing compressor ruin your food and your day. Call (800) 651-4528 for immediate compressor diagnostic and repair service.",
+      "The compressor is the heart of your refrigerator's cooling system. Understanding compressor issues helps you identify problems early.",
+    ],
+    bodyHtml: `
+<h2>What a Compressor Actually Does</h2>
+<p>The compressor is the pump that circulates refrigerant through the sealed system. It pulls cold, low-pressure refrigerant gas from the evaporator coil (inside the cabinet), compresses it to high pressure, and sends it to the condenser coil (back of the unit) where it dissipates heat. The cycle is continuous when the unit needs cooling and pauses when setpoint is reached.</p>
+<p>A working compressor is the foundation of refrigeration. When the compressor genuinely fails, the unit stops cooling completely — no halfway about it. When the compressor is partially failed (lost efficiency, weak compression), the unit cools but inefficiently — runs constantly, can't reach setpoint in warm weather.</p>
+
+<h2>The 4 Things Owners Mistake for Compressor Failure</h2>
+
+<h3>1. Failed starting relay or capacitor</h3>
+<p>The relay and capacitor are external components that help the compressor start. When they fail, the compressor tries to start, fails, and you hear clicking. Sounds exactly like a compressor problem. Costs $40 in parts. Easy to diagnose and replace.</p>
+
+<h3>2. Evaporator fan motor failure</h3>
+<p>Compressor runs fine, refrigerant cycles fine, but cold isn't being blown into the cabinet because the fan motor is dead. Owner reports "fridge not cooling but compressor sounds normal." Looks like a sealed-system issue but isn't. Common, cheap fix.</p>
+
+<h3>3. Defrost system failure causing ice buildup</h3>
+<p>Defrost system fails, ice accumulates on evaporator coil, air can't pass over the coil, cabinet warms up. Compressor runs continuously trying to compensate. Owner thinks compressor is overworking; actually the defrost system is the failure point.</p>
+
+<h3>4. Door seal compromise</h3>
+<p>Door gasket fails, warm air leaks in continuously, compressor runs constantly to compensate. Owner reports "compressor running all the time." Compressor is fine; door seal is the issue. $200 gasket replacement instead of $1,500 compressor repair.</p>
+
+<h2>How to Tell If It's Actually the Compressor</h2>
+<p>Real compressor problems have specific signatures. Here's the diagnostic logic:</p>
+
+<h3>Total no-cool with no compressor sound</h3>
+<p>If you put your ear to the back grille and hear nothing — no humming, no clicking, no buzzing — the compressor isn't trying to run. Could be: power issue, thermostat malfunction, control board failure, OR a completely failed compressor. This needs professional diagnosis to differentiate.</p>
+
+<h3>Loud humming followed by clicking and silence</h3>
+<p>Compressor trying to start, failing, and tripping its overload protector. Usually a relay or capacitor (cheap fix), occasionally a true compressor failure.</p>
+
+<h3>Compressor runs but doesn't cool</h3>
+<p>Multiple possible causes including: refrigerant leak, capillary tube blockage, weak compressor (lost compression), failed evaporator fan, sealed-system pressure issue. Requires manifold gauge testing on-site to differentiate.</p>
+
+<h3>Compressor cycles too short or too long</h3>
+<p>Could be thermostat, control board, sensor, or compressor efficiency. Diagnostic involves measuring run time, draw amperage, and pressure across the cycle.</p>
+
+<h3>Compressor trips circuit breaker</h3>
+<p>Almost always a hard short in the compressor windings — true compressor failure. Don't keep resetting the breaker; you'll damage other components.</p>
+
+<blockquote>"In 30 years of Sub-Zero service, I've replaced maybe 200 compressors. I've replaced thousands of relays, fan motors, and door gaskets that owners thought were compressor problems. The diagnostic step is what separates a $40 fix from a $1,500 fix."</blockquote>
+
+<h2>The Actual Diagnostic Process</h2>
+<p>What happens on-site when you call for "compressor failure":</p>
+
+<h3>Step 1: Visual + auditory inspection (5 minutes)</h3>
+<p>Pull the back panel, listen to compressor behavior, check for visible refrigerant oil residue (indicates leak), check for burnt smell (indicates electrical issue), check condenser fan and ambient airflow.</p>
+
+<h3>Step 2: Electrical testing (10 minutes)</h3>
+<p>Test the relay continuity and capacitor capacitance. Either failed component will be obvious. Test compressor terminals for short circuit (indicates winding failure). Measure compressor amperage under load (indicates efficiency).</p>
+
+<h3>Step 3: Sealed-system pressure testing (15 minutes)</h3>
+<p>If electrical tests passed, connect manifold gauges to measure suction and discharge pressures across a complete compressor cycle. Pressure differential indicates compressor health. Low differential plus low overall pressure indicates refrigerant loss; low differential plus normal pressure indicates compressor weakness.</p>
+
+<h3>Step 4: Diagnosis + repair recommendation (5 minutes)</h3>
+<p>Based on test results, recommend repair. Most calls end with relay replacement, capacitor replacement, or fan motor replacement. Some end with refrigerant leak repair. Few end with compressor replacement recommendation.</p>
+
+<h2>The Compressor Replacement Decision</h2>
+<p>When the compressor genuinely needs replacement, the decision is whether to replace or replace the whole unit.</p>
+
+<h3>Replace compressor when:</h3>
+<ul>
+  <li>Unit is under 15 years old</li>
+  <li>Other major components (sealed system, control board, condenser) are healthy</li>
+  <li>Cabinet, door alignment, gaskets are in good condition</li>
+  <li>Cost of compressor + labor is less than 50% of replacement unit cost</li>
+</ul>
+
+<h3>Consider replacing the unit when:</h3>
+<ul>
+  <li>Unit is 25+ years old AND multiple major components are showing wear</li>
+  <li>Cabinet has structural issues or significant rust</li>
+  <li>The compressor failure is the third major repair in 2 years</li>
+  <li>You were planning a kitchen renovation anyway</li>
+</ul>
+<p>For most Sub-Zero units in the 10-20 year range with isolated compressor failure, repair is the clear winner. These units have another decade of service life if the compressor is replaced.</p>
+
+<h2>Costs (Approximate)</h2>
+<ul>
+  <li><strong>Relay or capacitor replacement</strong>: $200-350 total</li>
+  <li><strong>Evaporator fan motor</strong>: $300-450</li>
+  <li><strong>Refrigerant leak repair + recharge</strong>: $400-700</li>
+  <li><strong>Compressor replacement</strong>: $1,200-2,000 (depending on model and refrigerant type)</li>
+  <li><strong>Replacement Sub-Zero unit</strong>: $8,000-25,000+</li>
+</ul>
+
+<h2>What You Can Do Before Calling</h2>
+<ul>
+  <li>Note the exact symptoms (sounds, when started, anything that triggered it)</li>
+  <li>Check for visible refrigerant oil residue at the back of the unit</li>
+  <li>Verify circuit breaker hasn't tripped</li>
+  <li>Get the model number ready</li>
+</ul>
+<p>This information cuts diagnostic time in half and means we can usually arrive with the most likely parts on the truck.</p>
+
+<h2>Same-Day Diagnostic + Repair</h2>
+<p><a href="/services/refrigerator-repair/">See our Sub-Zero refrigerator repair page</a> for service details, or call (800) 651-4528. Same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>.</p>
+`,
+    faqs: [
+      {
+        question: "How do I know if my compressor is actually broken?",
+        answer: "Hard symptoms: unit completely stopped cooling, compressor not running at all (silent at the back grille), or compressor trips circuit breaker. Soft symptoms (clicking, weak cooling, constant run) are usually OTHER components — relay, capacitor, fan motor, door seal — that mimic compressor failure. Diagnostic equipment differentiates.",
+      },
+      {
+        question: "Can I replace a refrigerator compressor myself?",
+        answer: "Technically yes, in practice no. Compressor replacement requires EPA Section 608 certification (federal regulation), refrigerant recovery equipment, vacuum pump, manifold gauges, and the parts catalog to source the right replacement. The labor and equipment cost makes professional replacement worth it even if you have HVAC background.",
+      },
+      {
+        question: "How much does Sub-Zero compressor replacement cost?",
+        answer: "$1,200-2,000 typical, including parts, labor, refrigerant, and proper recovery/recharge. Higher for older units that may need refrigerant conversion (R-12 to R-134a, etc.). Lower if other components don't need attention. We provide a written quote before any work begins.",
+      },
+      {
+        question: "Is it worth replacing the compressor on a 15-year-old Sub-Zero?",
+        answer: "Usually yes. Sub-Zero units are designed for 20-25 year service life. A 15-year unit with isolated compressor failure has another 10 years of service if the compressor is replaced. Compare $1,500 compressor repair to $15,000+ replacement unit. The math is clear unless other major components are also failing.",
+      },
+      {
+        question: "How long does compressor replacement take?",
+        answer: "Typically 4-6 hours on-site for the actual replacement, including refrigerant recovery, compressor swap, system vacuum, recharge, and pressure testing. We schedule it as a single visit. The unit is usable that evening.",
+      },
+      {
+        question: "Why does my compressor click but not start?",
+        answer: "Almost always the starting relay or run capacitor. The relay clicks as it tries to engage the compressor, fails, and trips an internal overload protector. Cycle repeats. $40 in parts to fix. Don't assume compressor failure based on clicking — get diagnostic confirmation first.",
+      },
     ],
   },
   "refrigerator-leaking-water-causes-quick-fixes": {
     slug: "refrigerator-leaking-water-causes-quick-fixes",
-    title: "Refrigerator Leaking Water: Causes and Quick Fixes",
-    metaTitle: "Refrigerator Leaking Water Causes and Fixes",
-    metaDescription: "Discover common causes of refrigerator water leaks and when you need professional repair. Fast, reliable service available.",
+    title: "Sub-Zero Leaking Water: 5 Causes and How to Identify Each",
+    metaTitle: "Sub-Zero Refrigerator Leaking Water Causes",
+    metaDescription: "Where the water is coming from tells you exactly what's wrong. The 5 most common Sub-Zero water leak causes — how to identify each and when to call for service.",
     author: "Daniel Rivera",
     date: "2025-02-15",
+    lead: "Where the water appears tells you what's wrong. Water at the bottom of the freezer means clogged defrost drain. Water under the unit means leaking water supply line or condensate pan. Water inside the refrigerator means defrost drain or door seal. Each cause has a distinct location and a distinct fix — and most are inexpensive if caught early.",
     content: [
-      "Finding water pooling around your refrigerator is never a welcome sight. Water leaks can damage your flooring, create slip hazards, and indicate underlying problems with your refrigerator that need attention.",
-      "Common causes of refrigerator water leaks include a clogged defrost drain, a cracked or frozen water supply line, a damaged door gasket, a faulty water inlet valve, or a blocked condensate drain.",
-      "While some causes like a clogged defrost drain can sometimes be addressed with basic troubleshooting, most water leak issues benefit from professional diagnosis to ensure the root cause is properly identified and fixed.",
-      "For fast, reliable water leak repair, call our certified technicians at (800) 651-4528. We offer same-day service and can quickly identify and fix the source of your leak.",
+      "Water leaks from your refrigerator can damage your flooring and indicate underlying problems. Here's how to identify what's causing yours.",
+    ],
+    bodyHtml: `
+<h2>Where the Water Is Tells You What's Wrong</h2>
+<p>Step 1 in every leak diagnosis is location. The five most common Sub-Zero water leak causes each have a distinctive location signature.</p>
+
+<h3>Water at the bottom of the freezer cabinet</h3>
+<p><strong>Cause: clogged defrost drain.</strong> The defrost cycle melts ice off the evaporator coil; that water normally flows down a drain tube to a pan that evaporates the water. If the drain clogs (food debris, ice formation, or sediment), water accumulates at the bottom of the freezer instead of draining away. Most common Sub-Zero leak.</p>
+<p><strong>Fix</strong>: clear the drain. Sometimes DIY-friendly with warm water and a small bottle brush; sometimes requires accessing the drain tube from behind the unit. Total cost when professional: $200-350.</p>
+
+<h3>Water inside the refrigerator section</h3>
+<p><strong>Cause: door seal compromise OR defrost drain blockage.</strong> Compromised door gasket lets warm humid air in, which condenses on the cold cabinet walls and pools at the bottom. Defrost drain blockage on some Built-In models also routes water into the refrigerator section.</p>
+<p><strong>Fix</strong>: identify which cause via the dollar bill test (door seal) or visual drain inspection (defrost drain). Door gasket replacement: $250-400. Defrost drain clearing: $200-350.</p>
+
+<h3>Water under the refrigerator on the floor</h3>
+<p><strong>Cause: water supply line leak OR condensate pan overflow.</strong> The water supply line to the ice maker passes through the back of the unit. Cracks at the connection point or kinks that lead to leaks happen over time. The condensate pan at the back/bottom collects defrost water and is supposed to evaporate; if the unit is over-cooling or the heater isn't working, the pan overflows.</p>
+<p><strong>Fix</strong>: visual inspection of supply line and pan. Supply line repair: $250-400. Pan replacement or heater repair: $300-500.</p>
+
+<h3>Water on the door interior or top edge</h3>
+<p><strong>Cause: water inlet valve failure</strong>. The inlet valve controls water flow to the ice maker and water dispenser. When it fails partially open, water continues flowing slowly even when not requested. On some Sub-Zero models the water then leaks out the top of the door or pools at the door interior.</p>
+<p><strong>Fix</strong>: inlet valve replacement. Common Sub-Zero part. $300-450.</p>
+
+<h3>Water dripping from the ice maker</h3>
+<p><strong>Cause: cracked fill tube OR ice maker mold issue</strong>. Fill tubes can crack from freeze events (especially in colder marinas or homes with cold water supply lines). Ice maker molds can develop hairline cracks from age. Either way, water that should be in the ice cube ends up outside the ice maker.</p>
+<p><strong>Fix</strong>: fill tube replacement: $200-350. Ice mold replacement: $400-600.</p>
+
+<h2>Less Common Causes</h2>
+
+<h3>Frozen water supply line</h3>
+<p>If the water supply line passes through an unconditioned space (between cabinet and exterior wall), cold weather can freeze the line. Some South Florida winters get cold enough for this. The line can crack from freeze expansion. Diagnostic: line is colder than expected; visible ice on or around the line.</p>
+
+<h3>High humidity condensation</h3>
+<p>South Florida humidity can cause condensation on door gaskets, hinges, and exterior surfaces, especially when AC is set warm. Looks like a leak but is just condensation. Wipe and monitor — if it continues despite normal AC use, the issue is gasket compression.</p>
+
+<h3>Damaged condensate drain heater</h3>
+<p>Sub-Zero units have a small heater that helps condensate water evaporate from the pan. If the heater fails, water accumulates faster than it can evaporate, eventually overflowing.</p>
+
+<blockquote>"The first 30 seconds of any 'water leak' call is figuring out where the water is coming from. Once you know the location, the cause is usually obvious. Owners often try to fix what they see — drying the floor, adjusting the door — without identifying the source. Source identification is the entire diagnostic."</blockquote>
+
+<h2>When to Call vs. When to DIY</h2>
+
+<h3>DIY-friendly</h3>
+<ul>
+  <li>Clearing an accessible defrost drain with warm water</li>
+  <li>Checking the dollar bill test on door seals</li>
+  <li>Wiping condensation buildup from gaskets</li>
+  <li>Tightening visible water supply line connections (only if accessible without removing the unit)</li>
+</ul>
+
+<h3>Call for service</h3>
+<ul>
+  <li>Water source is unclear despite inspection</li>
+  <li>Water leak hasn't stopped after attempting DIY clearing</li>
+  <li>Water inlet valve, ice maker fill tube, or condensate heater failures</li>
+  <li>Anything inside the sealed system</li>
+  <li>Water supply line cracks or major leaks</li>
+</ul>
+
+<h2>Why Acting Fast Matters</h2>
+<p>Water damage is cumulative and expensive. A small unaddressed leak can:</p>
+<ul>
+  <li>Damage flooring (especially hardwood and laminate)</li>
+  <li>Migrate behind cabinets and cause hidden water damage</li>
+  <li>Promote mold growth in compromised areas</li>
+  <li>Damage downstairs ceilings in second-floor kitchens</li>
+  <li>Cause refrigerator electrical components to short circuit</li>
+</ul>
+<p>What starts as a $300 defrost drain clearing can become a $5,000 floor repair if ignored.</p>
+
+<h2>Same-Day Service Across South Florida</h2>
+<p><a href="/services/refrigerator-repair/">See our Sub-Zero refrigerator repair page</a> for service details, or call (800) 651-4528. Water leaks get priority dispatch — same-day is standard across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>.</p>
+`,
+    faqs: [
+      {
+        question: "Why is there water at the bottom of my freezer?",
+        answer: "Almost always a clogged defrost drain. Defrost cycles melt ice off the coil; that water normally drains to an evaporation pan. When the drain clogs, water pools in the freezer instead. Most common Sub-Zero water leak. Sometimes DIY-friendly to clear; if you can't access the drain easily, call for service.",
+      },
+      {
+        question: "How urgent is a refrigerator water leak?",
+        answer: "More urgent than most owners think. Cumulative water damage is one of the most expensive insurance claims related to refrigerators. A small leak today is a $300 fix; the floor damage from ignoring it for 6 months is a $5,000+ repair. We dispatch water leaks as priority same-day calls.",
+      },
+      {
+        question: "Can I just put a towel under the refrigerator?",
+        answer: "As a temporary measure while waiting for service, yes. Long-term, no — towels don't address the cause and water damage continues to migrate. The leak has a specific source that needs to be identified and fixed. Call for diagnostic; we identify the source and fix it in one visit on most calls.",
+      },
+      {
+        question: "Will my homeowner's insurance cover refrigerator water damage?",
+        answer: "Typically yes for sudden water damage events, but coverage often excludes 'gradual damage' from neglected leaks. The insurance interpretation usually depends on whether you took reasonable steps to address the leak when discovered. Calling for repair within a week of noticing the leak is generally considered reasonable; ignoring it for months is generally not covered.",
+      },
+      {
+        question: "Why is my Sub-Zero leaking after I just had it serviced?",
+        answer: "Three possibilities: (1) the recent service didn't address the actual leak source, (2) the service involved disconnecting and reconnecting components and one connection wasn't fully tightened, or (3) it's a different leak from a different cause. Call us — if the service we provided is involved, return visit is covered under workmanship warranty.",
+      },
+      {
+        question: "Can high South Florida humidity cause a refrigerator to leak?",
+        answer: "It can cause condensation buildup that looks like a leak — moisture on door gaskets, hinges, exterior surfaces. Distinguishable from real leaks because it appears intermittently and only when AC is set warm or door is opened frequently. If it persists with normal AC use, the door gasket is the issue.",
+      },
     ],
   },
   "emergency-fridge-repair-near-me-24-7-service": {
     slug: "emergency-fridge-repair-near-me-24-7-service",
-    title: "Emergency Fridge Repair Near Me: 24/7 Service",
-    metaTitle: "Emergency Fridge Repair Near Me 24/7",
-    metaDescription: "Need emergency refrigerator repair? We offer 24/7 same-day service across South Florida. Call (800) 651-4528 now.",
+    title: "Emergency Sub-Zero Repair Near Me: 24/7 Same-Day Service in South Florida",
+    metaTitle: "Emergency Sub-Zero Repair Near Me 24/7",
+    metaDescription: "Sub-Zero refrigerator failed at 2 AM? Same flat rate, no surcharge. What counts as an emergency, what to do while waiting, and how to keep food safe.",
     author: "Daniel Rivera",
     date: "2025-02-20",
+    lead: "A Sub-Zero failure isn't always a 9-to-5 problem. We dispatch 24/7 across South Florida at the same flat rate — no surcharge for nights, weekends, or holidays. The most important thing isn't waiting time; it's what you do during the wait. Door discipline, food triage, and accurate symptom reporting determine whether your $800 of groceries is safe when we arrive.",
     content: [
-      "A refrigerator breakdown is always an emergency. Your food is at risk, and every hour counts. That's why we offer 24/7 emergency refrigerator repair service across South Florida — no extra charges for nights, weekends, or holidays.",
-      "When you call our emergency line at (800) 651-4528, we'll dispatch a certified technician to your location as quickly as possible. Our trucks are stocked with genuine Sub-Zero parts, so most repairs can be completed in a single visit.",
-      "While waiting for your technician, you can help preserve your food by keeping the refrigerator doors closed as much as possible, placing perishables in coolers with ice if available, and noting any unusual sounds or symptoms to share with the technician.",
-      "Don't wait and risk losing hundreds of dollars in food. Call (800) 651-4528 for immediate emergency refrigerator repair service.",
+      "Refrigerator emergencies don't wait for business hours. Here's how 24/7 emergency service works and what to do while waiting.",
+    ],
+    bodyHtml: `
+<h2>What Counts as a Sub-Zero Emergency</h2>
+<p>Not every issue needs immediate response. Knowing the difference saves you from after-hours calls when daytime service would have worked, and saves you from waiting until morning when you should call now.</p>
+
+<h3>Real emergencies (call immediately, even at 2 AM)</h3>
+<ul>
+  <li><strong>Total no-cool</strong> — both compartments warming, food at risk within 4-8 hours</li>
+  <li><strong>Active water leak</strong> — water flowing onto floor, risk of structural water damage</li>
+  <li><strong>Electrical issue</strong> — burnt smell, sparks, smoke, or breaker tripping repeatedly</li>
+  <li><strong>Refrigerant leak</strong> — chemical smell, hissing sound, with refrigerant smell</li>
+  <li><strong>E3 sealed-system error code</strong> — pressure issue that can damage compressor if unit keeps running</li>
+</ul>
+
+<h3>Same-day but not after-hours emergencies (call when you wake up if it happens at 2 AM)</h3>
+<ul>
+  <li>Cooling but inefficient — food still cold, just running more</li>
+  <li>One compartment warm but the other working</li>
+  <li>Slow water leak (drips, not flow)</li>
+  <li>Defrost system failure with visible ice but unit still cooling</li>
+  <li>Error codes E1, E2, EE, F1, F2 (less urgent than E3)</li>
+</ul>
+
+<h3>Schedule for next business day</h3>
+<ul>
+  <li>Door gasket compromise that you can mitigate by keeping door closed</li>
+  <li>Ice maker not making ice (food preservation not at risk)</li>
+  <li>Wine cooler temperature drift on a non-collection unit</li>
+  <li>Increased compressor cycling without major performance loss</li>
+</ul>
+
+<h2>What to Do While Waiting</h2>
+
+<h3>1. Door discipline first</h3>
+<p>The single biggest thing that determines whether food survives an extended outage is how often the door opens. Each opening lets warm air in and lets cold air out. With doors closed, a Sub-Zero refrigerator holds safe temps for 6-8 hours; freezer for 24-48 hours. With doors opened every 30 minutes "to check," cut those numbers in half.</p>
+
+<h3>2. Food triage by category</h3>
+<p>Move highest-value perishables to coolers with ice if you have them. Priorities:</p>
+<ul>
+  <li><strong>Highest priority</strong>: raw meats, fish, dairy products, prepared foods with mayo or eggs</li>
+  <li><strong>High priority</strong>: cheese, yogurt, milk</li>
+  <li><strong>Medium priority</strong>: produce, fruits, vegetables</li>
+  <li><strong>Low priority</strong>: condiments, beverages, jarred items</li>
+</ul>
+
+<h3>3. Document for insurance</h3>
+<p>If you have homeowner's insurance with food-loss coverage, photograph the contents before disposing of anything. Most policies cover $500-1,500 with documentation. This is the cheapest insurance step — 30 seconds of phone photography.</p>
+
+<h3>4. Note symptoms accurately</h3>
+<p>What we ask when you call:</p>
+<ul>
+  <li>Model number (metal plate inside the unit)</li>
+  <li>Exact symptoms — what's happening, when did it start, anything that triggered it</li>
+  <li>Any error codes on the display</li>
+  <li>Sounds (compressor, fans, clicks, anything new)</li>
+  <li>Visible water, ice buildup, or smell</li>
+</ul>
+<p>Accurate symptom reporting cuts diagnostic time on-site by 50%. Means we usually arrive with the right OEM parts on the truck.</p>
+
+<h2>How 24/7 Service Actually Works</h2>
+
+<h3>Same flat rate, no surcharges</h3>
+<p>Tuesday at 2 PM, Saturday at 11 PM, Christmas Day — same flat rate. We don't add after-hours surcharges, weekend surcharges, or holiday surcharges. The price you see when you book is the price on your invoice when we leave.</p>
+
+<h3>Dispatch coverage</h3>
+<p>Same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a> for emergency calls. Naples, Marco Island, and Florida Keys typically need a half-day buffer for true after-hours.</p>
+
+<h3>OEM parts on the truck</h3>
+<p>Our trucks ship with the parts statistically most likely to be needed on a Sub-Zero call: evaporator fan motors, defrost system components, water inlet valves, common door gaskets, control boards for major model lines. Most emergency repairs finish on the first visit.</p>
+
+<h3>Workmanship warranty</h3>
+<p>Same workmanship warranty on emergency calls as scheduled service. If the repair fails, we come back at no charge.</p>
+
+<blockquote>"The 'emergency' part of emergency service isn't really about how fast we arrive — it's about minimizing food loss while you wait. Door discipline and food triage matter more than dispatch speed for the first few hours of any outage."</blockquote>
+
+<h2>The Cost of Waiting</h2>
+<p>Owners sometimes weigh emergency call cost against waiting until morning. The math usually favors calling immediately:</p>
+<ul>
+  <li><strong>Emergency call (no surcharge)</strong>: same flat rate as daytime service</li>
+  <li><strong>Food loss from extended outage</strong>: $200-1,500+ depending on what's in the unit</li>
+  <li><strong>Cascade damage from continued failure</strong>: a failing component left running can cause secondary damage</li>
+</ul>
+<p>For most owners, calling at 2 AM costs the same as calling at 9 AM, but saves several hundred dollars in food.</p>
+
+<h2>What Counts as "Near Me"</h2>
+<p>Our service area: all 7 South Florida counties. Same-day across the three big ones. <a href="/areas-we-service/">See the full service area map</a>.</p>
+<p>Call (800) 651-4528 for 24/7 emergency Sub-Zero repair, or <a href="/contact/">request service online</a>.</p>
+`,
+    faqs: [
+      {
+        question: "Do you actually have technicians available at 2 AM?",
+        answer: "Yes — we maintain on-call coverage 24 hours a day, 365 days a year. After-hours dispatch may take slightly longer than business hours (typical: 60-90 minutes) but is always available. Same flat rate as daytime service. No surcharges.",
+      },
+      {
+        question: "What's the longest a Sub-Zero can hold safe temperatures during an outage?",
+        answer: "With doors closed: refrigerator 6-8 hours, freezer 24-48 hours. Both numbers are highly dependent on door discipline. Each opening cuts the window significantly. The 4-hour FDA food safety threshold for refrigerator contents is conservative for Sub-Zero, but is a reasonable baseline.",
+      },
+      {
+        question: "Should I move food to coolers while waiting for repair?",
+        answer: "Only if your service window is more than 4 hours away or you've already opened the unit several times. Otherwise, leaving food in the closed Sub-Zero is better — it holds temperature well as long as doors stay closed. Move only if you're sure the wait will exceed safe-temperature window.",
+      },
+      {
+        question: "Will my insurance cover food loss from a refrigerator failure?",
+        answer: "Many homeowner's policies cover $500-1,500 in food loss with documentation. Check your specific policy. Photograph the contents before disposal. Save the service repair invoice. File the claim within 30 days. Sub-Zero owners often have higher-value contents (specialty items, wine) — these losses are typically covered if documented.",
+      },
+      {
+        question: "Is calling for repair at 2 AM more expensive?",
+        answer: "Not with us. Same flat rate Tuesday afternoon, Saturday at midnight, or Christmas Day. The math on calling immediately almost always favors immediate dispatch — the cost of waiting (food loss, cascade damage) is typically more than any surcharge would have been, and we don't charge surcharges anyway.",
+      },
+      {
+        question: "How fast can you actually get to me for an emergency?",
+        answer: "Business hours: typically 60-90 minutes from call to arrival in Miami-Dade, Broward, and Palm Beach. After-hours: 90-120 minutes. Naples and Marco Island: 2-3 hours from call. Florida Keys: extended scheduling. Tell us your address when you call and we'll give you a realistic ETA.",
+      },
     ],
   },
   "ice-maker-repair-service-same-day-fixes-near-you": {
     slug: "ice-maker-repair-service-same-day-fixes-near-you",
-    title: "Ice Maker Repair Service: Same-Day Fixes Near You",
-    metaTitle: "Ice Maker Repair Service Same-Day",
-    metaDescription: "Professional ice maker repair with same-day service. Expert technicians for all Sub-Zero ice maker models. Call (800) 651-4528.",
+    title: "Sub-Zero Ice Maker Repair: Same-Day Fixes for the 5 Most Common Problems",
+    metaTitle: "Sub-Zero Ice Maker Repair Service Same-Day",
+    metaDescription: "9 out of 10 'no ice' calls trace to one of three things. Here's the diagnostic flow, the most common Sub-Zero ice maker problems, and what to check before calling.",
     author: "Daniel Rivera",
     date: "2025-03-01",
+    lead: "Nine out of ten 'no ice' calls trace to one of three things — a clogged water line, a stuck water inlet valve, or a frozen-over fill tube. Knowing which one you have determines whether the fix is a $200 service call or whether you can troubleshoot from home. The diagnostic takes about 5 minutes.",
     content: [
-      "When your ice maker stops producing ice or starts making unusual noises, you need fast professional help. Our certified technicians specialize in Sub-Zero ice maker repair and can diagnose and fix most issues the same day.",
-      "Common ice maker problems include no ice production, small or misshapen ice cubes, unusual noises during the ice-making cycle, ice with an off taste or odor, and water leaking from the ice maker.",
-      "Our technicians carry genuine Sub-Zero ice maker parts on every service call, including water inlet valves, motors, sensors, and ice molds. This means most repairs can be completed in a single visit without the need for a follow-up.",
-      "For same-day ice maker repair service, call (800) 651-4528. We serve all of South Florida with no extra charges for weekend or holiday service.",
+      "Sub-Zero ice maker problems usually have specific causes. Here's how to identify what's wrong.",
+    ],
+    bodyHtml: `
+<h2>The 5 Most Common Sub-Zero Ice Maker Problems</h2>
+
+<h3>1. No ice production</h3>
+<p>The most common single call. Three causes account for ~90% of "no ice" complaints:</p>
+<ul>
+  <li><strong>Clogged water line</strong> (40% of cases) — sediment buildup or kink in the supply line. Often a stuck saddle valve at the source.</li>
+  <li><strong>Stuck water inlet valve</strong> (35% of cases) — failure to open or partial open from corrosion or sediment.</li>
+  <li><strong>Frozen fill tube</strong> (15% of cases) — water that should have been ice freezes inside the fill tube and blocks the cycle.</li>
+</ul>
+<p>Self-check before calling: verify the saddle valve under the sink is fully open. Verify water filter isn't past its replacement date. Check if "ice maker" switch on the unit is in the on position.</p>
+<p>If those check out, call. Most repairs finish in under an hour.</p>
+
+<h3>2. Small or hollow ice cubes</h3>
+<p>Indicates restricted water flow during the fill cycle. Two causes:</p>
+<ul>
+  <li><strong>Filter overdue</strong> (most common) — Sub-Zero water filters need replacement every 6-9 months on South Florida water. Past replacement date, filter restricts flow.</li>
+  <li><strong>Inlet valve partially clogged</strong> — sediment or mineral buildup reduces flow.</li>
+</ul>
+<p>Self-check: replace the water filter. If problem persists 24 hours later, call for inlet valve service.</p>
+
+<h3>3. Cloudy or off-tasting ice</h3>
+<p>Almost always a filter issue:</p>
+<ul>
+  <li><strong>Filter overdue</strong> (~80% of cases) — replacement resolves immediately.</li>
+  <li><strong>Contaminated fill tube</strong> — debris in the fill tube transferring to ice. Less common.</li>
+  <li><strong>Stagnant water</strong> — if you haven't used the ice maker in weeks, the first batch of new ice may be off. Discard the bin and produce a fresh batch.</li>
+</ul>
+<p>Self-check: replace water filter. If problem persists for two batches, call.</p>
+
+<h3>4. Ice maker leaking water</h3>
+<p>Three sources, distinguishable by water location:</p>
+<ul>
+  <li><strong>Inlet valve stuck partially open</strong> — water continues to flow when not requested. Visible at the valve location.</li>
+  <li><strong>Cracked fill tube</strong> — usually from a freeze event. Water leaks behind the cabinet during fill cycles.</li>
+  <li><strong>Damaged ice mold</strong> — hairline cracks from age. Water leaks during the freeze cycle.</li>
+</ul>
+<p>All three need professional diagnosis. Inlet valve replacement runs $300-450; fill tube $200-350; ice mold $400-600.</p>
+
+<h3>5. Ice maker noise (clicking, grinding, buzzing)</h3>
+<p>Different sounds, different causes:</p>
+<ul>
+  <li><strong>Clicking</strong> — harvest motor binding or harvest mechanism stuck on ice.</li>
+  <li><strong>Grinding</strong> — auger motor wear.</li>
+  <li><strong>Buzzing</strong> — water inlet valve trying to fill against a clog.</li>
+</ul>
+<p>None are catastrophic if caught early. Each is worth a service call before the component fully fails.</p>
+
+<h2>Symptom-by-Symptom Quick Reference</h2>
+
+| Symptom | Most Likely Cause | Fix |
+|---------|-------------------|-----|
+| No ice at all | Clogged water line / inlet valve | Verify supply, replace filter, call if persists |
+| Small ice cubes | Filter overdue | Replace filter |
+| Cloudy ice | Filter overdue | Replace filter |
+| Slow ice production | Filter overdue or inlet valve | Replace filter, call if persists |
+| Ice with off taste | Filter overdue | Replace filter |
+| Water leaking | Inlet valve, fill tube, or mold | Call for diagnosis |
+| Clicking sound | Harvest motor or mechanism | Call for service |
+| Grinding sound | Auger motor wear | Call for service |
+| Buzzing sound | Inlet valve clog | Call for service |
+| Frozen up inside | Sensor or harvest motor | Call for service |
+| Error code on unit | Specific fault | Note code, call |
+
+<blockquote>"Half the 'my ice maker is broken' calls end with me telling the customer to replace their water filter. Filter neglect is the single biggest cause of ice maker problems in South Florida — our water profile pushes the replacement interval shorter than the manual suggests."</blockquote>
+
+<h2>The Water Filter Schedule for South Florida</h2>
+<p>Sub-Zero recommends 6-12 months for filter replacement. South Florida water profile pushes this to the lower end:</p>
+<ul>
+  <li><strong>Coral Gables, Pinecrest, Miami suburbs</strong>: 6-9 months</li>
+  <li><strong>Coastal cities (Miami Beach, Sunny Isles, Bal Harbour)</strong>: 6-8 months</li>
+  <li><strong>Naples and Marco Island</strong>: 6-9 months</li>
+  <li><strong>Palm Beach (Boca, Delray, etc.)</strong>: 5-7 months</li>
+  <li><strong>High-volume households (4+ people, daily ice production)</strong>: 4-6 months</li>
+</ul>
+<p>If you can't remember when you last replaced the filter, you're due. <a href="/blog/sub-zero-water-filter-replacement-guide/">See our water filter replacement guide</a> for the step-by-step.</p>
+
+<h2>Models We Service</h2>
+<p>Every active and legacy Sub-Zero ice maker:</p>
+<ul>
+  <li>Built-in refrigerator ice makers (BI series)</li>
+  <li>Pro 48 ice maker (built into Pro 48 column)</li>
+  <li>Undercounter ice makers (UC-15I indoor, UC-15IO outdoor)</li>
+  <li>Designer Series ice makers (DET-IC)</li>
+  <li>Legacy 532, 561T, 642, 695 ice makers</li>
+</ul>
+
+<h2>Same-Day Service</h2>
+<p><a href="/services/icemaker-repair/">See our Sub-Zero ice maker repair page</a> for service details, or call (800) 651-4528. Same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>.</p>
+`,
+    faqs: [
+      {
+        question: "Why is my Sub-Zero ice maker not making ice?",
+        answer: "Most likely a clogged water line, stuck water inlet valve, or frozen fill tube — those three account for about 90% of 'no ice' calls. Self-check: verify the saddle valve at the supply is fully open, replace the water filter if past 6-9 months, and verify the ice maker switch is on. If those don't resolve it, the fix is professional service.",
+      },
+      {
+        question: "How often should I replace my Sub-Zero water filter?",
+        answer: "Every 6-9 months on South Florida water. Manufacturer guidance is 6-12 months; South Florida water profile pushes most owners to the lower end. Coastal cities slightly more frequent (6-8 months). High-volume households or hard-water areas: 4-6 months. If you can't remember when you last replaced, you're due.",
+      },
+      {
+        question: "Why is my ice cloudy?",
+        answer: "Almost always the water filter is past its replacement date. Filter degrades over time and stops removing dissolved solids effectively. Replace filter and run a few batches of fresh ice through the system. If clouding persists, the fill tube or ice mold may need attention — call for service.",
+      },
+      {
+        question: "Should I replace the water filter myself or call?",
+        answer: "DIY-friendly. Sub-Zero designed water filters for owner replacement — twist counterclockwise to release, insert new filter, twist clockwise to lock, run 1-2 gallons through to flush. Use genuine Sub-Zero filters; third-party filters cause recognition issues on some models. See our dedicated water filter replacement guide.",
+      },
+      {
+        question: "Why is my Sub-Zero ice maker leaking water?",
+        answer: "Three possible sources: stuck water inlet valve (most common), cracked fill tube, or damaged ice mold. Each leaks from a different location. Inlet valve leaks at the back of the unit; fill tube cracks leak behind the cabinet; mold cracks leak during the freeze cycle. All three need professional diagnosis and replacement.",
+      },
+      {
+        question: "How long does ice maker repair take?",
+        answer: "Most ice maker repairs finish on the first visit, typically under an hour on-site. We carry water inlet valves, harvest motors, ice level sensors, and ice molds for every active Sub-Zero ice maker line on every truck. Special-order parts (rare for ice makers) may require a follow-up visit.",
+      },
     ],
   },
   "wine-cooler-repair-specialists-same-day-service": {
     slug: "wine-cooler-repair-specialists-same-day-service",
-    title: "Wine Cooler Repair Specialists: Same-Day Service",
-    metaTitle: "Wine Cooler Repair Specialists Same-Day",
-    metaDescription: "Expert wine cooler repair to protect your wine collection. Same-day service with genuine parts. Call (800) 651-4528.",
+    title: "Sub-Zero Wine Cooler Repair: Why Recalibration Matters After Every Service",
+    metaTitle: "Sub-Zero Wine Cooler Repair Specialists Same-Day",
+    metaDescription: "Wine column humidity drift is the silent killer of fine collections. The diagnostic, the repair, and why recalibration after every service is non-negotiable.",
     author: "Daniel Rivera",
     date: "2025-03-10",
+    lead: "Wine columns are the most precision-sensitive units Sub-Zero makes. A two-degree drift over a week ages a vintage faster than the owner ever notices. Most owners only call when temperature drifts visibly — by which point the underlying humidity issue has been damaging corks for months. Recalibration after every service is non-negotiable on our team for exactly this reason.",
     content: [
-      "Your wine collection is an investment that deserves proper protection. When your Sub-Zero wine cooler isn't maintaining the right temperature or humidity, every bottle is at risk. Our wine cooler repair specialists can help.",
-      "We repair all types of wine cooler issues including temperature fluctuations, compressor problems, humidity control failures, vibration issues, lighting malfunctions, and door seal problems.",
-      "Proper wine storage requires precise temperature and humidity control. Our factory-trained technicians understand the delicate requirements of wine preservation and will ensure your cooler is restored to optimal performance.",
-      "Don't risk your wine collection. Call (800) 651-4528 for same-day wine cooler repair service throughout South Florida.",
+      "Your wine collection is an investment. When your Sub-Zero wine cooler isn't maintaining the right temperature or humidity, every bottle is at risk.",
+    ],
+    bodyHtml: `
+<h2>Why Wine Coolers Are Different from Refrigerators</h2>
+<p>A residential refrigerator targets 38°F with relatively forgiving humidity tolerance. A Sub-Zero wine cooler targets 50-65°F with 50-70% relative humidity — narrow temperature window, tight humidity range. Drift of a few degrees or 10-15% RH that wouldn't matter on a refrigerator can damage wine over weeks or months.</p>
+<p>This makes wine cooler service different from refrigerator service. The components are similar but the calibration requirements are stricter. Service that's adequate for a refrigerator can leave a wine cooler operating outside its target window — invisible to the owner, slow death for the wine.</p>
+
+<h2>The 6 Most Common Wine Cooler Problems</h2>
+
+<h3>1. Temperature drifting up</h3>
+<p>Most common single call. Causes:</p>
+<ul>
+  <li>Failed evaporator fan motor (cold isn't being circulated)</li>
+  <li>Compressor cycling issue (not enough refrigeration capacity)</li>
+  <li>Door seal compromise (warm air leaking in)</li>
+  <li>Sensor drift (unit thinks it's at setpoint when actually it's warmer)</li>
+</ul>
+<p>Diagnostic: pressure check + sensor calibration verification on-site.</p>
+
+<h3>2. Temperature fluctuating between zones</h3>
+<p>Dual-zone columns where one zone drifts while the other holds. Usually:</p>
+<ul>
+  <li>Zone-specific evaporator fan failure</li>
+  <li>Damper between zones stuck or failed</li>
+  <li>Zone-specific sensor drift</li>
+</ul>
+<p>Easy to isolate; specific replacement.</p>
+
+<h3>3. Humidity too low (corks drying out)</h3>
+<p>The silent killer. Door seal compromised or evaporator running too cold. Cork desiccation is a real loss event — the cork shrinks slightly, gaps form, oxygen enters, wine oxidizes. The owner doesn't notice until they open a bottle that should have been at peak.</p>
+<p>Service immediately. <a href="/blog/sub-zero-wine-column-humidity-guide/">See our humidity guide</a> for the full story on why this matters.</p>
+
+<h3>4. Vibration</h3>
+<p>Vibration agitates wine and accelerates aging. Causes:</p>
+<ul>
+  <li>Compressor mounts worn (most common)</li>
+  <li>Condenser fan loose or bearing wear</li>
+  <li>Unit on uneven flooring</li>
+</ul>
+
+<h3>5. Compressor running constantly</h3>
+<p>Multiple causes overlap with refrigerator issues:</p>
+<ul>
+  <li>Door seal failure</li>
+  <li>Condenser blocked with dust</li>
+  <li>Refrigerant low from slow leak</li>
+  <li>Sensor drift causing the unit to think it's not at setpoint</li>
+</ul>
+
+<h3>6. Lighting issues</h3>
+<p>LED driver failure on Designer columns; bulb on legacy units. Common, easy fix.</p>
+
+<h2>Why Recalibration After Every Service Is Non-Negotiable</h2>
+<p>This is the difference between residential service and wine specialist service.</p>
+<p>Wine columns can drift their actual cabinet temperature by 2-3°F after any electrical or sealed-system service. The setpoint shows correct on the display, but the actual cabinet temperature is off. The owner doesn't know — there's no visible sign.</p>
+<p>2°F drift over a year ages wine roughly 30% faster than intended. Over 5 years, that compounds significantly.</p>
+<p>So our wine cooler service ALWAYS includes recalibration. Every visit. Even if the call was for something unrelated like a light bulb. Here's what we actually do:</p>
+
+<h3>1. Pre-service measurement</h3>
+<p>Calibrated thermocouple at three shelf positions (top, middle, bottom). Calibrated hygrometer for RH. Document baseline readings.</p>
+
+<h3>2. Sensor verification</h3>
+<p>Test the unit's temperature sensor against the calibrated thermocouple. If reads more than 1°F off, replace or compensate at the control board.</p>
+
+<h3>3. Door seal check</h3>
+<p>Bill test on every door, visual inspection. Replace if compromised.</p>
+
+<h3>4. Defrost timing assessment</h3>
+<p>If defrost is over- or under-cycling, adjust control board parameters. (Wine columns use shorter, less aggressive defrost cycles than refrigerators.)</p>
+
+<h3>5. Re-measurement after stabilization</h3>
+<p>Bring unit to setpoint. Wait 30-45 minutes. Re-measure temperature and humidity. Adjust until the cabinet matches the display.</p>
+
+<h3>6. Final adjustment + documentation</h3>
+<p>Final readings written on the invoice. You have a record.</p>
+
+<blockquote>"Wine column owners with serious collections expect their unit to maintain conditions to within a degree. Most service shops don't recalibrate unless asked. We don't ask — we just do it. Every visit. The math on a 50-bottle collection of $100/bottle wines tells you why."</blockquote>
+
+<h2>How Often Wine Coolers Need Service</h2>
+<p>Based on 30 years of South Florida wine column service:</p>
+
+<h3>Under 5 years old</h3>
+<p>Probably no service needed unless you observe symptoms.</p>
+
+<h3>5-10 years old</h3>
+<p>Recalibration check every 2 years is reasonable preventive maintenance.</p>
+
+<h3>10-15 years old</h3>
+<p>Annual recalibration is wise, especially for serious collections.</p>
+
+<h3>15+ years old</h3>
+<p>Annual minimum, plus consider proactive sensor replacement at the same visit.</p>
+
+<h2>Models We Service</h2>
+<ul>
+  <li>Designer Wine Columns (DET-WC, DEW)</li>
+  <li>Built-In Wine Storage (BW-30, BW-44)</li>
+  <li>Pro 48 wine column variant</li>
+  <li>Undercounter wine coolers (UW-24, UW-15)</li>
+  <li>Outdoor wine coolers (UW-15IO)</li>
+  <li>Legacy 315W, 424FS, 427R, 700BR</li>
+</ul>
+
+<h2>South Florida Wine Cooler Considerations</h2>
+<p>Two regional factors affect wine cooler maintenance:</p>
+
+<h3>Hurricane season power events</h3>
+<p>Voltage spikes during power restoration damage wine column control boards more easily than refrigerator boards (tighter tolerances). Schedule a post-season check after every major storm.</p>
+
+<h3>Coastal humidity</h3>
+<p>South Florida ambient humidity actually helps wine columns to some degree — high ambient RH means the cabinet doesn't have to work as hard to maintain target humidity. But coastal salt-air still corrodes contacts faster than inland properties.</p>
+
+<h2>Same-Day Service</h2>
+<p><a href="/services/wine-cooler-repair/">See our Sub-Zero wine cooler repair page</a> for service details, or call (800) 651-4528. Same-day across <a href="/areas-we-service/miami-dade-county/">Miami-Dade</a>, <a href="/areas-we-service/broward-county/">Broward</a>, and <a href="/areas-we-service/palm-beach-county/">Palm Beach</a>.</p>
+`,
+    faqs: [
+      {
+        question: "How can I tell if my wine cooler's humidity is wrong?",
+        answer: "Most Sub-Zero wine columns don't display humidity on the front panel. Three ways to check: (1) inspect corks on bottles stored long-term — visible drying or pulling away from the bottle indicates low humidity, (2) buy a portable hygrometer ($15-25), place inside for 24 hours, target is 50-70%, (3) schedule a service-level humidity check with calibrated equipment.",
+      },
+      {
+        question: "Why does my wine cooler need recalibration if it shows the right temperature?",
+        answer: "The display reads the temperature at the sensor location. After 5+ years, the sensor itself can drift, meaning the display reads correctly but the actual cabinet temperature is different. A 2°F drift over a year ages wine roughly 30% faster — invisible to owners but significant for collections. Recalibration verifies the cabinet matches the display.",
+      },
+      {
+        question: "How often should I have my Sub-Zero wine cooler serviced?",
+        answer: "For under-5-year units, only when symptoms appear. For 5-10 year units, recalibration check every 2 years. For 10-15 year units, annual recalibration is wise. For 15+ year units, annual at minimum plus proactive sensor replacement.",
+      },
+      {
+        question: "What does Sub-Zero wine cooler repair cost?",
+        answer: "Door gasket: $250-400. Light/LED driver: $200-300. Sensor replacement: $250-400. Compressor or sealed-system service: $1,000-2,000. Recalibration is included free with any other service. We provide written quote on-site before any labor.",
+      },
+      {
+        question: "Should I move my wine before the technician arrives?",
+        answer: "For most repairs, no. We bring portable cooling if a longer outage is expected. Tell us when you book if the collection is high-value and we'll prepare accordingly. Most wine cooler repairs finish in under 90 minutes on-site, well within the safe-temperature window for stored wine.",
+      },
+      {
+        question: "Can you fix older Sub-Zero wine cooler models?",
+        answer: "Yes. We have parts and service experience for legacy models including the 315W, 424FS, 427R, and 700BR series. Many of these units in South Florida luxury homes are 20+ years old and still running well. We service them with the same diligence as current Designer columns.",
+      },
     ],
   },
 
