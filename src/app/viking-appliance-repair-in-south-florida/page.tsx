@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AnswerBlock from "@/components/AnswerBlock";
 
 export const metadata: Metadata = {
   title: { absolute: "Viking Appliance Repair in South Florida | Expert Service" },
@@ -57,6 +58,22 @@ export default function VikingBrandPage() {
           </div>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get Viking appliances repaired in South Florida?"
+        answer="We service the full Viking Professional and 7-Series lineup across South Florida — built-in refrigerators, freezer columns, ranges, ovens, cooktops, and dishwashers. Same-day appointments across Miami-Dade, Broward, and Palm Beach. Factory-trained technicians with three decades of experience on luxury commercial-style appliances. OEM Viking parts on every truck."
+        stats={[
+          { value: "Pro + 7-Series", label: "All Viking lines" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Viking parts stocked" },
+          { value: "30+", label: "Years on premium brands" },
+        ]}
+        sources={[
+          { label: "Viking Owner Resources", url: "https://www.vikingrange.com/consumer/owner-care" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

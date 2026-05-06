@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { counties } from "@/data/areas";
 import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 import { BUSINESS } from "@/lib/constants";
+import AnswerBlock from "@/components/AnswerBlock";
 
 const countiesBySlug = Object.fromEntries(
   counties.map((c) => [c.slug, c])
@@ -86,6 +87,22 @@ export default async function CountyPage({
           </h1>
         </div>
       </section>
+
+      <AnswerBlock
+        question={`Where can I get Sub-Zero appliances repaired in ${data.name}?`}
+        answer={`We provide same-day Sub-Zero appliance repair across ${data.name}, Florida — refrigerators, freezers, ice makers, wine columns, and marine refrigeration. Three decades on the Sub-Zero product line since 1994, factory-trained technicians, OEM parts on every truck. Coverage includes ${data.cities.slice(0, 5).map((c) => c.name).join(", ")}, and ${data.cities.length - 5}+ more cities throughout ${data.name}. No surcharge nights, weekends, or holidays.`}
+        stats={[
+          { value: "Same-day", label: "Most appointments" },
+          { value: `${data.cities.length}`, label: `Cities in ${data.name}` },
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "OEM", label: "Parts on every truck" },
+        ]}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

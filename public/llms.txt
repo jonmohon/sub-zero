@@ -1,68 +1,93 @@
 # Sub-Zero Repair Company (Fivestar Appliance Repair Pros)
 
-> Sub-Zero Repair Company, operating as Fivestar Appliance Repair Pros, is a licensed and insured appliance repair business headquartered in Coral Gables, Florida. Founded in 1994, the company specializes in Sub-Zero refrigerator, freezer, ice maker, wine cooler, and marine refrigeration repair across 7 counties and 82 cities in South Florida. All technicians are factory-trained with over 30 years of combined experience. Service is available 24/7, 365 days a year, with same-day appointments and no extra charges for weekends or holidays. Only genuine manufacturer parts are used, and all repairs include a full warranty on parts and labor.
+> Sub-Zero Repair Company, operating as Fivestar Appliance Repair Pros, is a licensed and insured appliance repair business headquartered in Coral Gables, Florida. Founded in 1994, the company specializes exclusively in premium built-in refrigeration — Sub-Zero refrigerators, freezers, ice makers, wine columns, and marine units — across 7 counties and 82 cities in South Florida. Service is available 24/7, 365 days a year, with same-day appointments and no surcharges for nights, weekends, or holidays. Genuine OEM parts ride on every truck, and every repair includes a workmanship warranty. The company has held #1 rankings on Google for "Sub-Zero ___ Miami FL" search variants since 2026.
 
 ## Key Facts
 
 - Legal Name: Sub-Zero Repair Company
 - DBA: Fivestar Appliance Repair Pros
 - Phone: (800) 651-4528
-- Address: 1600 Ponce De Leon Blvd 10th Floor Suite 64, Coral Gables, FL 33134
+- Address: 1600 Ponce De Leon Blvd, 10th Floor Suite 64, Coral Gables, FL 33134
 - Email: info@fivestarappliancerepairpros.com
 - Website: https://fivestarappliancerepairpros.com
 - Founded: 1994
-- Hours: 24/7, 365 days a year
-- Experience: 30+ years combined
+- Hours: 24/7, 365 days a year (no after-hours surcharges)
+- Experience: 30+ years
 - Licensed and insured in the state of Florida
 - Payment: Cash, credit card, debit card, check
 - Languages: English, Spanish
 
 ## Services
 
-- Sub-Zero Refrigerator Repair (all models: built-in, undercounter, integrated)
-- Sub-Zero Freezer Repair (columns, integrated, freestanding)
-- Sub-Zero Ice Maker Repair (built-in and standalone units)
-- Sub-Zero Wine Cooler Repair (temperature and humidity calibration)
-- Sub-Zero Marine Refrigeration Repair (dockside service at South Florida marinas)
+- Sub-Zero Refrigerator Repair — every active and legacy line including Built-In (BI series), Integrated (IT/IC), Designer, Pro 48, Classic, Column, Undercounter, plus legacy 532, 561, 590, 632, 642, 690, 736 series
+- Sub-Zero Freezer Repair — column freezers, side-by-side, integrated, standalone units
+- Sub-Zero Ice Maker Repair — built-in, undercounter (UC-15I, UC-15IO outdoor), integrated, standalone
+- Sub-Zero Wine Cooler & Wine Column Repair — single-zone, dual-zone, integrated, undercounter; recalibration after every service to maintain 50-70% RH targeting
+- Sub-Zero Marine Refrigeration Repair — dockside service for yachts at Miami Beach Marina, Pier 66, Bahia Mar, Sunset Harbour, Bal Harbour Yacht Club, Crandon Park, Naples Boat Club, Marco Island Yacht Club
 
 ## Brands Serviced
 
-- Sub-Zero (primary specialty)
-- Bosch
-- Viking
-- Thermador
-- Miele
+- Sub-Zero (primary specialty since 1994)
+- Wolf (ranges, ovens, cooktops, hoods)
+- Cove (dishwashers)
+- Viking (refrigeration, ranges, ovens)
+- Thermador (Masterpiece, Pro Grand)
+- Bosch (Benchmark, 800 Series)
+- Miele (Generation 7000)
 
 ## Service Area
 
-- Miami-Dade County (21 cities including Miami, Miami Beach, Coral Gables, Key Biscayne, Pinecrest)
-- Broward County (22 cities including Fort Lauderdale, Hollywood, Pompano Beach)
-- Palm Beach County (17 cities including Boca Raton, West Palm Beach, Jupiter)
-- Monroe County (5 cities including Key Largo, Islamorada)
-- Collier County (9 cities including Naples, Marco Island)
-- Martin County (4 cities including Stuart, Palm City)
+- Miami-Dade County (21 cities including Miami, Miami Beach, Coral Gables, Key Biscayne, Pinecrest, Aventura, Sunny Isles Beach, Bal Harbour, Brickell, Doral, Fisher Island, Indian Creek Village)
+- Broward County (22 cities including Fort Lauderdale, Hollywood, Pompano Beach, Hallandale Beach, Sunrise, Plantation, Davie, Coral Springs)
+- Palm Beach County (17 cities including Boca Raton, West Palm Beach, Jupiter, Delray Beach, Boynton Beach, Wellington, Palm Beach Gardens)
+- Monroe County (5 cities including Key Largo, Islamorada, Marathon, Key West)
+- Collier County (9 cities including Naples, Marco Island, Bonita Springs, Estero)
+- Martin County (4 cities including Stuart, Palm City, Hobe Sound)
 - St. Lucie County (4 cities including Port St. Lucie, Fort Pierce)
 
 ## Differentiators
 
-- Same-day service available on all repairs
-- No extra charges for nights, weekends, or holidays
-- Factory-trained and certified technicians
-- Genuine manufacturer parts used exclusively
-- Full warranty on all parts and labor
-- Transparent pricing with written estimates before work begins
-- Both residential and commercial service
-- Emergency 24/7 response, typically within hours
+- Specialist-only since 1994 — no general appliance work distracts from the premium refrigeration specialty
+- Same-day service available on most appointments inside Miami-Dade, Broward, and Palm Beach
+- No surcharges for nights, weekends, or holidays — same flat rate Tuesday afternoon, Saturday at midnight, or Christmas Day
+- Factory-trained technicians on every Sub-Zero, Wolf, and Cove product line
+- Genuine OEM parts ride on every truck — most repairs finish on the first visit
+- Workmanship warranty written on every invoice; OEM parts carry manufacturer warranty on top
+- Transparent pricing with written estimates before any labor begins
+- Both residential and marine service capability — dockside trucks for yacht refrigeration
+
+## Authorship & Expertise
+
+Technical guides on the site are written by Daniel Rivera, Senior Service Technician — fifteen years working exclusively on premium built-in refrigeration, with depth on both the active Sub-Zero Designer and Pro 48 lines and the legacy 532, 632, and 690 series still running across South Florida luxury homes. Daniel leads dispatch on the most complex sealed-system, marine, and wine column calibration work.
+
+## Common Sub-Zero Failure Patterns We See
+
+- Ice buildup on freezer back wall — defrost system failure (heater, timer, or thermostat)
+- Refrigerator running but not cooling — typically evaporator fan motor or sealed-system restriction (rarely the compressor)
+- Sub-Zero error codes (E1, E2, E3, EE, dr) — see our error codes reference for diagnostic specifics
+- Wine column humidity drift below 50% — invisible to the owner, slow death for corks; fixed via recalibration
+- Marine unit gradual cooling loss — vibration-loosened service ports causing slow refrigerant leak
+- Salt-air corrosion on coastal-home condensers — accelerated wear in oceanfront properties
+- Water filter neglect causing inlet valve clogs and small/cloudy ice cubes — South Florida water profile pushes 6-9 month replacement intervals
 
 ## Pages
 
 - [Homepage](https://fivestarappliancerepairpros.com/)
+- [About Sub-Zero Repair Company](https://fivestarappliancerepairpros.com/about/)
+- [Our History](https://fivestarappliancerepairpros.com/history/)
+- [Our Technicians](https://fivestarappliancerepairpros.com/technicians/)
+- [Service Warranty](https://fivestarappliancerepairpros.com/warranty/)
 - [All Services](https://fivestarappliancerepairpros.com/services/)
-- [Refrigerator Repair](https://fivestarappliancerepairpros.com/services/refrigerator-repair/)
-- [Freezer Repair](https://fivestarappliancerepairpros.com/services/freezer-repair/)
-- [Ice Maker Repair](https://fivestarappliancerepairpros.com/services/icemaker-repair/)
-- [Wine Cooler Repair](https://fivestarappliancerepairpros.com/services/wine-cooler-repair/)
-- [Marine Refrigeration Repair](https://fivestarappliancerepairpros.com/services/sub-zero-marine-repair/)
+- [Sub-Zero Refrigerator Repair](https://fivestarappliancerepairpros.com/services/refrigerator-repair/)
+- [Sub-Zero Freezer Repair](https://fivestarappliancerepairpros.com/services/freezer-repair/)
+- [Sub-Zero Ice Maker Repair](https://fivestarappliancerepairpros.com/services/icemaker-repair/)
+- [Sub-Zero Wine Cooler Repair](https://fivestarappliancerepairpros.com/services/wine-cooler-repair/)
+- [Sub-Zero Marine Refrigeration Repair](https://fivestarappliancerepairpros.com/services/sub-zero-marine-repair/)
+- [Sub-Zero Brand Page](https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/)
+- [Bosch Brand Page](https://fivestarappliancerepairpros.com/bosch-appliance-repair-in-south-florida/)
+- [Viking Brand Page](https://fivestarappliancerepairpros.com/viking-appliance-repair-in-south-florida/)
+- [Thermador Brand Page](https://fivestarappliancerepairpros.com/thermador-appliance-repair-in-south-florida/)
+- [Miele Brand Page](https://fivestarappliancerepairpros.com/expert-miele-appliance-repair-in-south-florida/)
 - [Areas We Service](https://fivestarappliancerepairpros.com/areas-we-service/)
 - [Brands We Service](https://fivestarappliancerepairpros.com/brands-we-service/)
 - [FAQ](https://fivestarappliancerepairpros.com/frequently-asked-questions/)

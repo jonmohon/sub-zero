@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AnswerBlock from "@/components/AnswerBlock";
 
 export const metadata: Metadata = {
   title: { absolute: "Bosch Appliance Repair in South Florida | Certified Service" },
@@ -57,6 +58,22 @@ export default function BoschBrandPage() {
           </div>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get Bosch appliances repaired in South Florida?"
+        answer="We service the full Bosch luxury appliance lineup across South Florida — Benchmark and 800 Series refrigerators, dishwashers, wall ovens, ranges, cooktops, and warming drawers. Same-day appointments across Miami-Dade, Broward, and Palm Beach. Factory-trained technicians, OEM parts on every truck, and the diagnostic equipment specific to Bosch's German engineering since 1994."
+        stats={[
+          { value: "Full lineup", label: "Benchmark + 800 Series" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Bosch parts stocked" },
+          { value: "30+", label: "Years on premium brands" },
+        ]}
+        sources={[
+          { label: "Bosch Home Owner Resources", url: "https://www.bosch-home.com/us/owner" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

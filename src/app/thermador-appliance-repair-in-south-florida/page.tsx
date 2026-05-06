@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AnswerBlock from "@/components/AnswerBlock";
 
 export const metadata: Metadata = {
   title: { absolute: "Thermador Appliance Repair in South Florida | Expert Service" },
@@ -57,6 +58,22 @@ export default function ThermadorBrandPage() {
           </div>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get Thermador appliances repaired in South Florida?"
+        answer="We service the full Thermador Masterpiece and Pro Grand lineup across South Florida — built-in refrigerators, freezer columns, ranges, ovens, cooktops, and warming drawers. Same-day appointments across Miami-Dade, Broward, and Palm Beach. Three decades on luxury appliances, factory-trained technicians, OEM Thermador parts on every truck."
+        stats={[
+          { value: "Masterpiece + Pro Grand", label: "All Thermador lines" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Thermador parts stocked" },
+          { value: "30+", label: "Years on premium brands" },
+        ]}
+        sources={[
+          { label: "Thermador Owner Resources", url: "https://www.thermador.com/us/owner" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

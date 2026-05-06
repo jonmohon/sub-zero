@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AnswerBlock from "@/components/AnswerBlock";
 
 export const metadata: Metadata = {
   title: { absolute: "Sub-Zero Appliance Repair in South Florida" },
@@ -57,6 +58,26 @@ export default function SubZeroBrandPage() {
           </div>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get Sub-Zero appliances repaired in South Florida?"
+        answer="Sub-Zero Repair Company has serviced Sub-Zero refrigerators, freezers, ice makers, wine columns, and marine units across South Florida since 1994. Our team works exclusively on premium built-in refrigeration — every Sub-Zero line from current Designer and Pro 48 to legacy 532, 632, and 690 series. Same-day appointments across Miami-Dade, Broward, Palm Beach, and four more counties. OEM parts on every truck."
+        stats={[
+          { value: "30+", label: "Years on Sub-Zero" },
+          { value: "All lines", label: "Built-In to Pro 48" },
+          { value: "OEM", label: "Parts on every truck" },
+          { value: "7", label: "Counties served" },
+        ]}
+        quote={{
+          text: "Sub-Zero is unique in residential refrigeration — the sealed-system architecture, the integrated cabinetry, the precision tolerances. Three decades on this product line means we read failure patterns in minutes that take a generalist hours to isolate.",
+          attribution: "Daniel Rivera, Senior Service Technician",
+        }}
+        sources={[
+          { label: "Sub-Zero Use & Care Guides", url: "https://www.subzero-wolf.com/owners/use-and-care-guides" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

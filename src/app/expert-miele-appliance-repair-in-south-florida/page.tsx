@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AnswerBlock from "@/components/AnswerBlock";
 
 export const metadata: Metadata = {
   title: { absolute: "Miele Appliance Repair in South Florida | Expert Service" },
@@ -58,6 +59,22 @@ export default function MieleBrandPage() {
           </div>
         </div>
       </section>
+
+      <AnswerBlock
+        question="Where can I get Miele appliances repaired in South Florida?"
+        answer="We service the full Miele Generation 7000 lineup across South Florida — refrigerators, dishwashers, ovens, washers, dryers, coffee systems, and steam ovens. Same-day appointments across Miami-Dade, Broward, and Palm Beach. Factory-trained on Miele's German engineering and electronic control architecture, OEM Miele parts on every truck."
+        stats={[
+          { value: "Generation 7000", label: "Full Miele lineup" },
+          { value: "Same-day", label: "Most appointments" },
+          { value: "OEM", label: "Miele parts stocked" },
+          { value: "30+", label: "Years on premium brands" },
+        ]}
+        sources={[
+          { label: "Miele Owner Resources", url: "https://www.mieleusa.com/owner" },
+          { label: "Our service warranty", url: "/warranty/" },
+          { label: "Meet our technicians", url: "/technicians/" },
+        ]}
+      />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
