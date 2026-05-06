@@ -3,23 +3,25 @@
  * and aggregate rating data server-side.
  *
  * Setup required (one-time):
- * 1. Get a Place ID for the business:
- *    https://developers.google.com/maps/documentation/places/web-service/place-id
- *    Search "Sub-Zero Repair Services" and select 1600 Ponce De Leon Blvd, Coral Gables.
- *    Copy the Place ID (looks like: ChIJxxxxxxxxxxxxxxxxxx).
+ * 1. Place ID is committed in BUSINESS.googlePlacesId (constants.ts) since
+ *    it's public business data, not a secret.
  * 2. Create a Google Cloud project + enable "Places API (New)":
  *    https://console.cloud.google.com/apis/library/places.googleapis.com
  * 3. Create an API key (restrict it to Places API + the production domain):
  *    https://console.cloud.google.com/apis/credentials
- * 4. Add to environment variables (Vercel project settings, .env.local for dev):
+ * 4. Add the API key to environment variables:
  *      GOOGLE_PLACES_API_KEY=AIza...
- *      GOOGLE_PLACES_PLACE_ID=ChIJ...
+ *    Vercel project settings → Environment Variables, plus .env.local for
+ *    local dev. Without this env var the section falls back to the static
+ *    "View Reviews on Google" CTA card.
  *
  * Cost: Free tier covers ~10K Place Details requests/month. With 24h caching,
  * one site needs ~30 requests/month. Realistic monthly cost: $0.
  *
  * Privacy: Server-side fetch only. The API key is never exposed to the client.
  */
+
+import { BUSINESS } from "./constants";
 
 const PLACES_API_ENDPOINT = "https://places.googleapis.com/v1/places";
 const FIELD_MASK = "rating,userRatingCount,reviews";
@@ -67,7 +69,9 @@ export interface GooglePlacesData {
  */
 export async function fetchGooglePlacesData(): Promise<GooglePlacesData | null> {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-  const placeId = process.env.GOOGLE_PLACES_PLACE_ID;
+  // Place ID is committed business data (constants.ts), not a secret.
+  // Env var override allowed for testing/staging environments.
+  const placeId = process.env.GOOGLE_PLACES_PLACE_ID ?? BUSINESS.googlePlacesId;
 
   if (!apiKey || !placeId) return null;
 

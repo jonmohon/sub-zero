@@ -44,18 +44,19 @@ export const BUSINESS = {
   slogan: "South Florida's Trusted Sub-Zero Repair Experts",
   languages: ["English", "Spanish"],
   copyright: `© ${new Date().getFullYear()} Sub-Zero Repair Company. All Rights Reserved.`,
-  // Google Business Profile aggregate rating. Set to real values from the GBP
-  // dashboard so AggregateRating schema renders. Leave as null to omit (never
-  // ship fabricated numbers — Google penalizes that).
+  // Google Business Profile aggregate rating. When the Places API integration
+  // is configured (GOOGLE_PLACES_API_KEY env var), live data overrides these
+  // values. Manual fallback for builds without the API key — leave null to
+  // omit AggregateRating schema entirely.
   rating: {
     value: null as number | null,
     reviewCount: null as number | null,
   },
-  // Trustindex widget ID for the embedded Google Reviews section.
-  // Sign up at trustindex.io (free), connect GBP, create a "Google Reviews"
-  // widget, paste the ID here. Until set, the section renders a clear "coming
-  // soon" placeholder for visitors.
-  trustindexWidgetId: null as string | null,
+  // Google Places API place ID. Public information (not a secret). Used by
+  // src/lib/google-places.ts to fetch live reviews + aggregate rating.
+  // Pair with the GOOGLE_PLACES_API_KEY env var in Vercel.
+  // Find via: https://developers.google.com/maps/documentation/places/web-service/place-id
+  googlePlacesId: "ChIJB8HHu9gbokkRHLd83Qf_Ij0",
 } as const;
 
 export const NAV_ITEMS = [
