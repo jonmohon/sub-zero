@@ -1,45 +1,33 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { BUSINESS } from "@/lib/constants";
+import { fetchGooglePlacesData, type GooglePlacesReview } from "@/lib/google-places";
+import { generateReviewSchema } from "@/lib/schema";
 
-const TRUSTINDEX_SCRIPT_BASE = "https://cdn.trustindex.io/loader.js";
+/**
+ * Server component that fetches real Google reviews via the Places API
+ * and renders them along with valid Review + AggregateRating schema.
+ *
+ * If GOOGLE_PLACES_API_KEY / GOOGLE_PLACES_PLACE_ID are unset, falls back
+ * to a clean "View Reviews on Google" CTA card so the section still has
+ * value during setup.
+ *
+ * Cached for 24h via the Places API helper. No client-side script.
+ */
+export default async function GoogleReviewsSection() {
+  const data = await fetchGooglePlacesData();
+  const hasReviews = data && data.reviews.length > 0;
 
-export default function GoogleReviewsSection() {
-  const widgetId = BUSINESS.trustindexWidgetId;
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [shouldLoad, setShouldLoad] = useState(false);
-
-  // Lazy-load the Trustindex script only when the section approaches the
-  // viewport. Keeps the embed JS off the LCP critical path entirely.
-  useEffect(() => {
-    if (!widgetId) return;
-    const el = containerRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "200px 0px" }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [widgetId]);
-
-  useEffect(() => {
-    if (!shouldLoad || !widgetId) return;
-    const src = `${TRUSTINDEX_SCRIPT_BASE}?widget_id=${widgetId}`;
-    if (document.querySelector(`script[src="${src}"]`)) return;
-    const script = document.createElement("script");
-    script.src = src;
-    script.defer = true;
-    document.body.appendChild(script);
-  }, [shouldLoad, widgetId]);
+  // Build review schema only from real reviews. Never fabricate.
+  const reviewSchema = hasReviews
+    ? generateReviewSchema(
+        data.reviews.map((r) => ({
+          author: r.authorAttribution.displayName,
+          rating: r.rating,
+          body: r.text?.text ?? "",
+          datePublished: r.publishTime,
+        }))
+      )
+    : null;
 
   return (
     <section
@@ -49,6 +37,13 @@ export default function GoogleReviewsSection() {
           "linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #eef2ff 100%)",
       }}
     >
+      {reviewSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+        />
+      )}
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="blur-up">
           <div className="flex items-center justify-center gap-3 mb-3">
@@ -60,21 +55,111 @@ export default function GoogleReviewsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0B1D33] mb-4">
             What South Florida Homeowners Are Saying
           </h2>
-          <p className="text-center text-[#64748B] max-w-2xl mx-auto mb-12">
-            Real, dated reviews from Sub-Zero owners across Miami-Dade and
-            Broward — pulled live from our Google Business Profile.
-          </p>
+
+          {hasReviews ? (
+            <RatingHeader rating={data.rating} count={data.userRatingCount} />
+          ) : (
+            <p className="text-center text-[#64748B] max-w-2xl mx-auto mb-12">
+              Real, dated reviews from Sub-Zero owners across Miami-Dade and
+              Broward — pulled live from our Google Business Profile.
+            </p>
+          )}
         </ScrollReveal>
 
-        <div ref={containerRef} className="min-h-[200px]">
-          {widgetId ? (
-            <div data-widget-id={widgetId} className="ti-widget" />
-          ) : (
-            <ReviewsFallback />
-          )}
-        </div>
+        {hasReviews ? (
+          <ReviewsGrid reviews={data.reviews} />
+        ) : (
+          <ReviewsFallback />
+        )}
       </div>
     </section>
+  );
+}
+
+function RatingHeader({ rating, count }: { rating: number; count: number }) {
+  return (
+    <div className="flex items-center justify-center gap-3 mb-12">
+      <div className="flex items-center gap-1">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <StarIcon key={i} filled={i <= Math.round(rating)} />
+        ))}
+      </div>
+      <span className="font-bold text-[#0B1D33] text-lg">{rating.toFixed(1)}</span>
+      <span className="text-[#64748B] text-sm">
+        ({count.toLocaleString()} Google reviews)
+      </span>
+    </div>
+  );
+}
+
+function ReviewsGrid({ reviews }: { reviews: GooglePlacesReview[] }) {
+  return (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {reviews.map((review) => (
+        <ReviewCard
+          key={review.name ?? review.publishTime + review.authorAttribution.displayName}
+          review={review}
+        />
+      ))}
+    </div>
+  );
+}
+
+function ReviewCard({ review }: { review: GooglePlacesReview }) {
+  const initials = review.authorAttribution.displayName
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .slice(0, 2);
+
+  const text = review.text?.text ?? "";
+  const truncated = text.length > 280 ? text.slice(0, 280).trim() + "…" : text;
+  const dateLabel =
+    review.relativePublishTimeDescription ??
+    new Date(review.publishTime).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+    });
+
+  return (
+    <ScrollReveal animation="fade-up">
+      <article className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm h-full flex flex-col">
+        <div className="flex items-center gap-3 mb-4">
+          {review.authorAttribution.photoUri ? (
+            <img
+              src={review.authorAttribution.photoUri}
+              alt=""
+              className="w-12 h-12 rounded-full object-cover bg-gray-100"
+              loading="lazy"
+              referrerPolicy="no-referrer"
+            />
+          ) : (
+            <div
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0387cc] to-[#00B4D8] flex items-center justify-center text-white font-bold text-sm"
+              aria-hidden="true"
+            >
+              {initials}
+            </div>
+          )}
+          <div className="flex-1 min-w-0">
+            <div className="font-semibold text-[#0B1D33] truncate">
+              {review.authorAttribution.displayName}
+            </div>
+            <div className="text-xs text-[#64748B]">{dateLabel}</div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-1 mb-3">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <StarIcon key={i} filled={i <= review.rating} small />
+          ))}
+        </div>
+
+        <blockquote className="text-[#334155] text-sm leading-relaxed flex-1">
+          {truncated}
+        </blockquote>
+      </article>
+    </ScrollReveal>
   );
 }
 
@@ -120,6 +205,20 @@ function ReviewsFallback() {
   );
 }
 
+function StarIcon({ filled, small }: { filled: boolean; small?: boolean }) {
+  const size = small ? "w-4 h-4" : "w-5 h-5";
+  return (
+    <svg
+      className={`${size} ${filled ? "text-[#f89406]" : "text-gray-300"}`}
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      aria-hidden="true"
+    >
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+    </svg>
+  );
+}
+
 function GoogleGlyph() {
   return (
     <svg
@@ -147,3 +246,4 @@ function GoogleGlyph() {
     </svg>
   );
 }
+

@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { counties } from "@/data/areas";
 import {
   cityIntros,
+  cityNeighborhoods,
+  cityFailureNote,
   getCityContent,
   getCityFAQ,
   getNearbyAreas,
@@ -84,6 +86,8 @@ export default async function CityPage({
   const cityContent = getCityContent(city, cityData.name, countyData.name);
   const nearbyAreas = getNearbyAreas(city, county);
   const cityIntro = cityIntros[city];
+  const cityNeighborhoodsList = cityNeighborhoods[city];
+  const cityFailureNoteText = cityFailureNote[city];
   const cityFAQ = getCityFAQ(
     city,
     cityData.name,
@@ -319,6 +323,50 @@ export default async function CityPage({
           </div>
         </div>
       </section>
+
+      {/* Per-city deep content: neighborhoods + technician note */}
+      {(cityNeighborhoodsList || cityFailureNoteText) && (
+        <section className="py-16 bg-white border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-3 gap-12">
+              {cityNeighborhoodsList && (
+                <div className="lg:col-span-2">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#0B1D33] mb-4">
+                    Neighborhoods We Cover in {cityData.name}
+                  </h2>
+                  <p className="text-[#64748B] leading-relaxed mb-6">
+                    Sub-Zero installs in {cityData.name} cluster in specific neighborhoods, buildings, and gated communities. We service every one of them on the same same-day dispatch:
+                  </p>
+                  <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+                    {cityNeighborhoodsList.map((n) => (
+                      <li key={n} className="flex gap-2 text-[#334155] text-sm">
+                        <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-[#f89406] mt-2" aria-hidden="true" />
+                        <span>{n}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {cityFailureNoteText && (
+                <aside className="bg-[#0387cc]/5 border border-[#0387cc]/20 rounded-2xl p-6 self-start">
+                  <p className="text-xs uppercase tracking-[0.15em] text-[#0387cc] font-bold mb-2">
+                    From our service log
+                  </p>
+                  <p className="text-sm font-semibold text-[#0B1D33] mb-3">
+                    What we see most on {cityData.name} calls
+                  </p>
+                  <p className="text-[#334155] text-sm leading-relaxed mb-4">
+                    {cityFailureNoteText}
+                  </p>
+                  <p className="text-xs text-[#64748B]">
+                    — Daniel Rivera, Senior Service Technician
+                  </p>
+                </aside>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Service Detail Sections */}
       <section className="py-16 bg-[#F8FAFC]">

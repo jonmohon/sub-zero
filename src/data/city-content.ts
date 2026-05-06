@@ -419,6 +419,224 @@ export const cityIntros: Record<string, string> = {
 };
 
 /* =====================================================================
+ * Per-city neighborhood + landmark lists.
+ *
+ * Renders as a "Neighborhoods we cover in {City}" section on city pages
+ * when present. Adds substantial unique geographic content per city,
+ * which:
+ *   - Generates authority for long-tail "Sub-Zero repair {neighborhood}"
+ *     queries that don't have their own pages
+ *   - Helps Google's local-pack understanding of our actual service depth
+ *   - Reads as genuine service-area expertise rather than templated copy
+ *
+ * Add cities here to enable the section. Cities without entries fall
+ * through silently — no broken UI.
+ * ===================================================================== */
+
+export const cityNeighborhoods: Record<string, string[]> = {
+  // Miami-Dade
+  miami: [
+    "Brickell",
+    "Downtown Miami",
+    "Coconut Grove",
+    "Coral Way",
+    "Wynwood",
+    "Edgewater",
+    "Midtown",
+    "Design District",
+    "Little Havana",
+    "Allapattah",
+  ],
+  "coral-gables": [
+    "Old Cutler / Old Cutler Bay (waterfront estates)",
+    "Cocoplum",
+    "Country Club Section (around Granada Golf Course)",
+    "Riviera",
+    "Tahiti Beach Island",
+    "Snapper Creek Lakes",
+    "Hammock Lakes",
+    "Crafts Section",
+    "Granada / Biltmore corridor",
+    "Coral Gables Section (Miracle Mile / downtown)",
+  ],
+  "miami-beach": [
+    "South of Fifth (SoFi)",
+    "South Beach (Ocean Drive / Collins corridor)",
+    "Mid-Beach (Faena District, Carillon)",
+    "North Beach (71st-87th Streets)",
+    "Star Island",
+    "Palm Island",
+    "Hibiscus Island",
+    "Sunset Islands (1, 2, 3, 4)",
+    "Venetian Islands",
+    "Sunset Harbour / Bayshore",
+  ],
+  pinecrest: [
+    "High Pines",
+    "Pinecrest Estates",
+    "Hammock Oaks",
+    "Banyan Park area",
+    "Suniland",
+    "Snapper Creek",
+  ],
+  aventura: [
+    "Williams Island (residential towers)",
+    "Turnberry Isle",
+    "Porto Vita Tower I, II, III",
+    "Hidden Bay (I, II, III)",
+    "The Point at Aventura",
+    "Hamptons South / Hamptons West",
+    "Mystic Pointe Towers",
+    "Aventura Lakes",
+    "Country Club Estates",
+    "Aventura Isles",
+  ],
+  "sunny-isles-beach": [
+    "Acqualina Resort & Residences",
+    "Estates at Acqualina",
+    "Mansions at Acqualina",
+    "Trump Towers I, II, III",
+    "Jade Ocean / Jade Beach / Jade Signature",
+    "Porsche Design Tower",
+    "Muse Residences",
+    "Chateau Beach Residences",
+    "Regalia",
+    "Turnberry Ocean Club Residences",
+  ],
+  "key-biscayne": [
+    "Ocean Club (Coral, Palm, Lake, Tower)",
+    "Grand Bay Residences",
+    "Cape Florida Estates",
+    "The Towers of Key Biscayne",
+    "Key Biscayne Estates",
+    "Crandon Park area",
+    "Sand Dollar / Grand Bay",
+    "Mashta Island",
+  ],
+  doral: [
+    "Trump National Doral residences",
+    "Mansions at Doral",
+    "Vintage Estates",
+    "Doral Isles",
+    "Doral Park Country Club",
+    "Costa Verde / Costa Bella",
+    "The Reserve at Doral",
+  ],
+
+  // Broward
+  "fort-lauderdale": [
+    "Las Olas Isles (Idlewyld, Sunrise Key, Nurmi Isles, Hendricks Isle)",
+    "Las Olas / Beach Boulevard corridor",
+    "Rio Vista",
+    "Coral Ridge",
+    "Harbor Beach",
+    "Bay Colony",
+    "Victoria Park",
+    "Sailboat Bend / Tarpon River",
+    "Flagler Heights",
+    "Croissant Park",
+  ],
+  hollywood: [
+    "Hollywood Beach (Trump Hollywood, Hollywood Beach Resort)",
+    "Hollywood Lakes",
+    "Emerald Hills",
+    "Beverly Park",
+    "Hollywood Hills",
+    "Highland Gardens",
+    "Royal Poinciana",
+    "North Central Hollywood",
+  ],
+
+  // Palm Beach
+  "boca-raton": [
+    "Royal Palm Yacht & Country Club",
+    "Long Lake Estates",
+    "Boca Bath & Tennis Club",
+    "St. Andrews Country Club",
+    "The Polo Club of Boca Raton",
+    "Woodfield Country Club",
+    "Boca Pointe",
+    "Boca Grove",
+    "Mizner Park / One Thousand Ocean / Townsend Place",
+    "Boca West Country Club",
+  ],
+  "delray-beach": [
+    "Atlantic Avenue / Pineapple Grove (downtown condos)",
+    "Beach area (Spanish River, etc.)",
+    "Mizner Country Club",
+    "Polo Trace",
+    "Stonebridge",
+    "Hamlet",
+    "Country Club of Delray",
+  ],
+
+  // Collier
+  naples: [
+    "Port Royal",
+    "Aqualane Shores",
+    "Old Naples (south of Central Ave)",
+    "Coquina Sands / Park Shore / Moorings",
+    "Pelican Bay",
+    "Grey Oaks",
+    "Quail West",
+    "Mediterra",
+    "Audubon Country Club",
+    "Bay Colony",
+  ],
+  "marco-island": [
+    "Tigertail Beach",
+    "Hideaway Beach",
+    "Marco Beach",
+    "Old Marco Village",
+    "Cape Marco",
+    "Estates at Marco",
+    "Marco Shores",
+  ],
+};
+
+/* =====================================================================
+ * Per-city common-failure observations in technician voice.
+ *
+ * One sentence (sometimes two) describing the most common failure pattern
+ * we see in this specific city. These are written from the technician's
+ * perspective — observational, specific, with practical guidance.
+ *
+ * Renders as a "What we see most on {City} service calls" callout when
+ * present. Adds genuine technician-voice content unique to each city.
+ * ===================================================================== */
+
+export const cityFailureNote: Record<string, string> = {
+  miami:
+    "Most of our Miami calls are condo Built-In units in the Brickell and Edgewater towers. The dominant failure pattern is voltage instability from building electrical rooms killing electronic control boards — a $300-400 OEM control board replacement that prevents a $2,000 misdiagnosis.",
+  "coral-gables":
+    "Coral Gables is condenser-dust country. Mature tree canopy and active landscaping send debris into Sub-Zero condenser intakes faster than any other city we cover. A 30-minute condenser cleaning every 12-18 months prevents most of the major compressor failures we see.",
+  "miami-beach":
+    "Miami Beach splits into three failure profiles: salt-air condenser corrosion on oceanfront condos, voltage instability in luxury towers (Faena, Continuum, Setai), and standard residential wear on Star Island / Palm Island estates. Different parts inventory for each.",
+  pinecrest:
+    "Pinecrest's mature trees and active yard service mean dust-blocked condensers are the dominant failure here. Beyond that, defrost-system failures on the late-1990s and early-2000s renovation installs are the next-most-common call.",
+  aventura:
+    "Aventura is high-rise condo country. The dominant failure pattern is voltage instability from building electrical systems killing Sub-Zero control boards on units 5+ years old. New-build dust accumulation is the runner-up.",
+  "sunny-isles-beach":
+    "Sunny Isles units face the worst combination in our coverage: salt air at oceanfront elevation, voltage spikes from building generators, and high condo-tower duty cycles. Annual maintenance isn't optional here.",
+  "key-biscayne":
+    "Key Biscayne has the worst salt-air exposure in our coverage area. Sub-Zero condensers corrode here in 18-24 months versus 8-10 years inland. Annual maintenance is the difference between a 12-year unit and a 25-year unit.",
+  doral:
+    "Doral is gated-community single-family country. Most of our calls are Pro 48 and Designer Column units in homes from the 2010s build wave. Common pattern: ice maker water inlet valve failures from Doral's harder water profile pushing filter replacement intervals shorter than the manual suggests.",
+  "fort-lauderdale":
+    "Fort Lauderdale splits into two markets: waterfront residential (salt-air condenser wear, door gasket degradation from coastal humidity) and yacht refrigeration at Pier 66 / Bahia Mar / Las Olas Marina (vibration-loosened service ports causing slow refrigerant leak). We dispatch separately-stocked trucks for each.",
+  hollywood:
+    "Hollywood splits into beach condo work (salt-air corrosion at Trump Hollywood and the Broadwalk towers) and residential single-family work (Emerald Hills, Hollywood Lakes — defrost system failures on 2000s installs are the dominant call).",
+  "boca-raton":
+    "Boca's gated communities (Royal Palm, St. Andrews, Polo Club, Woodfield) installed thousands of BI-36 and BI-42 units during the 2008-2014 renovation wave. Defrost timer and defrost thermostat failures around the 12-year mark are now the dominant call. Wine column humidity drift is a close second.",
+  "delray-beach":
+    "Delray Beach is split between dense downtown condo work along Atlantic Avenue and the gated-estate work west of I-95. Same Sub-Zero models, different rhythms. Beachfront units add salt-air to the failure mix.",
+  naples:
+    "Naples has a meaningful seasonal component. Half-occupancy homes face significant stress on Sub-Zero units — months of dormancy, voltage cycles, humidity swings. Pre-season service catches problems before owners return. The other major call category is sealed-system service on the 2000s Pelican Bay and Grey Oaks Pro 48 installs hitting their 15-20 year mark.",
+  "marco-island":
+    "Marco Island is half-residential, half-marine, all Gulf Coast. Salt air, seasonal occupancy, and marine refrigeration at the yacht clubs. Pre-season service before snowbird returns is the dominant scheduled call.",
+};
+
+/* =====================================================================
  * City-specific FAQ system.
  *
  * The previous setup had four hardcoded Q&As repeated on every city
