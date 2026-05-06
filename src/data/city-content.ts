@@ -592,6 +592,107 @@ export const cityNeighborhoods: Record<string, string[]> = {
     "Estates at Marco",
     "Marco Shores",
   ],
+
+  // Additional Miami-Dade priority cities
+  "bal-harbour": [
+    "St. Regis Bal Harbour Resort Residences",
+    "Bal Harbour Tower",
+    "Majestic Tower",
+    "Plaza Bal Harbour",
+    "Sea View Hotel & Residences",
+    "Bellini Bal Harbour",
+    "One Bal Harbour",
+    "Tiffany of Bal Harbour",
+  ],
+  "fisher-island": [
+    "Bayside Village",
+    "Oceanside Estates",
+    "Seaside Villas",
+    "Marina Village",
+    "Palazzo Del Sol",
+    "Palazzo Della Luna",
+    "Vanderbilt Mansion estates",
+    "Fisher Island Club homes",
+  ],
+  "indian-creek-village": [
+    "Indian Creek Country Club homes",
+    "North Bay Road waterfront estates",
+    "Bay Drive residences",
+    "Ocean Boulevard estates",
+  ],
+
+  // Additional Broward priority cities
+  weston: [
+    "Weston Hills Country Club",
+    "Bonaventure",
+    "Savanna",
+    "Three Village",
+    "Country Isles",
+    "The Falls",
+    "The Reserve at Three Village",
+  ],
+
+  // Additional Palm Beach priority cities
+  "palm-beach": [
+    "Estate Section (south of Worth Avenue)",
+    "Worth Avenue / mid-island",
+    "El Bravo Way / South Ocean Boulevard",
+    "Royal Poinciana / North End",
+    "South of Mar-a-Lago oceanfront estates",
+    "The Breakers area",
+    "Sloan's Curve oceanfront",
+  ],
+  jupiter: [
+    "Admirals Cove",
+    "Jupiter Island",
+    "Jupiter Inlet Colony",
+    "Loxahatchee Club",
+    "Trump National Golf Club residences",
+    "Abacoa",
+    "Jupiter Country Club",
+    "The Bear's Club",
+  ],
+  "palm-beach-gardens": [
+    "BallenIsles Country Club",
+    "Mirasol Country Club",
+    "PGA National (Resort + residential)",
+    "Old Palm Golf Club",
+    "Frenchman's Reserve",
+    "Frenchman's Creek",
+    "The Sanctuary",
+    "Eastpointe Country Club",
+  ],
+  "west-palm-beach": [
+    "El Cid (historic district)",
+    "SoSo (South of Southern)",
+    "Flamingo Park",
+    "Prospect Park",
+    "Northwood",
+    "Downtown / CityPlace",
+    "Forest Hill",
+  ],
+
+  // Additional Monroe (Keys) priority cities
+  "key-largo": [
+    "Ocean Reef Club",
+    "Buttonwood Bay",
+    "Anglers Park",
+    "Sound Point",
+    "Stillwright Point",
+    "Largo Sound",
+    "Key Largo Yacht Club area",
+  ],
+
+  // Additional Martin priority cities
+  stuart: [
+    "Sailfish Point",
+    "Mariner Sands",
+    "Hutchinson Island",
+    "Sewall's Point",
+    "Downtown Stuart waterfront",
+    "Willoughby Cove",
+    "Yacht and Country Club of Stuart",
+  ],
 };
 
 /* =====================================================================
@@ -634,6 +735,26 @@ export const cityFailureNote: Record<string, string> = {
     "Naples has a meaningful seasonal component. Half-occupancy homes face significant stress on Sub-Zero units — months of dormancy, voltage cycles, humidity swings. Pre-season service catches problems before owners return. The other major call category is sealed-system service on the 2000s Pelican Bay and Grey Oaks Pro 48 installs hitting their 15-20 year mark.",
   "marco-island":
     "Marco Island is half-residential, half-marine, all Gulf Coast. Salt air, seasonal occupancy, and marine refrigeration at the yacht clubs. Pre-season service before snowbird returns is the dominant scheduled call.",
+  "bal-harbour":
+    "Bal Harbour Tower and St. Regis Residences run on the same playbook as Sunny Isles — strict building access, COI required, freight elevator booking. Most of our calls are control-board failures from generator-transition voltage spikes plus salt-air condenser corrosion on oceanfront-facing units.",
+  "fisher-island":
+    "Fisher Island is a logistics call as much as a service call. Ferry-only access means we coordinate with the marina office and time the visit around the schedule. Most homes have full Sub-Zero/Wolf chef's kitchens with Pro 48 columns — the dominant failure pattern is sealed-system service on 2010s installs hitting their first major service window.",
+  "indian-creek-village":
+    "Indian Creek Village is the most privacy-sensitive market we cover. Our calls run quiet — no logo trucks where possible, technicians briefed on protocol. The Sub-Zero installs are uniformly current-generation Pro 48 and Designer Column units, with failure patterns matching newer-build expectations: occasional control-board issues, condenser dust from extensive landscaping.",
+  weston:
+    "Weston is residential single-family country with deep gated-community installs. Most of our calls are Pro 48 and Built-In units in homes from the 2000s build wave. Common pattern: defrost-system component failures around the 12-15 year mark, plus ice maker water inlet valve replacements from West Broward's slightly harder water profile.",
+  "palm-beach":
+    "Palm Beach is our most exacting market. Estate Section homes have 8+ Sub-Zero appliances per kitchen, plus secondary kitchens, butler's pantries, and outdoor units. Failures cluster around aged Pro 48 sealed-system service and wine column humidity drift on collections that span decades. We dispatch white-glove protocol — discreet, on time, no signage where requested.",
+  jupiter:
+    "Jupiter splits between Admirals Cove / Jupiter Island estate work and the Loxahatchee Club / Bear's Club golf community installs. Salt air on the Jupiter Island oceanfront accelerates condenser wear. The mainland gated communities run more typical residential failure patterns — defrost system, evaporator fan, ice maker valve.",
+  "palm-beach-gardens":
+    "Palm Beach Gardens is gated-community country — BallenIsles, Mirasol, PGA National, Old Palm. Most installs are 2010s Pro 48 and Designer Series in single-family homes. Common pattern: wine column humidity recalibration that no one schedules until corks start failing. Annual check is the cheapest insurance for a serious collection.",
+  "west-palm-beach":
+    "West Palm Beach mixes historic single-family homes (El Cid, SoSo, Flamingo Park) with downtown high-rise condos (CityPlace area). Two different failure profiles. Historic homes show wear on legacy 632, 642, 690 series units the original owners installed 20+ years ago. Downtown condos look like newer Built-In units with new-build dust and voltage-stability issues.",
+  "key-largo":
+    "Key Largo is salt-air country first, everything else second. Sub-Zero condenser corrosion happens on a 18-24 month cycle here without intervention. Ocean Reef Club homes get the worst of it. Annual condenser cleaning + contact-set inspection is the difference between a 12-year unit and a 25-year unit on these properties.",
+  stuart:
+    "Stuart's Sailfish Point and Hutchinson Island oceanfront properties face Treasure Coast salt air. Mariner Sands and inland gated communities run more typical residential patterns. Marine work at Sailfish Point is a meaningful call category — yacht refrigeration on vessels berthed at the private marina.",
 };
 
 /* =====================================================================

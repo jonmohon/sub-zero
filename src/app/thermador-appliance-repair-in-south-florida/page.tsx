@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import AnswerBlock from "@/components/AnswerBlock";
 
+const link = (href: string, text: string) => (
+  <Link href={href} className="text-[#0387cc] hover:text-[#0F3460] font-medium">
+    {text}
+  </Link>
+);
+
 export const metadata: Metadata = {
   title: { absolute: "Thermador Appliance Repair in South Florida | Expert Service" },
   description:
@@ -80,19 +86,10 @@ export default function ThermadorBrandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
               <p className="text-[#64748B] leading-relaxed">
-                Thermador represents the pinnacle of premium kitchen appliances,
-                combining innovative technology with timeless design. When your
-                Thermador appliance requires repair, our certified technicians
-                deliver the expert service these luxury appliances deserve. We
-                provide comprehensive Thermador repair throughout South Florida.
+                Thermador Masterpiece and Pro Grand built-in refrigerators, freezer columns, ranges, ovens, cooktops, and warming drawers represent the most integrated luxury kitchen architecture on the market — and the Freedom Collection columns sit alongside Sub-Zero in most South Florida luxury kitchens we service. We&apos;ve worked Thermador alongside Sub-Zero, Wolf, and Cove since 1994, dispatching same-day to {link("/areas-we-service/miami-dade-county/coral-gables/", "Coral Gables")}, {link("/areas-we-service/miami-dade-county/aventura/", "Aventura")}, {link("/areas-we-service/broward-county/fort-lauderdale/", "Fort Lauderdale")}, {link("/areas-we-service/palm-beach-county/boca-raton/", "Boca Raton")}, and 75+ more cities across South Florida.
               </p>
               <p className="text-[#64748B] leading-relaxed">
-                From Thermador&apos;s signature Star Burner cooktops to their
-                Freedom Collection refrigerators and professional wall ovens,
-                our team has deep expertise with every Thermador product line.
-                We use only genuine Thermador replacement parts and follow
-                factory-recommended repair procedures to maintain your
-                appliance&apos;s premium performance.
+                Thermador&apos;s signature Star Burner cooktops, Freedom Collection refrigerators, and professional wall ovens get OEM-parts-on-every-truck service. The same diagnostic and repair discipline we apply to {link("/services/refrigerator-repair/", "Sub-Zero refrigerator repair")} and {link("/services/wine-cooler-repair/", "wine column service")}. Workmanship warranty in writing on every invoice; OEM parts carry manufacturer warranty on top.
               </p>
               <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Thermador

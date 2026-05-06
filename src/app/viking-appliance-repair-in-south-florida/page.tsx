@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import AnswerBlock from "@/components/AnswerBlock";
 
+const link = (href: string, text: string) => (
+  <Link href={href} className="text-[#0387cc] hover:text-[#0F3460] font-medium">
+    {text}
+  </Link>
+);
+
 export const metadata: Metadata = {
   title: { absolute: "Viking Appliance Repair in South Florida | Expert Service" },
   description:
@@ -80,20 +86,10 @@ export default function VikingBrandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
               <p className="text-[#64748B] leading-relaxed">
-                Viking appliances are built for performance, delivering
-                professional-grade cooking and refrigeration to discerning
-                homeowners. When your Viking appliance needs service, our
-                experienced technicians provide the expert care these
-                high-performance machines demand. We service all Viking models
-                throughout South Florida.
+                Viking Professional and 7-Series appliances are commercial-grade equipment installed in residential luxury kitchens — different tolerances, different parts inventory, different diagnostic logic than mass-market premium brands. We&apos;ve serviced Viking alongside Sub-Zero across South Florida since 1994, dispatching same-day to {link("/areas-we-service/miami-dade-county/coral-gables/", "Coral Gables")}, {link("/areas-we-service/miami-dade-county/pinecrest/", "Pinecrest")}, {link("/areas-we-service/broward-county/fort-lauderdale/", "Fort Lauderdale")}, {link("/areas-we-service/palm-beach-county/boca-raton/", "Boca Raton")}, and the rest of the seven-county service area.
               </p>
               <p className="text-[#64748B] leading-relaxed">
-                From Viking Professional Series ranges with their powerful
-                burners to Viking refrigerators designed for optimal food
-                preservation, our team has the training and genuine Viking parts
-                to handle any repair. We understand the engineering behind
-                Viking&apos;s commercial-grade components and deliver repairs
-                that restore full performance.
+                Viking Professional Series ranges (sealed burners, infrared broilers, convection ovens), Viking refrigerators (built-in, freestanding, column), Viking dishwashers, and Viking ventilation hoods all get factory-trained service with OEM parts on every truck. Same {link("/warranty/", "workmanship warranty")} on the labor as our {link("/services/refrigerator-repair/", "Sub-Zero refrigerator repair")}. Most repairs finish on the first visit.
               </p>
               <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Viking

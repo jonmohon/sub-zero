@@ -84,16 +84,10 @@ export default function SubZeroBrandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
               <p className="text-[#64748B] leading-relaxed">
-                As South Florida&apos;s premier Sub-Zero repair specialists, we
-                provide expert service for the full range of Sub-Zero appliances.
-                Our factory-trained technicians have over 30 years of experience
-                maintaining and repairing Sub-Zero refrigeration equipment.
+                Sub-Zero Repair Company has serviced Sub-Zero exclusively since 1994 — no general appliance work, no oven repair, no washer-dryer calls. The focus matters because Sub-Zero sealed-system architecture doesn&apos;t forgive a generalist. We dispatch same-day across <Link href="/areas-we-service/miami-dade-county/coral-gables/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">Coral Gables</Link>, <Link href="/areas-we-service/miami-dade-county/miami/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">Miami</Link>, <Link href="/areas-we-service/miami-dade-county/miami-beach/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">Miami Beach</Link>, <Link href="/areas-we-service/miami-dade-county/aventura/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">Aventura</Link>, <Link href="/areas-we-service/broward-county/fort-lauderdale/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">Fort Lauderdale</Link>, <Link href="/areas-we-service/palm-beach-county/boca-raton/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">Boca Raton</Link>, and 76 more cities across the seven South Florida counties.
               </p>
               <p className="text-[#64748B] leading-relaxed">
-                We service all Sub-Zero models including built-in refrigerators,
-                freestanding units, wine coolers, ice makers, and marine
-                refrigeration systems. Every repair uses genuine Sub-Zero parts
-                to maintain your appliance&apos;s performance and warranty.
+                We service every Sub-Zero product line — <Link href="/services/refrigerator-repair/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">refrigerator repair</Link>, <Link href="/services/freezer-repair/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">freezer repair</Link>, <Link href="/services/icemaker-repair/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">ice maker repair</Link>, <Link href="/services/wine-cooler-repair/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">wine column repair</Link>, and <Link href="/services/sub-zero-marine-repair/" className="text-[#0387cc] hover:text-[#0F3460] font-medium">marine refrigeration repair</Link>. Every active and legacy line: Built-In, Integrated, Designer, Pro 48, Classic, Column, Undercounter, plus the legacy 532, 632, and 690 series still running across South Florida luxury homes. Every repair uses genuine OEM parts with full manufacturer warranty.
               </p>
               <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Sub-Zero

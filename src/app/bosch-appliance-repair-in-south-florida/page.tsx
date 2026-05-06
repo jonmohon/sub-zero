@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import AnswerBlock from "@/components/AnswerBlock";
 
+// Internal linking helper used in body copy — keeps anchor text consistent
+const link = (href: string, text: string) => (
+  <Link href={href} className="text-[#0387cc] hover:text-[#0F3460] font-medium">
+    {text}
+  </Link>
+);
+
 export const metadata: Metadata = {
   title: { absolute: "Bosch Appliance Repair in South Florida | Certified Service" },
   description:
@@ -80,19 +87,10 @@ export default function BoschBrandPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-6">
               <p className="text-[#64748B] leading-relaxed">
-                Bosch appliances are renowned for their German engineering,
-                precision craftsmanship, and innovative technology. When your
-                Bosch appliance needs repair, you deserve technicians who
-                understand the sophisticated systems that make Bosch products
-                exceptional. Our factory-trained team provides expert Bosch
-                repair service throughout South Florida.
+                Bosch&apos;s German engineering — Benchmark and 800 Series refrigerators, dishwashers, wall ovens, ranges, cooktops, warming drawers — runs on different diagnostic logic than typical American premium brands. Voltage tolerances are tighter, electronic control architecture is more integrated, and parts inventory is brand-specific. We&apos;ve serviced Bosch alongside Sub-Zero in South Florida luxury kitchens since 1994, dispatching same-day to {link("/areas-we-service/miami-dade-county/coral-gables/", "Coral Gables")}, {link("/areas-we-service/miami-dade-county/aventura/", "Aventura")}, {link("/areas-we-service/broward-county/fort-lauderdale/", "Fort Lauderdale")}, {link("/areas-we-service/palm-beach-county/boca-raton/", "Boca Raton")}, and 75+ more cities.
               </p>
               <p className="text-[#64748B] leading-relaxed">
-                From Bosch refrigerators with VitaFresh technology to their
-                whisper-quiet dishwashers and precision cooking appliances, we
-                have the knowledge and genuine Bosch parts to restore your
-                appliance to peak performance. Our technicians stay current with
-                the latest Bosch models and repair techniques.
+                Bosch refrigerators with VitaFresh technology, whisper-quiet 800 Series dishwashers, and Benchmark steam ovens get the same OEM-parts-on-every-truck treatment as our {link("/services/refrigerator-repair/", "Sub-Zero refrigerator repair")} and {link("/services/wine-cooler-repair/", "wine column service")}. Most repairs finish on the first visit. Workmanship warranty in writing on the invoice.
               </p>
               <h2 className="text-2xl font-bold text-[#0B1D33] mt-8">
                 Services We Offer for Bosch
