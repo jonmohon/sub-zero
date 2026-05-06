@@ -42,7 +42,7 @@ Instead, the sister site targets:
 
 ## Critical Pre-Launch Checklist
 
-- [ ] **Get a different phone number for the sister site.** Forwarding to the same office line is fine, but the public number must be visibly different from (800) 651-4528.
+- [ ] ⚠️ **OWNER DECISION (May 2026): keeping the same phone number (800) 651-4528 across both sites.** This is the strongest signal Google uses to detect that two domains are the same operator. We are accepting this risk in exchange for not splitting customer-call analytics. **Monitor SERP positions on both domains weekly for the first 60 days.** If either site loses positions, the phone is the first lever to revisit. To compensate, Phase 2 leans extra hard on differentiating copy, structure, voice, and URL patterns.
 - [ ] **Different email** (already set: info@subzerohomerepair.com — keep as-is)
 - [ ] **Different Google Business Profile** OR no GBP at all on the sister site (sharing one GBP across two domains is a strong duplicate signal)
 - [ ] **Remove all references to "Marvin Schuster"** from the sister site
