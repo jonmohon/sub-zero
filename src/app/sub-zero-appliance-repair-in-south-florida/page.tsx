@@ -2,20 +2,51 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AnswerBlock from "@/components/AnswerBlock";
+import { generateFAQSchema } from "@/lib/schema";
+
+const faqs = [
+  {
+    question: "What makes Sub-Zero sealed system repairs different from standard repairs?",
+    answer:
+      "Sub-Zero systems run on precise pressure and refrigerant balance. Even small issues require specialized tools and OEM-level correction.",
+  },
+  {
+    question: "How often should sub-zero maintenance be done?",
+    answer:
+      "For coastal luxury homes, annual service is recommended to prevent corrosion and catch early micro-leaks.",
+  },
+  {
+    question: "Why do general technicians struggle with Sub-Zero units?",
+    answer:
+      "Most lack sealed system training, leading to misdiagnosis and temporary fixes that fail under pressure.",
+  },
+  {
+    question: "What is your emergency response time?",
+    answer:
+      "Critical cases are dispatched immediately, with many same-day repairs depending on location and availability.",
+  },
+  {
+    question: "Do you use OEM parts for repairs?",
+    answer:
+      "Yes, we use only genuine OEM parts to ensure factory-level performance, compatibility, and long-term reliability.",
+  },
+];
 
 export const metadata: Metadata = {
-  title: { absolute: "Sub-Zero Appliance Repair in South Florida" },
+  title: { absolute: "Sub-Zero Maintenance Serving Miami, FL" },
   description:
-    "Certified Sub-Zero appliance repair in South Florida. Refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
+    "Need sub-zero maintenance or sub-zero certified repair in Miami, FL? Trust Sub-Zero Repair Services for fast and expert service. Contact us today",
+  keywords:
+    "certified repair technicians miami, fl, appliance repair experts miami, fl, sub zero maintenance fisher island, fl, sub zero freezer not cold miami, fl, sub zero fridge not working miami, fl",
   alternates: {
     canonical:
       "https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/",
   },
   openGraph: {
     title:
-      "Sub-Zero Appliance Repair in South Florida - Sub-Zero Repair Services",
+      "Sub-Zero Maintenance Serving Miami, FL - Sub-Zero Repair Services",
     description:
-      "Certified Sub-Zero appliance repair in South Florida. Refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
+      "Need sub-zero maintenance or sub-zero certified repair in Miami, FL? Trust Sub-Zero Repair Services for fast and expert service. Contact us today",
     url: "https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/",
   },
 };
@@ -29,8 +60,15 @@ const brandServices = [
 ];
 
 export default function SubZeroBrandPage() {
+  const faqSchema = generateFAQSchema(faqs);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <section className="bg-[#0387cc] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="text-sm text-gray-400 mb-4">
@@ -47,13 +85,13 @@ export default function SubZeroBrandPage() {
           <div className="flex items-center gap-6">
             <Image
               src="/images/brands/sub-zero-logo.webp"
-              alt="Sub-Zero Logo"
+              alt="A technician performing professional sub-zero maintenance on a refrigerator."
               width={120}
               height={60}
               className="h-16 w-auto bg-white/10 rounded-lg p-2"
             />
             <h1 className="text-4xl md:text-5xl font-bold">
-              Sub-Zero Appliance Repair in South Florida
+              Sub-Zero Certified Repair Services In Miami, FL
             </h1>
           </div>
         </div>
@@ -191,6 +229,125 @@ export default function SubZeroBrandPage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Optimization-driven body content (sealed-system + Emergency Priority) */}
+      <section className="py-16 bg-[#F8FAFC] border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-5 text-[#334155] leading-relaxed">
+            <p>
+              Sub-Zero Repair Services provides advanced diagnostic and repair
+              solutions for high-end refrigeration systems across Miami, FL.
+              Unlike general appliance work, Sub-Zero units require precise
+              handling of sealed refrigeration systems where even minor errors
+              can lead to major performance loss. This is why proper sub-zero
+              maintenance is essential for protecting long-term cooling
+              stability in luxury kitchens.
+            </p>
+            <p>
+              Modern Sub-Zero refrigerators rely on a hermetically sealed
+              system that circulates refrigerant under exact pressure
+              conditions. When a leak or restriction occurs, the entire
+              cooling cycle becomes unstable. Technicians at Sub-Zero Repair
+              Services use advanced nitrogen pressure testing, electronic
+              leak detection, and micron-level vacuum procedures to isolate
+              failures without compromising system integrity. This level of
+              precision helps prevent unnecessary part replacements and
+              ensures long-term system reliability.
+            </p>
+            <p>
+              Unlike general technicians, a{" "}
+              <Link
+                href="/"
+                className="text-[#0387cc] hover:text-[#0F3460] font-medium underline underline-offset-2"
+              >
+                Sub-Zero certified repair
+              </Link>{" "}
+              approach ensures that refrigerant recharging is only performed
+              after full system validation, preventing repeat breakdowns. In
+              coastal environments like Miami, corrosion and humidity
+              accelerate micro-leaks in evaporator coils and solder joints,
+              making precision diagnostics critical. Proper sealed system
+              service also includes verifying compressor amperage draw,
+              capillary tube flow rates, and heat exchange efficiency to
+              ensure the unit returns to factory performance standards.
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1D33] pt-6">
+              Emergency Repair Priority Levels
+            </h2>
+
+            <p>
+              We classify refrigeration failures into structured emergency
+              tiers to ensure rapid response. Level 1 emergencies involve
+              complete cooling loss or active refrigerant leaks, requiring
+              immediate dispatch within hours. Level 2 cases include
+              inconsistent temperatures or partial compressor function, where
+              intervention prevents full system collapse. Level 3 issues
+              involve early warning signs such as noise changes or frost
+              buildup, often addressed through scheduled sub-zero maintenance
+              programs.
+            </p>
+            <p>
+              In Miami, FL, heat and humidity accelerate failure progression,
+              making timely triage essential for protecting food safety and
+              system integrity. This structured approach allows Sub-Zero
+              Repair Services to prioritize critical cases while maintaining
+              consistent service quality across all clients. Each case is
+              assessed on arrival using advanced diagnostic tools to determine
+              the fastest path to full system recovery.
+            </p>
+            <p>
+              If your refrigeration system is showing early warning signs,
+              Sub-Zero Repair Services provides fast diagnostic response and
+              precision repairs.{" "}
+              <Link
+                href="/contact"
+                className="text-[#0387cc] hover:text-[#0F3460] font-medium underline underline-offset-2"
+              >
+                Contact us today
+              </Link>{" "}
+              to protect your appliance investment before minor issues become
+              major system failures.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section (matches FAQPage schema above) */}
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0B1D33] mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((f) => (
+              <details
+                key={f.question}
+                className="group bg-white border border-gray-200 rounded-xl p-5 open:shadow-sm"
+              >
+                <summary className="flex items-center justify-between cursor-pointer font-semibold text-[#0B1D33]">
+                  {f.question}
+                  <svg
+                    className="w-5 h-5 text-[#0387cc] shrink-0 transition-transform group-open:rotate-45"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </summary>
+                <p className="text-[#334155] leading-relaxed mt-4">{f.answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
