@@ -33,20 +33,18 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "Sub-Zero Maintenance Serving Miami, FL" },
+  title: { absolute: "Sub-Zero Appliance Repair in South Florida" },
   description:
-    "Need sub-zero maintenance or sub-zero certified repair in Miami, FL? Trust Sub-Zero Repair Services for fast and expert service. Contact us today",
-  keywords:
-    "certified repair technicians miami, fl, appliance repair experts miami, fl, sub zero maintenance fisher island, fl, sub zero freezer not cold miami, fl, sub zero fridge not working miami, fl",
+    "Certified Sub-Zero appliance repair in South Florida. Refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
   alternates: {
     canonical:
       "https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/",
   },
   openGraph: {
     title:
-      "Sub-Zero Maintenance Serving Miami, FL - Sub-Zero Repair Services",
+      "Sub-Zero Appliance Repair in South Florida - Sub-Zero Repair Services",
     description:
-      "Need sub-zero maintenance or sub-zero certified repair in Miami, FL? Trust Sub-Zero Repair Services for fast and expert service. Contact us today",
+      "Certified Sub-Zero appliance repair in South Florida. Refrigerators, freezers, ice makers, wine coolers, and marine units. Call (800) 651-4528.",
     url: "https://fivestarappliancerepairpros.com/sub-zero-appliance-repair-in-south-florida/",
   },
 };
@@ -85,13 +83,13 @@ export default function SubZeroBrandPage() {
           <div className="flex items-center gap-6">
             <Image
               src="/images/brands/sub-zero-logo.webp"
-              alt="A technician performing professional sub-zero maintenance on a refrigerator."
+              alt="Sub-Zero brand logo"
               width={120}
               height={60}
               className="h-16 w-auto bg-white/10 rounded-lg p-2"
             />
             <h1 className="text-4xl md:text-5xl font-bold">
-              Sub-Zero Certified Repair Services In Miami, FL
+              Sub-Zero Appliance Repair in South Florida
             </h1>
           </div>
         </div>
@@ -239,10 +237,12 @@ export default function SubZeroBrandPage() {
           <div className="space-y-5 text-[#334155] leading-relaxed">
             <p>
               Sub-Zero Repair Services provides advanced diagnostic and repair
-              solutions for high-end refrigeration systems across Miami, FL.
-              Unlike general appliance work, Sub-Zero units require precise
-              handling of sealed refrigeration systems where even minor errors
-              can lead to major performance loss. This is why proper sub-zero
+              solutions for high-end refrigeration systems across South
+              Florida — Miami, Coral Gables, Fort Lauderdale, Boca Raton, and
+              the rest of the seven-county service area. Unlike general
+              appliance work, Sub-Zero units require precise handling of
+              sealed refrigeration systems where even minor errors can lead
+              to major performance loss. This is why proper sub-zero
               maintenance is essential for protecting long-term cooling
               stability in luxury kitchens.
             </p>
@@ -267,12 +267,13 @@ export default function SubZeroBrandPage() {
               </Link>{" "}
               approach ensures that refrigerant recharging is only performed
               after full system validation, preventing repeat breakdowns. In
-              coastal environments like Miami, corrosion and humidity
-              accelerate micro-leaks in evaporator coils and solder joints,
-              making precision diagnostics critical. Proper sealed system
-              service also includes verifying compressor amperage draw,
-              capillary tube flow rates, and heat exchange efficiency to
-              ensure the unit returns to factory performance standards.
+              coastal South Florida environments — from Key Biscayne to Palm
+              Beach — corrosion and humidity accelerate micro-leaks in
+              evaporator coils and solder joints, making precision
+              diagnostics critical. Proper sealed system service also
+              includes verifying compressor amperage draw, capillary tube
+              flow rates, and heat exchange efficiency to ensure the unit
+              returns to factory performance standards.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-[#0B1D33] pt-6">
@@ -291,13 +292,14 @@ export default function SubZeroBrandPage() {
               programs.
             </p>
             <p>
-              In Miami, FL, heat and humidity accelerate failure progression,
-              making timely triage essential for protecting food safety and
-              system integrity. This structured approach allows Sub-Zero
-              Repair Services to prioritize critical cases while maintaining
-              consistent service quality across all clients. Each case is
-              assessed on arrival using advanced diagnostic tools to determine
-              the fastest path to full system recovery.
+              Across South Florida, heat and humidity accelerate failure
+              progression, making timely triage essential for protecting
+              food safety and system integrity. This structured approach
+              allows Sub-Zero Repair Services to prioritize critical cases
+              while maintaining consistent service quality across all
+              clients. Each case is assessed on arrival using advanced
+              diagnostic tools to determine the fastest path to full system
+              recovery.
             </p>
             <p>
               If your refrigeration system is showing early warning signs,
