@@ -14,12 +14,12 @@ const WORKMANSHIP_PERIOD = "90 days";
 const PARTS_PERIOD = "manufacturer warranty period (typically 1 year)";
 
 export const metadata: Metadata = {
-  title: { absolute: "Warranty | Sub-Zero Repair Company" },
+  title: { absolute: "Warranty | Sub-Zero Repair Services" },
   description:
-    "Sub-Zero Repair Company stands behind every repair. Workmanship warranty, manufacturer parts coverage, and how to claim service across South Florida.",
+    "Sub-Zero Repair Services stands behind every repair. Workmanship warranty, manufacturer parts coverage, and how to claim service across South Florida.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Warranty | Sub-Zero Repair Company",
+    title: "Warranty | Sub-Zero Repair Services",
     description:
       "Workmanship warranty + manufacturer parts coverage on every Sub-Zero repair across South Florida.",
     url: PAGE_URL,

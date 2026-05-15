@@ -1,6 +1,6 @@
 export const BUSINESS = {
   name: "Sub-Zero Repair Services",
-  legalName: "Sub-Zero Repair Company",
+  legalName: "Sub-Zero Repair Services",
   phone: "(800) 651-4528",
   phoneHref: "tel:+18006514528",
   phoneSchema: "+1 800 651 4528",
@@ -15,7 +15,7 @@ export const BUSINESS = {
     country: "US",
   },
   schemaAddress: {
-    name: "Sub-Zero Repair Company",
+    name: "Sub-Zero Repair Services",
     street: "1600 Ponce De Leon Blvd 10th Floor Suite 64",
     city: "Coral Gables",
     state: "FL",
@@ -43,7 +43,7 @@ export const BUSINESS = {
   currenciesAccepted: "USD",
   slogan: "South Florida's Trusted Sub-Zero Repair Experts",
   languages: ["English", "Spanish"],
-  copyright: `© ${new Date().getFullYear()} Sub-Zero Repair Company. All Rights Reserved.`,
+  copyright: `© ${new Date().getFullYear()} Sub-Zero Repair Services. All Rights Reserved.`,
   // Google Business Profile aggregate rating. When the Places API integration
   // is configured (GOOGLE_PLACES_API_KEY env var), live data overrides these
   // values. Manual fallback for builds without the API key — leave null to

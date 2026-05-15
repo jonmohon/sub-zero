@@ -71,7 +71,7 @@ export default function RootLayout({
         <link rel="llms-txt" href="/llms.txt" />
         <meta
           name="ai-content-declaration"
-          content="This website contains factual business information about Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros), a licensed appliance repair service in South Florida founded in 1994."
+          content="This website contains factual business information about Sub-Zero Repair Services, a licensed appliance repair service in South Florida founded in 1994."
         />
         <script
           type="application/ld+json"

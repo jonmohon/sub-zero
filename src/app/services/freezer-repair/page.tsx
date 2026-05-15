@@ -91,7 +91,7 @@ export default function FreezerRepairPage() {
 
       <AnswerBlock
         question="Where can I get my Sub-Zero freezer repaired in South Florida?"
-        answer="Sub-Zero Repair Company services every Sub-Zero freezer configuration — column, side-by-side, integrated, and standalone — across all 7 South Florida counties. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck mean most repairs finish in one visit. 24/7 availability with no surcharges for nights, weekends, or holidays, since 1994."
+        answer="Sub-Zero Repair Services repairs every Sub-Zero freezer configuration — column, side-by-side, integrated, and standalone — across all 7 South Florida counties. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck mean most repairs finish in one visit. 24/7 availability with no surcharges for nights, weekends, or holidays, since 1994."
         stats={[
           { value: "30+", label: "Years on Sub-Zero" },
           { value: "Same-day", label: "Most appointments" },

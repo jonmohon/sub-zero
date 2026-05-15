@@ -98,7 +98,7 @@ export default function ServicesPage() {
 
       <AnswerBlock
         question="Who repairs Sub-Zero appliances in South Florida?"
-        answer="Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros) services Sub-Zero refrigerators, freezers, ice makers, wine columns, and marine units across all 7 South Florida counties — Miami-Dade, Broward, Palm Beach, Monroe, Collier, Martin, and St. Lucie. Same-day appointments, factory-trained technicians, genuine OEM parts, and 24/7 availability with no holiday or weekend surcharges."
+        answer="Sub-Zero Repair Services covers Sub-Zero refrigerators, freezers, ice makers, wine columns, and marine units across all 7 South Florida counties — Miami-Dade, Broward, Palm Beach, Monroe, Collier, Martin, and St. Lucie. Same-day appointments, factory-trained technicians, genuine OEM parts, and 24/7 availability with no holiday or weekend surcharges."
         stats={[
           { value: "30+", label: "Years in business" },
           { value: "82", label: "Cities served" },

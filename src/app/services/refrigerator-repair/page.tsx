@@ -107,7 +107,7 @@ export default function RefrigeratorRepairPage() {
 
       <AnswerBlock
         question="Where can I get my Sub-Zero refrigerator repaired in South Florida?"
-        answer="Sub-Zero Repair Company services every Sub-Zero refrigerator line — Built-In, Integrated, Classic, Designer, Pro 48, Column, and Undercounter — across Miami-Dade, Broward, and 5 more South Florida counties. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck mean most repairs finish in a single visit. Available 24/7 with no surcharges for nights, weekends, or holidays."
+        answer="Sub-Zero Repair Services repairs every Sub-Zero refrigerator line — Built-In, Integrated, Classic, Designer, Pro 48, Column, and Undercounter — across Miami-Dade, Broward, and 5 more South Florida counties. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck mean most repairs finish in a single visit. Available 24/7 with no surcharges for nights, weekends, or holidays."
         stats={[
           { value: "30+", label: "Years on Sub-Zero" },
           { value: "Same-day", label: "Most appointments" },

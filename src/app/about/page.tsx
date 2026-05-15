@@ -6,12 +6,12 @@ import { generateBreadcrumbSchema } from "@/lib/schema";
 const PAGE_URL = `${BUSINESS.siteUrl}/about/`;
 
 export const metadata: Metadata = {
-  title: { absolute: "About Sub-Zero Repair Company | South Florida Since 1994" },
+  title: { absolute: "About Sub-Zero Repair Services | South Florida Since 1994" },
   description:
-    "Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros) has provided premium appliance repair across South Florida since 1994. 24/7 service, factory-trained technicians, genuine parts, 7 counties served.",
+    "Sub-Zero Repair Services has provided premium appliance repair across South Florida since 1994. 24/7 service, factory-trained technicians, genuine parts, 7 counties served.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "About Sub-Zero Repair Company | South Florida Since 1994",
+    title: "About Sub-Zero Repair Services | South Florida Since 1994",
     description:
       "Sub-Zero appliance repair specialists serving Miami-Dade, Broward, Palm Beach, and 4 more South Florida counties since 1994.",
     url: PAGE_URL,
@@ -23,10 +23,10 @@ export default function AboutPage() {
   const aboutPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About Sub-Zero Repair Company",
+    name: "About Sub-Zero Repair Services",
     url: PAGE_URL,
     description:
-      "Sub-Zero Repair Company (DBA Fivestar Appliance Repair Pros) is a South Florida appliance repair business founded in 1994, specializing in Sub-Zero, Wolf, Cove, Viking, Thermador, Bosch, and Miele service across 7 counties.",
+      "Sub-Zero Repair Services is a South Florida appliance repair business founded in 1994, specializing in Sub-Zero, Wolf, Cove, Viking, Thermador, Bosch, and Miele service across 7 counties.",
     mainEntity: { "@id": `${BUSINESS.siteUrl}/#business` },
   };
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -47,7 +47,7 @@ export default function AboutPage() {
             <span className="text-gray-200">About</span>
           </nav>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About Sub-Zero Repair Company
+            About Sub-Zero Repair Services
           </h1>
           <p className="text-lg text-gray-200 max-w-3xl">
             South Florida&apos;s trusted premium appliance repair specialists, serving homeowners
@@ -59,9 +59,8 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-lg text-[#334155] leading-relaxed mb-8">
-            <strong className="text-[#0B1D33]">Sub-Zero Repair Company</strong>, doing business as
-            Fivestar Appliance Repair Pros, is a South Florida appliance repair service founded in
-            1994 in Coral Gables. We specialize in factory-trained service for Sub-Zero, Wolf, Cove,
+            <strong className="text-[#0B1D33]">Sub-Zero Repair Services</strong> is a South Florida
+            appliance repair service founded in 1994 in Coral Gables. We specialize in factory-trained service for Sub-Zero, Wolf, Cove,
             Viking, Thermador, Bosch, and Miele — the brands that built South Florida&apos;s luxury
             kitchens. Today we serve 82 cities across 7 counties, 24 hours a day, every day of the year.
           </p>
@@ -124,8 +123,7 @@ export default function AboutPage() {
 
           <h2 className="text-2xl md:text-3xl font-bold text-[#0B1D33] mt-12 mb-4">Business Information</h2>
           <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-[#334155]">
-            <Detail label="Legal name">{BUSINESS.legalName}</Detail>
-            <Detail label="DBA">Fivestar Appliance Repair Pros</Detail>
+            <Detail label="Business name">{BUSINESS.legalName}</Detail>
             <Detail label="Founded">1994</Detail>
             <Detail label="Headquarters">Coral Gables, FL</Detail>
             <Detail label="Phone">

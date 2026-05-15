@@ -163,7 +163,7 @@ export async function POST(request: Request) {
         </td></tr>
 
         <tr><td style="background:#020617;padding:24px 32px;text-align:center;color:#94A3B8;font-size:12px;line-height:1.6;">
-          <p style="margin:0 0 4px;color:#E2E8F0;font-weight:600;">Sub-Zero Repair Company</p>
+          <p style="margin:0 0 4px;color:#E2E8F0;font-weight:600;">Sub-Zero Repair Services</p>
           <p style="margin:0;">Coral Gables, FL 33134 &middot; (800) 651-4528</p>
           <p style="margin:8px 0 0;">Submitted via fivestarappliancerepairpros.com/contact</p>
         </td></tr>

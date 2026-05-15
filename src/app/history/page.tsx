@@ -6,12 +6,12 @@ import { generateBreadcrumbSchema } from "@/lib/schema";
 const PAGE_URL = `${BUSINESS.siteUrl}/history/`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Our History | Sub-Zero Repair Company Since 1994" },
+  title: { absolute: "Our History | Sub-Zero Repair Services Since 1994" },
   description:
-    "Three decades of South Florida appliance repair. The story of Sub-Zero Repair Company (Fivestar Appliance Repair Pros) from 1994 founding to 82 cities served today.",
+    "Three decades of South Florida appliance repair. The story of Sub-Zero Repair Services from 1994 founding to 82 cities served today.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Our History | Sub-Zero Repair Company Since 1994",
+    title: "Our History | Sub-Zero Repair Services Since 1994",
     description:
       "From a single-truck Coral Gables startup in 1994 to South Florida's 24/7 Sub-Zero specialists serving 7 counties today.",
     url: PAGE_URL,
@@ -23,7 +23,7 @@ const milestones = [
   {
     period: "1994",
     title: "Founded in Coral Gables",
-    body: "Sub-Zero Repair Company opens for business in Coral Gables, focused exclusively on premium built-in refrigeration. From day one, the model is the same: factory-trained technicians, genuine parts, no general-appliance work that distracts from the specialty.",
+    body: "Sub-Zero Repair Services opens for business in Coral Gables, focused exclusively on premium built-in refrigeration. From day one, the model is the same: factory-trained technicians, genuine parts, no general-appliance work that distracts from the specialty.",
   },
   {
     period: "Late 1990s",
@@ -82,7 +82,7 @@ export default function HistoryPage() {
       <section className="py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-lg text-[#334155] leading-relaxed mb-12">
-            Sub-Zero Repair Company was founded in 1994 in Coral Gables, Florida, with a single focus:
+            Sub-Zero Repair Services was founded in 1994 in Coral Gables, Florida, with a single focus:
             premium built-in refrigeration done by factory-trained technicians. Three decades later,
             that focus has not changed — even as the service area has grown from one city to 82, and
             from one truck to a 24/7 dispatched team across seven counties.

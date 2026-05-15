@@ -79,7 +79,7 @@ export default function IceMakerRepairPage() {
 
       <AnswerBlock
         question="Where can I get my Sub-Zero ice maker repaired in South Florida?"
-        answer="Sub-Zero Repair Company services every Sub-Zero ice maker — built-in, undercounter, integrated, and standalone — across all 7 South Florida counties. Our trucks carry water inlet valves, motors, sensors, and ice molds so most repairs finish in one visit. Same-day appointments, factory-trained technicians, no nights/weekends/holidays surcharges. Servicing the South Florida market since 1994."
+        answer="Sub-Zero Repair Services repairs every Sub-Zero ice maker — built-in, undercounter, integrated, and standalone — across all 7 South Florida counties. Our trucks carry water inlet valves, motors, sensors, and ice molds so most repairs finish in one visit. Same-day appointments, factory-trained technicians, no nights/weekends/holidays surcharges. Servicing the South Florida market since 1994."
         stats={[
           { value: "30+", label: "Years on Sub-Zero" },
           { value: "Same-day", label: "Most appointments" },

@@ -7,12 +7,12 @@ import { team } from "@/data/team";
 const PAGE_URL = `${BUSINESS.siteUrl}/technicians/`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Our Technicians | Sub-Zero Repair Company" },
+  title: { absolute: "Our Technicians | Sub-Zero Repair Services" },
   description:
-    "Meet the factory-trained technicians behind Sub-Zero Repair Company in South Florida. Decades of premium-only refrigeration experience across Miami-Dade and Broward.",
+    "Meet the factory-trained technicians behind Sub-Zero Repair Services in South Florida. Decades of premium-only refrigeration experience across Miami-Dade and Broward.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Our Technicians | Sub-Zero Repair Company",
+    title: "Our Technicians | Sub-Zero Repair Services",
     description:
       "Factory-trained Sub-Zero specialists serving South Florida since 1994.",
     url: PAGE_URL,

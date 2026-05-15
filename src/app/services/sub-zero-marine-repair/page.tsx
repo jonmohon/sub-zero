@@ -79,7 +79,7 @@ export default function MarineRepairPage() {
 
       <AnswerBlock
         question="Where can I get my Sub-Zero marine refrigerator repaired in South Florida?"
-        answer="Sub-Zero Repair Company provides dockside marine refrigeration service across South Florida — Miami Beach Marina, Sunset Harbour, Crandon Park, Bal Harbour, and every major yacht basin in between. We service marine refrigerators, freezers, ice makers, and wine units on vessels of any size. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck since 1994."
+        answer="Sub-Zero Repair Services provides dockside marine refrigeration service across South Florida — Miami Beach Marina, Sunset Harbour, Crandon Park, Bal Harbour, and every major yacht basin in between. We service marine refrigerators, freezers, ice makers, and wine units on vessels of any size. Same-day appointments, factory-trained technicians, and genuine OEM parts on every truck since 1994."
         stats={[
           { value: "Dockside", label: "We come to your slip" },
           { value: "30+", label: "Years on Sub-Zero" },

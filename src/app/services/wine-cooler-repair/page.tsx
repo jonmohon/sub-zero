@@ -79,7 +79,7 @@ export default function WineCoolerRepairPage() {
 
       <AnswerBlock
         question="Where can I get my Sub-Zero wine cooler repaired in South Florida?"
-        answer="Sub-Zero Repair Company services every Sub-Zero wine column and wine cooler — single-zone, dual-zone, integrated, and undercounter — across all 7 South Florida counties. We carry genuine OEM parts on every truck and recalibrate temperature and humidity after every repair so your collection is protected within hours, not days. Same-day service since 1994, no surcharges nights/weekends/holidays."
+        answer="Sub-Zero Repair Services repairs every Sub-Zero wine column and wine cooler — single-zone, dual-zone, integrated, and undercounter — across all 7 South Florida counties. We carry genuine OEM parts on every truck and recalibrate temperature and humidity after every repair so your collection is protected within hours, not days. Same-day service since 1994, no surcharges nights/weekends/holidays."
         stats={[
           { value: "30+", label: "Years on Sub-Zero" },
           { value: "Same-day", label: "Most appointments" },

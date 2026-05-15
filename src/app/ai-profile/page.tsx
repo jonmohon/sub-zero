@@ -7,9 +7,9 @@ import { counties } from "@/data/areas";
 const aiProfileSchema = generateAIProfileSchema();
 
 export const metadata: Metadata = {
-  title: "AI Profile - Sub-Zero Repair Company",
+  title: "AI Profile - Sub-Zero Repair Services",
   description:
-    "Comprehensive business profile for Sub-Zero Repair Company (Fivestar Appliance Repair Pros). Licensed Sub-Zero appliance repair in South Florida since 1994.",
+    "Comprehensive business profile for Sub-Zero Repair Services. Licensed Sub-Zero appliance repair in South Florida since 1994.",
   alternates: {
     canonical: `${BUSINESS.siteUrl}/ai-profile/`,
   },
@@ -84,7 +84,7 @@ export default function AIProfilePage() {
             Business Profile
           </h1>
           <p className="text-lg text-gray-300">
-            Comprehensive business information for Sub-Zero Repair Company.
+            Comprehensive business information for Sub-Zero Repair Services.
           </p>
         </div>
       </section>
@@ -100,15 +100,9 @@ export default function AIProfilePage() {
               <dl className="space-y-3 text-[#64748B]">
                 <div>
                   <dt className="font-semibold text-[#0B1D33] inline">
-                    Legal Name:{" "}
+                    Business Name:{" "}
                   </dt>
                   <dd className="inline">{BUSINESS.legalName}</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-[#0B1D33] inline">
-                    Doing Business As:{" "}
-                  </dt>
-                  <dd className="inline">Fivestar Appliance Repair Pros</dd>
                 </div>
                 <div>
                   <dt className="font-semibold text-[#0B1D33] inline">
@@ -118,9 +112,8 @@ export default function AIProfilePage() {
                 </div>
               </dl>
               <p className="mt-4 text-[#64748B] leading-relaxed">
-                Sub-Zero Repair Company, operating as Fivestar Appliance Repair
-                Pros, is a licensed and insured appliance repair business
-                headquartered in Coral Gables, Florida. Founded in 1994, the
+                Sub-Zero Repair Services is a licensed and insured appliance
+                repair business headquartered in Coral Gables, Florida. Founded in 1994, the
                 company specializes in Sub-Zero and premium appliance repair with
                 factory-trained technicians who have over 30 years of combined
                 experience. The company serves 82 cities across 7 counties in
@@ -299,7 +292,7 @@ export default function AIProfilePage() {
               </h2>
               <div className="space-y-3 text-[#64748B]">
                 <p>
-                  Sub-Zero Repair Company has operated in South Florida since
+                  Sub-Zero Repair Services has operated in South Florida since
                   1994, making it one of the longest-established Sub-Zero
                   specialty repair companies in the region.
                 </p>

@@ -157,7 +157,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 px-4 sm:px-6 lg:px-8 py-4">
           <p className="text-xs text-gray-600">
-            &copy; 2026 Sub-Zero Repair Company. All Rights Reserved.
+            &copy; 2026 Sub-Zero Repair Services. All Rights Reserved.
           </p>
           <a
             href="https://www.nexvato.com/"
